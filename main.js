@@ -16,6 +16,8 @@ document.getElementById('hide-courses-requiring-consent').addEventListener('clic
     rows = courses.map((course) => {
       if (course.CONSENT !== 'Instructor Consent Required') {
         return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
+      } else {
+        return ''
       }
     })
   } else {
@@ -26,4 +28,4 @@ document.getElementById('hide-courses-requiring-consent').addEventListener('clic
   }
 
   document.querySelector('tbody').innerHTML = rows.join('')
-});
+})
