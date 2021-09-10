@@ -9,13 +9,16 @@
 	</head>
 
 	<body>
-    <span>
     <input type="text" placeholder="Search for..."></input>
     <select name="filter">
       <!-- Add Filter options Here -->
       <option value="none">None</option>
     </select>
-  </span>
+    <div>
+      <input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent"/>
+      <label for="hide-courses-requiring-consent">Hide Courses Requiring Special Consent</label>
+    </div>
+    <br>
 		<table>
 			<thead>
 				<tr>
@@ -27,4 +30,5 @@
 		</table>
 		<script type="module" src="main.js"></script>
 	</body>
+
 </html>
