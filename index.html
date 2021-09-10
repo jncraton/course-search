@@ -5,23 +5,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 		<title></title>
-		<style></style>
+		<style>
+			table {
+				margin: auto;
+				width: 90%;
+			}
+			tbody {
+				text-align: center;
+			}
+			input {
+				display: block;
+				margin: 2vh auto;
+				width: 60%;
+				height: 4vh;
+				border-radius: 15px;
+			}
+		</style>
 	</head>
 
 	<body>
-    <span>
-    <input type="text" placeholder="Search for..."></input>
-    <select name="filter">
-      <!-- Add Filter options Here -->
-      <option value="none">None</option>
-    </select>
-  </span>
+		<input type="text" placeholder="Filter by..."></input>
 		<table>
 			<thead>
 				<tr>
-					<td>Course</td>
+					<th>Course</th>
+					<th>Description</th>
+					<th>Instructor</th>
+					<th>Days</th>
 				</tr>
-				<tr></tr>
 			</thead>
 			<tbody></tbody>
 		</table>
