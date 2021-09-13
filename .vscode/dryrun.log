@@ -1,6 +1,0 @@
-make.exe -f "c:\Users\jksch\Documents\Software\course-search\makefile" -C "c:\Users\jksch\Documents\Software\course-search\ " --dry-run --always-make --keep-going --print-directory
-make: Entering directory 'c:/Users/jksch/Documents/Software/course-search'
-npm install standard --global
-standard
-make: Leaving directory 'c:/Users/jksch/Documents/Software/course-search'
- 
