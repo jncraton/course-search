@@ -17,7 +17,6 @@
 			tbody {
 				text-align: center;
 			}
-
 			tbody > tr:nth-child(even) {
 				background-color: #8FC0A9;
 			}
@@ -43,8 +42,11 @@
 			}
 		</style>
 	</head>
-	<body style="background-color: #F7F5F3;">
-		<input type="text" placeholder="Filter by..."></input>
+    <div>
+		<input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent"/>
+		<label for="hide-courses-requiring-consent">Hide Courses Requiring Special Consent</label>
+    </div>
+    <br>
 		<table>
 			<thead>
 				<tr>
@@ -58,4 +60,5 @@
 		</table>
 		<script type="module" src="main.js"></script>
 	</body>
+
 </html>
