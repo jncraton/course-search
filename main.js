@@ -23,11 +23,11 @@ function render () {
   if (courseNumberFilter) {
     sortedCourses = sortedCourses.filter((course) => course.CRSE.includes(courseNumberFilter.toUpperCase()))
   }
-  if(liberalArt){
+  if (liberalArt) {
     sortedCourses = sortedCourses.filter((course) => course.NEWLIB.includes(liberalArt.toUpperCase()))
   }
 
-  if(liberalIntensive){
+  if (liberalIntensive) {
     sortedCourses = sortedCourses.filter((course) => course.NEWLIBINTENSIVES.includes(liberalIntensive.toUpperCase()))
   }
 
