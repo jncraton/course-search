@@ -40,12 +40,41 @@
 				height: 4vh;
 				border-radius: 16px;
 			}
+			button {
+				color: inherit;
+				font-size: inherit;
+				background-color: inherit;
+				font-weight: inherit;
+
+				height: 100%;
+				width: 100%;
+				border: 0;
+				box-shadow: none;
+				border-radius: 0%;
+				cursor: pointer;
+			}
+			.inputContainers {
+				display: flex;
+				padding-top: 6vh;
+				padding-bottom: 4vh;
+				justify-content: space-around;
+			}
+			.courseNumber {
+				width: 25%;	
+				height: 4vh;	
+				border-radius: 20px;	
+			}
+
+
 		</style>
 	</head>
     <div>
-		<input type="text" class="filterBox" placeholder="Filter" />
-		<input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent"/>
+		<span class="inputContainers">
+			<input type="text" placeholder="Course Number" class="courseNumber" id="classNumberFilter"/>
+
+		</span>
 		<label for="hide-courses-requiring-consent">Hide Courses Requiring Special Consent</label>
+		<input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent"/>
     </div>
 		<table>
 			<thead>
@@ -54,6 +83,7 @@
 					<th>Description</th>
 					<th>Instructor</th>
 					<th>Days</th>
+					<th style="width: 12%;"><button id="filterBySize">Class Size </button></th>
 				</tr>
 			</thead>
 			<tbody></tbody>
