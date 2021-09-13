@@ -1,5 +1,4 @@
 import { courses } from './courses.js'
-
 let hideRequirement = false
 
 function render () {
