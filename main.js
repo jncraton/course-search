@@ -1,6 +1,5 @@
 import { courses } from './courses.js'
 
-
 const classNumberBox = document.getElementById('classNumberFilter')
 const classSizeButton = document.getElementById('filterBySize')
 const liberalArtBox = document.getElementById('liberalart')
@@ -42,9 +41,7 @@ function render () {
     if (hideRequirement && course.CONSENT === 'Instructor Consent Required') {
       return ''
     } else {
-
       return `<tr class = ${closedClass}><td>${course.CRSE}</td><td>${course.DESCR}</td><td>${course.INSTR}</td><td>${course.DAYS}</td><td>${course.ENROLLED}</td></tr>`
-
     }
   })
 
