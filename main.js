@@ -4,12 +4,17 @@ const classNumberBox = document.getElementById('classNumberFilter')
 const classSizeButton = document.getElementById('filterBySize')
 const liberalArtBox = document.getElementById('liberalart')
 const intensiveBox = document.getElementById('intensive')
+
+const chairBox = document.getElementById('chairClassFilter')
+
 let closedClass = ''
 let hideRequirement = false
 let courseNumberFilter = ''
 let liberalArt = ''
 let liberalIntensive = ''
 let classSize = ''
+// variable
+let chair = ''
 
 // Renders the table based on the above variables
 function render () {
@@ -28,7 +33,12 @@ function render () {
   }
 
   if (liberalIntensive) {
-    sortedCourses = sortedCourses.filter((course) => course.NEWLIBINTENSIVES.includes(liberalIntensive.toUpperCase()))
+    sortedCourses = sortedCourses.filter((course) =>
+      course.NEWLIBINTENSIVES.includes(liberalIntensive.toUpperCase())
+    )
+  }
+  if (chair) {
+    sortedCourses = sortedCourses.filter((course) => course.CRSE.includes(chair.toUpperCase()))
   }
 
   const rows = sortedCourses.map((course) => {
@@ -84,5 +94,8 @@ intensiveBox.addEventListener('keyup', () => {
   liberalIntensive = intensiveBox.value
   render()
 })
-
+chairBox.addEventListener('change', () => {
+  chair = chairBox.value
+  render()
+})
 render()
