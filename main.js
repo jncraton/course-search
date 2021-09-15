@@ -4,7 +4,7 @@ const classNumberBox = document.getElementById('classNumberFilter')
 const classSizeButton = document.getElementById('filterBySize')
 const liberalArtBox = document.getElementById('liberalart')
 const intensiveBox = document.getElementById('intensive')
-
+let closedClass = ''
 let hideRequirement = false
 let courseNumberFilter = ''
 let liberalArt = ''
@@ -33,10 +33,15 @@ function render () {
 
   const rows = sortedCourses.map((course) => {
     // Checks if the hide consent checkbox is checked, and if so, returns and does not render add other filters HERE
+    if (course.ENROLLING === 'Open') {
+      closedClass = 'openClass'
+    } else {
+      closedClass = 'closedClass'
+    }
     if (hideRequirement && course.CONSENT === 'Instructor Consent Required') {
       return ''
     } else {
-      return `<tr><td>${course.CRSE}</td><td>${course.DESCR}</td><td>${course.INSTR}</td><td>${course.DAYS}</td><td>${course.ENROLLED}</td></tr>`
+      return `<tr class = ${closedClass}><td>${course.CRSE}</td><td>${course.DESCR}</td><td>${course.INSTR}</td><td>${course.DAYS}</td><td>${course.ENROLLED}</td></tr>`
     }
   })
 
