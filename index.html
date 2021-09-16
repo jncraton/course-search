@@ -1,151 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <title></title>
-        <style>
-            table {
-                margin: auto;
-                width: 90%;
-                box-shadow: 8px 10px 5px #6a7b76;
-                border: 2px solid #32322c;
-                background-color: #32322c;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-                    "Open Sans", "Helvetica Neue", sans-serif;
-            }
-            tbody {
-                text-align: center;
-            }
-            tbody > tr:nth-child(even) {
-                background-color: #8fc0a9;
-            }
-            tbody > tr:nth-child(odd) {
-                background-color: #4d9078;
-            }
-            tbody > tr {
-                font-size: 18px;
-                height: 4vh;
-            }
-            thead > tr {
-                font-size: 23px;
-                background-color: #08474a;
-                color: white;
-                height: 4vh;
-            }
-            .filterBox {
-                display: block;
-                margin: 2vh auto;
-                width: 60%;
-                height: 4vh;
-                border-radius: 16px;
-            }
-            button {
-                color: inherit;
-                font-size: inherit;
-                background-color: inherit;
-                font-weight: inherit;
-                height: 100%;
-                width: 100%;
-                border: 0;
-                box-shadow: none;
-                border-radius: 0%;
-                cursor: pointer;
-            }
-            .inputContainers {
-                display: flex;
-                padding-top: 6vh;
-                padding-bottom: 4vh;
-                justify-content: space-around;
-            }
-            .courseNumber {
-                width: 25%;
-                height: 4vh;
-                border-radius: 20px;
-            }
-            body {
-                background-color: #ff9966;
-            }
-            .closedClass {
-                color: red;
-            }
-           .openClass {
-               color: black;
-            }
-        </style>
-    </head>
-    <body>
-        <div>
-            <span class="inputContainers">
-                <input type="text" placeholder="Course Number" class="courseNumber" id="classNumberFilter" />
-                <input type="text" placeholder="Liberal Art" class="courseNumber" id="liberalart" />
-                <input type="text" placeholder="Intensive" class="courseNumber" id="intensive" />
-            </span>
-            <label for="hide-courses-requiring-consent">Hide Courses Requiring Special Consent</label>
-            <input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent" />
-            <label for="chair">Chair Search:</label>
-            <select name="chair" class="courseNumber" class="inputContainers" id="chairClassFilter">
-                <option></option>
-                <option>ACCT</option>
-                <option>ARTH</option>
-                <option>ARTS</option>
-                <option>ARTG</option>
-                <option>BIBL</option>
-                <option>BIOL</option>
-                <option>BSNS</option>
-                <option>CHEM</option>
-                <option>CMIN</option>
-                <option>COMM</option>
-                <option>CPSC</option>
-                <option>CRIM</option>
-                <option>DANC</option>
-                <option>ECON</option>
-                <option>EDUC</option>
-                <option>ENGL</option>
-                <option>ENGR</option>
-                <option>EXSC</option>
-                <option>FLAN</option>
-                <option>FREN</option>
-                <option>GERM</option>
-                <option>HIST</option>
-                <option>HNRS</option>
-                <option>INCS</option>
-                <option>LART</option>
-                <option>MATH</option>
-                <option>MUBS</option>
-                <option>MUED</option>
-                <option>MUPF</option>
-                <option>MUSC</option>
-                <option>MUTR</option>
-                <option>NURS</option>
-                <option>PECT</option>
-                <option>PEHS</option>
-                <option>PETE</option>
-                <option>PHYS</option>
-                <option>POSC</option>
-                <option>PSYC</option>
-                <option>PUBH</option>
-                <option>RLGN</option>
-                <option>SOCI</option>
-                <option>SOWK</option>
-                <option>SPAN</option>
-                <option>SPRL</option>
-                <option>THEA</option>
-            </select>
-        </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Course</th>
-                    <th>Description</th>
-                    <th>Instructor</th>
-                    <th>Days</th>
-                    <th style="width: 12%"><button id="filterBySize">Class Size</button></th>
-                </tr>
-            </thead>
-            <tbody></tbody>
-        </table>
-        <script type="module" src="main.js"></script>
-    </body>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title></title>
+    <style>
+        table {
+            margin: auto;
+            width: 90%;
+            box-shadow: 8px 10px 5px #6a7b76;
+            border: 2px solid #32322c;
+            background-color: #32322c;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+                "Open Sans", "Helvetica Neue", sans-serif;
+        }
+
+        tbody {
+            text-align: center;
+        }
+
+        tbody>tr:nth-child(even) {
+            background-color: #8fc0a9;
+        }
+
+        tbody>tr:nth-child(odd) {
+            background-color: #4d9078;
+        }
+
+        tbody>tr {
+            font-size: 18px;
+            height: 4vh;
+        }
+
+        thead>tr {
+            font-size: 23px;
+            background-color: #08474a;
+            color: white;
+            height: 4vh;
+        }
+
+        .filterBox {
+            display: block;
+            margin: 2vh auto;
+            width: 60%;
+            height: 4vh;
+            border-radius: 16px;
+        }
+
+        button {
+            color: inherit;
+            font-size: inherit;
+            background-color: inherit;
+            font-weight: inherit;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            box-shadow: none;
+            border-radius: 0%;
+            cursor: pointer;
+        }
+
+        .inputContainers {
+            display: flex;
+            padding-top: 6vh;
+            padding-bottom: 4vh;
+            justify-content: space-around;
+        }
+
+        .courseNumber {
+            width: 25%;
+            height: 4vh;
+            border-radius: 20px;
+        }
+
+        body {
+            background-color: #ff9966;
+        }
+
+        .closedClass {
+            color: red;
+        }
+
+        .openClass {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span class="inputContainers">
+            <input type="text" placeholder="Course Number" class="courseNumber" id="classNumberFilter" />
+            <input type="text" placeholder="Liberal Art" class="courseNumber" id="liberalart" />
+            <input type="text" placeholder="Intensive" class="courseNumber" id="intensive" />
+            <input type="text" placeholder="Instructor" class="courseNumber" id="instructor" /> 
+            <input type="text" placeholder="Class Description" class="courseNumber" id="description" />
+        </span>
+        <label for="hide-courses-requiring-consent">Hide Courses Requiring Special Consent</label>
+        <input type="checkbox" name="hide-courses-requiring-consent" id="hide-courses-requiring-consent" />
+        <label for="chair">Chair Search:</label>
+        <select name="chair" class="courseNumber" class="inputContainers" id="chairClassFilter">
+            <option></option>
+            <option>ACCT</option>
+            <option>ARTH</option>
+            <option>ARTS</option>
+            <option>ARTG</option>
+            <option>BIBL</option>
+            <option>BIOL</option>
+            <option>BSNS</option>
+            <option>CHEM</option>
+            <option>CMIN</option>
+            <option>COMM</option>
+            <option>CPSC</option>
+            <option>CRIM</option>
+            <option>DANC</option>
+            <option>ECON</option>
+            <option>EDUC</option>
+            <option>ENGL</option>
+            <option>ENGR</option>
+            <option>EXSC</option>
+            <option>FLAN</option>
+            <option>FREN</option>
+            <option>GERM</option>
+            <option>HIST</option>
+            <option>HNRS</option>
+            <option>INCS</option>
+            <option>LART</option>
+            <option>MATH</option>
+            <option>MUBS</option>
+            <option>MUED</option>
+            <option>MUPF</option>
+            <option>MUSC</option>
+            <option>MUTR</option>
+            <option>NURS</option>
+            <option>PECT</option>
+            <option>PEHS</option>
+            <option>PETE</option>
+            <option>PHYS</option>
+            <option>POSC</option>
+            <option>PSYC</option>
+            <option>PUBH</option>
+            <option>RLGN</option>
+            <option>SOCI</option>
+            <option>SOWK</option>
+            <option>SPAN</option>
+            <option>SPRL</option>
+            <option>THEA</option>
+        </select>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Course</th>
+                <th>Description</th>
+                <th>Instructor</th>
+                <th>Days</th>
+                <th style="width: 12%"><button id="filterBySize">Class Size</button></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script type="module" src="main.js"></script>
+</body>
+
 </html>

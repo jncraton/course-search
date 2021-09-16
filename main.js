@@ -5,6 +5,9 @@ const classSizeButton = document.getElementById('filterBySize')
 const liberalArtBox = document.getElementById('liberalart')
 const intensiveBox = document.getElementById('intensive')
 
+const instructorSearch = document.getElementById('instructor')
+const descriptionSearch = document.getElementById('description')
+
 const chairBox = document.getElementById('chairClassFilter')
 
 let closedClass = ''
@@ -15,6 +18,9 @@ let liberalIntensive = ''
 let classSize = ''
 // variable
 let chair = ''
+
+let instructorBox = ''
+let descriptionBox = ''
 
 // Renders the table based on the above variables
 function render () {
@@ -39,6 +45,13 @@ function render () {
   }
   if (chair) {
     sortedCourses = sortedCourses.filter((course) => course.CRSE.includes(chair.toUpperCase()))
+  }
+
+  if (instructorBox) {
+    sortedCourses = sortedCourses.filter((course) => course.CRSE.includes(instructorBox.toUpperCase()))
+  }
+  if (descriptionBox) {
+    sortedCourses = sortedCourses.filter((course) => course.CRSE.includes(descriptionBox.toUpperCase()))
   }
 
   const rows = sortedCourses.map((course) => {
@@ -99,3 +112,12 @@ chairBox.addEventListener('change', () => {
   render()
 })
 render()
+
+instructorSearch.addEventListener('keyup', () => {
+  instructorBox = instructorSearch.value
+  render()
+})
+descriptionSearch.addEventListener('keyup', () => {
+  descriptionBox = descriptionSearch.value
+  render()
+})
