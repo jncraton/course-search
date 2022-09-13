@@ -4,8 +4,8 @@ let filteredCourses = courses;
 let online = false;
 
 // Add event listener to online only button
-const el = document.getElementById("online-filter");
-el.addEventListener("click", showOnlineOnly, false);
+const onlineButtonEL = document.getElementById("online-filter");
+onlineButtonEL.addEventListener("click", showOnlineOnly, false);
 
 //filters the course list by whether or not the course is online
 //activated when the show online courses only button is clicked
@@ -26,10 +26,8 @@ function showOnlineOnly(){
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
-
-
 const rows = courses.map(course => {
-  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
+  return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
 })
 
 document.querySelector('tbody').innerHTML = rows.join('')
