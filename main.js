@@ -20,7 +20,7 @@ function showOnlineOnly() {
     online = true
   }
   let rows = filteredCourses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
+    return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
