@@ -1,7 +1,9 @@
 import { courses } from './courses.js'
 
 //Author: @Jacob Spires
-document.getElementById('search-button').addEventListener('click', getCoursesFromTime)
+document
+  .getElementById('search-button')
+  .addEventListener('click', getCoursesFromTime)
 //getCoursesFromTime lets the user search for a course based on start time
 function getCoursesFromTime() {
   let input = document.getElementById('timeSearch').value
