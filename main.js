@@ -1,6 +1,5 @@
 import { courses } from './courses.js'
 
-
 //Populate Dropdown
 const depts = new Set()
 courses.map(course => {
