@@ -20,7 +20,7 @@ function showOnlineOnly() {
     online = true
   }
   let rows = filteredCourses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
@@ -36,8 +36,8 @@ const sortByClassNumberEL = document.getElementById('sortByClassNumber')
 sortByClassNumberEL.addEventListener('click', sortByClassNumber)
 function sortByClassNumber() {
   console.log('sortByClassNumber')
-  courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
-  const rows = courses.map(course => {
+  filteredCourses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
+  const rows = filteredCourses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
@@ -48,8 +48,8 @@ const sortByClassSizeEL = document.getElementById('sortByClassSize')
 sortByClassSizeEL.addEventListener('click', sortByClassSize)
 function sortByClassSize() {
   console.log('sortByClassSize')
-  courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
-  const rows = courses.map(course => {
+  filteredCourses.sort((a, b) => b.ENROLLED - a.ENROLLED)
+  const rows = filteredCourses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
