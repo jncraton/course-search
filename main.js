@@ -1,20 +1,5 @@
 import { courses } from './courses.js'
-//Author: @Jacob Spires
-document
-  .getElementById('string-search')
-  .addEventListener('click', getCoursesFromTime)
-//getCoursesFromTime lets the user search for a course based on start time
-function getCoursesFromTime() {
-  let input = document.getElementById('course-search-box').value
-  input = input.toUpperCase() //accounts for lower case input
-  const rows = courses.map(course => {
-    //if input is in START_TIME, return the start time, course name, and course description
-    if (course.START_TIME.includes(input)) {
-      return `<tr><td>${course.START_TIME} - ${course.CRSE} - ${course.DESCR}</td></tr>`
-    }
-  })
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
+
 //event listener for search button
 document.getElementById('string-search').addEventListener('click', getCourses)
 //Get courses lets the user search for a course by CRSE, DESCR, or INSTR
@@ -22,6 +7,7 @@ function getCourses() {
   let num // to store course number
   let desc // to store course description
   let inst // to store course instructor
+  let time
   //get value from box
   let input = document.getElementById('course-search-box').value
   //convert to uppercase
@@ -32,10 +18,16 @@ function getCourses() {
     num = course.CRSE.toUpperCase()
     desc = course.DESCR.toUpperCase()
     inst = course.INSTR.toUpperCase()
+    time = course.START_TIME.toUpperCase() //Jacob Spires Change
     //if input is in CRSE, DESCR, or INSTR, return course
-    if (num.includes(input) || desc.includes(input) || inst.includes(input)) {
+    if (
+      num.includes(input) ||
+      desc.includes(input) ||
+      inst.includes(input) ||
+      time.includes(input)
+    ) {
       //build table
-      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTR}</td></tr>`
+      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTR} - ${course.START_TIME}</td></tr>`
     }
   })
   //join rows
