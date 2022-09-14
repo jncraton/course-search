@@ -1,6 +1,5 @@
 import { courses } from './courses.js'
 
-//Author: Michael Carroll
 //event listener for search button
 document.getElementById('string-search').addEventListener('click', getCourses)
 //Get courses lets the user search for a course by CRSE, DESCR, or INSTR
@@ -32,6 +31,7 @@ function getCourses() {
 
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+})
 
 //Populate Dropdown
 const depts = new Set()
