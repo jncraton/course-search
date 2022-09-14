@@ -1,11 +1,7 @@
 import { courses } from './courses.js'
 
 const rows = courses.map(course => {
-<<<<<<< HEAD
-  return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
-=======
-  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
->>>>>>> 9952ce6e4fa7ef4c64fa720588f5b16ab710b618
+  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} </td></tr>`
 })
 
 document.querySelector('tbody').innerHTML = rows.join('')
@@ -30,6 +26,17 @@ function sortByClassSize() {
   courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
   const rows = courses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+  })
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+
+//Shows what courses are not enrolling students
+const toggleAvailabilityEL = document.getElementById('toggleAvailability')
+toggleAvailabilityEL.addEventListener('click', toggleAvailability)
+function toggleAvailability() {
+  console.log('toggleAvailabity')
+  const rows = courses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLING}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
