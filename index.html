@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title></title>
     <style></style>
   </head>
@@ -12,14 +11,19 @@
     <!--Description of Website-->
     <h1>Anderson University Spring 2023 Course Catalog</h1>
     <h3>Course Search Based on Start Time</h3>
-    <input type="text" id="timeSearch" placeholder="ex. 09:00 AM" />
+    <input type="text" id="timeSearch" placeholder="Time(ex. 09:00 AM)" />
     <button id="search-button">Search</button>
+    <input type="button" value="Sort By Class Number" id="sortByClassNumber" />
+    <input type="button" value="Sort By Class Size" id="sortByClassSize" />
     <table>
       <thead>
         <tr>
+          <td>Course</td>
           <td>Starts:</td>
+          <td>
+            <select name="dept"></select>
+          </td>
         </tr>
-        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
