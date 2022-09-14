@@ -1,12 +1,11 @@
 import { courses } from './courses.js'
-
 //Author: @Jacob Spires
 document
-  .getElementById('search-button')
+  .getElementById('string-search')
   .addEventListener('click', getCoursesFromTime)
 //getCoursesFromTime lets the user search for a course based on start time
 function getCoursesFromTime() {
-  let input = document.getElementById('timeSearch').value
+  let input = document.getElementById('course-search-box').value
   input = input.toUpperCase() //accounts for lower case input
   const rows = courses.map(course => {
     //if input is in START_TIME, return the start time, course name, and course description
@@ -16,6 +15,38 @@ function getCoursesFromTime() {
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
+//event listener for search button
+document.getElementById('string-search').addEventListener('click', getCourses)
+//Get courses lets the user search for a course by CRSE, DESCR, or INSTR
+function getCourses() {
+  let num // to store course number
+  let desc // to store course description
+  let inst // to store course instructor
+  //get value from box
+  let input = document.getElementById('course-search-box').value
+  //convert to uppercase
+  input = input.toUpperCase()
+  //loop through courses
+  const rows = courses.map(course => {
+    // convert to uppercase
+    num = course.CRSE.toUpperCase()
+    desc = course.DESCR.toUpperCase()
+    inst = course.INSTR.toUpperCase()
+    //if input is in CRSE, DESCR, or INSTR, return course
+    if (num.includes(input) || desc.includes(input) || inst.includes(input)) {
+      //build table
+      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTR}</td></tr>`
+    }
+  })
+  //join rows
+  document.querySelector('tbody').innerHTML = rows.join('')
+  //clear input box
+  document.getElementById('course-search-box').value = ''
+}
+
+const rows = courses.map(course => {
+  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+})
 //Populate Dropdown
 const depts = new Set()
 courses.map(course => {
