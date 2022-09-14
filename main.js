@@ -38,7 +38,6 @@ const depts = new Set()
 courses.map(course => {
   let dept = course.CRSE.substring(0, 4)
   depts.add(dept)
-
 })
 
 const list = Array.from(depts).map(dept => {
