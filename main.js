@@ -9,7 +9,7 @@ function getCourses() {
   let desc // to store course description
   let inst // to store course instructor
   //get value from box
-  let input = document.getElementById('course-search-box').value
+  let input = document.getElementById('course-search-box').value 
   //convert to uppercase
   input = input.toUpperCase()
   //loop through courses
