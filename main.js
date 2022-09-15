@@ -98,7 +98,7 @@ function sortByClassSize() {
 const toggleAvailabilityEL = document.getElementById('toggleAvailability')
 toggleAvailabilityEL.addEventListener('click', toggleAvailability)
 function toggleAvailability() {
-  console.log('toggleAvailabity')
+  console.log('toggleAvailability')
   const rows = courses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLING}</td></tr>`
   })
