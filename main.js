@@ -96,7 +96,7 @@ function renderCourses() {
   const rows = filteredCourses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
   })
-
+  
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
@@ -129,6 +129,8 @@ function sortByClassSize() {
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
+const libR= new Set()
+
 const select_new_lib_requirements = courses.filter(course => {
   if (course.NEWLIB != ' ') {
     let lib = course.NEWLIB
@@ -142,7 +144,7 @@ const lib_list = Array.from(libR).map(lib => {
 })
 
 lib_list.unshift(
-  `<option value="">Select A New Liberal Arts Requirement</option>`
+  `<option value="">Select a Liberal Arts Requirement</option>`
 )
 
 document.querySelector('[name="lib"]').innerHTML = lib_list.join('')
@@ -150,18 +152,18 @@ document.querySelector('[name="lib"]').innerHTML = lib_list.join('')
 function sortByLibRequirement() {
   let libSorted = document.querySelector('[name="lib"]').value
 
-  let libCourses = courses
+  let libCourses = filteredCourses
   if (libSorted) {
-    libCourses = courses.filter(course => {
+    libCourses = filteredCourses.filter(course => {
       return course.NEWLIB === libSorted
     })
   }
 
-  const rows = libCourses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} - ${course.NEWLIB}</td></tr>`
-  })
+    const rows = libCourses.map(course => {
+      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} - ${course.NEWLIB}</td></tr>`
+    })
 
-  document.querySelector('tbody').innerHTML = rows.join('')
+    document.querySelector('tbody').innerHTML = rows.join('')
 }
 
 document
@@ -173,5 +175,3 @@ const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
 })
 document.querySelector('tbody').innerHTML = rows.join('')
-
-const libR = new Set()
