@@ -7,6 +7,7 @@ function getCourses() {
   let num // to store course number
   let desc // to store course description
   let inst // to store course instructor
+  let time
   //get value from box
   let input = document.getElementById('course-search-box').value
   //convert to uppercase
@@ -17,10 +18,16 @@ function getCourses() {
     num = course.CRSE.toUpperCase()
     desc = course.DESCR.toUpperCase()
     inst = course.INSTR.toUpperCase()
+    time = course.START_TIME.toUpperCase() //Jacob Spires Change
     //if input is in CRSE, DESCR, or INSTR, return course
-    if (num.includes(input) || desc.includes(input) || inst.includes(input)) {
+    if (
+      num.includes(input) ||
+      desc.includes(input) ||
+      inst.includes(input) ||
+      time.includes(input)
+    ) {
       //build table
-      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTR}</td></tr>`
+      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTR} - ${course.START_TIME}</td></tr>`
     }
   })
   //join rows
@@ -32,7 +39,6 @@ function getCourses() {
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
 })
-
 //Populate Dropdown
 const depts = new Set()
 courses.map(course => {

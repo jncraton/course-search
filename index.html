@@ -11,7 +11,7 @@
     <h1>Anderson University Spring 2023 Course Catalog</h1>
     <!--Search by name, number, or description
         returns a course with any info matching string-->
-    <h3>Course Search by number, description, or instructor</h3>
+    <h3>Course Search by number, description, instructor, or time</h3>
     <!--Input box-->
     <input type="text" id="course-search-box" placeholder="e.g. COMM1000" />
     <!--Search button-->
@@ -23,15 +23,16 @@
       <thead>
         <tr>
           <td>Course</td>
+          <td>Starts:</td>
           <td>
             <select name="dept"></select>
             <select name="lib"></select>
           </td>
         </tr>
-        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
     <script type="module" src="main.js"></script>
   </body>
+  <!---callback search function from main.js-->
 </html>
