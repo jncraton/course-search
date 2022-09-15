@@ -22,10 +22,10 @@ resetButtonEL.addEventListener('click', resetFilters, false)
 
 function resetFilters(){
   online = false
-  const rows = courses.map(course => {
+  const fullRows = courses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
   })
-  renderCourses()
+  document.querySelector('tbody').innerHTML = fullRows.join('')
 }
 
 //event listener for search button
@@ -64,9 +64,6 @@ function getCourses() {
   document.getElementById('course-search-box').value = ''
 }
 
-const rows = courses.map(course => {
-  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
-})
 //Populate Dropdown
 const depts = new Set()
 courses.map(course => {
@@ -85,19 +82,19 @@ document.querySelector('[name="dept"]').innerHTML = list.join('')
 //Populate Courses
 function renderCourses() {
   let filterDept = document.querySelector('[name="dept"]').value
-
+  filteredCourses = courses
   if (filterDept) {
-    filteredCourses = courses.filter(course => {
+    filteredCourses = filteredCourses.filter(course => {
       return course.CRSE.substring(0, 4) === filterDept
     })
   }
   if(online){
-    filteredCourses = filteredCourses.filter(function (value, index) {
-      return value.INSTRUCTION_MODE == 'Online'
+    filteredCourses = filteredCourses.filter(value => {
+      return value.INSTRUCTION_MODE == 'Online' || value.INSTRUCTION_MODE == 'Blended:Mtg/Online'
     })
   }
   const rows = filteredCourses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
   })
 
   document.querySelector('tbody').innerHTML = rows.join('')
@@ -175,4 +172,6 @@ sortByLibRequirement()
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
 })
+document.querySelector('tbody').innerHTML = rows.join('')
+
 const libR = new Set()
