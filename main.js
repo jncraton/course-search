@@ -93,3 +93,45 @@ function sortByClassSize() {
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
+
+const libR = new Set()
+
+const select_new_lib_requirements = courses.filter(course => {
+  if (course.NEWLIB != ' ') {
+    let lib = course.NEWLIB
+    libR.add(lib)
+    return true
+  }
+})
+
+const lib_list = Array.from(libR).map(lib => {
+  return `<option value="${lib}">${lib}</option>`
+})
+
+lib_list.unshift(
+  `<option value="">Select A New Liberal Arts Requirement</option>`
+)
+
+document.querySelector('[name="lib"]').innerHTML = lib_list.join('')
+
+function sortByLibRequirement() {
+  let libSorted = document.querySelector('[name="lib"]').value
+
+  let libCourses = courses
+  if (libSorted) {
+    libCourses = courses.filter(course => {
+      return course.NEWLIB === libSorted
+    })
+  }
+
+  const rows = libCourses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} - ${course.NEWLIB}</td></tr>`
+  })
+
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+
+document
+  .querySelector('[name="lib"]')
+  .addEventListener('change', sortByLibRequirement)
+sortByLibRequirement()
