@@ -10,17 +10,19 @@ onlineButtonEL.addEventListener('click', showOnlineOnly, false)
 //filters the course list by whether or not the course is online
 //activated when the show online courses only button is clicked
 function showOnlineOnly() {
-  if(online){
-    online=false
-  }else{online=true}
-  renderCourses();
+  if (online) {
+    online = false
+  } else {
+    online = true
+  }
+  renderCourses()
 }
 
 // Add event listener to reset button
 const resetButtonEL = document.getElementById('reset-filters')
 resetButtonEL.addEventListener('click', resetFilters, false)
 
-function resetFilters(){
+function resetFilters() {
   online = false
   const fullRows = courses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
@@ -88,15 +90,18 @@ function renderCourses() {
       return course.CRSE.substring(0, 4) === filterDept
     })
   }
-  if(online){
+  if (online) {
     filteredCourses = filteredCourses.filter(value => {
-      return value.INSTRUCTION_MODE == 'Online' || value.INSTRUCTION_MODE == 'Blended:Mtg/Online'
+      return (
+        value.INSTRUCTION_MODE == 'Online' ||
+        value.INSTRUCTION_MODE == 'Blended:Mtg/Online'
+      )
     })
   }
   const rows = filteredCourses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
   })
-  
+
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
@@ -129,7 +134,7 @@ function sortByClassSize() {
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
-const libR= new Set()
+const libR = new Set()
 
 const select_new_lib_requirements = courses.filter(course => {
   if (course.NEWLIB != ' ') {
@@ -143,9 +148,7 @@ const lib_list = Array.from(libR).map(lib => {
   return `<option value="${lib}">${lib}</option>`
 })
 
-lib_list.unshift(
-  `<option value="">Select a Liberal Arts Requirement</option>`
-)
+lib_list.unshift(`<option value="">Select a Liberal Arts Requirement</option>`)
 
 document.querySelector('[name="lib"]').innerHTML = lib_list.join('')
 
@@ -159,11 +162,11 @@ function sortByLibRequirement() {
     })
   }
 
-    const rows = libCourses.map(course => {
-      return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} - ${course.NEWLIB}</td></tr>`
-    })
+  const rows = libCourses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED} - ${course.NEWLIB}</td></tr>`
+  })
 
-    document.querySelector('tbody').innerHTML = rows.join('')
+  document.querySelector('tbody').innerHTML = rows.join('')
 }
 
 document
