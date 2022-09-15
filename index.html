@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <title></title>
     <style></style>
   </head>
@@ -11,11 +10,14 @@
   <body>
     <input type="button" value="Sort By Class Number" id="sortByClassNumber" />
     <input type="button" value="Sort By Class Size" id="sortByClassSize" />
+    <button id="online-filter">Show Online Courses Only</button>
     <table>
       <thead>
-        <button id="online-filter">Show Online Courses Only</button>
         <tr>
           <td>Course</td>
+          <td>
+            <select name="dept"></select>
+          </td>
         </tr>
         <tr></tr>
       </thead>
