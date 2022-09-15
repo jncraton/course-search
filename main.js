@@ -16,8 +16,16 @@ function showOnlineOnly() {
   renderCourses();
 }
 
+// Add event listener to reset button
+const resetButtonEL = document.getElementById('reset-filters')
+resetButtonEL.addEventListener('click', resetFilters, false)
+
 function resetFilters(){
-  
+  online = false
+  const rows = courses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
+  })
+  renderCourses()
 }
 
 //Populate Dropdown
