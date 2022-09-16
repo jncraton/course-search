@@ -22,6 +22,7 @@ function showOnlineOnly() {
 const resetButtonEL = document.getElementById('reset-filters')
 resetButtonEL.addEventListener('click', resetFilters, false)
 
+//a button to reset all filters
 function resetFilters() {
   online = false
   const fullRows = courses.map(course => {
