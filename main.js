@@ -1,5 +1,36 @@
 import { courses } from './courses.js'
 
+let filteredCourses = courses
+let online = false
+
+// Add event listener to online only button
+const onlineButtonEL = document.getElementById('online-filter')
+onlineButtonEL.addEventListener('click', showOnlineOnly, false)
+
+//filters the course list by whether or not the course is online
+//activated when the show online courses only button is clicked
+function showOnlineOnly() {
+  if (online) {
+    online = false
+  } else {
+    online = true
+  }
+  renderCourses()
+}
+
+// Add event listener to reset button
+const resetButtonEL = document.getElementById('reset-filters')
+resetButtonEL.addEventListener('click', resetFilters, false)
+
+//a button to reset all filters
+function resetFilters() {
+  online = false
+  const fullRows = courses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
+  })
+  document.querySelector('tbody').innerHTML = fullRows.join('')
+}
+
 //event listener for search button
 document.getElementById('string-search').addEventListener('click', getCourses)
 //Get courses lets the user search for a course by CRSE, DESCR, or INSTR
@@ -36,9 +67,6 @@ function getCourses() {
   document.getElementById('course-search-box').value = ''
 }
 
-const rows = courses.map(course => {
-  return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
-})
 //Populate Dropdown
 const depts = new Set()
 courses.map(course => {
@@ -57,15 +85,22 @@ document.querySelector('[name="dept"]').innerHTML = list.join('')
 //Populate Courses
 function renderCourses() {
   let filterDept = document.querySelector('[name="dept"]').value
-
-  let filteredCourses = courses
+  filteredCourses = courses
   if (filterDept) {
-    filteredCourses = courses.filter(course => {
+    filteredCourses = filteredCourses.filter(course => {
       return course.CRSE.substring(0, 4) === filterDept
     })
   }
+  if (online) {
+    filteredCourses = filteredCourses.filter(value => {
+      return (
+        value.INSTRUCTION_MODE == 'Online' ||
+        value.INSTRUCTION_MODE == 'Blended:Mtg/Online'
+      )
+    })
+  }
   const rows = filteredCourses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.INSTRUCTION_MODE}</td></tr>`
   })
 
   document.querySelector('tbody').innerHTML = rows.join('')
@@ -81,9 +116,9 @@ const sortByClassNumberEL = document.getElementById('sortByClassNumber')
 sortByClassNumberEL.addEventListener('click', sortByClassNumber)
 function sortByClassNumber() {
   console.log('sortByClassNumber')
-  courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
-  const rows = courses.map(course => {
-    return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
+  filteredCourses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
+  const rows = filteredCourses.map(course => {
+    return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
@@ -93,8 +128,8 @@ const sortByClassSizeEL = document.getElementById('sortByClassSize')
 sortByClassSizeEL.addEventListener('click', sortByClassSize)
 function sortByClassSize() {
   console.log('sortByClassSize')
-  courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
-  const rows = courses.map(course => {
+  filteredCourses.sort((a, b) => b.ENROLLED - a.ENROLLED)
+  const rows = filteredCourses.map(course => {
     return `<tr><td>${course.CRSE} - ${course.DESCR} - ${course.ENROLLED}</td></tr>`
   })
   document.querySelector('tbody').innerHTML = rows.join('')
@@ -114,18 +149,16 @@ const lib_list = Array.from(libR).map(lib => {
   return `<option value="${lib}">${lib}</option>`
 })
 
-lib_list.unshift(
-  `<option value="">Select A New Liberal Arts Requirement</option>`
-)
+lib_list.unshift(`<option value="">Select a Liberal Arts Requirement</option>`)
 
 document.querySelector('[name="lib"]').innerHTML = lib_list.join('')
 
 function sortByLibRequirement() {
   let libSorted = document.querySelector('[name="lib"]').value
 
-  let libCourses = courses
+  let libCourses = filteredCourses
   if (libSorted) {
-    libCourses = courses.filter(course => {
+    libCourses = filteredCourses.filter(course => {
       return course.NEWLIB === libSorted
     })
   }
@@ -141,3 +174,8 @@ document
   .querySelector('[name="lib"]')
   .addEventListener('change', sortByLibRequirement)
 sortByLibRequirement()
+
+const rows = courses.map(course => {
+  return `<tr><td>${course.CRSE} - ${course.DESCR} </td></tr>`
+})
+document.querySelector('tbody').innerHTML = rows.join('')
