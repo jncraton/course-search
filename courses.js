@@ -2,6 +2,7 @@ export const courses = [
   {
     CRSE: 'ACCT2020',
     DESCR: 'Principles of Accounting II',
+    MAX_CREDIT: '3',
     INSTR: 'Bates C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -15,6 +16,7 @@ export const courses = [
   {
     CRSE: 'ACCT2020',
     DESCR: 'Principles of Accounting II',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -28,6 +30,7 @@ export const courses = [
   {
     CRSE: 'ACCT3020',
     DESCR: 'Intermediate Accounting II',
+    MAX_CREDIT: '3',
     INSTR: 'Tijerina V',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -41,6 +44,7 @@ export const courses = [
   {
     CRSE: 'ACCT3850',
     DESCR: 'Practicum in Accounting',
+    MAX_CREDIT: '3',
     INSTR: 'Fox J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -54,6 +58,7 @@ export const courses = [
   {
     CRSE: 'ACCT3860',
     DESCR: 'Vol Inc Tax Assist Practicum',
+    MAX_CREDIT: '1',
     INSTR: 'Bates C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -67,6 +72,7 @@ export const courses = [
   {
     CRSE: 'ACCT4020',
     DESCR: 'Federal Income Tax',
+    MAX_CREDIT: '3',
     INSTR: 'Bates C',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -80,6 +86,7 @@ export const courses = [
   {
     CRSE: 'ACCT4100',
     DESCR: 'Adv Financial Acctg',
+    MAX_CREDIT: '3',
     INSTR: 'Tijerina V',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -93,6 +100,7 @@ export const courses = [
   {
     CRSE: 'ACCT4800',
     DESCR: 'Accounting Internship',
+    MAX_CREDIT: '6',
     INSTR: 'Fox J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -106,6 +114,7 @@ export const courses = [
   {
     CRSE: 'ACCT4850',
     DESCR: 'Practicum CPA Exam Prep',
+    MAX_CREDIT: '4',
     INSTR: 'Tijerina V',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -119,6 +128,7 @@ export const courses = [
   {
     CRSE: 'ARTS1210',
     DESCR: 'Drawing for Liberal Arts',
+    MAX_CREDIT: '3',
     INSTR: 'Sims H',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -132,6 +142,7 @@ export const courses = [
   {
     CRSE: 'ARTS2060',
     DESCR: 'Illustration',
+    MAX_CREDIT: '3',
     INSTR: 'Sims H',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -145,6 +156,7 @@ export const courses = [
   {
     CRSE: 'ARTS2100',
     DESCR: 'Intro to Graphic Design',
+    MAX_CREDIT: '3',
     INSTR: 'Higgs J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -158,6 +170,7 @@ export const courses = [
   {
     CRSE: 'ARTS3114',
     DESCR: 'Visual Design Studio II',
+    MAX_CREDIT: '3',
     INSTR: 'Sims H',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -171,6 +184,7 @@ export const courses = [
   {
     CRSE: 'ARTS4310',
     DESCR: 'Design Thinking',
+    MAX_CREDIT: '3',
     INSTR: 'Sims H',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -184,6 +198,7 @@ export const courses = [
   {
     CRSE: 'ARTS4420',
     DESCR: 'Design Methodology',
+    MAX_CREDIT: '3',
     INSTR: 'Higgs J',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -197,6 +212,7 @@ export const courses = [
   {
     CRSE: 'ARTS4650',
     DESCR: 'Spec Projs in Art (2 Dim)',
+    MAX_CREDIT: '4',
     INSTR: 'Higgs J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -210,6 +226,7 @@ export const courses = [
   {
     CRSE: 'ARTS4650',
     DESCR: 'Spec Projs in Art (2 Dim)',
+    MAX_CREDIT: '4',
     INSTR: 'Sims H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -223,6 +240,7 @@ export const courses = [
   {
     CRSE: 'ARTS4820',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Higgs J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -236,6 +254,7 @@ export const courses = [
   {
     CRSE: 'ARTS4820',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Sims H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -249,6 +268,7 @@ export const courses = [
   {
     CRSE: 'ARTS4930',
     DESCR: 'Comprehensive Projects I',
+    MAX_CREDIT: '2',
     INSTR: 'Higgs J',
     DAYS: 'M',
     START_TIME: '04:00 PM',
@@ -262,6 +282,7 @@ export const courses = [
   {
     CRSE: 'ARTS4950',
     DESCR: 'Comprehensive Projects II',
+    MAX_CREDIT: '4',
     INSTR: 'Higgs J',
     DAYS: 'M',
     START_TIME: '04:00 PM',
@@ -275,6 +296,7 @@ export const courses = [
   {
     CRSE: 'ATRG1530',
     DESCR: 'Theor of Conditioning Athletes',
+    MAX_CREDIT: '3',
     INSTR: 'Jones A',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -288,6 +310,7 @@ export const courses = [
   {
     CRSE: 'ATRG3400',
     DESCR: 'Clinical Exper Athl Train IV',
+    MAX_CREDIT: '1',
     INSTR: 'Whiteman T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -301,6 +324,7 @@ export const courses = [
   {
     CRSE: 'ATRG3500',
     DESCR: 'Clinical Exper Athl Train V',
+    MAX_CREDIT: '1',
     INSTR: 'Whiteman T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -314,6 +338,7 @@ export const courses = [
   {
     CRSE: 'ATRG3550',
     DESCR: 'Medical Issues in Ath Train-II',
+    MAX_CREDIT: '2',
     INSTR: 'Jones J',
     DAYS: 'R',
     START_TIME: '06:30 PM',
@@ -327,6 +352,7 @@ export const courses = [
   {
     CRSE: 'ATRG4400',
     DESCR: 'Clinical Exper Athl Train VI',
+    MAX_CREDIT: '1',
     INSTR: 'Whiteman T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -340,6 +366,7 @@ export const courses = [
   {
     CRSE: 'ATRG4500',
     DESCR: 'Clinical Exper Athl Train VII',
+    MAX_CREDIT: '1',
     INSTR: 'Whiteman T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -353,6 +380,7 @@ export const courses = [
   {
     CRSE: 'ATRG4850',
     DESCR: 'Practicum in Athletic Training',
+    MAX_CREDIT: '4',
     INSTR: 'Whiteman T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -366,6 +394,7 @@ export const courses = [
   {
     CRSE: 'ATRG4910',
     DESCR: 'Seminar in Athletic Training',
+    MAX_CREDIT: '2',
     INSTR: 'Hamlyn C',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -379,6 +408,7 @@ export const courses = [
   {
     CRSE: 'BIBL2000',
     DESCR: 'Intro to the Bible',
+    MAX_CREDIT: '3',
     INSTR: 'Kirkpatrick S',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -392,6 +422,7 @@ export const courses = [
   {
     CRSE: 'BIBL2000',
     DESCR: 'Intro to the Bible',
+    MAX_CREDIT: '3',
     INSTR: 'Lozano G',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -405,6 +436,7 @@ export const courses = [
   {
     CRSE: 'BIBL2000',
     DESCR: 'Intro to the Bible',
+    MAX_CREDIT: '3',
     INSTR: 'Burnett F',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -418,6 +450,7 @@ export const courses = [
   {
     CRSE: 'BIBL2000',
     DESCR: 'Intro to the Bible',
+    MAX_CREDIT: '3',
     INSTR: 'Overstreet G',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -431,6 +464,7 @@ export const courses = [
   {
     CRSE: 'BIBL2120',
     DESCR: 'Beginning Hebrew II',
+    MAX_CREDIT: '4',
     INSTR: 'Lozano G',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -444,6 +478,7 @@ export const courses = [
   {
     CRSE: 'BIBL2120',
     DESCR: 'Beginning Hebrew II',
+    MAX_CREDIT: '4',
     INSTR: 'Lozano G',
     DAYS: 'T',
     START_TIME: ' ',
@@ -457,6 +492,7 @@ export const courses = [
   {
     CRSE: 'BIBL3000',
     DESCR: 'History of Biblical Interp',
+    MAX_CREDIT: '3',
     INSTR: 'Kirkpatrick S',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -470,6 +506,7 @@ export const courses = [
   {
     CRSE: 'BIBL3000',
     DESCR: 'History of Biblical Interp',
+    MAX_CREDIT: '3',
     INSTR: 'Kirkpatrick S',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -483,6 +520,7 @@ export const courses = [
   {
     CRSE: 'BIBL3410',
     DESCR: 'Images of Jesus Then and Now',
+    MAX_CREDIT: '3',
     INSTR: 'Burnett F',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -496,6 +534,7 @@ export const courses = [
   {
     CRSE: 'BIBL3410',
     DESCR: 'Images of Jesus Then and Now',
+    MAX_CREDIT: '3',
     INSTR: 'Burnett F',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -509,6 +548,7 @@ export const courses = [
   {
     CRSE: 'BIBL4910',
     DESCR: 'Seminar',
+    MAX_CREDIT: '3',
     INSTR: 'Ketcham L',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -522,6 +562,7 @@ export const courses = [
   {
     CRSE: 'BIOL1000',
     DESCR: 'Prin of Modern Biology',
+    MAX_CREDIT: '4',
     INSTR: 'LyleIppolito K',
     DAYS: 'M',
     START_TIME: '02:00 PM',
@@ -535,6 +576,7 @@ export const courses = [
   {
     CRSE: 'BIOL1000',
     DESCR: 'Prin of Modern Biology',
+    MAX_CREDIT: '4',
     INSTR: 'LyleIppolito K',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -548,6 +590,7 @@ export const courses = [
   {
     CRSE: 'BIOL2010',
     DESCR: 'Medical Terminology',
+    MAX_CREDIT: '2',
     INSTR: 'Bailey M',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -561,6 +604,7 @@ export const courses = [
   {
     CRSE: 'BIOL2070',
     DESCR: 'Humans and the Environment',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -574,6 +618,7 @@ export const courses = [
   {
     CRSE: 'BIOL2220',
     DESCR: 'Foundations of Mod Biology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -587,6 +632,7 @@ export const courses = [
   {
     CRSE: 'BIOL2220',
     DESCR: 'Foundations of Mod Biology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -600,6 +646,7 @@ export const courses = [
   {
     CRSE: 'BIOL2240',
     DESCR: 'Cell Biology',
+    MAX_CREDIT: '4',
     INSTR: 'LyleIppolito K,Taylor R',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -613,6 +660,7 @@ export const courses = [
   {
     CRSE: 'BIOL2240',
     DESCR: 'Cell Biology',
+    MAX_CREDIT: '4',
     INSTR: 'LyleIppolito K,Taylor R',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -626,6 +674,7 @@ export const courses = [
   {
     CRSE: 'BIOL2420',
     DESCR: 'Human Anatomy/Physiology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -639,6 +688,7 @@ export const courses = [
   {
     CRSE: 'BIOL2420',
     DESCR: 'Human Anatomy/Physiology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'W',
     START_TIME: '02:00 PM',
@@ -652,6 +702,7 @@ export const courses = [
   {
     CRSE: 'BIOL2420',
     DESCR: 'Human Anatomy/Physiology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'T',
     START_TIME: '09:00 AM',
@@ -665,6 +716,7 @@ export const courses = [
   {
     CRSE: 'BIOL2420',
     DESCR: 'Human Anatomy/Physiology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -678,6 +730,7 @@ export const courses = [
   {
     CRSE: 'BIOL2420',
     DESCR: 'Human Anatomy/Physiology II',
+    MAX_CREDIT: '4',
     INSTR: 'Bailey M',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -691,6 +744,7 @@ export const courses = [
   {
     CRSE: 'BIOL3050',
     DESCR: 'Adv Topics in Microbiology',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -704,6 +758,7 @@ export const courses = [
   {
     CRSE: 'BIOL3420',
     DESCR: 'Fish Biology/Ecology',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -717,6 +772,7 @@ export const courses = [
   {
     CRSE: 'BIOL3920',
     DESCR: 'Integration Faith and Science',
+    MAX_CREDIT: '2',
     INSTR: 'LyleIppolito K',
     DAYS: 'TF',
     START_TIME: '12:00 PM',
@@ -730,6 +786,7 @@ export const courses = [
   {
     CRSE: 'BIOL4070',
     DESCR: 'Ecology/Evolutionary Biology',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -743,6 +800,7 @@ export const courses = [
   {
     CRSE: 'BIOL4310',
     DESCR: 'Molecular Biochemist/Genetics',
+    MAX_CREDIT: '4',
     INSTR: 'Taylor R',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -756,6 +814,7 @@ export const courses = [
   {
     CRSE: 'BIOL4310',
     DESCR: 'Molecular Biochemist/Genetics',
+    MAX_CREDIT: '4',
     INSTR: 'Taylor R',
     DAYS: 'TR',
     START_TIME: '09:00 AM',
@@ -769,6 +828,7 @@ export const courses = [
   {
     CRSE: 'BIOL4920',
     DESCR: 'Science Seminar II',
+    MAX_CREDIT: '1',
     INSTR: 'LyleIppolito K',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -782,6 +842,7 @@ export const courses = [
   {
     CRSE: 'BSNS1050',
     DESCR: 'Business as a Profession',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -795,6 +856,7 @@ export const courses = [
   {
     CRSE: 'BSNS2310',
     DESCR: 'Business Analytics',
+    MAX_CREDIT: '3',
     INSTR: 'Leeper L',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -808,6 +870,7 @@ export const courses = [
   {
     CRSE: 'BSNS2450',
     DESCR: 'Data Anly/Decis Making Busn',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -821,6 +884,7 @@ export const courses = [
   {
     CRSE: 'BSNS2510',
     DESCR: 'Principles of Finance',
+    MAX_CREDIT: '3',
     INSTR: 'Leeper L',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -834,6 +898,7 @@ export const courses = [
   {
     CRSE: 'BSNS2710',
     DESCR: 'Principles of Management',
+    MAX_CREDIT: '3',
     INSTR: 'Lucas D',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -847,6 +912,7 @@ export const courses = [
   {
     CRSE: 'BSNS2810',
     DESCR: 'Principles of Marketing',
+    MAX_CREDIT: '3',
     INSTR: 'Newton J',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -860,6 +926,7 @@ export const courses = [
   {
     CRSE: 'BSNS2810',
     DESCR: 'Principles of Marketing',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -873,6 +940,7 @@ export const courses = [
   {
     CRSE: 'BSNS3100',
     DESCR: 'Opportun Identif/Feasibility',
+    MAX_CREDIT: '3',
     INSTR: 'Reddington T',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -886,6 +954,7 @@ export const courses = [
   {
     CRSE: 'BSNS3120',
     DESCR: 'Global Business',
+    MAX_CREDIT: '3',
     INSTR: 'Fox J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -899,6 +968,7 @@ export const courses = [
   {
     CRSE: 'BSNS3150',
     DESCR: 'Financial Planning',
+    MAX_CREDIT: '3',
     INSTR: 'Fox J',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -912,6 +982,7 @@ export const courses = [
   {
     CRSE: 'BSNS3240',
     DESCR: 'Operations Management',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -925,6 +996,7 @@ export const courses = [
   {
     CRSE: 'BSNS3350',
     DESCR: 'Corporate Finance',
+    MAX_CREDIT: '3',
     INSTR: 'Leeper L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -938,6 +1010,7 @@ export const courses = [
   {
     CRSE: 'BSNS3360',
     DESCR: 'Beyond Talent:Entrepreneurship',
+    MAX_CREDIT: '3',
     INSTR: 'Sylvester R',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -951,6 +1024,7 @@ export const courses = [
   {
     CRSE: 'BSNS3420',
     DESCR: 'Business Law',
+    MAX_CREDIT: '3',
     INSTR: 'Hochstetler J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -964,6 +1038,7 @@ export const courses = [
   {
     CRSE: 'BSNS3850',
     DESCR: 'Practicum in Business',
+    MAX_CREDIT: '3',
     INSTR: 'Fox J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -977,6 +1052,7 @@ export const courses = [
   {
     CRSE: 'BSNS3850',
     DESCR: 'Practicum in Business',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -990,6 +1066,7 @@ export const courses = [
   {
     CRSE: 'BSNS3850',
     DESCR: 'Practicum in Business',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1003,6 +1080,7 @@ export const courses = [
   {
     CRSE: 'BSNS4010',
     DESCR: 'Organizational Behav/Theory',
+    MAX_CREDIT: '3',
     INSTR: 'Lucas D',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -1016,6 +1094,7 @@ export const courses = [
   {
     CRSE: 'BSNS4120',
     DESCR: 'International Management',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -1029,6 +1108,7 @@ export const courses = [
   {
     CRSE: 'BSNS4160',
     DESCR: 'Portfolio Management',
+    MAX_CREDIT: '3',
     INSTR: 'Leeper L',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -1042,6 +1122,7 @@ export const courses = [
   {
     CRSE: 'BSNS4240',
     DESCR: 'Topics in Business/Economics',
+    MAX_CREDIT: '3',
     INSTR: 'Sylvester R',
     DAYS: ' ',
     START_TIME: ' ',
@@ -1055,6 +1136,7 @@ export const courses = [
   {
     CRSE: 'BSNS4240',
     DESCR: 'Topics in Business/Economics',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1068,6 +1150,7 @@ export const courses = [
   {
     CRSE: 'BSNS4240',
     DESCR: 'Topics in Business/Economics',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -1081,6 +1164,7 @@ export const courses = [
   {
     CRSE: 'BSNS4250',
     DESCR: 'Global Marketing',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1094,6 +1178,7 @@ export const courses = [
   {
     CRSE: 'BSNS4250',
     DESCR: 'Global Marketing',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -1107,6 +1192,7 @@ export const courses = [
   {
     CRSE: 'BSNS4330',
     DESCR: 'Marketing Management',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1120,6 +1206,7 @@ export const courses = [
   {
     CRSE: 'BSNS4330',
     DESCR: 'Marketing Management',
+    MAX_CREDIT: '3',
     INSTR: 'Shaw V',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -1133,6 +1220,7 @@ export const courses = [
   {
     CRSE: 'BSNS4360',
     DESCR: 'Sport Sponsorship and Sales',
+    MAX_CREDIT: '3',
     INSTR: 'Newton J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -1146,6 +1234,7 @@ export const courses = [
   {
     CRSE: 'BSNS4400',
     DESCR: 'Social Media',
+    MAX_CREDIT: '3',
     INSTR: 'Newton J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -1159,6 +1248,7 @@ export const courses = [
   {
     CRSE: 'BSNS4440',
     DESCR: 'Senior Marketing Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Sylvester R',
     DAYS: 'F',
     START_TIME: '08:00 AM',
@@ -1172,6 +1262,7 @@ export const courses = [
   {
     CRSE: 'BSNS4500',
     DESCR: 'Strategic Management',
+    MAX_CREDIT: '3',
     INSTR: 'Hochstetler J',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -1185,6 +1276,7 @@ export const courses = [
   {
     CRSE: 'BSNS4550',
     DESCR: 'Integr Branding/Promotion II',
+    MAX_CREDIT: '3',
     INSTR: 'Sylvester R',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -1198,6 +1290,7 @@ export const courses = [
   {
     CRSE: 'BSNS4800',
     DESCR: 'Business Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Fox J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1211,6 +1304,7 @@ export const courses = [
   {
     CRSE: 'BSNS4810',
     DESCR: 'Internship in Music Business',
+    MAX_CREDIT: '3',
     INSTR: 'Sylvester R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1224,6 +1318,7 @@ export const courses = [
   {
     CRSE: 'BSNS4910',
     DESCR: 'Seminar in Ethics/Leadership',
+    MAX_CREDIT: '1',
     INSTR: 'Hochstetler J',
     DAYS: 'M',
     START_TIME: '08:00 AM',
@@ -1237,6 +1332,7 @@ export const courses = [
   {
     CRSE: 'BSNS4920',
     DESCR: 'Senior Seminar in Management',
+    MAX_CREDIT: '1',
     INSTR: 'Lucas D',
     DAYS: 'W',
     START_TIME: '08:00 AM',
@@ -1250,6 +1346,7 @@ export const courses = [
   {
     CRSE: 'CHEM1000',
     DESCR: 'Intro to Chemistry',
+    MAX_CREDIT: '4',
     INSTR: 'Carr S',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -1263,6 +1360,7 @@ export const courses = [
   {
     CRSE: 'CHEM1000',
     DESCR: 'Intro to Chemistry',
+    MAX_CREDIT: '4',
     INSTR: 'Carr S',
     DAYS: 'M',
     START_TIME: '03:00 PM',
@@ -1276,6 +1374,7 @@ export const courses = [
   {
     CRSE: 'CHEM1000',
     DESCR: 'Intro to Chemistry',
+    MAX_CREDIT: '4',
     INSTR: 'Carr S',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -1289,6 +1388,7 @@ export const courses = [
   {
     CRSE: 'CHEM1000',
     DESCR: 'Intro to Chemistry',
+    MAX_CREDIT: '4',
     INSTR: 'Carr S',
     DAYS: 'T',
     START_TIME: '03:00 PM',
@@ -1302,6 +1402,7 @@ export const courses = [
   {
     CRSE: 'CHEM2120',
     DESCR: 'General Chemistry II',
+    MAX_CREDIT: '4',
     INSTR: 'Kennedy S',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -1315,6 +1416,7 @@ export const courses = [
   {
     CRSE: 'CHEM2120',
     DESCR: 'General Chemistry II',
+    MAX_CREDIT: '4',
     INSTR: 'Kennedy S',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -1328,6 +1430,7 @@ export const courses = [
   {
     CRSE: 'CHEM2120',
     DESCR: 'General Chemistry II',
+    MAX_CREDIT: '4',
     INSTR: 'Kennedy S',
     DAYS: 'W',
     START_TIME: '03:00 PM',
@@ -1341,6 +1444,7 @@ export const courses = [
   {
     CRSE: 'CHEM2220',
     DESCR: 'Organic Chemistry II',
+    MAX_CREDIT: '4',
     INSTR: 'Wallace C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -1354,6 +1458,7 @@ export const courses = [
   {
     CRSE: 'CHEM2220',
     DESCR: 'Organic Chemistry II',
+    MAX_CREDIT: '4',
     INSTR: 'Carr S',
     DAYS: 'M',
     START_TIME: '02:00 PM',
@@ -1367,6 +1472,7 @@ export const courses = [
   {
     CRSE: 'CHEM4110',
     DESCR: 'Thermodyn/Kinetics',
+    MAX_CREDIT: '4',
     INSTR: 'Kennedy S',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -1380,6 +1486,7 @@ export const courses = [
   {
     CRSE: 'CHEM4110',
     DESCR: 'Thermodyn/Kinetics',
+    MAX_CREDIT: '4',
     INSTR: 'Kennedy S',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -1393,6 +1500,7 @@ export const courses = [
   {
     CRSE: 'CHEM4520',
     DESCR: 'Senior Phys Sci Practicum II',
+    MAX_CREDIT: '1',
     INSTR: 'Wallace C',
     DAYS: 'T',
     START_TIME: '12:00 PM',
@@ -1406,6 +1514,7 @@ export const courses = [
   {
     CRSE: 'CHEM4650',
     DESCR: 'Independent Study',
+    MAX_CREDIT: '4',
     INSTR: 'Wallace C,Carr S,Kennedy S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1419,6 +1528,7 @@ export const courses = [
   {
     CRSE: 'CHEM4920',
     DESCR: 'Science Seminar II',
+    MAX_CREDIT: '1',
     INSTR: 'LyleIppolito K',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -1432,6 +1542,7 @@ export const courses = [
   {
     CRSE: 'CMIN2000',
     DESCR: 'Intro to Christian Ministry',
+    MAX_CREDIT: '3',
     INSTR: 'Overstreet G',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -1445,6 +1556,7 @@ export const courses = [
   {
     CRSE: 'CMIN2810',
     DESCR: 'Ministry Exploration',
+    MAX_CREDIT: '1',
     INSTR: 'Overstreet G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1458,6 +1570,7 @@ export const courses = [
   {
     CRSE: 'CMIN3050',
     DESCR: 'Homiletics',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -1471,6 +1584,7 @@ export const courses = [
   {
     CRSE: 'CMIN3080',
     DESCR: 'Pastoral Care and Counseling',
+    MAX_CREDIT: '3',
     INSTR: 'Overstreet G',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1484,6 +1598,7 @@ export const courses = [
   {
     CRSE: 'CMIN3260',
     DESCR: 'Leading/Teachg/Disciplg Youth',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -1497,6 +1612,7 @@ export const courses = [
   {
     CRSE: 'CMIN4250',
     DESCR: 'Theology in a Ministry Context',
+    MAX_CREDIT: '3',
     INSTR: 'Overstreet G',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1510,6 +1626,7 @@ export const courses = [
   {
     CRSE: 'CMIN4810',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Overstreet G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1523,6 +1640,7 @@ export const courses = [
   {
     CRSE: 'COMM1000',
     DESCR: 'Intro to Speech Communication',
+    MAX_CREDIT: '3',
     INSTR: 'Wood J',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -1536,6 +1654,7 @@ export const courses = [
   {
     CRSE: 'COMM1000',
     DESCR: 'Intro to Speech Communication',
+    MAX_CREDIT: '3',
     INSTR: 'Wood J',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -1549,6 +1668,7 @@ export const courses = [
   {
     CRSE: 'COMM1000',
     DESCR: 'Intro to Speech Communication',
+    MAX_CREDIT: '3',
     INSTR: 'Kelly A',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -1562,6 +1682,7 @@ export const courses = [
   {
     CRSE: 'COMM2000',
     DESCR: 'Media and Society',
+    MAX_CREDIT: '3',
     INSTR: 'Lugar J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -1575,6 +1696,7 @@ export const courses = [
   {
     CRSE: 'COMM2010',
     DESCR: 'Communication Professional',
+    MAX_CREDIT: '1',
     INSTR: 'Leiter S',
     DAYS: 'T',
     START_TIME: '09:00 AM',
@@ -1588,6 +1710,7 @@ export const courses = [
   {
     CRSE: 'COMM2020',
     DESCR: 'Audio Concepts/Production',
+    MAX_CREDIT: '3',
     INSTR: 'Rinas K',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -1601,6 +1724,7 @@ export const courses = [
   {
     CRSE: 'COMM2130',
     DESCR: 'Writing for the Media',
+    MAX_CREDIT: '3',
     INSTR: 'Leiter S',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -1614,6 +1738,7 @@ export const courses = [
   {
     CRSE: 'COMM2130',
     DESCR: 'Writing for the Media',
+    MAX_CREDIT: '3',
     INSTR: 'Leiter S',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -1627,6 +1752,7 @@ export const courses = [
   {
     CRSE: 'COMM2160',
     DESCR: 'The Art of Storytelling',
+    MAX_CREDIT: '3',
     INSTR: 'Lugar J',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -1640,6 +1766,7 @@ export const courses = [
   {
     CRSE: 'COMM2200',
     DESCR: 'Visual Communication',
+    MAX_CREDIT: '3',
     INSTR: 'Baird D',
     DAYS: 'F',
     START_TIME: '10:00 AM',
@@ -1653,6 +1780,7 @@ export const courses = [
   {
     CRSE: 'COMM2200',
     DESCR: 'Visual Communication',
+    MAX_CREDIT: '3',
     INSTR: 'Baird D',
     DAYS: 'MW',
     START_TIME: '10:00 AM',
@@ -1666,6 +1794,7 @@ export const courses = [
   {
     CRSE: 'COMM2420',
     DESCR: 'Field/Soundstage/Postprod',
+    MAX_CREDIT: '4',
     INSTR: 'Lugar J',
     DAYS: 'MF',
     START_TIME: '01:00 PM',
@@ -1679,6 +1808,7 @@ export const courses = [
   {
     CRSE: 'COMM2420',
     DESCR: 'Field/Soundstage/Postprod',
+    MAX_CREDIT: '4',
     INSTR: 'Lugar J',
     DAYS: 'W',
     START_TIME: '01:00 PM',
@@ -1692,6 +1822,7 @@ export const courses = [
   {
     CRSE: 'COMM2550',
     DESCR: 'Appreciation of Great Speeches',
+    MAX_CREDIT: '3',
     INSTR: 'Kelly A',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -1705,6 +1836,7 @@ export const courses = [
   {
     CRSE: 'COMM2840',
     DESCR: 'Fifth Street Commun Staff',
+    MAX_CREDIT: '1',
     INSTR: 'Leiter S',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1718,6 +1850,7 @@ export const courses = [
   {
     CRSE: 'COMM2850',
     DESCR: 'Andersonian Staff',
+    MAX_CREDIT: '1',
     INSTR: 'Baird D',
     DAYS: 'W',
     START_TIME: '04:00 PM',
@@ -1731,6 +1864,7 @@ export const courses = [
   {
     CRSE: 'COMM2860',
     DESCR: 'Cinema/Media Arts Practicum',
+    MAX_CREDIT: '1',
     INSTR: 'Rinas K',
     DAYS: 'W',
     START_TIME: '03:00 PM',
@@ -1744,6 +1878,7 @@ export const courses = [
   {
     CRSE: 'COMM3130',
     DESCR: 'Advanced Newswriting/Reporting',
+    MAX_CREDIT: '3',
     INSTR: 'Baird D',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -1757,6 +1892,7 @@ export const courses = [
   {
     CRSE: 'COMM3160',
     DESCR: 'Motion Graphics',
+    MAX_CREDIT: '3',
     INSTR: 'Higgs J',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -1770,6 +1906,7 @@ export const courses = [
   {
     CRSE: 'COMM3250',
     DESCR: 'Event Planning/Management',
+    MAX_CREDIT: '2',
     INSTR: 'Leiter S',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -1783,6 +1920,7 @@ export const courses = [
   {
     CRSE: 'COMM3340',
     DESCR: 'Public Relations Writing',
+    MAX_CREDIT: '3',
     INSTR: 'Leiter S',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -1796,6 +1934,7 @@ export const courses = [
   {
     CRSE: 'COMM3860',
     DESCR: 'Practicum Event Management',
+    MAX_CREDIT: '2',
     INSTR: 'Leiter S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1809,6 +1948,7 @@ export const courses = [
   {
     CRSE: 'COMM4000',
     DESCR: 'Communication Law',
+    MAX_CREDIT: '3',
     INSTR: 'Lugar J',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -1822,6 +1962,7 @@ export const courses = [
   {
     CRSE: 'COMM4800',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Lugar J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1835,6 +1976,7 @@ export const courses = [
   {
     CRSE: 'COMM4800',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Baird D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1848,6 +1990,7 @@ export const courses = [
   {
     CRSE: 'COMM4800',
     DESCR: 'Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Leiter S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -1861,6 +2004,7 @@ export const courses = [
   {
     CRSE: 'CPSC1500',
     DESCR: 'Computer Science II',
+    MAX_CREDIT: '4',
     INSTR: 'Koontz C',
     DAYS: 'MTWF',
     START_TIME: '02:00 PM',
@@ -1874,6 +2018,7 @@ export const courses = [
   {
     CRSE: 'CPSC2180',
     DESCR: 'Scripting and Systems',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -1887,6 +2032,7 @@ export const courses = [
   {
     CRSE: 'CPSC2250',
     DESCR: 'Discrete Math Structures',
+    MAX_CREDIT: '4',
     INSTR: 'Coon F',
     DAYS: 'MTRF',
     START_TIME: '08:00 AM',
@@ -1900,6 +2046,7 @@ export const courses = [
   {
     CRSE: 'CPSC2330',
     DESCR: 'Web Application Development',
+    MAX_CREDIT: '4',
     INSTR: 'Koontz C',
     DAYS: 'MTWF',
     START_TIME: '10:00 AM',
@@ -1913,6 +2060,7 @@ export const courses = [
   {
     CRSE: 'CPSC2420',
     DESCR: 'Computer Architecture',
+    MAX_CREDIT: '2',
     INSTR: 'Craton J',
     DAYS: 'F',
     START_TIME: '01:00 PM',
@@ -1926,6 +2074,7 @@ export const courses = [
   {
     CRSE: 'CPSC2420',
     DESCR: 'Computer Architecture',
+    MAX_CREDIT: '2',
     INSTR: 'Craton J',
     DAYS: 'M',
     START_TIME: '01:00 PM',
@@ -1939,6 +2088,7 @@ export const courses = [
   {
     CRSE: 'CPSC2430',
     DESCR: 'Progrmg Languages/Compilers',
+    MAX_CREDIT: '2',
     INSTR: 'Preston M',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -1952,6 +2102,7 @@ export const courses = [
   {
     CRSE: 'CPSC2430',
     DESCR: 'Progrmg Languages/Compilers',
+    MAX_CREDIT: '2',
     INSTR: 'Preston M',
     DAYS: 'W',
     START_TIME: '01:00 PM',
@@ -1965,6 +2116,7 @@ export const courses = [
   {
     CRSE: 'CPSC2550',
     DESCR: 'Selected Topics',
+    MAX_CREDIT: '3',
     INSTR: 'Koontz C',
     DAYS: 'M',
     START_TIME: '11:00 AM',
@@ -1978,6 +2130,7 @@ export const courses = [
   {
     CRSE: 'CPSC2550',
     DESCR: 'Selected Topics',
+    MAX_CREDIT: '3',
     INSTR: 'Koontz C',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -1991,6 +2144,7 @@ export const courses = [
   {
     CRSE: 'CPSC3520',
     DESCR: 'Intro Artificial Intelligence',
+    MAX_CREDIT: '4',
     INSTR: 'Preston M',
     DAYS: 'MTW',
     START_TIME: '09:00 AM',
@@ -2004,6 +2158,7 @@ export const courses = [
   {
     CRSE: 'CPSC3520',
     DESCR: 'Intro Artificial Intelligence',
+    MAX_CREDIT: '4',
     INSTR: 'Preston M',
     DAYS: 'F',
     START_TIME: '08:00 AM',
@@ -2017,6 +2172,7 @@ export const courses = [
   {
     CRSE: 'CPSC3550',
     DESCR: 'Special Topics',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '09:00 AM',
@@ -2030,6 +2186,7 @@ export const courses = [
   {
     CRSE: 'CPSC3550',
     DESCR: 'Special Topics',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'T',
     START_TIME: '09:00 AM',
@@ -2043,6 +2200,7 @@ export const courses = [
   {
     CRSE: 'CPSC3800',
     DESCR: 'Computer Science Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -2056,6 +2214,7 @@ export const courses = [
   {
     CRSE: 'CPSC3800',
     DESCR: 'Computer Science Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'TF',
     START_TIME: '12:00 PM',
@@ -2069,6 +2228,7 @@ export const courses = [
   {
     CRSE: 'CPSC4080',
     DESCR: 'Network Security',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -2082,6 +2242,7 @@ export const courses = [
   {
     CRSE: 'CPSC4080',
     DESCR: 'Network Security',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'F',
     START_TIME: '01:00 PM',
@@ -2095,6 +2256,7 @@ export const courses = [
   {
     CRSE: 'CPSC4420',
     DESCR: 'Operating Systems',
+    MAX_CREDIT: '4',
     INSTR: 'Craton J',
     DAYS: 'F',
     START_TIME: '10:00 AM',
@@ -2108,6 +2270,7 @@ export const courses = [
   {
     CRSE: 'CPSC4420',
     DESCR: 'Operating Systems',
+    MAX_CREDIT: '4',
     INSTR: 'Craton J',
     DAYS: 'MTW',
     START_TIME: '10:00 AM',
@@ -2121,6 +2284,7 @@ export const courses = [
   {
     CRSE: 'CPSC4960',
     DESCR: 'Senior Design Capstone II',
+    MAX_CREDIT: '2',
     INSTR: 'Preston M',
     DAYS: 'W',
     START_TIME: '11:00 AM',
@@ -2134,6 +2298,7 @@ export const courses = [
   {
     CRSE: 'CPSC4960',
     DESCR: 'Senior Design Capstone II',
+    MAX_CREDIT: '2',
     INSTR: 'Preston M',
     DAYS: 'M',
     START_TIME: '12:00 PM',
@@ -2147,6 +2312,7 @@ export const courses = [
   {
     CRSE: 'CRIM2510',
     DESCR: 'Nature Crime/Soc Deviance',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -2160,6 +2326,7 @@ export const courses = [
   {
     CRSE: 'CRIM2510',
     DESCR: 'Nature Crime/Soc Deviance',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -2173,6 +2340,7 @@ export const courses = [
   {
     CRSE: 'CRIM2520',
     DESCR: 'Intro to Criminal Justice',
+    MAX_CREDIT: '3',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -2186,6 +2354,7 @@ export const courses = [
   {
     CRSE: 'CRIM2560',
     DESCR: 'Intro Crim Forensic Sci',
+    MAX_CREDIT: '3',
     INSTR: 'Freeman N',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -2199,6 +2368,7 @@ export const courses = [
   {
     CRSE: 'CRIM3010',
     DESCR: 'Victimology/Victim Studies',
+    MAX_CREDIT: '3',
     INSTR: 'Freeman N',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2212,6 +2382,7 @@ export const courses = [
   {
     CRSE: 'CRIM3350',
     DESCR: 'Homeland Security',
+    MAX_CREDIT: '3',
     INSTR: 'Sutton C',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -2225,6 +2396,7 @@ export const courses = [
   {
     CRSE: 'CRIM4810',
     DESCR: 'Crim Just Internship I',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2238,6 +2410,7 @@ export const courses = [
   {
     CRSE: 'CRIM4820',
     DESCR: 'Crim Just Internship II',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2251,6 +2424,7 @@ export const courses = [
   {
     CRSE: 'DANC1120',
     DESCR: 'Tap I',
+    MAX_CREDIT: '1',
     INSTR: 'King D',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2264,6 +2438,7 @@ export const courses = [
   {
     CRSE: 'DANC1150',
     DESCR: 'Dance Repertory',
+    MAX_CREDIT: '1',
     INSTR: 'Stoneking R',
     DAYS: 'MTWRF',
     START_TIME: '04:30 PM',
@@ -2277,6 +2452,7 @@ export const courses = [
   {
     CRSE: 'DANC1160',
     DESCR: 'Dance Production',
+    MAX_CREDIT: '1',
     INSTR: 'Yetter E',
     DAYS: 'MTWRF',
     START_TIME: '04:30 PM',
@@ -2290,6 +2466,7 @@ export const courses = [
   {
     CRSE: 'DANC1220',
     DESCR: 'Modern I',
+    MAX_CREDIT: '1',
     INSTR: 'Stoneking R',
     DAYS: 'MWF',
     START_TIME: '03:00 PM',
@@ -2303,6 +2480,7 @@ export const courses = [
   {
     CRSE: 'DANC1220',
     DESCR: 'Modern I',
+    MAX_CREDIT: '1',
     INSTR: 'Silveus D',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -2316,6 +2494,7 @@ export const courses = [
   {
     CRSE: 'DANC1320',
     DESCR: 'Jazz I',
+    MAX_CREDIT: '1',
     INSTR: 'King D',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -2329,6 +2508,7 @@ export const courses = [
   {
     CRSE: 'DANC1420',
     DESCR: 'Ballet I',
+    MAX_CREDIT: '1',
     INSTR: 'Thiemet J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -2342,6 +2522,7 @@ export const courses = [
   {
     CRSE: 'DANC1420',
     DESCR: 'Ballet I',
+    MAX_CREDIT: '1',
     INSTR: 'Agresti A',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -2355,6 +2536,7 @@ export const courses = [
   {
     CRSE: 'DANC1590',
     DESCR: 'Dance Composition I',
+    MAX_CREDIT: '2',
     INSTR: 'Silveus D',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -2368,6 +2550,7 @@ export const courses = [
   {
     CRSE: 'DANC2110',
     DESCR: 'Musical Theatre Dance Forms',
+    MAX_CREDIT: '1',
     INSTR: 'Shepard K',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -2381,6 +2564,7 @@ export const courses = [
   {
     CRSE: 'DANC2120',
     DESCR: 'Tap II',
+    MAX_CREDIT: '1',
     INSTR: 'King D',
     DAYS: 'TR',
     START_TIME: '08:30 AM',
@@ -2394,6 +2578,7 @@ export const courses = [
   {
     CRSE: 'DANC2220',
     DESCR: 'Modern II',
+    MAX_CREDIT: '1',
     INSTR: 'Silveus D',
     DAYS: 'MWF',
     START_TIME: '03:00 PM',
@@ -2407,6 +2592,7 @@ export const courses = [
   {
     CRSE: 'DANC2320',
     DESCR: 'Jazz II',
+    MAX_CREDIT: '1',
     INSTR: 'King D',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -2420,6 +2606,7 @@ export const courses = [
   {
     CRSE: 'DANC2420',
     DESCR: 'Ballet II',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -2433,6 +2620,7 @@ export const courses = [
   {
     CRSE: 'DANC2420',
     DESCR: 'Ballet II',
+    MAX_CREDIT: '1',
     INSTR: 'Thiemet J',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -2446,6 +2634,7 @@ export const courses = [
   {
     CRSE: 'DANC2420',
     DESCR: 'Ballet II',
+    MAX_CREDIT: '1',
     INSTR: 'Agresti A',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -2459,6 +2648,7 @@ export const courses = [
   {
     CRSE: 'DANC2590',
     DESCR: 'Dance Composition II',
+    MAX_CREDIT: '2',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -2472,6 +2662,7 @@ export const courses = [
   {
     CRSE: 'DANC2850',
     DESCR: 'Practice in Teaching',
+    MAX_CREDIT: '1',
     INSTR: 'Yetter E',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2485,6 +2676,7 @@ export const courses = [
   {
     CRSE: 'DANC3010',
     DESCR: 'Dance History I',
+    MAX_CREDIT: '3',
     INSTR: 'Yetter E',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -2498,6 +2690,7 @@ export const courses = [
   {
     CRSE: 'DANC3060',
     DESCR: 'Movement Analysis',
+    MAX_CREDIT: '3',
     INSTR: 'Stoneking R',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -2511,6 +2704,7 @@ export const courses = [
   {
     CRSE: 'DANC3220',
     DESCR: 'Modern III',
+    MAX_CREDIT: '1',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'MWF',
     START_TIME: '03:00 PM',
@@ -2524,6 +2718,7 @@ export const courses = [
   {
     CRSE: 'DANC3320',
     DESCR: 'Jazz Dance III',
+    MAX_CREDIT: '1',
     INSTR: 'Shepard K',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2537,6 +2732,7 @@ export const courses = [
   {
     CRSE: 'DANC3420',
     DESCR: 'Ballet III',
+    MAX_CREDIT: '1',
     INSTR: 'Yetter E',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -2550,6 +2746,7 @@ export const courses = [
   {
     CRSE: 'DANC3510',
     DESCR: 'Period Dance',
+    MAX_CREDIT: '2',
     INSTR: 'Yetter E',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2563,6 +2760,7 @@ export const courses = [
   {
     CRSE: 'DANC3520',
     DESCR: 'Pointe',
+    MAX_CREDIT: '1',
     INSTR: 'HachiyaWeiner J',
     DAYS: 'MWF',
     START_TIME: '10:20 AM',
@@ -2576,6 +2774,7 @@ export const courses = [
   {
     CRSE: 'DANC3520',
     DESCR: 'Pointe',
+    MAX_CREDIT: '1',
     INSTR: 'Agresti A',
     DAYS: 'MWF',
     START_TIME: '10:20 AM',
@@ -2589,6 +2788,7 @@ export const courses = [
   {
     CRSE: 'DANC3520',
     DESCR: 'Pointe',
+    MAX_CREDIT: '1',
     INSTR: 'Thiemet J',
     DAYS: 'MWF',
     START_TIME: '01:20 PM',
@@ -2602,6 +2802,7 @@ export const courses = [
   {
     CRSE: 'DANC3590',
     DESCR: 'Dance Composition III',
+    MAX_CREDIT: '2',
     INSTR: 'Stoneking R',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -2615,6 +2816,7 @@ export const courses = [
   {
     CRSE: 'DANC4220',
     DESCR: 'Modern IV',
+    MAX_CREDIT: '1',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'MWF',
     START_TIME: '03:00 PM',
@@ -2628,6 +2830,7 @@ export const courses = [
   {
     CRSE: 'DANC4420',
     DESCR: 'Ballet IV',
+    MAX_CREDIT: '1',
     INSTR: 'Yetter E',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -2641,6 +2844,7 @@ export const courses = [
   {
     CRSE: 'DANC4590',
     DESCR: 'Dance Composition IV',
+    MAX_CREDIT: '2',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -2654,6 +2858,7 @@ export const courses = [
   {
     CRSE: 'DANC4590',
     DESCR: 'Dance Composition IV',
+    MAX_CREDIT: '2',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'M',
     START_TIME: '01:00 PM',
@@ -2667,6 +2872,7 @@ export const courses = [
   {
     CRSE: 'DANC4590',
     DESCR: 'Dance Composition IV',
+    MAX_CREDIT: '2',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'W',
     START_TIME: '11:00 AM',
@@ -2680,6 +2886,7 @@ export const courses = [
   {
     CRSE: 'DANC4590',
     DESCR: 'Dance Composition IV',
+    MAX_CREDIT: '2',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'F',
     START_TIME: '02:00 PM',
@@ -2693,6 +2900,7 @@ export const courses = [
   {
     CRSE: 'DANC4800',
     DESCR: 'Internship in Dance',
+    MAX_CREDIT: '3',
     INSTR: 'Yetter E',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2706,6 +2914,7 @@ export const courses = [
   {
     CRSE: 'DANC4800',
     DESCR: 'Internship in Dance',
+    MAX_CREDIT: '3',
     INSTR: 'Colquitt Thacker K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2719,6 +2928,7 @@ export const courses = [
   {
     CRSE: 'DANC4900',
     DESCR: 'Seminar Selected Topics',
+    MAX_CREDIT: '1',
     INSTR: 'Yetter E',
     DAYS: 'MWF',
     START_TIME: '10:20 AM',
@@ -2732,6 +2942,7 @@ export const courses = [
   {
     CRSE: 'DANC4900',
     DESCR: 'Seminar Selected Topics',
+    MAX_CREDIT: '1',
     INSTR: 'Garner M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2745,6 +2956,7 @@ export const courses = [
   {
     CRSE: 'DANC4900',
     DESCR: 'Seminar Selected Topics',
+    MAX_CREDIT: '1',
     INSTR: 'Garner M',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -2758,6 +2970,7 @@ export const courses = [
   {
     CRSE: 'ECON2020',
     DESCR: 'Prin Microeconomics',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -2771,6 +2984,7 @@ export const courses = [
   {
     CRSE: 'ECON2020',
     DESCR: 'Prin Microeconomics',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -2784,6 +2998,7 @@ export const courses = [
   {
     CRSE: 'ECON3020',
     DESCR: 'Intermed Microeconomics',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -2797,6 +3012,7 @@ export const courses = [
   {
     CRSE: 'ECON3410',
     DESCR: 'Money/Banking/Financial Mkts',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2810,6 +3026,7 @@ export const courses = [
   {
     CRSE: 'ECON3850',
     DESCR: 'Practicum in Economics',
+    MAX_CREDIT: '3',
     INSTR: 'Shin H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -2823,6 +3040,7 @@ export const courses = [
   {
     CRSE: 'EDUC2000',
     DESCR: 'Teaching as a Profession',
+    MAX_CREDIT: '2',
     INSTR: 'Hosier A',
     DAYS: 'TR',
     START_TIME: '09:00 AM',
@@ -2836,6 +3054,7 @@ export const courses = [
   {
     CRSE: 'EDUC2030',
     DESCR: 'Learning/Tchg Math Elem Clsrm',
+    MAX_CREDIT: '3',
     INSTR: 'Baker R',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -2849,6 +3068,7 @@ export const courses = [
   {
     CRSE: 'EDUC2100',
     DESCR: 'Child/Adolescnt Developmt',
+    MAX_CREDIT: '3',
     INSTR: 'Hosier A',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -2862,6 +3082,7 @@ export const courses = [
   {
     CRSE: 'EDUC2110',
     DESCR: 'Educational Psychology',
+    MAX_CREDIT: '3',
     INSTR: 'Trotter J',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -2875,6 +3096,7 @@ export const courses = [
   {
     CRSE: 'EDUC2170',
     DESCR: 'Tchg I:Curric/Instr Early Chld',
+    MAX_CREDIT: '4',
     INSTR: 'Hosier A,Staff U',
     DAYS: 'F',
     START_TIME: '10:00 AM',
@@ -2888,6 +3110,7 @@ export const courses = [
   {
     CRSE: 'EDUC2170',
     DESCR: 'Tchg I:Curric/Instr Early Chld',
+    MAX_CREDIT: '4',
     INSTR: 'Hosier A,Staff U',
     DAYS: 'MW',
     START_TIME: '09:00 AM',
@@ -2901,6 +3124,7 @@ export const courses = [
   {
     CRSE: 'EDUC2460',
     DESCR: 'Teaching in a Diverse Society',
+    MAX_CREDIT: '3',
     INSTR: 'Baker R',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -2914,6 +3138,7 @@ export const courses = [
   {
     CRSE: 'EDUC2520',
     DESCR: 'Technology in the Classroom',
+    MAX_CREDIT: '3',
     INSTR: 'Trotter J',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -2927,6 +3152,7 @@ export const courses = [
   {
     CRSE: 'EDUC2730',
     DESCR: 'Fld Exper Reading Processes',
+    MAX_CREDIT: '1',
     INSTR: 'Sample K',
     DAYS: 'T',
     START_TIME: '08:00 AM',
@@ -2940,6 +3166,7 @@ export const courses = [
   {
     CRSE: 'EDUC2850',
     DESCR: 'Practicum in Leadership Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Griffith G',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -2953,6 +3180,7 @@ export const courses = [
   {
     CRSE: 'EDUC3100',
     DESCR: 'Middle Sch in U S',
+    MAX_CREDIT: '3',
     INSTR: 'Tatom M',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -2966,6 +3194,7 @@ export const courses = [
   {
     CRSE: 'EDUC3120',
     DESCR: 'Educ Assessmt for Clsrm Teachr',
+    MAX_CREDIT: '3',
     INSTR: 'Tatom M',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -2979,6 +3208,7 @@ export const courses = [
   {
     CRSE: 'EDUC3300',
     DESCR: 'Rdg Processes w/ Asses/Interv',
+    MAX_CREDIT: '3',
     INSTR: 'Sample K',
     DAYS: 'F',
     START_TIME: '08:00 AM',
@@ -2992,6 +3222,7 @@ export const courses = [
   {
     CRSE: 'EDUC3300',
     DESCR: 'Rdg Processes w/ Asses/Interv',
+    MAX_CREDIT: '3',
     INSTR: 'Sample K',
     DAYS: 'MW',
     START_TIME: '09:00 AM',
@@ -3005,6 +3236,7 @@ export const courses = [
   {
     CRSE: 'EDUC4010',
     DESCR: 'Student Teaching',
+    MAX_CREDIT: '10',
     INSTR: 'Tatom M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -3018,6 +3250,7 @@ export const courses = [
   {
     CRSE: 'EDUC4310',
     DESCR: 'Integ Tchg II:Lang Arts/Soc St',
+    MAX_CREDIT: '4',
     INSTR: 'Baker R',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3031,6 +3264,7 @@ export const courses = [
   {
     CRSE: 'EDUC4800',
     DESCR: 'Internship in Youth Leadership',
+    MAX_CREDIT: '2',
     INSTR: 'Blunt J',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -3044,6 +3278,7 @@ export const courses = [
   {
     CRSE: 'EDUC4910',
     DESCR: 'Reading Research Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Sample K',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -3057,6 +3292,7 @@ export const courses = [
   {
     CRSE: 'EDUC4910',
     DESCR: 'Reading Research Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Sample K',
     DAYS: 'M',
     START_TIME: '06:00 PM',
@@ -3070,6 +3306,7 @@ export const courses = [
   {
     CRSE: 'EDUC4930',
     DESCR: 'Ldrshp Seminar Character Educ',
+    MAX_CREDIT: '2',
     INSTR: 'Tatom M',
     DAYS: 'T',
     START_TIME: '05:00 PM',
@@ -3083,6 +3320,7 @@ export const courses = [
   {
     CRSE: 'ENGL1100',
     DESCR: 'Rhetoric/Composition (Basic)',
+    MAX_CREDIT: '4',
     INSTR: 'Parks J',
     DAYS: 'MWRF',
     START_TIME: '02:00 PM',
@@ -3096,6 +3334,7 @@ export const courses = [
   {
     CRSE: 'ENGL1110',
     DESCR: 'Rhetoric and Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Beaumont A',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -3109,6 +3348,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Fox D',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -3122,6 +3362,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Miller C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -3135,6 +3376,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Parks J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -3148,6 +3390,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Miller C',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3161,6 +3404,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Bruning B',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3174,6 +3418,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Beaumont A',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -3187,6 +3432,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Beaumont A',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3200,6 +3446,7 @@ export const courses = [
   {
     CRSE: 'ENGL1120',
     DESCR: 'Rhetoric and Research',
+    MAX_CREDIT: '3',
     INSTR: 'Beaumont A',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -3213,6 +3460,7 @@ export const courses = [
   {
     CRSE: 'ENGL2500',
     DESCR: 'Apprec of the Writing Craft',
+    MAX_CREDIT: '2',
     INSTR: 'Miller C',
     DAYS: 'MF',
     START_TIME: '12:00 PM',
@@ -3226,6 +3474,7 @@ export const courses = [
   {
     CRSE: 'ENGL2510',
     DESCR: 'Creative Writing Workshop',
+    MAX_CREDIT: '1',
     INSTR: 'Miller C',
     DAYS: 'W',
     START_TIME: '12:00 PM',
@@ -3239,6 +3488,7 @@ export const courses = [
   {
     CRSE: 'ENGL3000',
     DESCR: 'Grammar and Style',
+    MAX_CREDIT: '3',
     INSTR: 'Imafuji E',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -3252,6 +3502,7 @@ export const courses = [
   {
     CRSE: 'ENGL3110',
     DESCR: 'Creative Writing:Fiction',
+    MAX_CREDIT: '3',
     INSTR: 'Fox D',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3265,6 +3516,7 @@ export const courses = [
   {
     CRSE: 'ENGL3180',
     DESCR: 'Composing Nonfiction',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -3278,6 +3530,7 @@ export const courses = [
   {
     CRSE: 'ENGL3570',
     DESCR: 'Studies American Lit',
+    MAX_CREDIT: '3',
     INSTR: 'Parks J',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3291,6 +3544,7 @@ export const courses = [
   {
     CRSE: 'ENGL3590',
     DESCR: 'Tchg Diversity Young Adult Lit',
+    MAX_CREDIT: '3',
     INSTR: 'Elliott P',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -3304,6 +3558,7 @@ export const courses = [
   {
     CRSE: 'ENGL3870',
     DESCR: 'Literary Arts Practicum',
+    MAX_CREDIT: '1',
     INSTR: 'Miller C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -3317,6 +3572,7 @@ export const courses = [
   {
     CRSE: 'ENGR2010',
     DESCR: 'Statics',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'R',
     START_TIME: '02:00 PM',
@@ -3330,6 +3586,7 @@ export const courses = [
   {
     CRSE: 'ENGR2010',
     DESCR: 'Statics',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -3343,6 +3600,7 @@ export const courses = [
   {
     CRSE: 'ENGR2030',
     DESCR: 'Circuit Analysis',
+    MAX_CREDIT: '3',
     INSTR: 'McPheron B',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -3356,6 +3614,7 @@ export const courses = [
   {
     CRSE: 'ENGR2030',
     DESCR: 'Circuit Analysis',
+    MAX_CREDIT: '3',
     INSTR: 'McPheron B',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -3369,6 +3628,7 @@ export const courses = [
   {
     CRSE: 'ENGR2030',
     DESCR: 'Circuit Analysis',
+    MAX_CREDIT: '3',
     INSTR: 'Troy W',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -3382,6 +3642,7 @@ export const courses = [
   {
     CRSE: 'ENGR2060',
     DESCR: 'Engineering Ethics',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '02:00 PM',
@@ -3395,6 +3656,7 @@ export const courses = [
   {
     CRSE: 'ENGR2090',
     DESCR: 'Systems Engineering',
+    MAX_CREDIT: '3',
     INSTR: 'Troy W',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -3408,6 +3670,7 @@ export const courses = [
   {
     CRSE: 'ENGR2110',
     DESCR: 'Dynamics',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'TF',
     START_TIME: '02:00 PM',
@@ -3421,6 +3684,7 @@ export const courses = [
   {
     CRSE: 'ENGR2110',
     DESCR: 'Dynamics',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'T',
     START_TIME: '06:00 PM',
@@ -3434,6 +3698,7 @@ export const courses = [
   {
     CRSE: 'ENGR2200',
     DESCR: 'Foundatns Digital Electronics',
+    MAX_CREDIT: '2',
     INSTR: 'Troy W',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -3447,6 +3712,7 @@ export const courses = [
   {
     CRSE: 'ENGR2200',
     DESCR: 'Foundatns Digital Electronics',
+    MAX_CREDIT: '2',
     INSTR: 'Troy W',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -3460,6 +3726,7 @@ export const courses = [
   {
     CRSE: 'ENGR2310',
     DESCR: 'Computational Problem Solving',
+    MAX_CREDIT: '3',
     INSTR: 'Baker C',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -3473,6 +3740,7 @@ export const courses = [
   {
     CRSE: 'ENGR2310',
     DESCR: 'Computational Problem Solving',
+    MAX_CREDIT: '3',
     INSTR: 'Baker C',
     DAYS: 'F',
     START_TIME: '01:00 PM',
@@ -3486,6 +3754,7 @@ export const courses = [
   {
     CRSE: 'ENGR2310',
     DESCR: 'Computational Problem Solving',
+    MAX_CREDIT: '3',
     INSTR: 'Baker C',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -3499,6 +3768,7 @@ export const courses = [
   {
     CRSE: 'ENGR3100',
     DESCR: 'Mechanics Lab',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'TR',
     START_TIME: '09:00 AM',
@@ -3512,6 +3782,7 @@ export const courses = [
   {
     CRSE: 'ENGR3190',
     DESCR: 'Thermodyn: Cycle Analysis',
+    MAX_CREDIT: '2',
     INSTR: 'Kennedy S',
     DAYS: 'MW',
     START_TIME: '08:00 AM',
@@ -3525,6 +3796,7 @@ export const courses = [
   {
     CRSE: 'ENGR3190',
     DESCR: 'Thermodyn: Cycle Analysis',
+    MAX_CREDIT: '2',
     INSTR: 'Kennedy S',
     DAYS: 'F',
     START_TIME: '08:00 AM',
@@ -3538,6 +3810,7 @@ export const courses = [
   {
     CRSE: 'ENGR3230',
     DESCR: 'Analog Circuit Design',
+    MAX_CREDIT: '3',
     INSTR: 'McPheron B',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -3551,6 +3824,7 @@ export const courses = [
   {
     CRSE: 'ENGR3230',
     DESCR: 'Analog Circuit Design',
+    MAX_CREDIT: '3',
     INSTR: 'McPheron B',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -3564,6 +3838,7 @@ export const courses = [
   {
     CRSE: 'ENGR3510',
     DESCR: 'Solid Mechanics',
+    MAX_CREDIT: '3',
     INSTR: 'Baker C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -3577,6 +3852,7 @@ export const courses = [
   {
     CRSE: 'ENGR3600',
     DESCR: 'Topics in Engineering:',
+    MAX_CREDIT: '2',
     INSTR: 'McPheron B',
     DAYS: 'T',
     START_TIME: '12:00 PM',
@@ -3590,6 +3866,7 @@ export const courses = [
   {
     CRSE: 'ENGR3600',
     DESCR: 'Topics in Engineering:',
+    MAX_CREDIT: '2',
     INSTR: 'McPheron B',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -3603,6 +3880,7 @@ export const courses = [
   {
     CRSE: 'ENGR3850',
     DESCR: 'Engineering Projects Lab',
+    MAX_CREDIT: '1',
     INSTR: 'George L',
     DAYS: 'M',
     START_TIME: '03:00 PM',
@@ -3616,6 +3894,7 @@ export const courses = [
   {
     CRSE: 'ENGR4110',
     DESCR: 'Machine Design',
+    MAX_CREDIT: '3',
     INSTR: 'Baker C',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3629,6 +3908,7 @@ export const courses = [
   {
     CRSE: 'ENGR4130',
     DESCR: 'Fluid Mechanics',
+    MAX_CREDIT: '3',
     INSTR: 'McKenna B',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -3642,6 +3922,7 @@ export const courses = [
   {
     CRSE: 'ENGR4250',
     DESCR: 'Digital Signal Processing',
+    MAX_CREDIT: '3',
     INSTR: 'Troy W',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3655,6 +3936,7 @@ export const courses = [
   {
     CRSE: 'ENGR4960',
     DESCR: 'Engineering Senior Design II',
+    MAX_CREDIT: '2',
     INSTR: 'McKenna B',
     DAYS: 'MW',
     START_TIME: '12:00 PM',
@@ -3668,6 +3950,7 @@ export const courses = [
   {
     CRSE: 'EXSC2140',
     DESCR: 'Nutrition Health and Disease',
+    MAX_CREDIT: '4',
     INSTR: 'Miller A',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -3681,6 +3964,7 @@ export const courses = [
   {
     CRSE: 'EXSC2455',
     DESCR: 'Found Exercise Leadership',
+    MAX_CREDIT: '3',
     INSTR: 'Jones A',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -3694,6 +3978,7 @@ export const courses = [
   {
     CRSE: 'EXSC2580',
     DESCR: 'Sports Nutrition',
+    MAX_CREDIT: '3',
     INSTR: 'Miller A',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -3707,6 +3992,7 @@ export const courses = [
   {
     CRSE: 'EXSC3100',
     DESCR: 'Eating Disorders',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'M',
     START_TIME: '07:00 PM',
@@ -3720,6 +4006,7 @@ export const courses = [
   {
     CRSE: 'EXSC3480',
     DESCR: 'Physiology of Exercise II',
+    MAX_CREDIT: '4',
     INSTR: 'Masi E',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -3733,6 +4020,7 @@ export const courses = [
   {
     CRSE: 'EXSC3480',
     DESCR: 'Physiology of Exercise II',
+    MAX_CREDIT: '4',
     INSTR: 'Masi E',
     DAYS: 'T',
     START_TIME: '09:00 AM',
@@ -3746,6 +4034,7 @@ export const courses = [
   {
     CRSE: 'EXSC3480',
     DESCR: 'Physiology of Exercise II',
+    MAX_CREDIT: '4',
     INSTR: 'Masi E',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -3759,6 +4048,7 @@ export const courses = [
   {
     CRSE: 'EXSC3530',
     DESCR: 'Biomechanics II',
+    MAX_CREDIT: '4',
     INSTR: 'Miller A',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3772,6 +4062,7 @@ export const courses = [
   {
     CRSE: 'EXSC3530',
     DESCR: 'Biomechanics II',
+    MAX_CREDIT: '4',
     INSTR: 'Miller A',
     DAYS: 'T',
     START_TIME: '09:00 AM',
@@ -3785,6 +4076,7 @@ export const courses = [
   {
     CRSE: 'EXSC3530',
     DESCR: 'Biomechanics II',
+    MAX_CREDIT: '4',
     INSTR: 'Miller A',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -3798,6 +4090,7 @@ export const courses = [
   {
     CRSE: 'EXSC4010',
     DESCR: 'Adv Resistance Traing/Conditng',
+    MAX_CREDIT: '3',
     INSTR: 'Jones A',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3811,6 +4104,7 @@ export const courses = [
   {
     CRSE: 'EXSC4050',
     DESCR: 'EKG and Cardiovascular Disease',
+    MAX_CREDIT: '3',
     INSTR: 'Masi E',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -3824,6 +4118,7 @@ export const courses = [
   {
     CRSE: 'EXSC4150',
     DESCR: 'Exercise Testing/Prescrip',
+    MAX_CREDIT: '4',
     INSTR: 'Masi E',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -3837,6 +4132,7 @@ export const courses = [
   {
     CRSE: 'EXSC4150',
     DESCR: 'Exercise Testing/Prescrip',
+    MAX_CREDIT: '4',
     INSTR: 'Masi E',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3850,6 +4146,7 @@ export const courses = [
   {
     CRSE: 'EXSC4160',
     DESCR: 'Clin Exper Exer Test/Prescr',
+    MAX_CREDIT: '1',
     INSTR: 'Masi E',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -3863,6 +4160,7 @@ export const courses = [
   {
     CRSE: 'EXSC4850',
     DESCR: 'Practicum in Exercise Science',
+    MAX_CREDIT: '4',
     INSTR: 'Jones A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -3876,6 +4174,7 @@ export const courses = [
   {
     CRSE: 'EXSC4920',
     DESCR: 'Seminar in Exercise Science',
+    MAX_CREDIT: '3',
     INSTR: 'Jones A',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -3889,6 +4188,7 @@ export const courses = [
   {
     CRSE: 'FREN1020',
     DESCR: 'Elementary French II',
+    MAX_CREDIT: '4',
     INSTR: 'Stevens R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -3902,6 +4202,7 @@ export const courses = [
   {
     CRSE: 'FREN1020',
     DESCR: 'Elementary French II',
+    MAX_CREDIT: '4',
     INSTR: 'Stevens R',
     DAYS: 'MR',
     START_TIME: '05:30 PM',
@@ -3915,6 +4216,7 @@ export const courses = [
   {
     CRSE: 'GERM1020',
     DESCR: 'Elementary German II',
+    MAX_CREDIT: '4',
     INSTR: 'Baird I',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -3928,6 +4230,7 @@ export const courses = [
   {
     CRSE: 'HIST2000',
     DESCR: 'World History',
+    MAX_CREDIT: '3',
     INSTR: 'Rogers J',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -3941,6 +4244,7 @@ export const courses = [
   {
     CRSE: 'HIST2040',
     DESCR: 'Western Civilization II',
+    MAX_CREDIT: '3',
     INSTR: 'Murphy D',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -3954,6 +4258,7 @@ export const courses = [
   {
     CRSE: 'HIST2110',
     DESCR: 'American History I',
+    MAX_CREDIT: '3',
     INSTR: 'Dirck B',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -3967,6 +4272,7 @@ export const courses = [
   {
     CRSE: 'HIST2120',
     DESCR: 'American History II',
+    MAX_CREDIT: '3',
     INSTR: 'Dirck B',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -3980,6 +4286,7 @@ export const courses = [
   {
     CRSE: 'HIST2120',
     DESCR: 'American History II',
+    MAX_CREDIT: '3',
     INSTR: 'Rogers J',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -3993,6 +4300,7 @@ export const courses = [
   {
     CRSE: 'HIST2350',
     DESCR: 'Foundatn Public History',
+    MAX_CREDIT: '3',
     INSTR: 'Dirck B',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -4006,6 +4314,7 @@ export const courses = [
   {
     CRSE: 'HIST3150',
     DESCR: 'Europe Since 1870',
+    MAX_CREDIT: '3',
     INSTR: 'Murphy D',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -4019,6 +4328,7 @@ export const courses = [
   {
     CRSE: 'HIST3190',
     DESCR: 'Jewish Holocaust/Hist Context',
+    MAX_CREDIT: '3',
     INSTR: 'Murphy D',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -4032,6 +4342,7 @@ export const courses = [
   {
     CRSE: 'HIST3260',
     DESCR: 'Women in the World 1800-Pres',
+    MAX_CREDIT: '3',
     INSTR: 'Rogers J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -4045,6 +4356,7 @@ export const courses = [
   {
     CRSE: 'HIST3260',
     DESCR: 'Women in the World 1800-Pres',
+    MAX_CREDIT: '3',
     INSTR: 'Rogers J',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4058,6 +4370,7 @@ export const courses = [
   {
     CRSE: 'HIST3280',
     DESCR: 'The Age of Global Empires',
+    MAX_CREDIT: '3',
     INSTR: 'Murphy D',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -4071,6 +4384,7 @@ export const courses = [
   {
     CRSE: 'HIST3320',
     DESCR: 'World Religions',
+    MAX_CREDIT: '3',
     INSTR: 'Burnett F',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -4084,6 +4398,7 @@ export const courses = [
   {
     CRSE: 'HIST3370',
     DESCR: 'General History Latin America',
+    MAX_CREDIT: '3',
     INSTR: 'Rogers J',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -4097,6 +4412,7 @@ export const courses = [
   {
     CRSE: 'HIST3520',
     DESCR: 'History of the Vietnam War',
+    MAX_CREDIT: '3',
     INSTR: 'Dirck B',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -4110,6 +4426,7 @@ export const courses = [
   {
     CRSE: 'HIST4800',
     DESCR: 'Internship Public History',
+    MAX_CREDIT: '4',
     INSTR: 'Rogers J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4123,6 +4440,7 @@ export const courses = [
   {
     CRSE: 'HIST4930',
     DESCR: 'Senior Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Rogers J',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -4136,6 +4454,7 @@ export const courses = [
   {
     CRSE: 'HNRS2125',
     DESCR: 'Scholar as Servant Leader',
+    MAX_CREDIT: '2',
     INSTR: 'Bargerstock L',
     DAYS: 'MW',
     START_TIME: '12:00 PM',
@@ -4149,6 +4468,7 @@ export const courses = [
   {
     CRSE: 'HNRS2125',
     DESCR: 'Scholar as Servant Leader',
+    MAX_CREDIT: '2',
     INSTR: 'Lozano G',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -4162,6 +4482,7 @@ export const courses = [
   {
     CRSE: 'HNRS3221',
     DESCR: 'Traditionlism/Globlizatn',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -4175,6 +4496,7 @@ export const courses = [
   {
     CRSE: 'HNRS3221',
     DESCR: 'Traditionlism/Globlizatn',
+    MAX_CREDIT: '3',
     INSTR: 'Parks J,Fox T',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -4188,6 +4510,7 @@ export const courses = [
   {
     CRSE: 'HNRS3325',
     DESCR: 'Christ and Culture',
+    MAX_CREDIT: '3',
     INSTR: 'Ketcham L',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -4201,6 +4524,7 @@ export const courses = [
   {
     CRSE: 'LART1000',
     DESCR: 'College Survival Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Stankiewicz D',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -4214,6 +4538,7 @@ export const courses = [
   {
     CRSE: 'LART1000',
     DESCR: 'College Survival Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Doster B',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -4227,6 +4552,7 @@ export const courses = [
   {
     CRSE: 'LART1000',
     DESCR: 'College Survival Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Linville J',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -4240,6 +4566,7 @@ export const courses = [
   {
     CRSE: 'LART1000',
     DESCR: 'College Survival Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Doster B',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -4253,6 +4580,7 @@ export const courses = [
   {
     CRSE: 'LART1000',
     DESCR: 'College Survival Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Linville J',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -4266,6 +4594,7 @@ export const courses = [
   {
     CRSE: 'LART1010',
     DESCR: 'Strategies for Academic Succes',
+    MAX_CREDIT: '3',
     INSTR: 'Stankiewicz D',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -4279,6 +4608,7 @@ export const courses = [
   {
     CRSE: 'LART1010',
     DESCR: 'Strategies for Academic Succes',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -4292,6 +4622,7 @@ export const courses = [
   {
     CRSE: 'LART1010',
     DESCR: 'Strategies for Academic Succes',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -4305,6 +4636,7 @@ export const courses = [
   {
     CRSE: 'LART1020',
     DESCR: 'Strat Acad Success Adult Lrn',
+    MAX_CREDIT: '3',
     INSTR: 'Watkins D',
     DAYS: 'TR',
     START_TIME: '05:00 PM',
@@ -4318,6 +4650,7 @@ export const courses = [
   {
     CRSE: 'LART1020',
     DESCR: 'Strat Acad Success Adult Lrn',
+    MAX_CREDIT: '3',
     INSTR: 'Watkins D',
     DAYS: 'TR',
     START_TIME: '05:00 PM',
@@ -4331,6 +4664,7 @@ export const courses = [
   {
     CRSE: 'LART1050',
     DESCR: 'First-Year Exper Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Lambright J',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -4344,6 +4678,7 @@ export const courses = [
   {
     CRSE: 'LART1100',
     DESCR: 'Critical-Thinking Seminar',
+    MAX_CREDIT: '2',
     INSTR: 'Moran S',
     DAYS: 'T',
     START_TIME: '06:00 PM',
@@ -4357,6 +4692,7 @@ export const courses = [
   {
     CRSE: 'LART1100',
     DESCR: 'Critical-Thinking Seminar',
+    MAX_CREDIT: '2',
     INSTR: 'Moran S',
     DAYS: 'T',
     START_TIME: '06:00 PM',
@@ -4370,6 +4706,7 @@ export const courses = [
   {
     CRSE: 'LART1200',
     DESCR: 'Career and Life Planning',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -4383,6 +4720,7 @@ export const courses = [
   {
     CRSE: 'MATH1000',
     DESCR: 'Introductory Algebra',
+    MAX_CREDIT: '2',
     INSTR: 'Coon F',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -4396,6 +4734,7 @@ export const courses = [
   {
     CRSE: 'MATH1110',
     DESCR: 'Elem Math-Geometry',
+    MAX_CREDIT: '3',
     INSTR: 'Coon F',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -4409,6 +4748,7 @@ export const courses = [
   {
     CRSE: 'MATH1300',
     DESCR: 'Finite Mathematics',
+    MAX_CREDIT: '3',
     INSTR: 'Van Groningen G',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -4422,6 +4762,7 @@ export const courses = [
   {
     CRSE: 'MATH2010',
     DESCR: 'Calculus I',
+    MAX_CREDIT: '4',
     INSTR: 'Coon F',
     DAYS: 'MTWF',
     START_TIME: '02:00 PM',
@@ -4435,6 +4776,7 @@ export const courses = [
   {
     CRSE: 'MATH2020',
     DESCR: 'Calculus II',
+    MAX_CREDIT: '4',
     INSTR: 'Van Groningen G',
     DAYS: 'MTWF',
     START_TIME: '10:00 AM',
@@ -4448,6 +4790,7 @@ export const courses = [
   {
     CRSE: 'MATH2120',
     DESCR: 'Intro Stats w/ Apps',
+    MAX_CREDIT: '4',
     INSTR: 'Van Groningen G',
     DAYS: 'MTRF',
     START_TIME: '01:00 PM',
@@ -4461,6 +4804,7 @@ export const courses = [
   {
     CRSE: 'MATH2200',
     DESCR: 'Discrete Math Structures',
+    MAX_CREDIT: '4',
     INSTR: 'Coon F',
     DAYS: 'MTRF',
     START_TIME: '08:00 AM',
@@ -4474,6 +4818,7 @@ export const courses = [
   {
     CRSE: 'MATH3020',
     DESCR: 'Calculus III',
+    MAX_CREDIT: '4',
     INSTR: 'Lambright J',
     DAYS: 'MTWF',
     START_TIME: '10:00 AM',
@@ -4487,6 +4832,7 @@ export const courses = [
   {
     CRSE: 'MATH3100',
     DESCR: 'Differential Equations',
+    MAX_CREDIT: '3',
     INSTR: 'Van Groningen G',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -4500,6 +4846,7 @@ export const courses = [
   {
     CRSE: 'MATH3200',
     DESCR: 'Mathematical Models',
+    MAX_CREDIT: '3',
     INSTR: 'Lambright J',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -4513,6 +4860,7 @@ export const courses = [
   {
     CRSE: 'MLAN2000',
     DESCR: 'Language and Society',
+    MAX_CREDIT: '4',
     INSTR: 'Baird I',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4526,6 +4874,7 @@ export const courses = [
   {
     CRSE: 'MLAN2000',
     DESCR: 'Language and Society',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4539,6 +4888,7 @@ export const courses = [
   {
     CRSE: 'MLAN3500',
     DESCR: 'Immer Exper:Cultur/Ling/Pers',
+    MAX_CREDIT: '1',
     INSTR: 'Grayson B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4552,6 +4902,7 @@ export const courses = [
   {
     CRSE: 'MUBS2020',
     DESCR: 'Introduction Music Publishing',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4565,6 +4916,7 @@ export const courses = [
   {
     CRSE: 'MUBS2020',
     DESCR: 'Introduction Music Publishing',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -4578,6 +4930,7 @@ export const courses = [
   {
     CRSE: 'MUBS3100',
     DESCR: 'Artist Development',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4591,6 +4944,7 @@ export const courses = [
   {
     CRSE: 'MUBS3100',
     DESCR: 'Artist Development',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'R',
     START_TIME: '09:30 AM',
@@ -4604,6 +4958,7 @@ export const courses = [
   {
     CRSE: 'MUBS3470',
     DESCR: 'DIY for Musicians',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -4617,6 +4972,7 @@ export const courses = [
   {
     CRSE: 'MUBS3470',
     DESCR: 'DIY for Musicians',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'W',
     START_TIME: '01:00 PM',
@@ -4630,6 +4986,7 @@ export const courses = [
   {
     CRSE: 'MUBS3550',
     DESCR: 'Audio Enhance/Authentictn',
+    MAX_CREDIT: '3',
     INSTR: 'Evans C',
     DAYS: 'T',
     START_TIME: '05:30 PM',
@@ -4643,6 +5000,7 @@ export const courses = [
   {
     CRSE: 'MUBS4500',
     DESCR: 'Songwriter Showcase',
+    MAX_CREDIT: '1',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4656,6 +5014,7 @@ export const courses = [
   {
     CRSE: 'MUBS4800',
     DESCR: 'Internship in Music Business',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4669,6 +5028,7 @@ export const courses = [
   {
     CRSE: 'MUBS4870',
     DESCR: 'Pract in Record Prod',
+    MAX_CREDIT: '3',
     INSTR: 'Evans C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4682,6 +5042,7 @@ export const courses = [
   {
     CRSE: 'MUBS4900',
     DESCR: 'Recording Label Seminar',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'M',
     START_TIME: '05:00 PM',
@@ -4695,6 +5056,7 @@ export const courses = [
   {
     CRSE: 'MUED1000',
     DESCR: 'Introduction Music Education',
+    MAX_CREDIT: '2',
     INSTR: 'Bade M',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -4708,6 +5070,7 @@ export const courses = [
   {
     CRSE: 'MUED1400',
     DESCR: 'Percussion Techniques',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '02:00 PM',
@@ -4721,6 +5084,7 @@ export const courses = [
   {
     CRSE: 'MUED2110',
     DESCR: 'Music for Elem Classroom',
+    MAX_CREDIT: '2',
     INSTR: 'Bade M',
     DAYS: 'TR',
     START_TIME: '10:00 AM',
@@ -4734,6 +5098,7 @@ export const courses = [
   {
     CRSE: 'MUED2110',
     DESCR: 'Music for Elem Classroom',
+    MAX_CREDIT: '2',
     INSTR: 'Bade M',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -4747,6 +5112,7 @@ export const courses = [
   {
     CRSE: 'MUED2470',
     DESCR: 'Intro to Conducting',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -4760,6 +5126,7 @@ export const courses = [
   {
     CRSE: 'MUED2510',
     DESCR: "Singer's Diction I",
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -4773,6 +5140,7 @@ export const courses = [
   {
     CRSE: 'MUED3120',
     DESCR: 'Vocal Mus in Sec Sch',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -4786,6 +5154,7 @@ export const courses = [
   {
     CRSE: 'MUED3330',
     DESCR: 'Instrumental Pedagogy',
+    MAX_CREDIT: '2',
     INSTR: 'Waller A',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -4799,6 +5168,7 @@ export const courses = [
   {
     CRSE: 'MUED4700',
     DESCR: 'Meth Tchg Mus Pub Sch',
+    MAX_CREDIT: '2',
     INSTR: 'Bade M',
     DAYS: 'W',
     START_TIME: '04:00 PM',
@@ -4812,6 +5182,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0010',
     DESCR: 'Unassigned Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4825,6 +5196,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0020',
     DESCR: 'Unassigned Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4838,6 +5210,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0030',
     DESCR: 'Unassignd Cl Piano',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4851,6 +5224,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0040',
     DESCR: 'Unassigned Choirs',
+    MAX_CREDIT: '2',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4864,6 +5238,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0050',
     DESCR: 'Unassigned Bands',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4877,6 +5252,7 @@ export const courses = [
   {
     CRSE: 'MUPF    _0060',
     DESCR: 'Unassigned Piano (Mus Ed)',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4890,6 +5266,7 @@ export const courses = [
   {
     CRSE: 'MUPF1030',
     DESCR: 'Class Lessons in Piano I',
+    MAX_CREDIT: '1',
     INSTR: 'Kim J',
     DAYS: 'M',
     START_TIME: '02:00 PM',
@@ -4903,6 +5280,7 @@ export const courses = [
   {
     CRSE: 'MUPF1030',
     DESCR: 'Class Lessons in Piano I',
+    MAX_CREDIT: '1',
     INSTR: 'Kim J',
     DAYS: 'M',
     START_TIME: '01:00 PM',
@@ -4916,6 +5294,7 @@ export const courses = [
   {
     CRSE: 'MUPF1060',
     DESCR: 'Keyboard Class II',
+    MAX_CREDIT: '2',
     INSTR: 'Kim J',
     DAYS: 'MW',
     START_TIME: '10:00 AM',
@@ -4929,6 +5308,7 @@ export const courses = [
   {
     CRSE: 'MUPF1060',
     DESCR: 'Keyboard Class II',
+    MAX_CREDIT: '2',
     INSTR: 'Kim J',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -4942,6 +5322,7 @@ export const courses = [
   {
     CRSE: 'MUPF1070',
     DESCR: 'Vola Voce (SSAA Choir)',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -4955,6 +5336,7 @@ export const courses = [
   {
     CRSE: 'MUPF1070',
     DESCR: 'Vola Voce (SSAA Choir)',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4968,6 +5350,7 @@ export const courses = [
   {
     CRSE: 'MUPF1080',
     DESCR: 'Chorale (SATB Choir)',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'MWF',
     START_TIME: '03:00 PM',
@@ -4981,6 +5364,7 @@ export const courses = [
   {
     CRSE: 'MUPF1080',
     DESCR: 'Chorale (SATB Choir)',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -4994,6 +5378,7 @@ export const courses = [
   {
     CRSE: 'MUPF1110',
     DESCR: 'Gospel Choir',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5007,6 +5392,7 @@ export const courses = [
   {
     CRSE: 'MUPF1150',
     DESCR: 'Opera Production',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5020,6 +5406,7 @@ export const courses = [
   {
     CRSE: 'MUPF1160',
     DESCR: 'Musical Theatre Production',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5033,6 +5420,7 @@ export const courses = [
   {
     CRSE: 'MUPF1170',
     DESCR: 'Lyric Theatre Workshop',
+    MAX_CREDIT: '1',
     INSTR: 'Coolidge D',
     DAYS: 'TR',
     START_TIME: '04:00 PM',
@@ -5046,6 +5434,7 @@ export const courses = [
   {
     CRSE: 'MUPF1170',
     DESCR: 'Lyric Theatre Workshop',
+    MAX_CREDIT: '1',
     INSTR: 'Coolidge D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5059,6 +5448,7 @@ export const courses = [
   {
     CRSE: 'MUPF1180',
     DESCR: 'Vox Corvi (TTBB Choir)',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'WF',
     START_TIME: '03:00 PM',
@@ -5072,6 +5462,7 @@ export const courses = [
   {
     CRSE: 'MUPF1190',
     DESCR: 'Instrumental Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5085,6 +5476,7 @@ export const courses = [
   {
     CRSE: 'MUPF1210',
     DESCR: 'Duo Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5098,6 +5490,7 @@ export const courses = [
   {
     CRSE: 'MUPF1210',
     DESCR: 'Duo Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5111,6 +5504,7 @@ export const courses = [
   {
     CRSE: 'MUPF1220',
     DESCR: 'Athletic Band',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'Sat ',
     START_TIME: '11:00 AM',
@@ -5124,6 +5518,7 @@ export const courses = [
   {
     CRSE: 'MUPF1230',
     DESCR: 'Jazz Combo',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '04:00 PM',
@@ -5137,6 +5532,7 @@ export const courses = [
   {
     CRSE: 'MUPF1230',
     DESCR: 'Jazz Combo',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5150,6 +5546,7 @@ export const courses = [
   {
     CRSE: 'MUPF1230',
     DESCR: 'Jazz Combo',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'MW',
     START_TIME: '06:15 PM',
@@ -5163,6 +5560,7 @@ export const courses = [
   {
     CRSE: 'MUPF1230',
     DESCR: 'Jazz Combo',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5176,6 +5574,7 @@ export const courses = [
   {
     CRSE: 'MUPF1260',
     DESCR: 'Concert Band',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'T',
     START_TIME: '06:30 PM',
@@ -5189,6 +5588,7 @@ export const courses = [
   {
     CRSE: 'MUPF1260',
     DESCR: 'Concert Band',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5202,6 +5602,7 @@ export const courses = [
   {
     CRSE: 'MUPF1270',
     DESCR: 'Symphonic Wind Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Waller A',
     DAYS: 'MW',
     START_TIME: '04:00 PM',
@@ -5215,6 +5616,7 @@ export const courses = [
   {
     CRSE: 'MUPF1270',
     DESCR: 'Symphonic Wind Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Waller A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5228,6 +5630,7 @@ export const courses = [
   {
     CRSE: 'MUPF1280',
     DESCR: 'Jazz Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Waller A',
     DAYS: 'TR',
     START_TIME: '04:00 PM',
@@ -5241,6 +5644,7 @@ export const courses = [
   {
     CRSE: 'MUPF1280',
     DESCR: 'Jazz Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Waller A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5254,6 +5658,7 @@ export const courses = [
   {
     CRSE: 'MUPF1290',
     DESCR: 'Anderson Symphony Orchestra',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'M',
     START_TIME: '07:30 PM',
@@ -5267,6 +5672,7 @@ export const courses = [
   {
     CRSE: 'MUPF1290',
     DESCR: 'Anderson Symphony Orchestra',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5280,6 +5686,7 @@ export const courses = [
   {
     CRSE: 'MUPF1310',
     DESCR: 'Anderson Symphonic Choir',
+    MAX_CREDIT: '1',
     INSTR: 'Brinson A',
     DAYS: 'M',
     START_TIME: '07:30 PM',
@@ -5293,6 +5700,7 @@ export const courses = [
   {
     CRSE: 'MUPF1310',
     DESCR: 'Anderson Symphonic Choir',
+    MAX_CREDIT: '1',
     INSTR: 'Brinson A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5306,6 +5714,7 @@ export const courses = [
   {
     CRSE: 'MUPF1330',
     DESCR: 'Orchestra',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'TR',
     START_TIME: '04:30 PM',
@@ -5319,6 +5728,7 @@ export const courses = [
   {
     CRSE: 'MUPF1330',
     DESCR: 'Orchestra',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'F',
     START_TIME: '03:00 PM',
@@ -5332,6 +5742,7 @@ export const courses = [
   {
     CRSE: 'MUPF1330',
     DESCR: 'Orchestra',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5345,6 +5756,7 @@ export const courses = [
   {
     CRSE: 'MUPF1350',
     DESCR: 'Guitar Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5358,6 +5770,7 @@ export const courses = [
   {
     CRSE: 'MUPF1360',
     DESCR: 'Brass Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'WF',
     START_TIME: '04:00 PM',
@@ -5371,6 +5784,7 @@ export const courses = [
   {
     CRSE: 'MUPF1360',
     DESCR: 'Brass Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5384,6 +5798,7 @@ export const courses = [
   {
     CRSE: 'MUPF1360',
     DESCR: 'Brass Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5397,6 +5812,7 @@ export const courses = [
   {
     CRSE: 'MUPF1370',
     DESCR: 'Woodwind Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5410,6 +5826,7 @@ export const courses = [
   {
     CRSE: 'MUPF1370',
     DESCR: 'Woodwind Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5423,6 +5840,7 @@ export const courses = [
   {
     CRSE: 'MUPF1380',
     DESCR: 'String Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5436,6 +5854,7 @@ export const courses = [
   {
     CRSE: 'MUPF1390',
     DESCR: 'Percussion Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'W',
     START_TIME: '04:00 PM',
@@ -5449,6 +5868,7 @@ export const courses = [
   {
     CRSE: 'MUPF1390',
     DESCR: 'Percussion Ensemble',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5462,6 +5882,7 @@ export const courses = [
   {
     CRSE: 'MUPF1410',
     DESCR: 'Class Lessons in Guitar I',
+    MAX_CREDIT: '1',
     INSTR: 'Johnson J',
     DAYS: 'W',
     START_TIME: '05:00 PM',
@@ -5475,6 +5896,7 @@ export const courses = [
   {
     CRSE: 'MUPF1500',
     DESCR: 'World Drumming',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'W',
     START_TIME: '06:00 PM',
@@ -5488,6 +5910,7 @@ export const courses = [
   {
     CRSE: 'MUPF1530',
     DESCR: 'Accompanying II',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5501,6 +5924,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5514,6 +5938,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5527,6 +5952,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5540,6 +5966,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5553,6 +5980,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5566,6 +5994,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5579,6 +6008,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5592,6 +6022,7 @@ export const courses = [
   {
     CRSE: 'MUPF1700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5605,6 +6036,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5618,6 +6050,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5631,6 +6064,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Edwards S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5644,6 +6078,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Pine N',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5657,6 +6092,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Edie R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5670,6 +6106,7 @@ export const courses = [
   {
     CRSE: 'MUPF1710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Kim J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5683,6 +6120,7 @@ export const courses = [
   {
     CRSE: 'MUPF1720',
     DESCR: 'Harpsichord',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5696,6 +6134,7 @@ export const courses = [
   {
     CRSE: 'MUPF1730',
     DESCR: 'Organ',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5709,6 +6148,7 @@ export const courses = [
   {
     CRSE: 'MUPF1740',
     DESCR: 'Violin',
+    MAX_CREDIT: '1',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5722,6 +6162,7 @@ export const courses = [
   {
     CRSE: 'MUPF1740',
     DESCR: 'Violin',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5735,6 +6176,7 @@ export const courses = [
   {
     CRSE: 'MUPF1750',
     DESCR: 'Viola',
+    MAX_CREDIT: '1',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5748,6 +6190,7 @@ export const courses = [
   {
     CRSE: 'MUPF1750',
     DESCR: 'Viola',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5761,6 +6204,7 @@ export const courses = [
   {
     CRSE: 'MUPF1760',
     DESCR: 'Cello',
+    MAX_CREDIT: '1',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5774,6 +6218,7 @@ export const courses = [
   {
     CRSE: 'MUPF1760',
     DESCR: 'Cello',
+    MAX_CREDIT: '1',
     INSTR: 'Hawkey S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5787,6 +6232,7 @@ export const courses = [
   {
     CRSE: 'MUPF1770',
     DESCR: 'Bass',
+    MAX_CREDIT: '1',
     INSTR: 'Witzel B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5800,6 +6246,7 @@ export const courses = [
   {
     CRSE: 'MUPF1770',
     DESCR: 'Bass',
+    MAX_CREDIT: '1',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5813,6 +6260,7 @@ export const courses = [
   {
     CRSE: 'MUPF1780',
     DESCR: 'Flute/Piccolo',
+    MAX_CREDIT: '1',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5826,6 +6274,7 @@ export const courses = [
   {
     CRSE: 'MUPF1790',
     DESCR: 'Clarinet',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5839,6 +6288,7 @@ export const courses = [
   {
     CRSE: 'MUPF1800',
     DESCR: 'Oboe/English Horn',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5852,6 +6302,7 @@ export const courses = [
   {
     CRSE: 'MUPF1810',
     DESCR: 'Bassoon',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5865,6 +6316,7 @@ export const courses = [
   {
     CRSE: 'MUPF1820',
     DESCR: 'Saxophone',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5878,6 +6330,7 @@ export const courses = [
   {
     CRSE: 'MUPF1830',
     DESCR: 'Trumpet/Cornet',
+    MAX_CREDIT: '1',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5891,6 +6344,7 @@ export const courses = [
   {
     CRSE: 'MUPF1840',
     DESCR: 'French Horn',
+    MAX_CREDIT: '1',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5904,6 +6358,7 @@ export const courses = [
   {
     CRSE: 'MUPF1850',
     DESCR: 'Trombone',
+    MAX_CREDIT: '1',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5917,6 +6372,7 @@ export const courses = [
   {
     CRSE: 'MUPF1860',
     DESCR: 'Baritone/Euphonium',
+    MAX_CREDIT: '1',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5930,6 +6386,7 @@ export const courses = [
   {
     CRSE: 'MUPF1870',
     DESCR: 'Tuba',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5943,6 +6400,7 @@ export const courses = [
   {
     CRSE: 'MUPF1880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5956,6 +6414,7 @@ export const courses = [
   {
     CRSE: 'MUPF1880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5969,6 +6428,7 @@ export const courses = [
   {
     CRSE: 'MUPF1885',
     DESCR: 'Harp',
+    MAX_CREDIT: '1',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5982,6 +6442,7 @@ export const courses = [
   {
     CRSE: 'MUPF1890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -5995,6 +6456,7 @@ export const courses = [
   {
     CRSE: 'MUPF1890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6008,6 +6470,7 @@ export const courses = [
   {
     CRSE: 'MUPF1890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6021,6 +6484,7 @@ export const courses = [
   {
     CRSE: 'MUPF1900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6034,6 +6498,7 @@ export const courses = [
   {
     CRSE: 'MUPF1900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6047,6 +6512,7 @@ export const courses = [
   {
     CRSE: 'MUPF1900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6060,6 +6526,7 @@ export const courses = [
   {
     CRSE: 'MUPF1900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6073,6 +6540,7 @@ export const courses = [
   {
     CRSE: 'MUPF1905',
     DESCR: 'Songwriting',
+    MAX_CREDIT: '1',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6086,6 +6554,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6099,6 +6568,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6112,6 +6582,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6125,6 +6596,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6138,6 +6610,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6151,6 +6624,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6164,6 +6638,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6177,6 +6652,7 @@ export const courses = [
   {
     CRSE: 'MUPF2700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6190,6 +6666,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6203,6 +6680,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6216,6 +6694,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Edwards S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6229,6 +6708,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Pine N',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6242,6 +6722,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Edie R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6255,6 +6736,7 @@ export const courses = [
   {
     CRSE: 'MUPF2710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Kim J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6268,6 +6750,7 @@ export const courses = [
   {
     CRSE: 'MUPF2720',
     DESCR: 'Harpsichord',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6281,6 +6764,7 @@ export const courses = [
   {
     CRSE: 'MUPF2730',
     DESCR: 'Organ',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6294,6 +6778,7 @@ export const courses = [
   {
     CRSE: 'MUPF2740',
     DESCR: 'Violin',
+    MAX_CREDIT: '3',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6307,6 +6792,7 @@ export const courses = [
   {
     CRSE: 'MUPF2740',
     DESCR: 'Violin',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6320,6 +6806,7 @@ export const courses = [
   {
     CRSE: 'MUPF2750',
     DESCR: 'Viola',
+    MAX_CREDIT: '3',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6333,6 +6820,7 @@ export const courses = [
   {
     CRSE: 'MUPF2750',
     DESCR: 'Viola',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6346,6 +6834,7 @@ export const courses = [
   {
     CRSE: 'MUPF2760',
     DESCR: 'Cello',
+    MAX_CREDIT: '3',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6359,6 +6848,7 @@ export const courses = [
   {
     CRSE: 'MUPF2760',
     DESCR: 'Cello',
+    MAX_CREDIT: '3',
     INSTR: 'Hawkey S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6372,6 +6862,7 @@ export const courses = [
   {
     CRSE: 'MUPF2770',
     DESCR: 'Bass',
+    MAX_CREDIT: '3',
     INSTR: 'Witzel B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6385,6 +6876,7 @@ export const courses = [
   {
     CRSE: 'MUPF2770',
     DESCR: 'Bass',
+    MAX_CREDIT: '3',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6398,6 +6890,7 @@ export const courses = [
   {
     CRSE: 'MUPF2780',
     DESCR: 'Flute/Piccolo',
+    MAX_CREDIT: '3',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6411,6 +6904,7 @@ export const courses = [
   {
     CRSE: 'MUPF2790',
     DESCR: 'Clarinet',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6424,6 +6918,7 @@ export const courses = [
   {
     CRSE: 'MUPF2800',
     DESCR: 'Oboe/English Horn',
+    MAX_CREDIT: '3',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6437,6 +6932,7 @@ export const courses = [
   {
     CRSE: 'MUPF2810',
     DESCR: 'Bassoon',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6450,6 +6946,7 @@ export const courses = [
   {
     CRSE: 'MUPF2820',
     DESCR: 'Saxophone',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6463,6 +6960,7 @@ export const courses = [
   {
     CRSE: 'MUPF2830',
     DESCR: 'Trumpet/Cornet',
+    MAX_CREDIT: '3',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6476,6 +6974,7 @@ export const courses = [
   {
     CRSE: 'MUPF2840',
     DESCR: 'French Horn',
+    MAX_CREDIT: '3',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6489,6 +6988,7 @@ export const courses = [
   {
     CRSE: 'MUPF2850',
     DESCR: 'Trombone',
+    MAX_CREDIT: '3',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6502,6 +7002,7 @@ export const courses = [
   {
     CRSE: 'MUPF2860',
     DESCR: 'Baritone/Euphonium',
+    MAX_CREDIT: '3',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6515,6 +7016,7 @@ export const courses = [
   {
     CRSE: 'MUPF2870',
     DESCR: 'Tuba',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6528,6 +7030,7 @@ export const courses = [
   {
     CRSE: 'MUPF2880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '3',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6541,6 +7044,7 @@ export const courses = [
   {
     CRSE: 'MUPF2880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6554,6 +7058,7 @@ export const courses = [
   {
     CRSE: 'MUPF2885',
     DESCR: 'Harp',
+    MAX_CREDIT: '3',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6567,6 +7072,7 @@ export const courses = [
   {
     CRSE: 'MUPF2890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6580,6 +7086,7 @@ export const courses = [
   {
     CRSE: 'MUPF2890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6593,6 +7100,7 @@ export const courses = [
   {
     CRSE: 'MUPF2890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6606,6 +7114,7 @@ export const courses = [
   {
     CRSE: 'MUPF2900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6619,6 +7128,7 @@ export const courses = [
   {
     CRSE: 'MUPF2900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6632,6 +7142,7 @@ export const courses = [
   {
     CRSE: 'MUPF2900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6645,6 +7156,7 @@ export const courses = [
   {
     CRSE: 'MUPF2900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6658,6 +7170,7 @@ export const courses = [
   {
     CRSE: 'MUPF2905',
     DESCR: 'Songwriting',
+    MAX_CREDIT: '3',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6671,6 +7184,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6684,6 +7198,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6697,6 +7212,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6710,6 +7226,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6723,6 +7240,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6736,6 +7254,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6749,6 +7268,7 @@ export const courses = [
   {
     CRSE: 'MUPF3540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6762,6 +7282,7 @@ export const courses = [
   {
     CRSE: 'MUPF3550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6775,6 +7296,7 @@ export const courses = [
   {
     CRSE: 'MUPF3550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6788,6 +7310,7 @@ export const courses = [
   {
     CRSE: 'MUPF3550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6801,6 +7324,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6814,6 +7338,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6827,6 +7352,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6840,6 +7366,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6853,6 +7380,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6866,6 +7394,7 @@ export const courses = [
   {
     CRSE: 'MUPF3560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6879,6 +7408,7 @@ export const courses = [
   {
     CRSE: 'MUPF3570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6892,6 +7422,7 @@ export const courses = [
   {
     CRSE: 'MUPF3570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6905,6 +7436,7 @@ export const courses = [
   {
     CRSE: 'MUPF3570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6918,6 +7450,7 @@ export const courses = [
   {
     CRSE: 'MUPF3570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6931,6 +7464,7 @@ export const courses = [
   {
     CRSE: 'MUPF3580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6944,6 +7478,7 @@ export const courses = [
   {
     CRSE: 'MUPF3580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6957,6 +7492,7 @@ export const courses = [
   {
     CRSE: 'MUPF3580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6970,6 +7506,7 @@ export const courses = [
   {
     CRSE: 'MUPF3580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6983,6 +7520,7 @@ export const courses = [
   {
     CRSE: 'MUPF3590',
     DESCR: 'Percussion Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -6996,6 +7534,7 @@ export const courses = [
   {
     CRSE: 'MUPF3590',
     DESCR: 'Percussion Recital',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7009,6 +7548,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7022,6 +7562,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7035,6 +7576,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7048,6 +7590,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7061,6 +7604,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7074,6 +7618,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7087,6 +7632,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7100,6 +7646,7 @@ export const courses = [
   {
     CRSE: 'MUPF3700',
     DESCR: 'Voice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7113,6 +7660,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7126,6 +7674,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7139,6 +7688,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Edwards S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7152,6 +7702,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Pine N',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7165,6 +7716,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Edie R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7178,6 +7730,7 @@ export const courses = [
   {
     CRSE: 'MUPF3710',
     DESCR: 'Piano',
+    MAX_CREDIT: '1',
     INSTR: 'Kim J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7191,6 +7744,7 @@ export const courses = [
   {
     CRSE: 'MUPF3720',
     DESCR: 'Harpsichord',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7204,6 +7758,7 @@ export const courses = [
   {
     CRSE: 'MUPF3730',
     DESCR: 'Organ',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7217,6 +7772,7 @@ export const courses = [
   {
     CRSE: 'MUPF3740',
     DESCR: 'Violin',
+    MAX_CREDIT: '1',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7230,6 +7786,7 @@ export const courses = [
   {
     CRSE: 'MUPF3740',
     DESCR: 'Violin',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7243,6 +7800,7 @@ export const courses = [
   {
     CRSE: 'MUPF3750',
     DESCR: 'Viola',
+    MAX_CREDIT: '1',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7256,6 +7814,7 @@ export const courses = [
   {
     CRSE: 'MUPF3750',
     DESCR: 'Viola',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7269,6 +7828,7 @@ export const courses = [
   {
     CRSE: 'MUPF3760',
     DESCR: 'Cello',
+    MAX_CREDIT: '1',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7282,6 +7842,7 @@ export const courses = [
   {
     CRSE: 'MUPF3760',
     DESCR: 'Cello',
+    MAX_CREDIT: '1',
     INSTR: 'Hawkey S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7295,6 +7856,7 @@ export const courses = [
   {
     CRSE: 'MUPF3770',
     DESCR: 'Bass',
+    MAX_CREDIT: '1',
     INSTR: 'Witzel B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7308,6 +7870,7 @@ export const courses = [
   {
     CRSE: 'MUPF3770',
     DESCR: 'Bass',
+    MAX_CREDIT: '1',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7321,6 +7884,7 @@ export const courses = [
   {
     CRSE: 'MUPF3780',
     DESCR: 'Flute/Piccolo',
+    MAX_CREDIT: '1',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7334,6 +7898,7 @@ export const courses = [
   {
     CRSE: 'MUPF3790',
     DESCR: 'Clarinet',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7347,6 +7912,7 @@ export const courses = [
   {
     CRSE: 'MUPF3800',
     DESCR: 'Oboe/English Horn',
+    MAX_CREDIT: '1',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7360,6 +7926,7 @@ export const courses = [
   {
     CRSE: 'MUPF3810',
     DESCR: 'Bassoon',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7373,6 +7940,7 @@ export const courses = [
   {
     CRSE: 'MUPF3820',
     DESCR: 'Saxophone',
+    MAX_CREDIT: '1',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7386,6 +7954,7 @@ export const courses = [
   {
     CRSE: 'MUPF3830',
     DESCR: 'Trumpet/Cornet',
+    MAX_CREDIT: '1',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7399,6 +7968,7 @@ export const courses = [
   {
     CRSE: 'MUPF3840',
     DESCR: 'French Horn',
+    MAX_CREDIT: '1',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7412,6 +7982,7 @@ export const courses = [
   {
     CRSE: 'MUPF3850',
     DESCR: 'Trombone',
+    MAX_CREDIT: '1',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7425,6 +7996,7 @@ export const courses = [
   {
     CRSE: 'MUPF3860',
     DESCR: 'Baritone/Euphonium',
+    MAX_CREDIT: '1',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7438,6 +8010,7 @@ export const courses = [
   {
     CRSE: 'MUPF3870',
     DESCR: 'Tuba',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7451,6 +8024,7 @@ export const courses = [
   {
     CRSE: 'MUPF3880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '1',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7464,6 +8038,7 @@ export const courses = [
   {
     CRSE: 'MUPF3880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7477,6 +8052,7 @@ export const courses = [
   {
     CRSE: 'MUPF3885',
     DESCR: 'Harp',
+    MAX_CREDIT: '1',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7490,6 +8066,7 @@ export const courses = [
   {
     CRSE: 'MUPF3890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7503,6 +8080,7 @@ export const courses = [
   {
     CRSE: 'MUPF3890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7516,6 +8094,7 @@ export const courses = [
   {
     CRSE: 'MUPF3890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7529,6 +8108,7 @@ export const courses = [
   {
     CRSE: 'MUPF3900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7542,6 +8122,7 @@ export const courses = [
   {
     CRSE: 'MUPF3900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7555,6 +8136,7 @@ export const courses = [
   {
     CRSE: 'MUPF3900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7568,6 +8150,7 @@ export const courses = [
   {
     CRSE: 'MUPF3900',
     DESCR: 'Composition',
+    MAX_CREDIT: '1',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7581,6 +8164,7 @@ export const courses = [
   {
     CRSE: 'MUPF3905',
     DESCR: 'Songwriting',
+    MAX_CREDIT: '1',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7594,6 +8178,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7607,6 +8192,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7620,6 +8206,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7633,6 +8220,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7646,6 +8234,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7659,6 +8248,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7672,6 +8262,7 @@ export const courses = [
   {
     CRSE: 'MUPF4540',
     DESCR: 'Voice Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7685,6 +8276,7 @@ export const courses = [
   {
     CRSE: 'MUPF4550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7698,6 +8290,7 @@ export const courses = [
   {
     CRSE: 'MUPF4550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7711,6 +8304,7 @@ export const courses = [
   {
     CRSE: 'MUPF4550',
     DESCR: 'Keyboard Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7724,6 +8318,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7737,6 +8332,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7750,6 +8346,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7763,6 +8360,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7776,6 +8374,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7789,6 +8388,7 @@ export const courses = [
   {
     CRSE: 'MUPF4560',
     DESCR: 'String/Guitar/Harp Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7802,6 +8402,7 @@ export const courses = [
   {
     CRSE: 'MUPF4570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7815,6 +8416,7 @@ export const courses = [
   {
     CRSE: 'MUPF4570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7828,6 +8430,7 @@ export const courses = [
   {
     CRSE: 'MUPF4570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7841,6 +8444,7 @@ export const courses = [
   {
     CRSE: 'MUPF4570',
     DESCR: 'Woodwind Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7854,6 +8458,7 @@ export const courses = [
   {
     CRSE: 'MUPF4580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7867,6 +8472,7 @@ export const courses = [
   {
     CRSE: 'MUPF4580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7880,6 +8486,7 @@ export const courses = [
   {
     CRSE: 'MUPF4580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7893,6 +8500,7 @@ export const courses = [
   {
     CRSE: 'MUPF4580',
     DESCR: 'Brass Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7906,6 +8514,7 @@ export const courses = [
   {
     CRSE: 'MUPF4590',
     DESCR: 'Percussion Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7919,6 +8528,7 @@ export const courses = [
   {
     CRSE: 'MUPF4590',
     DESCR: 'Percussion Recital',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7932,6 +8542,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7945,6 +8556,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'York K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7958,6 +8570,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Hill D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7971,6 +8584,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7984,6 +8598,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Huntoon D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -7997,6 +8612,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8010,6 +8626,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Mannell D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8023,6 +8640,7 @@ export const courses = [
   {
     CRSE: 'MUPF4700',
     DESCR: 'Voice',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8036,6 +8654,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Rodgers R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8049,6 +8668,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8062,6 +8682,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Edwards S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8075,6 +8696,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Pine N',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8088,6 +8710,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Edie R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8101,6 +8724,7 @@ export const courses = [
   {
     CRSE: 'MUPF4710',
     DESCR: 'Piano',
+    MAX_CREDIT: '3',
     INSTR: 'Kim J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8114,6 +8738,7 @@ export const courses = [
   {
     CRSE: 'MUPF4720',
     DESCR: 'Harpsichord',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8127,6 +8752,7 @@ export const courses = [
   {
     CRSE: 'MUPF4730',
     DESCR: 'Organ',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8140,6 +8766,7 @@ export const courses = [
   {
     CRSE: 'MUPF4740',
     DESCR: 'Violin',
+    MAX_CREDIT: '3',
     INSTR: 'Kumi G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8153,6 +8780,7 @@ export const courses = [
   {
     CRSE: 'MUPF4740',
     DESCR: 'Violin',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8166,6 +8794,7 @@ export const courses = [
   {
     CRSE: 'MUPF4750',
     DESCR: 'Viola',
+    MAX_CREDIT: '3',
     INSTR: 'Kniffen A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8179,6 +8808,7 @@ export const courses = [
   {
     CRSE: 'MUPF4750',
     DESCR: 'Viola',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8192,6 +8822,7 @@ export const courses = [
   {
     CRSE: 'MUPF4760',
     DESCR: 'Cello',
+    MAX_CREDIT: '3',
     INSTR: 'Swanson Y',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8205,6 +8836,7 @@ export const courses = [
   {
     CRSE: 'MUPF4760',
     DESCR: 'Cello',
+    MAX_CREDIT: '3',
     INSTR: 'Hawkey S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8218,6 +8850,7 @@ export const courses = [
   {
     CRSE: 'MUPF4770',
     DESCR: 'Bass',
+    MAX_CREDIT: '3',
     INSTR: 'Witzel B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8231,6 +8864,7 @@ export const courses = [
   {
     CRSE: 'MUPF4770',
     DESCR: 'Bass',
+    MAX_CREDIT: '3',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8244,6 +8878,7 @@ export const courses = [
   {
     CRSE: 'MUPF4780',
     DESCR: 'Flute/Piccolo',
+    MAX_CREDIT: '3',
     INSTR: 'Howlett A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8257,6 +8892,7 @@ export const courses = [
   {
     CRSE: 'MUPF4790',
     DESCR: 'Clarinet',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8270,6 +8906,7 @@ export const courses = [
   {
     CRSE: 'MUPF4800',
     DESCR: 'Oboe/English Horn',
+    MAX_CREDIT: '3',
     INSTR: 'Sirotkin L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8283,6 +8920,7 @@ export const courses = [
   {
     CRSE: 'MUPF4810',
     DESCR: 'Bassoon',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8296,6 +8934,7 @@ export const courses = [
   {
     CRSE: 'MUPF4820',
     DESCR: 'Saxophone',
+    MAX_CREDIT: '3',
     INSTR: 'Chappell R',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8309,6 +8948,7 @@ export const courses = [
   {
     CRSE: 'MUPF4830',
     DESCR: 'Trumpet/Cornet',
+    MAX_CREDIT: '3',
     INSTR: 'Carter A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8322,6 +8962,7 @@ export const courses = [
   {
     CRSE: 'MUPF4840',
     DESCR: 'French Horn',
+    MAX_CREDIT: '3',
     INSTR: 'Rice S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8335,6 +8976,7 @@ export const courses = [
   {
     CRSE: 'MUPF4850',
     DESCR: 'Trombone',
+    MAX_CREDIT: '3',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8348,6 +8990,7 @@ export const courses = [
   {
     CRSE: 'MUPF4860',
     DESCR: 'Baritone/Euphonium',
+    MAX_CREDIT: '3',
     INSTR: 'Hetrick G',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8361,6 +9004,7 @@ export const courses = [
   {
     CRSE: 'MUPF4870',
     DESCR: 'Tuba',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8374,6 +9018,7 @@ export const courses = [
   {
     CRSE: 'MUPF4880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '3',
     INSTR: 'Robbins S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8387,6 +9032,7 @@ export const courses = [
   {
     CRSE: 'MUPF4880',
     DESCR: 'Percussion',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8400,6 +9046,7 @@ export const courses = [
   {
     CRSE: 'MUPF4885',
     DESCR: 'Harp',
+    MAX_CREDIT: '3',
     INSTR: 'Fan H',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8413,6 +9060,7 @@ export const courses = [
   {
     CRSE: 'MUPF4890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Shuntich A',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8426,6 +9074,7 @@ export const courses = [
   {
     CRSE: 'MUPF4890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Johnson J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8439,6 +9088,7 @@ export const courses = [
   {
     CRSE: 'MUPF4890',
     DESCR: 'Guitar',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8452,6 +9102,7 @@ export const courses = [
   {
     CRSE: 'MUPF4900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8465,6 +9116,7 @@ export const courses = [
   {
     CRSE: 'MUPF4900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8478,6 +9130,7 @@ export const courses = [
   {
     CRSE: 'MUPF4900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Ahn K',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8491,6 +9144,7 @@ export const courses = [
   {
     CRSE: 'MUPF4900',
     DESCR: 'Composition',
+    MAX_CREDIT: '3',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8504,6 +9158,7 @@ export const courses = [
   {
     CRSE: 'MUPF4905',
     DESCR: 'Songwriting',
+    MAX_CREDIT: '3',
     INSTR: 'Powell J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8517,6 +9172,7 @@ export const courses = [
   {
     CRSE: 'MUSC1020',
     DESCR: 'Theory II',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -8530,6 +9186,7 @@ export const courses = [
   {
     CRSE: 'MUSC1020',
     DESCR: 'Theory II',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -8543,6 +9200,7 @@ export const courses = [
   {
     CRSE: 'MUSC1040',
     DESCR: 'Aural Comprehension II',
+    MAX_CREDIT: '1',
     INSTR: 'Brooks J',
     DAYS: 'TR',
     START_TIME: '08:30 AM',
@@ -8556,6 +9214,7 @@ export const courses = [
   {
     CRSE: 'MUSC1040',
     DESCR: 'Aural Comprehension II',
+    MAX_CREDIT: '1',
     INSTR: 'Brooks J',
     DAYS: 'TR',
     START_TIME: '10:00 AM',
@@ -8569,6 +9228,7 @@ export const courses = [
   {
     CRSE: 'MUSC2020',
     DESCR: 'Theory IV',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -8582,6 +9242,7 @@ export const courses = [
   {
     CRSE: 'MUSC2040',
     DESCR: 'Aural Comprehension IV',
+    MAX_CREDIT: '1',
     INSTR: 'Brooks J',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -8595,6 +9256,7 @@ export const courses = [
   {
     CRSE: 'MUSC2210',
     DESCR: 'Music the Arts and Culture',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -8608,6 +9270,7 @@ export const courses = [
   {
     CRSE: 'MUSC2210',
     DESCR: 'Music the Arts and Culture',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -8621,6 +9284,7 @@ export const courses = [
   {
     CRSE: 'MUSC2220',
     DESCR: 'Music in Society',
+    MAX_CREDIT: '2',
     INSTR: 'Wright J',
     DAYS: 'TR',
     START_TIME: '10:00 AM',
@@ -8634,6 +9298,7 @@ export const courses = [
   {
     CRSE: 'MUSC2330',
     DESCR: 'Intro to World Music',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -8647,6 +9312,7 @@ export const courses = [
   {
     CRSE: 'MUSC3040',
     DESCR: 'Orchestration',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -8660,6 +9326,7 @@ export const courses = [
   {
     CRSE: 'MUSC3130',
     DESCR: 'Hist of Music: 19th/20th Cent',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -8673,6 +9340,7 @@ export const courses = [
   {
     CRSE: 'MUSC3160',
     DESCR: 'Sacred Music: Past/Curr Uses',
+    MAX_CREDIT: '3',
     INSTR: 'Wright J',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -8686,6 +9354,7 @@ export const courses = [
   {
     CRSE: 'MUSC3180',
     DESCR: 'Hist of Music: Musical Theatre',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -8699,6 +9368,7 @@ export const courses = [
   {
     CRSE: 'MUSC3800',
     DESCR: 'Internship in Church Music',
+    MAX_CREDIT: '3',
     INSTR: 'Wright J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8712,6 +9382,7 @@ export const courses = [
   {
     CRSE: 'MUSC4950',
     DESCR: 'Senior Project',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8725,6 +9396,7 @@ export const courses = [
   {
     CRSE: 'MUSC4950',
     DESCR: 'Senior Project',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8738,6 +9410,7 @@ export const courses = [
   {
     CRSE: 'MUSC4950',
     DESCR: 'Senior Project',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8751,6 +9424,7 @@ export const courses = [
   {
     CRSE: 'MUSC4955',
     DESCR: 'Senior Presentation',
+    MAX_CREDIT: '3',
     INSTR: 'Brooks J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8764,6 +9438,7 @@ export const courses = [
   {
     CRSE: 'MUSC4955',
     DESCR: 'Senior Presentation',
+    MAX_CREDIT: '3',
     INSTR: 'Hicks T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8777,6 +9452,7 @@ export const courses = [
   {
     CRSE: 'MUSC4955',
     DESCR: 'Senior Presentation',
+    MAX_CREDIT: '3',
     INSTR: 'Holmes C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -8790,6 +9466,7 @@ export const courses = [
   {
     CRSE: 'MUTR2410',
     DESCR: 'Voice/Movement for Actor I',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge M',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -8803,6 +9480,7 @@ export const courses = [
   {
     CRSE: 'MUTR3210',
     DESCR: 'Musical Theatre Styles I',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge D',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -8816,6 +9494,7 @@ export const courses = [
   {
     CRSE: 'MUTR3410',
     DESCR: 'Voice/Movement Actor III',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge M',
     DAYS: 'MW',
     START_TIME: '09:00 AM',
@@ -8829,6 +9508,7 @@ export const courses = [
   {
     CRSE: 'MUTR4500',
     DESCR: 'Musical Theatre Showcase',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge D',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -8842,6 +9522,7 @@ export const courses = [
   {
     CRSE: 'NURS1210',
     DESCR: 'Nutrition for Hlthy Liv',
+    MAX_CREDIT: '2',
     INSTR: 'Miller A',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -8855,6 +9536,7 @@ export const courses = [
   {
     CRSE: 'NURS1210',
     DESCR: 'Nutrition for Hlthy Liv',
+    MAX_CREDIT: '2',
     INSTR: 'Miller A',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -8868,6 +9550,7 @@ export const courses = [
   {
     CRSE: 'NURS1210',
     DESCR: 'Nutrition for Hlthy Liv',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -8881,6 +9564,7 @@ export const courses = [
   {
     CRSE: 'NURS2140',
     DESCR: 'Intro to Nursing',
+    MAX_CREDIT: '2',
     INSTR: 'Lutterman T',
     DAYS: 'MW',
     START_TIME: '10:00 AM',
@@ -8894,6 +9578,7 @@ export const courses = [
   {
     CRSE: 'NURS2140',
     DESCR: 'Intro to Nursing',
+    MAX_CREDIT: '2',
     INSTR: 'Lutterman T',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -8907,6 +9592,7 @@ export const courses = [
   {
     CRSE: 'NURS2241',
     DESCR: 'Fundamentals II',
+    MAX_CREDIT: '5',
     INSTR: 'OKeefe D,Miller K,Bays S,Lutterman T',
     DAYS: 'TR',
     START_TIME: '07:00 AM',
@@ -8920,6 +9606,7 @@ export const courses = [
   {
     CRSE: 'NURS2241',
     DESCR: 'Fundamentals II',
+    MAX_CREDIT: '5',
     INSTR: 'OKeefe D,Miller K,Bays S,Lutterman T',
     DAYS: 'MW',
     START_TIME: '08:00 AM',
@@ -8933,6 +9620,7 @@ export const courses = [
   {
     CRSE: 'NURS2270',
     DESCR: 'Pathophys/Pharmacology in Nurs',
+    MAX_CREDIT: '4',
     INSTR: 'OKeefe D',
     DAYS: 'MW',
     START_TIME: '09:30 AM',
@@ -8946,6 +9634,7 @@ export const courses = [
   {
     CRSE: 'NURS2270',
     DESCR: 'Pathophys/Pharmacology in Nurs',
+    MAX_CREDIT: '4',
     INSTR: 'OKeefe D',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -8959,6 +9648,7 @@ export const courses = [
   {
     CRSE: 'NURS2270',
     DESCR: 'Pathophys/Pharmacology in Nurs',
+    MAX_CREDIT: '4',
     INSTR: 'OKeefe D',
     DAYS: 'R',
     START_TIME: '03:00 PM',
@@ -8972,6 +9662,7 @@ export const courses = [
   {
     CRSE: 'NURS2340',
     DESCR: 'Personal/Community Hlth Nursng',
+    MAX_CREDIT: '2',
     INSTR: 'Bays S',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -8985,6 +9676,7 @@ export const courses = [
   {
     CRSE: 'NURS3361',
     DESCR: 'Adult Health II',
+    MAX_CREDIT: '6',
     INSTR: 'Gray R,Cox S',
     DAYS: 'TR',
     START_TIME: '07:00 AM',
@@ -8998,6 +9690,7 @@ export const courses = [
   {
     CRSE: 'NURS3361',
     DESCR: 'Adult Health II',
+    MAX_CREDIT: '6',
     INSTR: 'Gray R,Cox S',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -9011,6 +9704,7 @@ export const courses = [
   {
     CRSE: 'NURS3391',
     DESCR: 'Evidence-Based Research',
+    MAX_CREDIT: '3',
     INSTR: 'Miller K',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -9024,6 +9718,7 @@ export const courses = [
   {
     CRSE: 'NURS4510',
     DESCR: 'Entry Profess Nursing Practice',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -9037,6 +9732,7 @@ export const courses = [
   {
     CRSE: 'NURS4521',
     DESCR: 'Child Health',
+    MAX_CREDIT: '4',
     INSTR: 'Miller K,Cox S',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -9050,6 +9746,7 @@ export const courses = [
   {
     CRSE: 'NURS4521',
     DESCR: 'Child Health',
+    MAX_CREDIT: '4',
     INSTR: 'Miller K,Cox S',
     DAYS: 'CLI',
     START_TIME: ' ',
@@ -9063,6 +9760,7 @@ export const courses = [
   {
     CRSE: 'NURS4950',
     DESCR: 'Intercultural Capstone',
+    MAX_CREDIT: '4',
     INSTR: 'Gray R',
     DAYS: 'T',
     START_TIME: '10:00 AM',
@@ -9076,6 +9774,7 @@ export const courses = [
   {
     CRSE: 'NURS4960',
     DESCR: 'Leadership Capstone',
+    MAX_CREDIT: '4',
     INSTR: 'Hofer C',
     DAYS: 'CLI',
     START_TIME: ' ',
@@ -9089,6 +9788,7 @@ export const courses = [
   {
     CRSE: 'NURS4960',
     DESCR: 'Leadership Capstone',
+    MAX_CREDIT: '4',
     INSTR: 'Hofer C',
     DAYS: 'R',
     START_TIME: '09:30 AM',
@@ -9102,6 +9802,7 @@ export const courses = [
   {
     CRSE: 'NURS4970',
     DESCR: 'Clinical Capstone',
+    MAX_CREDIT: '2',
     INSTR: 'Bays S',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9115,6 +9816,7 @@ export const courses = [
   {
     CRSE: 'PACT2200',
     DESCR: 'Peacemakers Past and Present',
+    MAX_CREDIT: '2',
     INSTR: 'Kirkpatrick S',
     DAYS: 'M',
     START_TIME: '05:00 PM',
@@ -9128,6 +9830,7 @@ export const courses = [
   {
     CRSE: 'PEHS1000',
     DESCR: 'Fitness/Wellness for Life',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -9141,6 +9844,7 @@ export const courses = [
   {
     CRSE: 'PEHS1000',
     DESCR: 'Fitness/Wellness for Life',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -9154,6 +9858,7 @@ export const courses = [
   {
     CRSE: 'PEHS1000',
     DESCR: 'Fitness/Wellness for Life',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -9167,6 +9872,7 @@ export const courses = [
   {
     CRSE: 'PEHS1100',
     DESCR: 'Begin Swimming',
+    MAX_CREDIT: '1',
     INSTR: 'Scott J',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -9180,6 +9886,7 @@ export const courses = [
   {
     CRSE: 'PEHS1150',
     DESCR: 'Badminton',
+    MAX_CREDIT: '1',
     INSTR: 'Scott J',
     DAYS: 'MTWR',
     START_TIME: '12:00 PM',
@@ -9193,6 +9900,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9206,6 +9914,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9219,6 +9928,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9232,6 +9942,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9245,6 +9956,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9258,6 +9970,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9271,6 +9984,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9284,6 +9998,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9297,6 +10012,7 @@ export const courses = [
   {
     CRSE: 'PEHS1200',
     DESCR: 'Co-Curr Activity',
+    MAX_CREDIT: '1',
     INSTR: 'Frakes M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9310,6 +10026,7 @@ export const courses = [
   {
     CRSE: 'PEHS1220',
     DESCR: 'Tennis',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'MTWR',
     START_TIME: '12:00 PM',
@@ -9323,6 +10040,7 @@ export const courses = [
   {
     CRSE: 'PEHS1450',
     DESCR: 'First Aid',
+    MAX_CREDIT: '2',
     INSTR: 'Scott J',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -9336,6 +10054,7 @@ export const courses = [
   {
     CRSE: 'PEHS2000',
     DESCR: 'Intermediate Swimming',
+    MAX_CREDIT: '1',
     INSTR: 'Scott J',
     DAYS: 'MW',
     START_TIME: '02:00 PM',
@@ -9349,6 +10068,7 @@ export const courses = [
   {
     CRSE: 'PEHS2040',
     DESCR: 'Water Safety Instructor',
+    MAX_CREDIT: '1',
     INSTR: 'Scott J',
     DAYS: 'TR',
     START_TIME: '02:00 PM',
@@ -9362,6 +10082,7 @@ export const courses = [
   {
     CRSE: 'PEHS2260',
     DESCR: 'Adv Conditioning Sports Perf',
+    MAX_CREDIT: '1',
     INSTR: 'Rock S',
     DAYS: 'KAR',
     START_TIME: ' ',
@@ -9375,6 +10096,7 @@ export const courses = [
   {
     CRSE: 'PEHS2260',
     DESCR: 'Adv Conditioning Sports Perf',
+    MAX_CREDIT: '1',
     INSTR: 'Fridley S',
     DAYS: 'KAR',
     START_TIME: ' ',
@@ -9388,6 +10110,7 @@ export const courses = [
   {
     CRSE: 'PEHS2260',
     DESCR: 'Adv Conditioning Sports Perf',
+    MAX_CREDIT: '1',
     INSTR: 'Rock S',
     DAYS: 'KAR',
     START_TIME: ' ',
@@ -9401,6 +10124,7 @@ export const courses = [
   {
     CRSE: 'PEHS2260',
     DESCR: 'Adv Conditioning Sports Perf',
+    MAX_CREDIT: '1',
     INSTR: 'Myhre J',
     DAYS: 'KAR',
     START_TIME: ' ',
@@ -9414,6 +10138,7 @@ export const courses = [
   {
     CRSE: 'PEHS2260',
     DESCR: 'Adv Conditioning Sports Perf',
+    MAX_CREDIT: '1',
     INSTR: 'Miller T',
     DAYS: 'KAR',
     START_TIME: ' ',
@@ -9427,6 +10152,7 @@ export const courses = [
   {
     CRSE: 'PEHS3060',
     DESCR: 'Tech Coaching Track',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9440,6 +10166,7 @@ export const courses = [
   {
     CRSE: 'PEHS3100',
     DESCR: 'Health Concepts II',
+    MAX_CREDIT: '3',
     INSTR: 'Miller T',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -9453,6 +10180,7 @@ export const courses = [
   {
     CRSE: 'PEHS3340',
     DESCR: 'Sociology of Sport',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -9466,6 +10194,7 @@ export const courses = [
   {
     CRSE: 'PEHS3410',
     DESCR: 'Sports Administration',
+    MAX_CREDIT: '3',
     INSTR: 'Myhre J',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -9479,6 +10208,7 @@ export const courses = [
   {
     CRSE: 'PEHS3490',
     DESCR: 'School Health Organzation',
+    MAX_CREDIT: '3',
     INSTR: 'Miller T',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -9492,6 +10222,7 @@ export const courses = [
   {
     CRSE: 'PETE2250',
     DESCR: 'Motor Behavior',
+    MAX_CREDIT: '3',
     INSTR: 'Miller A',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -9505,6 +10236,7 @@ export const courses = [
   {
     CRSE: 'PETE3710',
     DESCR: 'Instructional Strategies (K-5)',
+    MAX_CREDIT: '3',
     INSTR: 'Beach V',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -9518,6 +10250,7 @@ export const courses = [
   {
     CRSE: 'PETE4850',
     DESCR: 'Practicum in Phys Ed Teaching',
+    MAX_CREDIT: '4',
     INSTR: 'Hamlyn C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9531,6 +10264,7 @@ export const courses = [
   {
     CRSE: 'PHYS1030',
     DESCR: 'Tchg STEM in Elem Clsrm',
+    MAX_CREDIT: '3',
     INSTR: 'Carr S',
     DAYS: 'TR',
     START_TIME: '09:00 AM',
@@ -9544,6 +10278,7 @@ export const courses = [
   {
     CRSE: 'PHYS2140',
     DESCR: 'Gen Physics I (Algebra)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'MWF',
     START_TIME: '08:00 AM',
@@ -9557,6 +10292,7 @@ export const courses = [
   {
     CRSE: 'PHYS2140',
     DESCR: 'Gen Physics I (Algebra)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -9570,6 +10306,7 @@ export const courses = [
   {
     CRSE: 'PHYS2140',
     DESCR: 'Gen Physics I (Algebra)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'T',
     START_TIME: '03:00 PM',
@@ -9583,6 +10320,7 @@ export const courses = [
   {
     CRSE: 'PHYS2140',
     DESCR: 'Gen Physics I (Algebra)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -9596,6 +10334,7 @@ export const courses = [
   {
     CRSE: 'PHYS2140',
     DESCR: 'Gen Physics I (Algebra)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'R',
     START_TIME: '03:00 PM',
@@ -9609,6 +10348,7 @@ export const courses = [
   {
     CRSE: 'PHYS2240',
     DESCR: 'Gen Physics I (Calculus)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -9622,6 +10362,7 @@ export const courses = [
   {
     CRSE: 'PHYS2240',
     DESCR: 'Gen Physics I (Calculus)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'R',
     START_TIME: '01:00 PM',
@@ -9635,6 +10376,7 @@ export const courses = [
   {
     CRSE: 'PHYS2240',
     DESCR: 'Gen Physics I (Calculus)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'T',
     START_TIME: '03:00 PM',
@@ -9648,6 +10390,7 @@ export const courses = [
   {
     CRSE: 'PHYS2240',
     DESCR: 'Gen Physics I (Calculus)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'T',
     START_TIME: '01:00 PM',
@@ -9661,6 +10404,7 @@ export const courses = [
   {
     CRSE: 'PHYS2240',
     DESCR: 'Gen Physics I (Calculus)',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'R',
     START_TIME: '03:00 PM',
@@ -9674,6 +10418,7 @@ export const courses = [
   {
     CRSE: 'PHYS4410',
     DESCR: 'Statistical Mechanics',
+    MAX_CREDIT: '3',
     INSTR: 'Williamson T',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -9687,6 +10432,7 @@ export const courses = [
   {
     CRSE: 'PHYS4520',
     DESCR: 'Senior Phys Sci Practicum II',
+    MAX_CREDIT: '1',
     INSTR: 'Wallace C',
     DAYS: 'T',
     START_TIME: '12:00 PM',
@@ -9700,6 +10446,7 @@ export const courses = [
   {
     CRSE: 'PHYS4650',
     DESCR: 'Independent Study',
+    MAX_CREDIT: '4',
     INSTR: 'Williamson T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9713,6 +10460,7 @@ export const courses = [
   {
     CRSE: 'PHYS4920',
     DESCR: 'Science Seminar II',
+    MAX_CREDIT: '1',
     INSTR: 'LyleIppolito K',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -9726,6 +10474,7 @@ export const courses = [
   {
     CRSE: 'POSC2100',
     DESCR: 'American Natl Government',
+    MAX_CREDIT: '3',
     INSTR: 'Frank M',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -9739,6 +10488,7 @@ export const courses = [
   {
     CRSE: 'POSC2200',
     DESCR: 'Public Policy',
+    MAX_CREDIT: '3',
     INSTR: 'Sutton C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -9752,6 +10502,7 @@ export const courses = [
   {
     CRSE: 'POSC2200',
     DESCR: 'Public Policy',
+    MAX_CREDIT: '3',
     INSTR: 'Sutton C',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -9765,6 +10516,7 @@ export const courses = [
   {
     CRSE: 'POSC2210',
     DESCR: 'Intro to Legal Studies',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'R',
     START_TIME: '05:00 PM',
@@ -9778,6 +10530,7 @@ export const courses = [
   {
     CRSE: 'POSC2420',
     DESCR: 'Applied Statistics Lab',
+    MAX_CREDIT: '1',
     INSTR: 'Frank M',
     DAYS: 'W',
     START_TIME: '01:00 PM',
@@ -9791,6 +10544,7 @@ export const courses = [
   {
     CRSE: 'POSC2580',
     DESCR: 'Principles of Geography',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -9804,6 +10558,7 @@ export const courses = [
   {
     CRSE: 'POSC2840',
     DESCR: 'Model Diplom/Simul Confer',
+    MAX_CREDIT: '1',
     INSTR: 'Sutton C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9817,6 +10572,7 @@ export const courses = [
   {
     CRSE: 'POSC3212',
     DESCR: 'The Presidency',
+    MAX_CREDIT: '3',
     INSTR: 'Frank M',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -9830,6 +10586,7 @@ export const courses = [
   {
     CRSE: 'POSC3350',
     DESCR: 'Homeland Security',
+    MAX_CREDIT: '3',
     INSTR: 'Sutton C',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -9843,6 +10600,7 @@ export const courses = [
   {
     CRSE: 'POSC3360',
     DESCR: 'War Peace and Security',
+    MAX_CREDIT: '3',
     INSTR: 'Sutton C',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -9856,6 +10614,7 @@ export const courses = [
   {
     CRSE: 'POSC4800',
     DESCR: 'Government Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Frank M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9869,6 +10628,7 @@ export const courses = [
   {
     CRSE: 'POSC4810',
     DESCR: 'Legal Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Frank M',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9882,6 +10642,7 @@ export const courses = [
   {
     CRSE: 'POSC4820',
     DESCR: 'International Internship',
+    MAX_CREDIT: '4',
     INSTR: 'Sutton C',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -9895,6 +10656,7 @@ export const courses = [
   {
     CRSE: 'POSC4930',
     DESCR: 'Senior Seminar',
+    MAX_CREDIT: '1',
     INSTR: 'Frank M',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -9908,6 +10670,7 @@ export const courses = [
   {
     CRSE: 'PSYC2000',
     DESCR: 'General Psychology',
+    MAX_CREDIT: '3',
     INSTR: 'Priest W',
     DAYS: 'MWF',
     START_TIME: '10:00 AM',
@@ -9921,6 +10684,7 @@ export const courses = [
   {
     CRSE: 'PSYC2000',
     DESCR: 'General Psychology',
+    MAX_CREDIT: '3',
     INSTR: 'Blunt J',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -9934,6 +10698,7 @@ export const courses = [
   {
     CRSE: 'PSYC2010',
     DESCR: 'Research Methods in Psychology',
+    MAX_CREDIT: '3',
     INSTR: 'Stull L',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -9947,6 +10712,7 @@ export const courses = [
   {
     CRSE: 'PSYC2100',
     DESCR: 'Interpersonal Relationships',
+    MAX_CREDIT: '4',
     INSTR: 'Griffith G',
     DAYS: 'MW',
     START_TIME: '03:00 PM',
@@ -9960,6 +10726,7 @@ export const courses = [
   {
     CRSE: 'PSYC2100',
     DESCR: 'Interpersonal Relationships',
+    MAX_CREDIT: '4',
     INSTR: 'Priest W',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -9973,6 +10740,7 @@ export const courses = [
   {
     CRSE: 'PSYC2110',
     DESCR: 'Educational Psychology',
+    MAX_CREDIT: '3',
     INSTR: 'Trotter J',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -9986,6 +10754,7 @@ export const courses = [
   {
     CRSE: 'PSYC2440',
     DESCR: 'Appl Stats / Intro Research',
+    MAX_CREDIT: '4',
     INSTR: 'Griffith G',
     DAYS: 'MTWR',
     START_TIME: '01:00 PM',
@@ -9999,6 +10768,7 @@ export const courses = [
   {
     CRSE: 'PSYC2850',
     DESCR: 'Practicum in Leadership Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Griffith G',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -10012,6 +10782,7 @@ export const courses = [
   {
     CRSE: 'PSYC3010',
     DESCR: 'Social Psychology',
+    MAX_CREDIT: '4',
     INSTR: 'Priest W',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -10025,6 +10796,7 @@ export const courses = [
   {
     CRSE: 'PSYC3030',
     DESCR: 'Psychiatric Rehablitation',
+    MAX_CREDIT: '3',
     INSTR: 'Stull L',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -10038,6 +10810,7 @@ export const courses = [
   {
     CRSE: 'PSYC3220',
     DESCR: 'Organizational Behav/Theory',
+    MAX_CREDIT: '3',
     INSTR: 'Lucas D',
     DAYS: 'TR',
     START_TIME: '08:00 AM',
@@ -10051,6 +10824,7 @@ export const courses = [
   {
     CRSE: 'PSYC3240',
     DESCR: 'Experimental Design',
+    MAX_CREDIT: '4',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -10064,6 +10838,7 @@ export const courses = [
   {
     CRSE: 'PSYC3330',
     DESCR: 'Cognitive Psychology',
+    MAX_CREDIT: '4',
     INSTR: 'Blunt J',
     DAYS: 'MTRF',
     START_TIME: '10:00 AM',
@@ -10077,6 +10852,7 @@ export const courses = [
   {
     CRSE: 'PSYC3400',
     DESCR: 'Memory',
+    MAX_CREDIT: '4',
     INSTR: 'Blunt J',
     DAYS: 'MF',
     START_TIME: '09:00 AM',
@@ -10090,6 +10866,7 @@ export const courses = [
   {
     CRSE: 'PSYC3400',
     DESCR: 'Memory',
+    MAX_CREDIT: '4',
     INSTR: 'Blunt J',
     DAYS: 'TR',
     START_TIME: '08:30 AM',
@@ -10103,6 +10880,7 @@ export const courses = [
   {
     CRSE: 'PSYC4030',
     DESCR: 'Counsl/Psychotherapy',
+    MAX_CREDIT: '4',
     INSTR: 'Griffith G',
     DAYS: 'MTWR',
     START_TIME: '10:00 AM',
@@ -10116,6 +10894,7 @@ export const courses = [
   {
     CRSE: 'PSYC4100',
     DESCR: 'Leadership and Training Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Priest W',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -10129,6 +10908,7 @@ export const courses = [
   {
     CRSE: 'PSYC4520',
     DESCR: 'Capstone Research II',
+    MAX_CREDIT: '2',
     INSTR: 'Stull L',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -10142,6 +10922,7 @@ export const courses = [
   {
     CRSE: 'PSYC4800',
     DESCR: 'Internship in Youth Leadership',
+    MAX_CREDIT: '2',
     INSTR: 'Blunt J',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -10155,6 +10936,7 @@ export const courses = [
   {
     CRSE: 'PUBH3010',
     DESCR: 'Social Psychology',
+    MAX_CREDIT: '4',
     INSTR: 'Priest W',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -10168,6 +10950,7 @@ export const courses = [
   {
     CRSE: 'PUBH3020',
     DESCR: 'Intro to Epidemiology',
+    MAX_CREDIT: '3',
     INSTR: 'Neal S',
     DAYS: ' ',
     START_TIME: ' ',
@@ -10181,6 +10964,7 @@ export const courses = [
   {
     CRSE: 'PUBH3260',
     DESCR: 'Sociology Health/Illness',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10194,6 +10978,7 @@ export const courses = [
   {
     CRSE: 'PUBH3700',
     DESCR: 'Intro Social Research',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10207,6 +10992,7 @@ export const courses = [
   {
     CRSE: 'PUBH3700',
     DESCR: 'Intro Social Research',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -10220,6 +11006,7 @@ export const courses = [
   {
     CRSE: 'PUBH4360',
     DESCR: 'Health Policy',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10233,6 +11020,7 @@ export const courses = [
   {
     CRSE: 'PUBH4950',
     DESCR: 'Intercultural Capstone',
+    MAX_CREDIT: '4',
     INSTR: 'Gray R',
     DAYS: 'T',
     START_TIME: '10:00 AM',
@@ -10246,6 +11034,7 @@ export const courses = [
   {
     CRSE: 'RLGN2130',
     DESCR: 'Intro to Christian Ethics',
+    MAX_CREDIT: '3',
     INSTR: 'Willowby N',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -10259,6 +11048,7 @@ export const courses = [
   {
     CRSE: 'RLGN3000',
     DESCR: 'History of Biblical Interp',
+    MAX_CREDIT: '3',
     INSTR: 'Kirkpatrick S',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -10272,6 +11062,7 @@ export const courses = [
   {
     CRSE: 'RLGN3000',
     DESCR: 'History of Biblical Interp',
+    MAX_CREDIT: '3',
     INSTR: 'Kirkpatrick S',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10285,6 +11076,7 @@ export const courses = [
   {
     CRSE: 'RLGN3320',
     DESCR: 'World Religions',
+    MAX_CREDIT: '3',
     INSTR: 'Burnett F',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -10298,6 +11090,7 @@ export const courses = [
   {
     CRSE: 'SOCI2010',
     DESCR: 'Intro to Sociology',
+    MAX_CREDIT: '3',
     INSTR: 'Pay L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10311,6 +11104,7 @@ export const courses = [
   {
     CRSE: 'SOCI2020',
     DESCR: 'Social Problems',
+    MAX_CREDIT: '3',
     INSTR: 'Poythress D',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -10324,6 +11118,7 @@ export const courses = [
   {
     CRSE: 'SOCI2020',
     DESCR: 'Social Problems',
+    MAX_CREDIT: '3',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10337,6 +11132,7 @@ export const courses = [
   {
     CRSE: 'SOCI2100',
     DESCR: 'Family Global/Diverse Context',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -10350,6 +11146,7 @@ export const courses = [
   {
     CRSE: 'SOCI2450',
     DESCR: 'Intro Issues in Race/Ethnicity',
+    MAX_CREDIT: '3',
     INSTR: 'Poythress D',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -10363,6 +11160,7 @@ export const courses = [
   {
     CRSE: 'SOCI2510',
     DESCR: 'Nature Crime/Soc Deviance',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -10376,6 +11174,7 @@ export const courses = [
   {
     CRSE: 'SOCI2510',
     DESCR: 'Nature Crime/Soc Deviance',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10389,6 +11188,7 @@ export const courses = [
   {
     CRSE: 'SOCI2850',
     DESCR: 'Practicum in Leadership Skills',
+    MAX_CREDIT: '2',
     INSTR: 'Griffith G',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -10402,6 +11202,7 @@ export const courses = [
   {
     CRSE: 'SOCI3010',
     DESCR: 'Social Psychology',
+    MAX_CREDIT: '4',
     INSTR: 'Priest W',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -10415,6 +11216,7 @@ export const courses = [
   {
     CRSE: 'SOCI3100',
     DESCR: 'Human Sexuality',
+    MAX_CREDIT: '3',
     INSTR: 'Pay L',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -10428,6 +11230,7 @@ export const courses = [
   {
     CRSE: 'SOCI3260',
     DESCR: 'Sociology Health/Illness',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10441,6 +11244,7 @@ export const courses = [
   {
     CRSE: 'SOCI3300',
     DESCR: 'Famly Law/Pub Policy',
+    MAX_CREDIT: '3',
     INSTR: 'Musser M',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -10454,6 +11258,7 @@ export const courses = [
   {
     CRSE: 'SOCI3700',
     DESCR: 'Intro Social Research',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10467,6 +11272,7 @@ export const courses = [
   {
     CRSE: 'SOCI3700',
     DESCR: 'Intro Social Research',
+    MAX_CREDIT: '4',
     INSTR: 'Scott D',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -10480,6 +11286,7 @@ export const courses = [
   {
     CRSE: 'SOCI4800',
     DESCR: 'Internship in Youth Leadership',
+    MAX_CREDIT: '2',
     INSTR: 'Blunt J',
     DAYS: 'TR',
     START_TIME: '12:00 PM',
@@ -10493,6 +11300,7 @@ export const courses = [
   {
     CRSE: 'SOCI4910',
     DESCR: 'Family Science Integrative Sem',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10506,6 +11314,7 @@ export const courses = [
   {
     CRSE: 'SOCI4950',
     DESCR: 'Fam Life Ed Method/Prof Eth',
+    MAX_CREDIT: '3',
     INSTR: 'Quashie L',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -10519,6 +11328,7 @@ export const courses = [
   {
     CRSE: 'SOWK2000',
     DESCR: 'Intro Soc Welfare/Soc Work',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'Cancelled',
     START_TIME: ' ',
@@ -10532,6 +11342,7 @@ export const courses = [
   {
     CRSE: 'SOWK2100',
     DESCR: 'Intro to Field Exper',
+    MAX_CREDIT: '2',
     INSTR: 'Staff U',
     DAYS: 'R',
     START_TIME: '04:00 PM',
@@ -10545,6 +11356,7 @@ export const courses = [
   {
     CRSE: 'SOWK3100',
     DESCR: 'Soc Welfare Policy',
+    MAX_CREDIT: '4',
     INSTR: 'Bargerstock L',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10558,6 +11370,7 @@ export const courses = [
   {
     CRSE: 'SOWK3100',
     DESCR: 'Soc Welfare Policy',
+    MAX_CREDIT: '4',
     INSTR: 'Bargerstock L',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -10571,6 +11384,7 @@ export const courses = [
   {
     CRSE: 'SOWK3300',
     DESCR: 'Famly Law/Pub Policy',
+    MAX_CREDIT: '3',
     INSTR: 'Musser M',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -10584,6 +11398,7 @@ export const courses = [
   {
     CRSE: 'SOWK4710',
     DESCR: 'Soc Work Practice',
+    MAX_CREDIT: '4',
     INSTR: 'Pay L',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10597,6 +11412,7 @@ export const courses = [
   {
     CRSE: 'SOWK4850',
     DESCR: 'Soc Work Practicum',
+    MAX_CREDIT: '12',
     INSTR: 'Bargerstock L,Pay L',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10610,6 +11426,7 @@ export const courses = [
   {
     CRSE: 'SPAN1010',
     DESCR: 'Elementary Spanish I',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'R',
     START_TIME: '12:00 PM',
@@ -10623,6 +11440,7 @@ export const courses = [
   {
     CRSE: 'SPAN1010',
     DESCR: 'Elementary Spanish I',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'MWF',
     START_TIME: '12:00 PM',
@@ -10636,6 +11454,7 @@ export const courses = [
   {
     CRSE: 'SPAN1010',
     DESCR: 'Elementary Spanish I',
+    MAX_CREDIT: '4',
     INSTR: 'Baird I',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10649,6 +11468,7 @@ export const courses = [
   {
     CRSE: 'SPAN1020',
     DESCR: 'Elementary Spanish II',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'R',
     START_TIME: '09:00 AM',
@@ -10662,6 +11482,7 @@ export const courses = [
   {
     CRSE: 'SPAN1020',
     DESCR: 'Elementary Spanish II',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -10675,6 +11496,7 @@ export const courses = [
   {
     CRSE: 'SPAN2010',
     DESCR: 'Intermediate Spanish I',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'R',
     START_TIME: '02:00 PM',
@@ -10688,6 +11510,7 @@ export const courses = [
   {
     CRSE: 'SPAN2010',
     DESCR: 'Intermediate Spanish I',
+    MAX_CREDIT: '4',
     INSTR: 'Clay C',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -10701,6 +11524,7 @@ export const courses = [
   {
     CRSE: 'SPAN2020',
     DESCR: 'Intermediate Spanish II',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'F',
     START_TIME: '02:00 PM',
@@ -10714,6 +11538,7 @@ export const courses = [
   {
     CRSE: 'SPAN2020',
     DESCR: 'Intermediate Spanish II',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'MTW',
     START_TIME: '02:00 PM',
@@ -10727,6 +11552,7 @@ export const courses = [
   {
     CRSE: 'SPAN3010',
     DESCR: 'Spanish Composition',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'F',
     START_TIME: '12:00 PM',
@@ -10740,6 +11566,7 @@ export const courses = [
   {
     CRSE: 'SPAN3010',
     DESCR: 'Spanish Composition',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'MTW',
     START_TIME: '12:00 PM',
@@ -10753,6 +11580,7 @@ export const courses = [
   {
     CRSE: 'SPAN3020',
     DESCR: 'Spanish Conversation',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10766,6 +11594,7 @@ export const courses = [
   {
     CRSE: 'SPAN3020',
     DESCR: 'Spanish Conversation',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -10779,6 +11608,7 @@ export const courses = [
   {
     CRSE: 'SPAN3020',
     DESCR: 'Spanish Conversation',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10792,6 +11622,7 @@ export const courses = [
   {
     CRSE: 'SPAN3020',
     DESCR: 'Spanish Conversation',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -10805,6 +11636,7 @@ export const courses = [
   {
     CRSE: 'SPAN3103',
     DESCR: 'Spanish for Soc Work/Crim J',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'MWF',
     START_TIME: '01:00 PM',
@@ -10818,6 +11650,7 @@ export const courses = [
   {
     CRSE: 'SPAN3103',
     DESCR: 'Spanish for Soc Work/Crim J',
+    MAX_CREDIT: '4',
     INSTR: 'Fox T',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10831,6 +11664,7 @@ export const courses = [
   {
     CRSE: 'SPAN3240',
     DESCR: 'Strat Adv Spanish Proficiency',
+    MAX_CREDIT: '2',
     INSTR: 'Clay C',
     DAYS: 'T',
     START_TIME: '02:00 PM',
@@ -10844,6 +11678,7 @@ export const courses = [
   {
     CRSE: 'SPAN4500',
     DESCR: 'Special Topics',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'MWF',
     START_TIME: '11:00 AM',
@@ -10857,6 +11692,7 @@ export const courses = [
   {
     CRSE: 'SPAN4550',
     DESCR: 'Intensive Exper in Spanish',
+    MAX_CREDIT: '6',
     INSTR: 'Grayson B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10870,6 +11706,7 @@ export const courses = [
   {
     CRSE: 'SPAN4660',
     DESCR: 'Directed Indiv Study',
+    MAX_CREDIT: '4',
     INSTR: 'Grayson B',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10883,6 +11720,7 @@ export const courses = [
   {
     CRSE: 'SPED2400',
     DESCR: 'Intro to Mild Disabilities',
+    MAX_CREDIT: '3',
     INSTR: 'Epperly A',
     DAYS: 'TR',
     START_TIME: '09:30 AM',
@@ -10896,6 +11734,7 @@ export const courses = [
   {
     CRSE: 'SPED2550',
     DESCR: 'Char Emot/Beh Disord Chld/Yout',
+    MAX_CREDIT: '3',
     INSTR: 'Trotter J',
     DAYS: 'MWF',
     START_TIME: '09:00 AM',
@@ -10909,6 +11748,7 @@ export const courses = [
   {
     CRSE: 'SPED3200',
     DESCR: 'Clsrm Instruction Mild Disab',
+    MAX_CREDIT: '3',
     INSTR: 'Epperly A',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10922,6 +11762,7 @@ export const courses = [
   {
     CRSE: 'SPRL2450',
     DESCR: 'Phys Act III: Rec Act/Outdoor',
+    MAX_CREDIT: '3',
     INSTR: 'Miller T',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10935,6 +11776,7 @@ export const courses = [
   {
     CRSE: 'SPRL3150',
     DESCR: 'Recreational Ldrshp',
+    MAX_CREDIT: '2',
     INSTR: 'Scott J',
     DAYS: 'TR',
     START_TIME: '09:00 AM',
@@ -10948,6 +11790,7 @@ export const courses = [
   {
     CRSE: 'SPRL3250',
     DESCR: 'Legal Aspects Sport/Rec',
+    MAX_CREDIT: '3',
     INSTR: 'Myhre J',
     DAYS: 'ONL',
     START_TIME: ' ',
@@ -10961,6 +11804,7 @@ export const courses = [
   {
     CRSE: 'SPRL3300',
     DESCR: 'Mgt Sport Facil/Events',
+    MAX_CREDIT: '3',
     INSTR: 'Palmer T',
     DAYS: 'TR',
     START_TIME: '01:00 PM',
@@ -10974,6 +11818,7 @@ export const courses = [
   {
     CRSE: 'SPRL4850',
     DESCR: 'Practicum Sport/Rec Ldrship',
+    MAX_CREDIT: '3',
     INSTR: 'Scott J',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -10987,6 +11832,7 @@ export const courses = [
   {
     CRSE: 'THEA1170',
     DESCR: 'Lyric Theatre Workshop',
+    MAX_CREDIT: '1',
     INSTR: 'Coolidge D',
     DAYS: 'TR',
     START_TIME: '04:00 PM',
@@ -11000,6 +11846,7 @@ export const courses = [
   {
     CRSE: 'THEA1170',
     DESCR: 'Lyric Theatre Workshop',
+    MAX_CREDIT: '1',
     INSTR: 'Coolidge D',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -11013,6 +11860,7 @@ export const courses = [
   {
     CRSE: 'THEA2120',
     DESCR: 'Acting II',
+    MAX_CREDIT: '3',
     INSTR: 'Coolidge D',
     DAYS: 'MWF',
     START_TIME: '02:00 PM',
@@ -11026,6 +11874,7 @@ export const courses = [
   {
     CRSE: 'THEA2350',
     DESCR: 'Intro to Acting',
+    MAX_CREDIT: '2',
     INSTR: 'Haight B',
     DAYS: 'MW',
     START_TIME: '11:00 AM',
@@ -11039,6 +11888,7 @@ export const courses = [
   {
     CRSE: 'THEA2410',
     DESCR: 'Voice/Movement for Actor I',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge M',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -11052,6 +11902,7 @@ export const courses = [
   {
     CRSE: 'THEA2890',
     DESCR: 'Acting/Production Practicum',
+    MAX_CREDIT: '1',
     INSTR: 'Staff U',
     DAYS: 'Arranged',
     START_TIME: ' ',
@@ -11065,6 +11916,7 @@ export const courses = [
   {
     CRSE: 'THEA3210',
     DESCR: 'Musical Theatre Styles I',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge D',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -11078,6 +11930,7 @@ export const courses = [
   {
     CRSE: 'THEA3410',
     DESCR: 'Voice/Movement Actor III',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge M',
     DAYS: 'MW',
     START_TIME: '09:00 AM',
@@ -11091,6 +11944,7 @@ export const courses = [
   {
     CRSE: 'THEA3550',
     DESCR: 'Lighting Design',
+    MAX_CREDIT: '3',
     INSTR: 'Staff U',
     DAYS: 'TR',
     START_TIME: '02:30 PM',
@@ -11104,6 +11958,7 @@ export const courses = [
   {
     CRSE: 'THEA4500',
     DESCR: 'Musical Theatre Showcase',
+    MAX_CREDIT: '2',
     INSTR: 'Coolidge D',
     DAYS: 'MW',
     START_TIME: '01:00 PM',
@@ -11117,6 +11972,7 @@ export const courses = [
   {
     CRSE: 'THEA4800',
     DESCR: 'Senior Project',
+    MAX_CREDIT: '4',
     INSTR: 'Coolidge D',
     DAYS: 'Arranged',
     START_TIME: ' ',
