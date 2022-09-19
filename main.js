@@ -58,6 +58,16 @@ function filterByDept(courses, filter) {
   }
 }
 
+//Funtion that returns the courses that match a specific time from time input box
+function filterByTime(courses, time) {
+  if (time) {
+    courses = courses.filter(course => {
+      return course.START_TIME.includes(time)
+    })
+    return courses
+  }
+}
+
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
 })
