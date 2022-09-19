@@ -27,6 +27,7 @@ function populateDepts() {
   })
 
   list.unshift('Choose a department')
+  return list
 }
 
 //Filters the list by departments, accepts an array and return an array
@@ -36,6 +37,7 @@ function filterByDept(courses, filter) {
       return course.CRSE.substring(0, 4) === filter
     })
   }
+  return courses
 }
 
 const rows = courses.map(course => {
