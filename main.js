@@ -47,12 +47,13 @@ function populateDepts() {
   })
 
   list.unshift('Choose a department')
+  return list
 }
 
 //Filters the list by departments, accepts an array and return an array
 function filterByDept(courses, filter) {
   if (filter) {
-    courses = courses.filter(course => {
+    return courses.filter(course => {
       return course.CRSE.substring(0, 4) === filter
     })
   }
