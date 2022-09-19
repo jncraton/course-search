@@ -58,6 +58,19 @@ function filterByDept(courses, filter) {
   }
 }
 
+//filters courses by showing either online courses only or all courses depending on whether a box is checked
+//accepts array of courses and boolean depending on checkbox state, returns course array
+function filterByMode(courses, checked) {
+  if (checked) {
+    courses = courses.filter(course => {
+      return (
+        course.INSTRUCTION_MODE === 'Online' ||
+        course.INSTRUCTION_MODE === 'Blended:Mtg/Online'
+      )
+    })
+  }
+}
+
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
 })
