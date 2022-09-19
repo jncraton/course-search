@@ -71,6 +71,18 @@ function filterByMode(courses, checked) {
   }
 }
 
+//filters courses by showing either open courses only or all courses
+//accepts array of courses and boolean depending on checkbox state, returns course array
+function filterByStatus(courses, checked) {
+  if (checked) {
+    return courses.filter(course => {
+      return course.ENROLLING === 'Open'
+    })
+  } else {
+    return courses
+  }
+}
+
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
 })
