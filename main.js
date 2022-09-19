@@ -14,6 +14,26 @@ function searchInstr(courses, searchTerm) {
   )
 }
 
+//Accepts an array and the current order of the sort (ASC or DESC)
+//Returns a sorted array by course number
+function sortByCourseNumber(courses, currOrder) {
+  if (currOrder == 'ASC') {
+    return courses.sort((a, b) => b.CRSE.localeCompare(a.CRSE))
+  } else {
+    return courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
+  }
+}
+
+//Accepts an array and the current order of the sort (ASC or DESC)
+//Returns a sorted array by course size
+function sortByCourseSize(courses, currOrder) {
+  if (currOrder == 'ASC') {
+    return courses.sort((a, b) => a.SIZE - b.SIZE)
+  } else {
+    return courses.sort((a, b) => b.SIZE - a.SIZE)
+  }
+}
+
 //Populates the dropdown for departments search.
 function populateDepts() {
   const depts = new Set()
@@ -38,6 +58,19 @@ function filterByDept(courses, filter) {
     })
   }
   return courses
+}
+
+//filters courses by showing either online courses only or all courses depending on whether a box is checked
+//accepts array of courses and boolean depending on checkbox state, returns course array
+function filterByMode(courses, checked) {
+  if (checked) {
+    courses = courses.filter(course => {
+      return (
+        course.INSTRUCTION_MODE === 'Online' ||
+        course.INSTRUCTION_MODE === 'Blended:Mtg/Online'
+      )
+    })
+  }
 }
 
 const rows = courses.map(course => {
