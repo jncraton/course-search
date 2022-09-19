@@ -14,6 +14,30 @@ function searchInstr(courses, searchTerm) {
   )
 }
 
+//Populates the dropdown for departments search.
+function populateDepts() {
+  const depts = new Set()
+  courses.map(course => {
+    let dept = course.CRSE.substring(0, 4)
+    depts.add(dept)
+  })
+
+  const list = Array.from(depts).map(dept => {
+    return dept
+  })
+
+  list.unshift('Choose a department')
+}
+
+//Filters the list by departments, accepts an array and return an array
+function filterByDept(courses, filter) {
+  if (filter) {
+    courses = courses.filter(course => {
+      return course.CRSE.substring(0, 4) === filter
+    })
+  }
+}
+
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
 })
