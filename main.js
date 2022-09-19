@@ -53,11 +53,10 @@ function populateDepts() {
 //Filters the list by departments, accepts an array and return an array
 function filterByDept(courses, filter) {
   if (filter) {
-    courses = courses.filter(course => {
+    return courses.filter(course => {
       return course.CRSE.substring(0, 4) === filter
     })
   }
-  return courses
 }
 
 //filters courses by showing either online courses only or all courses depending on whether a box is checked
