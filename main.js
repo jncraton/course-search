@@ -47,12 +47,13 @@ function populateDepts() {
   })
 
   list.unshift('Choose a department')
+  return list
 }
 
 //Filters the list by departments, accepts an array and return an array
 function filterByDept(courses, filter) {
   if (filter) {
-    courses = courses.filter(course => {
+    return courses.filter(course => {
       return course.CRSE.substring(0, 4) === filter
     })
   }
@@ -78,7 +79,18 @@ function filterByStatus(courses, checked) {
     return courses.filter(course => {
       return course.ENROLLING === 'Open'
     })
-  } else {
+  }
+  else{
+    return courses
+  }
+}
+
+//Funtion that returns the courses that match a specific time from time input box
+function filterByTime(courses, time) {
+  if (time) {
+    courses = courses.filter(course => {
+      return course.START_TIME.includes(time)
+    })
     return courses
   }
 }
