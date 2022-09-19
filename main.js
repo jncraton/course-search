@@ -85,7 +85,7 @@ function filterByTime(courses, time) {
 function populateLib() {
   const libA = new Set()
   const libPop = courses.filter(course => {
-    if(course.NEWLIB != ' ') {
+    if (course.NEWLIB != ' ') {
       let lib = course.NEWLIB
       libA.add(lib)
     }
