@@ -31,7 +31,8 @@ function sortByCourseSize(courses, currOrder) {
     return courses.sort((a, b) => a.SIZE - b.SIZE)
   } else {
     return courses.sort((a, b) => b.SIZE - a.SIZE)
-
+  }
+}
 
 //Populates the dropdown for departments search.
 function populateDepts() {
