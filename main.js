@@ -82,6 +82,31 @@ function filterByTime(courses, time) {
   }
 }
 
+function populateLib() {
+  const libA = new Set()
+  const libPop = courses.filter(course => {
+    if (course.NEWLIB != ' ') {
+      let lib = course.NEWLIB
+      libA.add(lib)
+    }
+  })
+
+  const lib_list = Array.from(libA).map(lib => {
+    return lib
+  })
+
+  lib_list.unshift('Select liberal arts requirements program')
+  return lib_list
+}
+
+function filterByLib(courses, filter) {
+  if (filter) {
+    return courses.filter(course => {
+      return course.NEWLIB === filter
+    })
+  }
+}
+
 const rows = courses.map(course => {
   return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
 })
