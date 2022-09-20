@@ -79,8 +79,7 @@ function filterByStatus(courses, checked) {
     return courses.filter(course => {
       return course.ENROLLING === 'Open'
     })
-  }
-  else{
+  } else {
     return courses
   }
 }
