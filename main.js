@@ -72,6 +72,18 @@ function filterByMode(courses, checked) {
   }
 }
 
+//filters courses by showing either open courses only or all courses
+//accepts array of courses and boolean depending on checkbox state, returns course array
+function filterByStatus(courses, checked) {
+  if (checked) {
+    return courses.filter(course => {
+      return course.ENROLLING === 'Open'
+    })
+  } else {
+    return courses
+  }
+}
+
 //Funtion that returns the courses that match a specific time from time input box
 function filterByTime(courses, time) {
   if (time) {
