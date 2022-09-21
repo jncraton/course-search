@@ -1,0 +1,45 @@
+#wrapper{
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0.5%;
+}
+#card-header-AU {
+    background-color: #000000; 
+    color:floralwhite; 
+    padding-top: 2%;
+    padding-left: 2%;
+    font-size: x-large;
+}
+
+#card-body-AU{
+    background-color: #000000;
+}
+
+#container-AU{
+    min-width: 100%;
+}
+
+#inputGroup-sizing-sm{
+    background-color: #E75A0D;
+    color: floralwhite;
+}
+
+#col-AU{
+    width: 50%;
+}
+
+#col-AU-small{
+    width: 25%;
+}
+
+#input-AU{
+    min-width: 55%;
+}
+
+#toggle-label-AU{
+    color: floralwhite;
+}
+
+#toggle-AU{
+    color: #E75A0D;
+
+}
