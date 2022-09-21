@@ -119,8 +119,33 @@ function filterByLib(courses, filter) {
   }
 }
 
+//Runder all class information
 const rows = courses.map(course => {
-  return `<tr><td>${course.CRSE} - ${course.DESCR}</td></tr>`
+  let onlineIco = ''
+  let openIco = ''
+
+  //use the appropriate icon for online or in-person classes
+  if (course.INSTRUCTION_MODE === 'Face to Face') {
+    onlineIco = '<i class="bi bi-person-fill"></i>'
+  } else {
+    onlineIco = '<i class="bi bi-laptop"></i>'
+  }
+
+  //use the appropriate icon for open or closed classes
+  if (course.ENROLLING === 'Open') {
+    openIco = '<i class="bi bi-check-circle-fill"></i>'
+  } else {
+    openIco = '<i class="bi bi-x-square-fill"></i>'
+  }
+
+  return `<tr><td>${course.CRSE}</td>
+              <td>${course.DESCR}</td>
+              <td>${course.INSTR}</td>
+              <td>${course.DAYS}</td>
+              <td>${course.START_TIME}</td>
+              <td>${course.ENROLLED}</td>
+              <td>${openIco}</td>
+              <td>${onlineIco}</td></tr>`
 })
 
 document.querySelector('tbody').innerHTML = rows.join('')
