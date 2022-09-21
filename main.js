@@ -119,11 +119,10 @@ function filterByLib(courses, filter) {
   }
 }
 
-
 const rows = courses.map(course => {
   let onlineIco = ''
   let openIco = ''
-  
+
   if (course.INSTRUCTION_MODE === 'Face to Face') {
     onlineIco = '<i class="bi bi-person-fill"></i>'
   } else {
