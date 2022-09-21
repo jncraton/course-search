@@ -119,16 +119,19 @@ function filterByLib(courses, filter) {
   }
 }
 
+//Runder all class information
 const rows = courses.map(course => {
   let onlineIco = ''
   let openIco = ''
 
+  //use the appropriate icon for online or in-person classes
   if (course.INSTRUCTION_MODE === 'Face to Face') {
     onlineIco = '<i class="bi bi-person-fill"></i>'
   } else {
     onlineIco = '<i class="bi bi-laptop"></i>'
   }
 
+  //use the appropriate icon for open or closed classes
   if (course.ENROLLING === 'Open') {
     openIco = '<i class="bi bi-check-circle-fill"></i>'
   } else {
