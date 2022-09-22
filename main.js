@@ -126,16 +126,16 @@ const rows = courses.map(course => {
 
   //use the appropriate icon for online or in-person classes
   if (course.INSTRUCTION_MODE === 'Face to Face') {
-    onlineIco = '<i class="bi bi-person-fill"></i>'
+    onlineIco = '<i class="bi bi-person-fill" id="online-AU"></i>'
   } else {
-    onlineIco = '<i class="bi bi-laptop"></i>'
+    onlineIco = '<i class="bi bi-laptop" id="remote-AU"></i>'
   }
 
   //use the appropriate icon for open or closed classes
   if (course.ENROLLING === 'Open') {
-    openIco = '<i class="bi bi-check-circle-fill"></i>'
+    openIco = '<i class="bi bi-check-circle-fill" id="open-AU"></i>'
   } else {
-    openIco = '<i class="bi bi-x-square-fill"></i>'
+    openIco = '<i class="bi bi-x-circle-fill" id="close-AU"></i>'
   }
 
   return `<tr><td>${course.CRSE}</td>
