@@ -9,86 +9,116 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="styles.css" />
     <!--Import Icons-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css"
     />
-
-    <title></title>
-    <style></style>
+    <title>AU Course Catalog</title>
   </head>
 
   <body>
-    <div style="padding: 5%; background-color: #aebdca">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="input-group input-group-sm mb-3">
-              <span class="input-group-text" id="inputGroup-sizing-sm"
-                >Instructor Name</span
-              >
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Ex: Jon Craton"
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-            </div>
-          </div>
-
-          <div class="col">
-            <select
-              class="form-select form-select-sm"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>Choose a department</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-
-          <div class="col">
-            <select
-              class="form-select form-select-sm"
-              aria-label=".form-select-sm example"
-            >
-              <option selected>Choose a liberal art requirement</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="row">
-            <div class="col">
-              <label for="appt">Select a time:</label>
-              <input type="time" id="appt" name="appt" />
-              <input type="submit" />
-            </div>
-            <div class="col">
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Show online courses only</label
-                >
+    <div id="wrapper">
+      <div class="card">
+        <h5 class="card-header" id="card-header-AU">
+          anderson university course catalog
+        </h5>
+        <div class="card-body" id="card-body-AU">
+          <div class="container" id="container-AU">
+            <div class="row">
+              <div class="col-6">
+                <div class="input-group input-group-sm mb-3">
+                  <span
+                    class="input-group-text classsearch-AU"
+                    id="inputGroup-sizing-sm"
+                    >Class or Instructor</span
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="input-AU"
+                    placeholder="Ex: Craton J or Web App"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  id="flexSwitchCheckDefault"
-                />
-                <label class="form-check-label" for="flexSwitchCheckDefault"
-                  >Show open courses only</label
-                >
+
+              <div class="col-md-auto">
+                <select
+                  class="form-select form-select-sm"
+                  id="deptselect-AU"
+                  aria-label=".form-select-sm example"
+                ></select>
+              </div>
+
+              <div class="col-md-auto">
+                <select
+                  class="form-select form-select-sm"
+                  id="libselect-AU"
+                  aria-label=".form-select-sm example"
+                ></select>
+              </div>
+              <div class="row">
+                <div class="col-md-auto">
+                  <div class="input-group input-group-sm mb-3">
+                    <span
+                      class="input-group-text classsearch-AU"
+                      id="inputGroup-sizing-default"
+                    >
+                      Start Time
+                    </span>
+                    <input
+                      type="time"
+                      class="form-control"
+                      id="timeinput-AU"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="form-check form-switch" id="onlinetogglegroup-AU">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label"
+                      id="onlinetoggle-label-AU"
+                      for="flexSwitchCheckDefault"
+                      >Show online courses only</label
+                    >
+                  </div>
+                </div>
+                <div class="col-md-auto">
+                  <div class="form-check form-switch" id="opentogglegroup-AU">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault1"
+                    />
+                    <label
+                      class="form-check-label"
+                      id="opentoggle-label-AU"
+                      for="flexSwitchCheckDefault"
+                      >Show open courses only</label
+                    >
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check form-switch" id="btnholder-AU">
+                    <button
+                      type="button"
+                      id="clearbtn-AU"
+                      class="btn btn-secondary"
+                    >
+                      <i class="bi bi-funnel" id="funnel-AU"></i>Clear Filters
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -96,16 +126,36 @@
       </div>
     </div>
 
-    <div style="margin: 5%">
+    <div id="table-AU">
       <table class="table">
-        <thead>
+        <thead id="thead-AU">
           <tr>
-            <th scope="col">Course Number</th>
+            <th scope="col">
+              Course Number
+              <button
+                type="button"
+                id="cnumsortbutton-AU"
+                class="btn btn-secondary btn-sm"
+                value="DESC"
+              >
+                <i class="bi bi-sort-numeric-up"></i>
+              </button>
+            </th>
             <th scope="col">Name</th>
             <th scope="col">Instructor</th>
             <th scope="col">Days</th>
             <th scope="col">Time</th>
-            <th scope="col">Enrolled</th>
+            <th scope="col">
+              Enrolled
+              <button
+                type="button"
+                id="enrollsortbutton-AU"
+                class="btn btn-secondary btn-sm"
+                value="DESC"
+              >
+                <i class="bi bi-sort-numeric-up"></i>
+              </button>
+            </th>
             <th scope="col">Open</th>
             <th scope="col">Mode</th>
           </tr>
@@ -116,5 +166,4 @@
 
     <script type="module" src="main.js"></script>
   </body>
-  <!---callback search function from main.js-->
 </html>
