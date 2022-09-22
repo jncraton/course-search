@@ -44,29 +44,34 @@
   padding: auto;
 }
 
-#select-AU {
+#deptselect-AU,
+#libselect-AU {
   font-size: small;
   font-weight: normal;
   color: darkslategrey;
   margin-left: 20px;
 }
 
-#togglegroup-AU {
+#onlinetogglegroup-AU,
+#opentogglegroup-AU {
   margin-left: 50px;
   padding: auto;
 }
 
-#toggle-label-AU {
+#onlinetoggle-label-AU,
+#opentoggle-label-AU {
   color: floralwhite;
   font-size: small;
   font-weight: normal;
 }
 
-#flexSwitchCheckDefault:active {
+#flexSwitchCheckDefault:active,
+#flexSwitchCheckDefault1:active {
   background-color: #e14d2a;
 }
 
-#flexSwitchCheckDefault:checked {
+#flexSwitchCheckDefault:checked,
+#flexSwitchCheckDefault1:checked {
   background-color: #e14d2a;
 }
 
@@ -101,7 +106,8 @@
   color: #e14d2a;
 }
 
-#sortbutton-AU {
+#cnumsortbutton-AU,
+#enrollsortbutton-AU {
   background-color: white;
   color: #383838;
   padding: 0.1%;
