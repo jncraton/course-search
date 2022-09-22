@@ -37,7 +37,7 @@
             </div>
 
             <div class="col-md-auto">
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <select class="form-select form-select-sm" id="select-AU" aria-label=".form-select-sm example">
                 <option selected>Choose a department</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-md-auto">
-              <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+              <select class="form-select form-select-sm" id="select-AU" aria-label=".form-select-sm example">
                 <option selected>Choose a liberal art requirement</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -63,17 +63,22 @@
 
               </div>
               <div class="col-md-auto">
-                <div class="form-check form-switch">
+                <div class="form-check form-switch" id="togglegroup-AU">
                   <input class="form-check-input" id="toggle-AU" type="checkbox" id="flexSwitchCheckDefault" />
                   <label class="form-check-label" id="toggle-label-AU" for="flexSwitchCheckDefault">Show online courses
                     only</label>
                 </div>
               </div>
               <div class="col-md-auto">
-                <div class="form-check form-switch">
+                <div class="form-check form-switch" id="togglegroup-AU">
                   <input class="form-check-input" id="toggle-AU" type="checkbox" id="flexSwitchCheckDefault" />
                   <label class="form-check-label" id="toggle-label-AU" for="flexSwitchCheckDefault">Show open courses
                     only</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check form-switch" id="btnholder-AU">
+                  <button type="button" id="clearbtn-AU" class="btn btn-secondary">Clear All Filters</button>
                 </div>
               </div>
             </div>
@@ -84,16 +89,19 @@
 
   </div>
 
-  <div style="margin: 5%">
+  <div id="table-AU">
     <table class="table">
-      <thead>
+      <thead id="thead-AU">
         <tr>
-          <th scope="col">Course Number</th>
+          <th scope="col">Course Number <button type="button" id="sortbutton-AU" class="btn btn-secondary btn-sm"><i
+                class="bi bi-sort-numeric-up"></i></button>
+          </th>
           <th scope="col">Name</th>
           <th scope="col">Instructor</th>
           <th scope="col">Days</th>
           <th scope="col">Time</th>
-          <th scope="col">Enrolled</th>
+          <th scope="col">Enrolled <button type="button" id="sortbutton-AU" class="btn btn-secondary btn-sm"><i
+                class="bi bi-sort-numeric-up"></i></button></th>
           <th scope="col">Open</th>
           <th scope="col">Mode</th>
         </tr>
