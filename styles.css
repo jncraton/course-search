@@ -1,116 +1,117 @@
-#wrapper{
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+#wrapper {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #card-header-AU {
-    background-color: #E14D2A; 
-    color:floralwhite; 
-    padding-top: 2%;
-    padding-left: 2%;
-    font-size: x-large;
-    font-weight: lighter;
+  background-color: #e14d2a;
+  color: floralwhite;
+  padding-top: 2%;
+  padding-left: 2%;
+  font-size: x-large;
+  font-weight: lighter;
 }
 
-#card-body-AU{
-    background-color: #212121;
+#card-body-AU {
+  background-color: #212121;
 }
 
-#container-AU{
-    min-width: 100%;
+#container-AU {
+  min-width: 100%;
 }
 
-#inputGroup-sizing-sm{
-    background-color: #E14D2A;
-    color: white;
-    font-size: small;
-    font-weight: normal;
+#inputGroup-sizing-sm {
+  background-color: #e14d2a;
+  color: white;
+  font-size: small;
+  font-weight: normal;
 }
 
-#input-AU{
-    min-width: 55%;
-    font-size: small;
-    font-weight: normal;
-    color: darkslategrey;
-    padding: auto;
+#input-AU {
+  min-width: 55%;
+  font-size: small;
+  font-weight: normal;
+  color: darkslategrey;
+  padding: auto;
 }
 
-#select-AU{
-    font-size: small;
-    font-weight: normal;
-    color: darkslategrey;
-    margin-left: 20px;
+#select-AU {
+  font-size: small;
+  font-weight: normal;
+  color: darkslategrey;
+  margin-left: 20px;
 }
 
-#togglegroup-AU{
-    margin-left: 50px;
-    padding: auto;
+#togglegroup-AU {
+  margin-left: 50px;
+  padding: auto;
 }
 
-#toggle-label-AU{
-    color: floralwhite;
-    font-size: small;
-    font-weight: normal;
+#toggle-label-AU {
+  color: floralwhite;
+  font-size: small;
+  font-weight: normal;
 }
 
-#toggle-AU:active{
-    background-color: #E14D2A;
+#toggle-AU:active {
+  background-color: #e14d2a;
 }
 
-#toggle-AU:checked{
-    background-color: #E14D2A;
+#toggle-AU:checked {
+  background-color: #e14d2a;
 }
 
-#table-AU{
-    margin: 3%;
-    font-size: small;
-    color: #212121;
+#table-AU {
+  margin: 3%;
+  font-size: small;
+  color: #212121;
 }
 
 #pill-AU {
-    font-size: xx-small;
-    font-weight: normal;
+  font-size: xx-small;
+  font-weight: normal;
 }
 
-#open-AU{
-    margin-left: 30%;
-    color: green;
+#open-AU {
+  margin-left: 30%;
+  color: green;
 }
 
-#close-AU{
-    margin-left: 30%;
-    color: red;
+#close-AU {
+  margin-left: 30%;
+  color: red;
 }
 
-#online-AU{
-    margin-left: 30%;
-    color: darkslategrey;
+#online-AU {
+  margin-left: 30%;
+  color: darkslategrey;
 }
 
-#remote-AU{
-    margin-left: 30%;
-    color: #E14D2A;
+#remote-AU {
+  margin-left: 30%;
+  color: #e14d2a;
 }
 
-#sortbutton-AU{
-    background-color: white;
-    color: #383838;
-    padding:0.1%;
-    border: none;
+#sortbutton-AU {
+  background-color: white;
+  color: #383838;
+  padding: 0.1%;
+  border: none;
 }
 
-#thead-AU{
-    color: #E14D2A;
-    background-color: white;
-    border-bottom: 1.01px solid grey;
+#thead-AU {
+  color: #e14d2a;
+  background-color: white;
+  border-bottom: 1.01px solid grey;
 }
 
-#clearbtn-AU{
-    font-size: xx-small;
-    font-weight: normal;
-    padding: 5px;
+#clearbtn-AU {
+  font-size: xx-small;
+  font-weight: normal;
+  padding: 5px;
 }
 
-#btnholder-AU{
-    margin-left: 60%;
-    padding: auto;
+#btnholder-AU {
+  margin-left: 60%;
+  padding: auto;
 }
