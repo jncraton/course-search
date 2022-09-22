@@ -10,6 +10,7 @@
   padding-left: 2%;
   font-size: x-large;
   font-weight: lighter;
+  text-transform: uppercase;
 }
 
 #card-body-AU {
@@ -20,7 +21,7 @@
   min-width: 100%;
 }
 
-#inputGroup-sizing-sm {
+.classsearch-AU {
   background-color: #e14d2a;
   color: white;
   font-size: small;
@@ -28,6 +29,14 @@
 }
 
 #input-AU {
+  min-width: 55%;
+  font-size: small;
+  font-weight: normal;
+  color: darkslategrey;
+  padding: auto;
+}
+
+#timeinput-AU {
   min-width: 55%;
   font-size: small;
   font-weight: normal;
@@ -53,11 +62,11 @@
   font-weight: normal;
 }
 
-#toggle-AU:active {
+#flexSwitchCheckDefault:active {
   background-color: #e14d2a;
 }
 
-#toggle-AU:checked {
+#flexSwitchCheckDefault:checked {
   background-color: #e14d2a;
 }
 
@@ -117,6 +126,6 @@
 }
 
 #funnel-AU {
-  margin-right: 2%;
-  font-size: medium;
+  margin-right: 3px;
+  font-size: x-small;
 }
