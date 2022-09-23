@@ -87,20 +87,18 @@ function filterByStatus(courses) {
 //Funtion that returns the courses that match a specific time from time input box
 function filterByTime(courses, time) {
   if (time) {
-    let hour = parseInt(time.substring(0,2));
-      if(hour > 11){
-        if (hour === 12){
-          time += ' PM'
-        }
-        else {
-          hour -= 12
-          time = hour + time.substring(2,5) + ' PM'
-        }
+    let hour = parseInt(time.substring(0, 2))
+    if (hour > 11) {
+      if (hour === 12) {
+        time += ' PM'
+      } else {
+        hour -= 12
+        time = hour + time.substring(2, 5) + ' PM'
       }
-      else {
-        time += ' AM'
-      }
-      courses = courses.filter(course => {
+    } else {
+      time += ' AM'
+    }
+    courses = courses.filter(course => {
       return course.START_TIME.includes(time)
     })
     return courses
