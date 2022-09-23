@@ -76,7 +76,6 @@ function filterByMode(courses) {
       course.INSTRUCTION_MODE === 'Online' ||
       course.INSTRUCTION_MODE === 'Blended:Mtg/Online' ||
       course.INSTRUCTION_MODE === 'Online Accelerated'
-
   )
 }
 
@@ -101,12 +100,13 @@ function populateLib() {
   const libA = new Set()
   courses.filter(course => {
     if (course.NEWLIB != ' ') {
-      let lib = course.NEWLIB 
+      let lib = course.NEWLIB
       if (lib === 'FS1UC') {
         lib = lib + ' | Foundational SKills: Understanding College'
       }
       if (lib === 'FS2CDCR') {
-        lib = lib + ' | Foundational SKills: Civil Discourse & Critical Reasoning'
+        lib =
+          lib + ' | Foundational SKills: Civil Discourse & Critical Reasoning'
       }
       if (lib === 'FS3WC') {
         lib = lib + ' | Foundational SKills: Speaking and Listening (writing)'
@@ -154,7 +154,9 @@ function populateLib() {
         lib = lib + ' | Honors Program'
       }
       if (lib === 'CDCR_OR_GI') {
-        lib = lib + ' | Civil Discourse & Critical Reasoning or Global/Intercultural'
+        lib =
+          lib +
+          ' | Civil Discourse & Critical Reasoning or Global/Intercultural'
       }
       libA.add(lib)
     }
@@ -180,9 +182,8 @@ function filterByLib(courses, filter) {
       }
       if (course.NEWLIB === 'CDCR_OR_GI') {
         return course.NEWLIB === filter.substring(0, 10)
-      }
-      else {
-      return course.NEWLIB === filter.substring(0, 5)
+      } else {
+        return course.NEWLIB === filter.substring(0, 5)
       }
     })
   }
