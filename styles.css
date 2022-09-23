@@ -135,3 +135,36 @@
   margin-right: 3px;
   font-size: x-small;
 }
+
+.footer-AU,
+#cone-AU,
+.caution-AU {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.footer-AU {
+  background-color: #212121;
+  margin-top: 5%;
+  margin-bottom: none;
+  padding: 2%;
+  color: white;
+  font-size: small;
+  font-weight: lighter;
+}
+
+#cone-AU {
+  color: #e14d2a;
+  margin-top: 10%;
+  margin-bottom: 1%;
+  font-size: 800%;
+}
+
+.caution-AU {
+  color: #212121;
+  margin-bottom: 10%;
+  font-size: x-large;
+  font-weight: lighter;
+}
