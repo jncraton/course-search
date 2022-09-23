@@ -29,7 +29,7 @@
 }
 
 #input-AU {
-  min-width: 55%;
+  max-width: 400px;
   font-size: small;
   font-weight: normal;
   color: darkslategrey;
@@ -49,7 +49,7 @@
   font-size: small;
   font-weight: normal;
   color: darkslategrey;
-  margin-left: 20px;
+  max-width: 300px;
 }
 
 #onlinetogglegroup-AU,
