@@ -188,11 +188,14 @@ function renderCourses() {
                 <td>${openIco}</td>
                 <td>${onlineIco}</td></tr>`
   })
+  document.querySelector('tbody').innerHTML = rows.join('')
+
   if (rows.length > 0) {
-    document.querySelector('tbody').innerHTML = rows.join('')
+    document.getElementById('showerror-AU').style.display = 'none'
+    document.querySelector('table').style.display = 'table'
   } else {
-    document.getElementById('table-AU').innerHTML =
-      '<i class="bi bi-cone-striped" id="cone-AU"></i><p class="caution-AU"> No class found</p>'
+    document.getElementById('showerror-AU').style.display = 'block'
+    document.querySelector('table').style.display = 'none'
   }
 }
 
