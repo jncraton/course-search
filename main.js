@@ -74,7 +74,8 @@ function filterByMode(courses) {
   return courses.filter(
     course =>
       course.INSTRUCTION_MODE === 'Online' ||
-      course.INSTRUCTION_MODE === 'Blended:Mtg/Online'
+      course.INSTRUCTION_MODE === 'Blended:Mtg/Online' ||
+      course.INSTRUCTION_MODE === 'Online Accelerated'
   )
 }
 
@@ -105,11 +106,69 @@ function filterByTime(courses, time) {
   }
 }
 
+// populates the lib drop down
 function populateLib() {
   const libA = new Set()
   courses.filter(course => {
     if (course.NEWLIB != ' ') {
       let lib = course.NEWLIB
+      if (lib === 'FS1UC') {
+        lib = lib + ' | Foundational SKills: Understanding College'
+      }
+      if (lib === 'FS2CDCR') {
+        lib =
+          lib + ' | Foundational SKills: Civil Discourse & Critical Reasoning'
+      }
+      if (lib === 'FS3WC') {
+        lib = lib + ' | Foundational SKills: Speaking and Listening (writing)'
+      }
+      if (lib === 'FS4SL') {
+        lib = lib + ' | Foundational SKills: Speaking and Listening (speaking)'
+      }
+      if (lib === 'FS5QR') {
+        lib = lib + ' | Foundational SKills: Quantitative Reasoning'
+      }
+      if (lib === 'FS6BL') {
+        lib = lib + ' | Foundational SKills: Bible Literacy'
+      }
+      if (lib === 'FS7PW') {
+        lib = lib + ' | Foundational SKills: Personal Wellness'
+      }
+      if (lib === 'WK1CH') {
+        lib = lib + ' | Christian Ways of Knowing'
+      }
+      if (lib === 'WK2SC') {
+        lib = lib + ' | Scientific Ways of Knowing'
+      }
+      if (lib === 'WK3CV') {
+        lib = lib + ' | Civic Ways of Knowing'
+      }
+      if (lib === 'WK4AE') {
+        lib = lib + ' | Aesthetic Ways of Knowing'
+      }
+      if (lib === 'WK4AP') {
+        lib = lib + ' | Aesthetic Ways of Knowing (Appreciation)'
+      }
+      if (lib === 'WK4AX') {
+        lib = lib + ' | Aesthetic Ways of Knowing (Experiental)'
+      }
+      if (lib === 'WK5SB') {
+        lib = lib + ' | Social and Behavioral Ways of Knowing'
+      }
+      if (lib === 'WK6GL') {
+        lib = lib + ' | Global/Intercultural Ways of Knowing'
+      }
+      if (lib === 'WK7GI') {
+        lib = lib + ' | Global/Intercultural'
+      }
+      if (lib === 'HON') {
+        lib = lib + ' | Honors Program'
+      }
+      if (lib === 'CDCR_OR_GI') {
+        lib =
+          lib +
+          ' | Civil Discourse & Critical Reasoning or Global/Intercultural'
+      }
       libA.add(lib)
     }
   })
@@ -122,10 +181,21 @@ function populateLib() {
   document.getElementById('libselect-AU').innerHTML = lib_list.join('')
 }
 
+//filters the liberal arts programs
 function filterByLib(courses, filter) {
   if (filter) {
     return courses.filter(course => {
-      return course.NEWLIB === filter
+      if (course.NEWLIB === 'FS2CDCR') {
+        return course.NEWLIB === filter.substring(0, 7)
+      }
+      if (course.NEWLIB === 'HON') {
+        return course.NEWLIB === filter.substring(0, 3)
+      }
+      if (course.NEWLIB === 'CDCR_OR_GI') {
+        return course.NEWLIB === filter.substring(0, 10)
+      } else {
+        return course.NEWLIB === filter.substring(0, 5)
+      }
     })
   }
 }
