@@ -14,13 +14,13 @@ function searchByValue(courses, searchTerm) {
 //Accepts an array and the current order of the sort (ASC or DESC)
 //Returns a sorted array by course number
 function sortByCourseNumber(courses, currOrder) {
-  if (currOrder == 'ASC') {
-    document.getElementById('cnumsortbutton-AU').value = 'DESC'
+  if (currOrder == '1') {
+    document.getElementById('cnumsortbutton-AU').value = '2'
     document.getElementById('cnumsortbutton-AU').innerHTML =
       '<i class="bi bi-sort-numeric-down"></i>'
     return courses.sort((a, b) => b.CRSE.localeCompare(a.CRSE))
   } else {
-    document.getElementById('cnumsortbutton-AU').value = 'ASC'
+    document.getElementById('cnumsortbutton-AU').value = '1'
     document.getElementById('cnumsortbutton-AU').innerHTML =
       '<i class="bi bi-sort-numeric-up"></i>'
     return courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
@@ -30,13 +30,13 @@ function sortByCourseNumber(courses, currOrder) {
 //Accepts an array and the current order of the sort (ASC or DESC)
 //Returns a sorted array by course size
 function sortByCourseSize(courses, currOrder) {
-  if (currOrder == 'ASC') {
-    document.getElementById('enrollsortbutton-AU').value = 'DESC'
+  if (currOrder == '1') {
+    document.getElementById('enrollsortbutton-AU').value = '2'
     document.getElementById('enrollsortbutton-AU').innerHTML =
       '<i class="bi bi-sort-numeric-down"></i>'
     return courses.sort((a, b) => b.ENROLLED.localeCompare(a.ENROLLED))
   } else {
-    document.getElementById('enrollsortbutton-AU').value = 'ASC'
+    document.getElementById('enrollsortbutton-AU').value = '1'
     document.getElementById('enrollsortbutton-AU').innerHTML =
       '<i class="bi bi-sort-numeric-up"></i>'
     return courses.sort((a, b) => a.ENROLLED.localeCompare(b.ENROLLED))
@@ -148,10 +148,10 @@ function filterCourses(courses) {
   if (searchLib != '') {
     courses = filterByLib(courses, searchLib)
   }
-  if (sortCnum) {
+  if (sortCnum == '1' || sortCnum == '2') {
     courses = sortByCourseNumber(courses, sortCnum)
   }
-  if (sortEnroll) {
+  if (sortEnroll == '1' || sortEnroll == '2') {
     courses = sortByCourseSize(courses, sortEnroll)
   }
 
@@ -198,14 +198,32 @@ function clear() {
 
 //Render all class information
 document.getElementById('container-AU').addEventListener('input', e => {
+  document.getElementById('cnumsortbutton-AU').value = '0'
+  document.getElementById('enrollsortbutton-AU').value = '0'
   renderCourses()
 })
 
 document.getElementById('cnumsortbutton-AU').addEventListener('click', e => {
+  if (document.getElementById('cnumsortbutton-AU').value == '0') {
+    document.getElementById('cnumsortbutton-AU').value = '1'
+  }
+  if (document.getElementById('enrollsortbutton-AU').value != '0') {
+    document.getElementById('enrollsortbutton-AU').value = '0'
+    document.getElementById('enrollsortbutton-AU').innerHTML =
+      '<i class="bi bi-sort-numeric-up"></i>'
+  }
   renderCourses()
 })
 
 document.getElementById('enrollsortbutton-AU').addEventListener('click', e => {
+  if (document.getElementById('enrollsortbutton-AU').value == '0') {
+    document.getElementById('enrollsortbutton-AU').value = '1'
+  }
+  if (document.getElementById('cnumsortbutton-AU').value != '0') {
+    document.getElementById('cnumsortbutton-AU').value = '0'
+    document.getElementById('cnumsortbutton-AU').innerHTML =
+      '<i class="bi bi-sort-numeric-up"></i>'
+  }
   renderCourses()
 })
 
