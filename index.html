@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title></title>
-    <style></style>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
-
+  
   <body>
     <table>
       <thead>
         <tr>
           <td>Course</td>
+          <td>
+            <div class="dropdown">
+                <button class="dropBtn">Instruction Type</button>
+                  <div class="dropdownContent">
+                    <button type ="button" onclick="filterAll()">All</button>
+                    <button type ="button" onclick="filterOnline()">Online</button> 
+                    <button type ="button" onclick="filterFace()">Face-To-Face</button>
+                  </div>
+                </div>
+          </td>
         </tr>
         <tr></tr>
       </thead>
