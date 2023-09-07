@@ -6,4 +6,4 @@ const rows = courses.map(course => {
           </tr>`
 })
 
-document.querySelector('tbody').innerHTML = rows.join('')
+document.querySelector('tbody').innerHTML = rows.join('');
