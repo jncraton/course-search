@@ -7,11 +7,11 @@ function renderCourses(courses, sortBy) {
   const rows = courses.map(course => {
     if (course.ENROLLING == 'Closed') {
       return `<tr>
-      <td><s>${course.CRSE} - ${course.DESCR}</s></td>
+      <td><s>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</s></td>
     </tr>`
     } else {
       return `<tr>
-      <td>${course.CRSE} - ${course.DESCR}</td>
+      <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
     </tr>`
     }
   })
