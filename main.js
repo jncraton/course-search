@@ -8,7 +8,7 @@ const rows = courses.map(course => {
 
 document.querySelector('tbody').innerHTML = rows.join('')
 
-function filterAll(){
+all.onclick = function filterAll(){
   const rows = courses.map(course => {
     return `<tr>
               <td>${course.CRSE} - ${course.DESCR}</td>
@@ -17,7 +17,7 @@ function filterAll(){
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 
-function filterOnline() {
+online.onclick = function filterOnline() {
   const onlineCourses = courses.filter((course) => course.INSTRUCTION_MODE == "Online");
   const rows2 = onlineCourses.map((course) => {
     return `<tr>
@@ -27,7 +27,7 @@ function filterOnline() {
   document.querySelector('tbody').innerHTML = rows2.join('');
 }
 
-function filterFace(){
+face.onclick = function filterFace(){
   const onlineCourses = courses.filter((course) => course.INSTRUCTION_MODE == "Face to Face");
   const rows = onlineCourses.map((course) => {
     return `<tr>
@@ -38,7 +38,7 @@ function filterFace(){
   document.querySelector('tbody').innerHTML = rows.join('');
 }
 
-function filterHybrid(){
+hybrid.onclick = function filterHybrid(){
   const onlineCourses = courses.filter((course) => course.INSTRUCTION_MODE == "Blended:Mtg/Online");
   const rows = onlineCourses.map((course) => {
     return `<tr>
