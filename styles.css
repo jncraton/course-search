@@ -16,3 +16,15 @@
     display: block;
   }
   .dropdown:hover .dropdownContent {display: block;}
+
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  thead {
+  font-weight: bold;
+  }
+  tbody tr:nth-child(odd) {
+     background-color: silver;
+  }
+  
