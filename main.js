@@ -2,6 +2,7 @@ import { courses } from './courses.js'
 
 const courseTableBody = document.querySelector('tbody')
 const sortSelect = document.getElementById('sortSelect')
+const sortTime = document.getElementById('sortTime')
 
 function renderCourses(courses, sortBy) {
   const rows = courses.map(course => {
@@ -36,4 +37,32 @@ sortSelect.addEventListener('change', () => {
   }
 
   renderCourses(courses, sortBy)
+})
+
+// Filters courses based on selected Time
+function updateTable(selectedTime) {
+  const setTime = selectedTime
+  ? courses.filter(course => {
+    const time = course.START_TIME
+    return time == selectedTime
+  })
+  : courses
+
+  const rows = setTime.map(course => {
+    return `<tr>
+              <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
+            </tr>`
+  })
+
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+
+// Event listener for time
+sortTime.addEventListener('change', event => {
+  const setTime = event.target.value
+  if(setTime == 'All'){
+    updateTable('')
+  } else {
+    updateTable(setTime)
+  }
 })
