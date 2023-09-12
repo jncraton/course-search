@@ -88,7 +88,7 @@ sortSelect.addEventListener('change', () => {
 })
 
 // Filters courses based on selected Time
-function updateTable(selectedTime) {
+function updateTime(selectedTime) {
   const setTime = selectedTime
     ? courses.filter(course => {
         const time = course.START_TIME
@@ -109,8 +109,8 @@ function updateTable(selectedTime) {
 sortTime.addEventListener('change', event => {
   const setTime = event.target.value
   if (setTime == 'All') {
-    updateTable('')
+    updateTime('')
   } else {
-    updateTable(setTime)
+    updateTime(setTime)
   }
 })
