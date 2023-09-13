@@ -5,17 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title></title>
-    <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      thead {
-        font-weight: bold;
-      }
-      tbody tr:nth-child(odd) {
-        background-color: silver;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
 
   <body>
@@ -64,6 +54,17 @@
       <thead>
         <tr>
           <td>Course</td>
+          <td>
+            <div class="dropdown">
+              <button class="dropBtn">Instruction Type</button>
+              <div class="dropdownContent">
+                <button type="button" id="all">All</button>
+                <button type="button" id="online">Online</button>
+                <button type="button" id="face">Face-To-Face</button>
+                <button type="button" id="hybrid">Hybrid</button>
+              </div>
+            </div>
+          </td>
         </tr>
         <tr></tr>
       </thead>
