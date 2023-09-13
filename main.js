@@ -50,16 +50,17 @@ updateTable('')
 document.querySelector('tbody').innerHTML = rows.join('')
 const courseTableBody = document.querySelector('tbody')
 const sortSelect = document.getElementById('sortSelect')
+const sortTime = document.getElementById('sortTime')
 
 function renderCourses(courses, sortBy) {
   const rows = courses.map(course => {
     if (course.ENROLLING == 'Closed') {
       return `<tr>
-      <td><s>${course.CRSE} - ${course.DESCR}</s></td>
+      <td><s>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</s></td>
     </tr>`
     } else {
       return `<tr>
-      <td>${course.CRSE} - ${course.DESCR}</td>
+      <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
     </tr>`
     }
   })
@@ -131,3 +132,31 @@ hybrid.onclick = function filterHybrid() {
   })
   document.querySelector('tbody').innerHTML = rows.join('')
 }
+
+// Filters courses based on selected Time
+function updateTime(selectedTime) {
+  const setTime = selectedTime
+    ? courses.filter(course => {
+        const time = course.START_TIME
+        return time == selectedTime
+      })
+    : courses
+
+  const rows = setTime.map(course => {
+    return `<tr>
+              <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
+            </tr>`
+  })
+
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+
+// Event listener for time
+sortTime.addEventListener('change', event => {
+  const setTime = event.target.value
+  if (setTime == 'All') {
+    updateTime('')
+  } else {
+    updateTime(setTime)
+  }
+})
