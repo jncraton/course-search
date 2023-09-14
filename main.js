@@ -70,9 +70,7 @@ courses.forEach(course => {
   specialConsentSet.add(course.CONSENT)
 })
 // Populate special consent filter
-const specialConsentElement = document.getElementById(
-  'selectConsent'
-)
+const specialConsentElement = document.getElementById('selectConsent')
 Array.from(specialConsentSet)
   .sort()
   .forEach(value => {
@@ -81,7 +79,7 @@ Array.from(specialConsentSet)
     option.textContent = value
     specialConsentElement.appendChild(option)
   })
-  specialConsentElement.addEventListener('change', updateTable)
+specialConsentElement.addEventListener('change', updateTable)
 
 // Event listener for sorting dropdown
 selectSort.addEventListener('change', updateTable)
