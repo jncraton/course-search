@@ -86,35 +86,49 @@ selectSort.addEventListener('change', updateTable)
 
 const coursesTableBody = document.getElementById('coursesTableBody')
 
-function updateTable() {
+// Update the updateTable function to accept an optional searchQuery parameter
+// Update the updateTable function to accept an optional searchQuery parameter
+function updateTable(searchQuery = '') {
   // Clear all existing rows
-  coursesTableBody.innerHTML = ''
+  coursesTableBody.innerHTML = '';
 
-  // Add a row to the table for each course
-  courses.forEach(course => {
-    const row = document.createElement('tr')
-    if (course.ENROLLING == 'Closed') row.classList.add('closed-course')
+  // Filter courses based on the search query and other filters
+  const filteredCourses = courses.filter(course => {
+    // Check if the course name (DESCR) contains the search query
+    return course.DESCR.toLowerCase().includes(searchQuery.toLowerCase());
+  });
+
+
+  // Add a row to the table for each filtered course
+  filteredCourses.forEach(course => {
+    const row = document.createElement('tr');
+    if (course.ENROLLING === 'Closed') row.classList.add('closed-course');
     columns.forEach(columnID => {
-      const cell = document.createElement('td')
-      /* TODO: Filter based on current dropdown values (Issue #85)
-         The relevant element IDs are selectSubject, selectStartTime, and selectInstructionMode.
-         The select element's value will be blank if the "All" option is selected.
-         Otherwise, it the value will match the text displayed in the dropdown.
-      */
-      if (columnID == 'CONSENT') {
-        if (course.CONSENT == 'No Special Consent Required')
-          cell.innerText = 'None'
-        else if (course.CONSENT == 'Instructor Consent Required')
-          cell.innerText = 'Instructor'
-        else if (course.CONSENT == 'Department Consent Required')
-          cell.innerText = 'Department'
-        else cell.innerText = course[columnID]
-      } else cell.innerText = course[columnID]
-      row.appendChild(cell)
-    })
-    coursesTableBody.appendChild(row)
-  })
+      const cell = document.createElement('td');
+      // Handle the CONSENT column separately as in your existing code
+      if (columnID === 'CONSENT') {
+        if (course.CONSENT === 'No Special Consent Required')
+          cell.innerText = 'None';
+        else if (course.CONSENT === 'Instructor Consent Required')
+          cell.innerText = 'Instructor';
+        else if (course.CONSENT === 'Department Consent Required')
+          cell.innerText = 'Department';
+        else cell.innerText = course[columnID];
+      } else {
+        cell.innerText = course[columnID];
+      }
+      row.appendChild(cell);
+    });
+    coursesTableBody.appendChild(row);
+  });
 }
 
-// Initial unfiltered table
-updateTable(courses, 'courseNumber')
+// Event listener for input changes in the search bar
+searchInput.addEventListener('input', () => {
+  const searchQuery = searchInput.value;
+  updateTable(searchQuery);
+});
+
+// Initial table population (without search)
+updateTable();
+
