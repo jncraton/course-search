@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -9,63 +9,59 @@
   </head>
 
   <body>
-    <div>
-      <label for="departments">Departments:</label>
-      <select id="departments">
-        <option value="Departments">Department</option>
-      </select>
-    </div>
-    <label for="sortSelect">Sort by:</label>
-    <select id="sortSelect">
-      <option value="courseNumber">Course Number</option>
-      <option value="enrolled">Enrolled</option>
-    </select>
-    <label for="instruction-type">Instruction Type:</label>
-    <select id="instruction-type">
-      <option value="all">All</option>
-      <option value="online">Online</option>
-      <option value="face">Face-To-Face</option>
-      <option value="hybrid">Hybrid</option>
-    </select>
+    <h1>Anderson University Course Schedule</h1>
 
-    <label for="sortTime">Time:</label>
-    <select id="sortTime">
-      <option value="All">All Times</option>
-      <option value=" ">None</option>
-      <option value="08:00 AM">8:00AM</option>
-      <option value="08:30 AM">8:30AM</option>
-      <option value="09:00 AM">9:00AM</option>
-      <option value="09:30 AM">9:30AM</option>
-      <option value="10:00 AM">10:00AM</option>
-      <option value="10:30 AM">10:30AM</option>
-      <option value="11:00 AM">11:00AM</option>
-      <option value="11:30 AM">11:30AM</option>
-      <option value="12:00 PM">12:00PM</option>
-      <option value="12:30 PM">12:30PM</option>
-      <option value="01:00 PM">01:00PM</option>
-      <option value="01:30 PM">01:30PM</option>
-      <option value="02:00 PM">02:00PM</option>
-      <option value="02:30 PM">02:30PM</option>
-      <option value="03:00 PM">03:00PM</option>
-      <option value="03:30 PM">03:30PM</option>
-      <option value="04:00 PM">04:00PM</option>
-      <option value="04:30 PM">04:30PM</option>
-      <option value="05:00 PM">05:00PM</option>
-      <option value="05:30 PM">05:30PM</option>
-      <option value="06:00 PM">06:00PM</option>
-      <option value="06:30 PM">06:30PM</option>
-      <option value="07:00 PM">07:00PM</option>
-      <option value="07:30 PM">07:30PM</option>
-    </select>
+    <div id="filters-container">
+      <div>
+        <label for="selectSubject">Subject</label>
+        <select id="selectSubject">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="selectStartTime">Start Time</label>
+        <select id="selectStartTime">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="selectInstructionMode">Instrucion Mode</label>
+        <select id="selectInstructionMode">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="selectConsent">Special Consent</label>
+        <select id="selectConsent">
+          <option value="">All</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="selectSort">Sort By</label>
+        <select id="selectSort">
+          <option value="">Course Caption</option>
+          <option value="enrolled">Enrolled</option>
+        </select>
+      </div>
+    </div>
     <table>
       <thead>
         <tr>
-          <td>Course</td>
-          <td></td>
+          <td>Course Caption</td>
+          <td>Course Title</td>
+          <td>Instructor</td>
+          <td>Days</td>
+          <td>Start Time</td>
+          <td>Consent</td>
+          <td>Instruction Mode</td>
+          <td>Enrolled</td>
         </tr>
-        <tr></tr>
       </thead>
-      <tbody></tbody>
+      <tbody id="coursesTableBody"></tbody>
     </table>
     <script type="module" src="main.js"></script>
   </body>
