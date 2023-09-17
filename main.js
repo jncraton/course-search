@@ -87,6 +87,7 @@ sortSelect.addEventListener('change', () => {
   renderCourses(courses, sortBy)
 })
 
+  //filters items based on button clicked
 all.onclick = function filterAll() {
   const rows = courses.map(course => {
     return `<tr>
