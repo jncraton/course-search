@@ -1,162 +1,120 @@
 import { courses } from './courses.js'
 
-// Create set that stores departments first 4 characters and doesnt repeat
-const departmentSet = new Set()
+const columns = [
+  'CRSE',
+  'DESCR',
+  'INSTR',
+  'DAYS',
+  'START_TIME',
+  'CONSENT',
+  'INSTRUCTION_MODE',
+  'ENROLLED',
+]
 
+// Create a Set that stores the subject code, which is the first four characters of the course caption
+const subjectSet = new Set()
 courses.forEach(course => {
-  const department = course.CRSE.slice(0, 4)
-  departmentSet.add(department)
+  subjectSet.add(course.CRSE.slice(0, 4))
 })
+// Populate subject filter
+const selectSubjectElement = document.getElementById('selectSubject')
+Array.from(subjectSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectSubjectElement.appendChild(option)
+  })
+selectSubjectElement.addEventListener('change', updateTable)
 
-// Populate dropdown menu
-const departmentsDropdown = document.getElementById('departments')
-departmentSet.forEach(department => {
-  const option = document.createElement('option')
-  option.value = department
-  option.textContent = `Department ${department}`
-  departmentsDropdown.appendChild(option)
+// Create a Set that stores the start times
+const startTimeSet = new Set()
+courses.forEach(course => {
+  startTimeSet.add(course.START_TIME)
 })
+// Populate start time filter
+const selectStartTimeElement = document.getElementById('selectStartTime')
+Array.from(startTimeSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectStartTimeElement.appendChild(option)
+  })
+selectStartTimeElement.addEventListener('change', updateTable)
 
-const rows = courses.map(course => {
-  return `<tr>
-            <td>${course.CRSE} - ${course.DESCR}</td>
-          </tr>`
+// Create a Set that stores the instruction modes
+const instructionModeSet = new Set()
+courses.forEach(course => {
+  instructionModeSet.add(course.INSTRUCTION_MODE)
 })
-
-//Function updates table based on the department that was selected
-function updateTable(selectedDepartment) {
-  const filteredCourses = selectedDepartment
-    ? courses.filter(course => {
-        const department = course.CRSE.slice(0, 4)
-        return department == selectedDepartment
-      })
-    : courses
-
-  const rows = filteredCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
+// Populate instruction mode filter
+const selectInstructionModeElement = document.getElementById(
+  'selectInstructionMode',
+)
+Array.from(instructionModeSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectInstructionModeElement.appendChild(option)
   })
+selectInstructionModeElement.addEventListener('change', updateTable)
 
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-departmentsDropdown.addEventListener('change', event => {
-  const selectedDepartment = event.target.value
-  updateTable(selectedDepartment)
+// Create a Set that stores the special consent options
+const specialConsentSet = new Set()
+courses.forEach(course => {
+  specialConsentSet.add(course.CONSENT)
 })
-
-updateTable('')
-document.querySelector('tbody').innerHTML = rows.join('')
-const courseTableBody = document.querySelector('tbody')
-const sortSelect = document.getElementById('sortSelect')
-const sortTime = document.getElementById('sortTime')
-
-function renderCourses(courses, sortBy) {
-  const rows = courses.map(course => {
-    if (course.ENROLLING == 'Closed') {
-      return `<tr>
-      <td><s>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</s></td>
-    </tr>`
-    } else {
-      return `<tr>
-      <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
-    </tr>`
-    }
+// Populate special consent filter
+const specialConsentElement = document.getElementById('selectConsent')
+Array.from(specialConsentSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    specialConsentElement.appendChild(option)
   })
+specialConsentElement.addEventListener('change', updateTable)
 
-  courseTableBody.innerHTML = rows.join('')
+// Event listener for sorting dropdown
+selectSort.addEventListener('change', updateTable)
+
+const coursesTableBody = document.getElementById('coursesTableBody')
+
+function updateTable() {
+  // Clear all existing rows
+  coursesTableBody.innerHTML = ''
+
+  // Add a row to the table for each course
+  courses.forEach(course => {
+    const row = document.createElement('tr')
+    if (course.ENROLLING == 'Closed') row.classList.add('closed-course')
+    columns.forEach(columnID => {
+      const cell = document.createElement('td')
+      /* TODO: Filter based on current dropdown values (Issue #85)
+         The relevant element IDs are selectSubject, selectStartTime, and selectInstructionMode.
+         The select element's value will be blank if the "All" option is selected.
+         Otherwise, it the value will match the text displayed in the dropdown.
+      */
+      if (columnID == 'CONSENT') {
+        if (course.CONSENT == 'No Special Consent Required')
+          cell.innerText = 'None'
+        else if (course.CONSENT == 'Instructor Consent Required')
+          cell.innerText = 'Instructor'
+        else if (course.CONSENT == 'Department Consent Required')
+          cell.innerText = 'Department'
+        else cell.innerText = course[columnID]
+      } else cell.innerText = course[columnID]
+      row.appendChild(cell)
+    })
+    coursesTableBody.appendChild(row)
+  })
 }
 
-// Initial render
-renderCourses(courses, 'courseNumber')
-
-// Event listener for sorting
-sortSelect.addEventListener('change', () => {
-  const sortBy = sortSelect.value
-
-  if (sortBy === 'courseNumber') {
-    courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
-  } else if (sortBy === 'enrolled') {
-    courses.sort((a, b) => parseInt(b.ENROLLED) - parseInt(a.ENROLLED))
-  } else {
-    // Default sorting or invalid option
-    courses.sort((a, b) => a.DESCR.localeCompare(b.DESCR))
-  }
-
-  renderCourses(courses, sortBy)
-})
-
-all.onclick = function filterAll() {
-  const rows = courses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-online.onclick = function filterOnline() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Online',
-  )
-  const rows2 = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows2.join('')
-}
-
-face.onclick = function filterFace() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Face to Face',
-  )
-  const rows = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-hybrid.onclick = function filterHybrid() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Blended:Mtg/Online',
-  )
-  const rows = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-// Filters courses based on selected Time
-function updateTime(selectedTime) {
-  const setTime = selectedTime
-    ? courses.filter(course => {
-        const time = course.START_TIME
-        return time == selectedTime
-      })
-    : courses
-
-  const rows = setTime.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
-            </tr>`
-  })
-
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-// Event listener for time
-sortTime.addEventListener('change', event => {
-  const setTime = event.target.value
-  if (setTime == 'All') {
-    updateTime('')
-  } else {
-    updateTime(setTime)
-  }
-})
+// Initial unfiltered table
+updateTable(courses, 'courseNumber')
