@@ -87,11 +87,12 @@ selectSort.addEventListener('change', updateTable)
 const coursesTableBody = document.getElementById('coursesTableBody')
 
 // Update table rows given the search parameter
-function updateTable(searchQuery = '') {
+function updateTable() {
   // Clear all existing rows
   coursesTableBody.innerHTML = ''
 
   // Filter courses based on the search query and other filters
+  const searchQuery = searchInput.value;
   const filteredCourses = courses.filter(course => {
     // Check if the course name (DESCR) contains the search query
     return (
@@ -127,10 +128,7 @@ function updateTable(searchQuery = '') {
 
 // Event listener for input changes in the search bar
 searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
-searchInput.addEventListener('input', () => {
-  const searchQuery = searchInput.value
-  updateTable(searchQuery)
-})
+searchInput.addEventListener('input', updateTable)
 
 // Initial unfiltered table
-updateTable('')
+updateTable()
