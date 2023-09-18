@@ -52,7 +52,7 @@ courses.forEach(course => {
 })
 // Populate instruction mode filter
 const selectInstructionModeElement = document.getElementById(
-  'selectInstructionMode',
+  'selectInstructionMode'
 )
 Array.from(instructionModeSet)
   .sort()
@@ -92,7 +92,7 @@ function updateTable() {
   coursesTableBody.innerHTML = ''
 
   // Filter courses based on the search query and other filters
-  const searchQuery = searchInput.value;
+  const searchQuery = searchInput.value
   const filteredCourses = courses.filter(course => {
     // Check if the course name (DESCR) contains the search query
     return (
