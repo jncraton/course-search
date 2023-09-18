@@ -86,7 +86,6 @@ selectSort.addEventListener('change', updateTable)
 
 const coursesTableBody = document.getElementById('coursesTableBody')
 
-
 // Update the updateTable function to accept an optional searchQuery parameter
 function updateTable(searchQuery = '') {
   // Clear all existing rows
