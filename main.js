@@ -86,6 +86,7 @@ selectSort.addEventListener('change', updateTable)
 
 const coursesTableBody = document.getElementById('coursesTableBody')
 
+
 // Update the updateTable function to accept an optional searchQuery parameter
 function updateTable(searchQuery = '') {
   // Clear all existing rows
@@ -132,5 +133,5 @@ searchInput.addEventListener('input', () => {
   updateTable(searchQuery)
 })
 
-// Initial table population (without search)
-updateTable()
+// Initial unfiltered table
+updateTable(courses, 'courseNumber')
