@@ -125,6 +125,7 @@ function updateTable(searchQuery = '') {
 }
 
 // Event listener for input changes in the search bar
+searchInput.setAttribute('size',searchInput.getAttribute('placeholder').length);
 searchInput.addEventListener('input', () => {
   const searchQuery = searchInput.value;
   updateTable(searchQuery);
