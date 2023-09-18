@@ -89,48 +89,48 @@ const coursesTableBody = document.getElementById('coursesTableBody')
 // Update the updateTable function to accept an optional searchQuery parameter
 function updateTable(searchQuery = '') {
   // Clear all existing rows
-  coursesTableBody.innerHTML = '';
+  coursesTableBody.innerHTML = ''
 
   // Filter courses based on the search query and other filters
   const filteredCourses = courses.filter(course => {
     // Check if the course name (DESCR) contains the search query
-   return  course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) || 
-   course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) || 
-   course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
-  });
-
+    return (
+      course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })
 
   // Add a row to the table for each filtered course
   filteredCourses.forEach(course => {
-    const row = document.createElement('tr');
-    if (course.ENROLLING === 'Closed') row.classList.add('closed-course');
+    const row = document.createElement('tr')
+    if (course.ENROLLING === 'Closed') row.classList.add('closed-course')
     columns.forEach(columnID => {
-      const cell = document.createElement('td');
+      const cell = document.createElement('td')
       // Handle the CONSENT column separately as in your existing code
       if (columnID === 'CONSENT') {
         if (course.CONSENT === 'No Special Consent Required')
-          cell.innerText = 'None';
+          cell.innerText = 'None'
         else if (course.CONSENT === 'Instructor Consent Required')
-          cell.innerText = 'Instructor';
+          cell.innerText = 'Instructor'
         else if (course.CONSENT === 'Department Consent Required')
-          cell.innerText = 'Department';
-        else cell.innerText = course[columnID];
+          cell.innerText = 'Department'
+        else cell.innerText = course[columnID]
       } else {
-        cell.innerText = course[columnID];
+        cell.innerText = course[columnID]
       }
-      row.appendChild(cell);
-    });
-    coursesTableBody.appendChild(row);
-  });
+      row.appendChild(cell)
+    })
+    coursesTableBody.appendChild(row)
+  })
 }
 
 // Event listener for input changes in the search bar
-searchInput.setAttribute('size',searchInput.getAttribute('placeholder').length);
+searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
 searchInput.addEventListener('input', () => {
-  const searchQuery = searchInput.value;
-  updateTable(searchQuery);
-});
+  const searchQuery = searchInput.value
+  updateTable(searchQuery)
+})
 
 // Initial table population (without search)
-updateTable();
-
+updateTable()
