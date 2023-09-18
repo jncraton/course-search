@@ -87,7 +87,6 @@ selectSort.addEventListener('change', updateTable)
 const coursesTableBody = document.getElementById('coursesTableBody')
 
 // Update the updateTable function to accept an optional searchQuery parameter
-// Update the updateTable function to accept an optional searchQuery parameter
 function updateTable(searchQuery = '') {
   // Clear all existing rows
   coursesTableBody.innerHTML = '';
@@ -95,7 +94,9 @@ function updateTable(searchQuery = '') {
   // Filter courses based on the search query and other filters
   const filteredCourses = courses.filter(course => {
     // Check if the course name (DESCR) contains the search query
-    return course.DESCR.toLowerCase().includes(searchQuery.toLowerCase());
+   return  course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) || 
+   course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) || 
+   course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
   });
 
 
