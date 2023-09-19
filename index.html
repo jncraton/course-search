@@ -1,75 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <body>
-    <h1>Anderson University Course Schedule</h1>
+  <title>Anderson University Course Schedule</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
 
-    <label for="searchInput">Search: </label>
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Search by Course Caption, Course Title, or Instructor"
-    />
+<body>
+  <h1>Anderson University Course Schedule</h1>
 
-    <div id="filters-container">
-      <div>
-        <label for="selectSubject">Subject</label>
-        <select id="selectSubject">
-          <option value="">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectStartTime">Start Time</label>
-        <select id="selectStartTime">
-          <option value="">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectInstructionMode">Instrucion Mode</label>
-        <select id="selectInstructionMode">
-          <option value="">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectConsent">Special Consent</label>
-        <select id="selectConsent">
-          <option value="">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectSort">Sort By</label>
-        <select id="selectSort">
-          <option value="">Course Caption</option>
-          <option value="enrolled">Enrolled</option>
-        </select>
-      </div>
+  <div id="filters-container">
+    <div>
+      <label for="selectSubject">Subject</label>
+      <select id="selectSubject">
+        <option value="">All</option>
+      </select>
     </div>
-    <table>
-      <thead>
-        <tr>
-          <td>Course Caption</td>
-          <td>Course Title</td>
-          <td>Instructor</td>
-          <td>Days</td>
-          <td>Start Time</td>
-          <td>Consent</td>
-          <td>Instruction Mode</td>
-          <td>Enrolled</td>
-        </tr>
-      </thead>
-      <tbody id="coursesTableBody"></tbody>
-    </table>
-    <script type="module" src="main.js"></script>
-  </body>
+
+    <div>
+      <label for="selectStartTime">Start Time</label>
+      <select id="selectStartTime">
+        <option value="">All</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="selectInstructionMode">Instruction Mode</label>
+      <select id="selectInstructionMode">
+        <option value="">All</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="selectConsent">Special Consent</label>
+      <select id="selectConsent">
+        <option value="">All</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="selectSort">Sort By</label>
+      <select id="selectSort">
+        <option value="">Course Caption</option>
+        <option value="enrolled">Enrolled</option>
+      </select>
+    </div>
+
+    <div id="raven-container">
+      <img src="images/raven.png" alt="Raven Image">
+    </div>
+  </div>
+
+  <div id="content">
+    <div id="search-container">
+      <label for="searchInput">Search: </label>
+      <input type="text" id="searchInput" placeholder="Search by Course Caption, Course Title, or Instructor">
+    </div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <td>Course Caption</td>
+        <td>Course Title</td>
+        <td>Instructor</td>
+        <td>Days</td>
+        <td>Start Time</td>
+        <td>Consent</td>
+        <td>Instruction Mode</td>
+        <td>Enrolled</td>
+      </tr>
+    </thead>
+    <tbody id="coursesTableBody"></tbody>
+  </table>
+
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
