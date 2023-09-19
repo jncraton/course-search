@@ -13,6 +13,7 @@ const columns = [
 
 // Grab element for sorter
 const selectSort = document.getElementById('selectSort')
+selectSort.addEventListener('change', () => {updateTable()})
 
 // Create a Set that stores the subject code, which is the first four characters of the course caption
 const subjectSet = new Set()
@@ -29,11 +30,11 @@ Array.from(subjectSet)
     option.textContent = value
     selectSubjectElement.appendChild(option)
   })
-selectSubjectElement.addEventListener('change', () => {updateTable('subject')})
+selectSubjectElement.addEventListener('change', () => {updateTable()})
 
 // Populate start time filter
 const selectStartTimeElement = document.getElementById('selectStartTime')
-selectStartTimeElement.addEventListener('change', () => {updateTable('time')})
+selectStartTimeElement.addEventListener('change', () => {updateTable()})
 
 // Create a Set that stores the instruction modes
 const instructionModeSet = new Set()
@@ -52,7 +53,7 @@ Array.from(instructionModeSet)
     option.textContent = value
     selectInstructionModeElement.appendChild(option)
   })
-selectInstructionModeElement.addEventListener('change', () => {updateTable('instruction')})
+selectInstructionModeElement.addEventListener('change', () => {updateTable()})
 
 // Create a Set that stores the special consent options
 const specialConsentSet = new Set()
@@ -69,12 +70,12 @@ Array.from(specialConsentSet)
     option.textContent = value
     specialConsentElement.appendChild(option)
   })
-specialConsentElement.addEventListener('change', () => {updateTable('consent')})
+specialConsentElement.addEventListener('change', () => {updateTable()})
 
 // Element table body
 const coursesTableBody = document.getElementById('coursesTableBody')
 
-function updateTable(element) {
+function updateTable() {
   // Clear all existing rows
   coursesTableBody.innerHTML = ''
   const setSubject = selectSubjectElement.value
@@ -108,8 +109,16 @@ function updateTable(element) {
     else { return ( course.CRSE.slice(0,4) == setSubject && course.START_TIME == setTime && course.INSTRUCTION_MODE == setInstrction && course.CONSENT == setConsent ) }    
   })
 
+  // No filter (load in filter)
   if(!filteredCourses){
     filteredCourses = courses
+  }
+
+  // Sort by setSort value
+  if(setSort === 'All') {
+    filteredCourses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
+  } else if (setSort === 'enrolled') {
+    filteredCourses.sort((a, b) => parseInt(b.ENROLLED) - parseInt(a.ENROLLED))
   }
 
   // Add a row to the table for each course
@@ -119,11 +128,7 @@ function updateTable(element) {
     if (course.ENROLLING === 'Closed') row.classList.add('closed-course')
     columns.forEach(columnID => {
       const cell = document.createElement('td')
-      /* TODO: Filter based on current dropdown values (Issue #85)
-         The relevant element IDs are selectSubject, selectStartTime, and selectInstructionMode.
-         The select element's value will be blank if the "All" option is selected.
-         Otherwise, it the value will match the text displayed in the dropdown.
-      */
+
      // Updates 'Consent' column to shorted field
       if (columnID === 'CONSENT') {
         if (course.CONSENT == 'No Special Consent Required')
