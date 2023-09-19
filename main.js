@@ -94,16 +94,16 @@ function updateTable() {
   const setConsent = specialConsentElement.value
   const setSort = selectSort.value
 
-// Filter courses based on the search query and other filters
-const searchQuery = searchInput.value
-const searchCourses = courses.filter(course => {
-  // Check if the course name (DESCR) contains the search query
-  return (
-    course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
-  )
-})
+  // Filter courses based on the search query and other filters
+  const searchQuery = searchInput.value
+  const searchCourses = courses.filter(course => {
+    // Check if the course name (DESCR) contains the search query
+    return (
+      course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
+    )
+  })
 
   // Filter Courses
   const filteredCourses = searchCourses.filter(course => {
