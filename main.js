@@ -94,8 +94,19 @@ function updateTable() {
   const setConsent = specialConsentElement.value
   const setSort = selectSort.value
 
+// Filter courses based on the search query and other filters
+const searchQuery = searchInput.value
+const searchCourses = courses.filter(course => {
+  // Check if the course name (DESCR) contains the search query
+  return (
+    course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
+  )
+})
+
   // Filter Courses
-  const filteredCourses = courses.filter(course => {
+  const filteredCourses = searchCourses.filter(course => {
     // No filter
     if (
       setSubject === 'All' &&
@@ -229,6 +240,10 @@ function updateTable() {
     coursesTableBody.appendChild(row)
   })
 }
+
+// Event listener for input changes in the search bar
+searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
+searchInput.addEventListener('input', updateTable)
 
 // Initial unfiltered table
 updateTable('')
