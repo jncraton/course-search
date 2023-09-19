@@ -1,163 +1,159 @@
 import { courses } from './courses.js'
 
-// Create set that stores departments first 4 characters and doesnt repeat
-const departmentSet = new Set()
+const columns = [
+  'CRSE',
+  'DESCR',
+  'INSTR',
+  'DAYS',
+  'START_TIME',
+  'CONSENT',
+  'INSTRUCTION_MODE',
+  'ENROLLED',
+]
+// Add event listeners to table headers
+const tableHeaders = document.querySelectorAll('thead th');
+tableHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const columnID = header.id;
+    updateTable(columnID);
+  });
+});
 
+// Create a Set that stores the subject code, which is the first four characters of the course caption
+const subjectSet = new Set()
 courses.forEach(course => {
-  const department = course.CRSE.slice(0, 4)
-  departmentSet.add(department)
+  subjectSet.add(course.CRSE.slice(0, 4))
 })
+// Populate subject filter
+const selectSubjectElement = document.getElementById('selectSubject')
+Array.from(subjectSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectSubjectElement.appendChild(option)
+  })
+selectSubjectElement.addEventListener('change', updateTable)
 
-// Populate dropdown menu
-const departmentsDropdown = document.getElementById('departments')
-departmentSet.forEach(department => {
-  const option = document.createElement('option')
-  option.value = department
-  option.textContent = `Department ${department}`
-  departmentsDropdown.appendChild(option)
+// Create a Set that stores the start times
+const startTimeSet = new Set()
+courses.forEach(course => {
+  startTimeSet.add(course.START_TIME)
 })
+// Populate start time filter
+const selectStartTimeElement = document.getElementById('selectStartTime')
+Array.from(startTimeSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectStartTimeElement.appendChild(option)
+  })
+selectStartTimeElement.addEventListener('change', updateTable)
 
-const rows = courses.map(course => {
-  return `<tr>
-            <td>${course.CRSE} - ${course.DESCR}</td>
-          </tr>`
+// Create a Set that stores the instruction modes
+const instructionModeSet = new Set()
+courses.forEach(course => {
+  instructionModeSet.add(course.INSTRUCTION_MODE)
 })
+// Populate instruction mode filter
+const selectInstructionModeElement = document.getElementById(
+  'selectInstructionMode',
+)
+Array.from(instructionModeSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    selectInstructionModeElement.appendChild(option)
+  })
+selectInstructionModeElement.addEventListener('change', updateTable)
 
-//Function updates table based on the department that was selected
-function updateTable(selectedDepartment) {
-  const filteredCourses = selectedDepartment
-    ? courses.filter(course => {
-        const department = course.CRSE.slice(0, 4)
-        return department == selectedDepartment
-      })
-    : courses
+// Create a Set that stores the special consent options
+const specialConsentSet = new Set()
+courses.forEach(course => {
+  specialConsentSet.add(course.CONSENT)
+})
+// Populate special consent filter
+const specialConsentElement = document.getElementById('selectConsent')
+Array.from(specialConsentSet)
+  .sort()
+  .forEach(value => {
+    const option = document.createElement('option')
+    option.value = value
+    option.textContent = value
+    specialConsentElement.appendChild(option)
+  })
+specialConsentElement.addEventListener('change', updateTable)
 
-  const rows = filteredCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
+// Event listener for sorting dropdown
+selectSort.addEventListener('change', updateTable)
+
+const coursesTableBody = document.getElementById('coursesTableBody')
+
+// Update table rows given the search parameter
+function updateTable(colId) {
+  // Clear all existing rows
+  coursesTableBody.innerHTML = ''
+
+  // Filter courses based on the search query and other filters
+  const searchQuery = searchInput.value
+  const filteredCourses = courses.filter(course => {
+    // Check if the course name (DESCR) contains the search query
+    return (
+      course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.DESCR.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      course.INSTR.toLowerCase().includes(searchQuery.toLowerCase())
+    )
   })
 
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-departmentsDropdown.addEventListener('change', event => {
-  const selectedDepartment = event.target.value
-  updateTable(selectedDepartment)
-})
-
-updateTable('')
-document.querySelector('tbody').innerHTML = rows.join('')
-const courseTableBody = document.querySelector('tbody')
-const sortSelect = document.getElementById('sortSelect')
-const sortTime = document.getElementById('sortTime')
-
-function renderCourses(courses, sortBy) {
-  const rows = courses.map(course => {
-    if (course.ENROLLING == 'Closed') {
-      return `<tr>
-      <td><s>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</s></td>
-    </tr>`
-    } else {
-      return `<tr>
-      <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
-    </tr>`
-    }
+  // Add a row to the table for each filtered course
+  filteredCourses.forEach(course => {
+    const row = document.createElement('tr')
+    if (course.ENROLLING === 'Closed') row.classList.add('closed-course')
+    columns.forEach(columnID => {
+      const cell = document.createElement('td')
+      // Handle the CONSENT column separately as in your existing code
+      if (columnID === 'CONSENT') {
+        if (course.CONSENT === 'No Special Consent Required')
+          cell.innerText = 'None'
+        else if (course.CONSENT === 'Instructor Consent Required')
+          cell.innerText = 'Instructor'
+        else if (course.CONSENT === 'Department Consent Required')
+          cell.innerText = 'Department'
+        else cell.innerText = course[columnID]
+      } else {
+        cell.innerText = course[columnID]
+      }
+      row.appendChild(cell)
+    })
+    coursesTableBody.appendChild(row)
   })
-
-  courseTableBody.innerHTML = rows.join('')
-}
-
-// Initial render
-renderCourses(courses, 'courseNumber')
-
-// Event listener for sorting
-sortSelect.addEventListener('change', () => {
-  const sortBy = sortSelect.value
-
-  if (sortBy === 'courseNumber') {
-    courses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
-  } else if (sortBy === 'enrolled') {
-    courses.sort((a, b) => parseInt(b.ENROLLED) - parseInt(a.ENROLLED))
-  } else {
-    // Default sorting or invalid option
-    courses.sort((a, b) => a.DESCR.localeCompare(b.DESCR))
+  if (colId != null){
+    columnSort(colId)
   }
 
-  renderCourses(courses, sortBy)
-})
-
-  //filters items based on button clicked
-all.onclick = function filterAll() {
-  const rows = courses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows.join('')
 }
 
-online.onclick = function filterOnline() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Online',
-  )
-  const rows2 = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows2.join('')
-}
-
-face.onclick = function filterFace() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Face to Face',
-  )
-  const rows = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-hybrid.onclick = function filterHybrid() {
-  const onlineCourses = courses.filter(
-    course => course.INSTRUCTION_MODE == 'Blended:Mtg/Online',
-  )
-  const rows = onlineCourses.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-  })
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-// Filters courses based on selected Time
-function updateTime(selectedTime) {
-  const setTime = selectedTime
-    ? courses.filter(course => {
-        const time = course.START_TIME
-        return time == selectedTime
-      })
-    : courses
-
-  const rows = setTime.map(course => {
-    return `<tr>
-              <td>${course.CRSE} - ${course.DESCR} - ${course.START_TIME}</td>
-            </tr>`
-  })
-
-  document.querySelector('tbody').innerHTML = rows.join('')
-}
-
-// Event listener for time
-sortTime.addEventListener('change', event => {
-  const setTime = event.target.value
-  if (setTime == 'All') {
-    updateTime('')
-  } else {
-    updateTime(setTime)
+function columnSort(Id){
+  if ((Id == "CRSE") || (Id == "DESCR") || (Id == "INSTR")){
+    alert(Id)
+    
   }
-})
+  if (Id == "START_TIME"){
+    alert("Sort by time")
+  }
+  if (Id == "ENROLLED"){
+    alert("Sort by enrolled")
+  }
+  
+}
+// Event listener for input changes in the search bar
+searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
+searchInput.addEventListener('input', updateTable)
+
+// Initial unfiltered table
+updateTable()
