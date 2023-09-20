@@ -1,7 +1,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #000000;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 h1 {
@@ -22,7 +22,7 @@ h1 {
 }
 
 #filters-container select {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
   border: 1px solid #ff8000;
   margin-left: 20px;
@@ -33,11 +33,11 @@ thead {
   font-weight: bold;
   background-color: #ff8000;
   color: #000000;
-  text-align: center; 
+  text-align: center;
 }
 
 tbody tr:nth-child(odd) {
-  background-color: silver; 
+  background-color: silver;
 }
 
 tr.closed-course {
@@ -58,14 +58,14 @@ table {
 }
 
 #searchInput {
-background-color: #aaa;  
-margin-left: 20px;
+  background-color: #aaa;
+  margin-left: 20px;
   margin-top: 20px;
   color: black;
 }
 
 #searchInput::placeholder {
-color:#777;
+  color: #777;
 }
 
 #raven-container {

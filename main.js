@@ -49,7 +49,7 @@ courses.forEach(course => {
 })
 // Populate instruction mode filter
 const selectInstructionModeElement = document.getElementById(
-  'selectInstructionMode',
+  'selectInstructionMode'
 )
 Array.from(instructionModeSet)
   .sort()
