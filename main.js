@@ -10,12 +10,18 @@ const columns = [
   'INSTRUCTION_MODE',
   'ENROLLED',
 ]
-// Add event listeners to table headers
+
+// 0 is decending 1 is accending
+let order = 0
+let currentSortColumn = null
+
 const tableHeaders = document.querySelectorAll('thead th');
 tableHeaders.forEach(header => {
   header.addEventListener('click', () => {
     const columnID = header.id;
-    updateTable(columnID);
+    order = columnID === currentSortColumn ? (order === 0 ? 1 : 0) : 1;
+    currentSortColumn = columnID;
+    updateTable(columnID, order);
   });
 });
 
@@ -24,6 +30,7 @@ const subjectSet = new Set()
 courses.forEach(course => {
   subjectSet.add(course.CRSE.slice(0, 4))
 })
+
 // Populate subject filter
 const selectSubjectElement = document.getElementById('selectSubject')
 Array.from(subjectSet)
@@ -95,9 +102,9 @@ selectSort.addEventListener('change', updateTable)
 const coursesTableBody = document.getElementById('coursesTableBody')
 
 // Update table rows given the search parameter
-function updateTable(colId) {
+function updateTable(colId, colOrder) {
   // Clear all existing rows
-  coursesTableBody.innerHTML = ''
+ // coursesTableBody.innerHTML = ''
 
   // Filter courses based on the search query and other filters
   const searchQuery = searchInput.value
@@ -110,6 +117,21 @@ function updateTable(colId) {
     )
   })
 
+  if (colId && colOrder != null) {
+    filteredCourses = filteredCourses.sort((a, b) => {
+      const valueA = a[colId];
+      const valueB = b[colId];
+
+      // Handle sorting for numeric values
+      if (!isNaN(valueA) && !isNaN(valueB)) {
+        return (colOrder === 0 ? valueB - valueA : valueA - valueB);
+      }
+
+      // Handle sorting for non-numeric values (alphabetical)
+      return (colOrder === 0 ? valueB.localeCompare(valueA) : valueA.localeCompare(valueB));
+    });
+  }
+  coursesTableBody.innerHTML = '';
   // Add a row to the table for each filtered course
   filteredCourses.forEach(course => {
     const row = document.createElement('tr')
@@ -132,25 +154,35 @@ function updateTable(colId) {
     })
     coursesTableBody.appendChild(row)
   })
-  if (colId != null){
-    columnSort(colId)
+   // If sorting is requested, apply sorting here
+  if (colId && colOrder != null) {
+    columnSort(colId, colOrder, filteredCourses);
   }
-
 }
 
-function columnSort(Id){
-  if ((Id == "CRSE") || (Id == "DESCR") || (Id == "INSTR")){
-    alert(Id)
-    
+function columnSort(colId, colOrder, data) {
+  if (data) {
+    // Sorting based on the provided data
+    data.sort((a, b) => {
+      const valueA = a[colId];
+      const valueB = b[colId];
+
+      // Handle sorting for numeric values
+      if (!isNaN(valueA) && !isNaN(valueB)) {
+        return colOrder === 0 ? valueB - valueA : valueA - valueB;
+      }
+
+      // Handle sorting for non-numeric values (alphabetical)
+      return colOrder === 0 ? valueB.localeCompare(valueA) : valueA.localeCompare(valueB);
+    });
   }
-  if (Id == "START_TIME"){
-    alert("Sort by time")
-  }
-  if (Id == "ENROLLED"){
-    alert("Sort by enrolled")
-  }
-  
+
+  // Update the table with the sorted data
+  updateTable();
 }
+
+
+
 // Event listener for input changes in the search bar
 searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
 searchInput.addEventListener('input', updateTable)
