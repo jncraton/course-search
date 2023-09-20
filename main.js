@@ -11,26 +11,26 @@ const columns = [
   'ENROLLED',
 ]
 
-// 0 is decending 1 is accending
-let order = 0
-let currentSortColumn = null
-
+// Add event listeners to table headers
 const tableHeaders = document.querySelectorAll('thead th');
 tableHeaders.forEach(header => {
   header.addEventListener('click', () => {
     const columnID = header.id;
-    order = columnID === currentSortColumn ? (order === 0 ? 1 : 0) : 1;
-    currentSortColumn = columnID;
-    updateTable(columnID, order);
+    updateTable(columnID);
   });
 });
+
+// Grab element for sorter
+/*const selectSort = document.getElementById('selectSort')
+selectSort.addEventListener('change', () => {
+  updateTable()
+})*/
 
 // Create a Set that stores the subject code, which is the first four characters of the course caption
 const subjectSet = new Set()
 courses.forEach(course => {
   subjectSet.add(course.CRSE.slice(0, 4))
 })
-
 // Populate subject filter
 const selectSubjectElement = document.getElementById('selectSubject')
 Array.from(subjectSet)
@@ -41,24 +41,15 @@ Array.from(subjectSet)
     option.textContent = value
     selectSubjectElement.appendChild(option)
   })
-selectSubjectElement.addEventListener('change', updateTable)
-
-// Create a Set that stores the start times
-const startTimeSet = new Set()
-courses.forEach(course => {
-  startTimeSet.add(course.START_TIME)
+selectSubjectElement.addEventListener('change', () => {
+  updateTable()
 })
+
 // Populate start time filter
 const selectStartTimeElement = document.getElementById('selectStartTime')
-Array.from(startTimeSet)
-  .sort()
-  .forEach(value => {
-    const option = document.createElement('option')
-    option.value = value
-    option.textContent = value
-    selectStartTimeElement.appendChild(option)
-  })
-selectStartTimeElement.addEventListener('change', updateTable)
+selectStartTimeElement.addEventListener('change', () => {
+  updateTable()
+})
 
 // Create a Set that stores the instruction modes
 const instructionModeSet = new Set()
@@ -77,7 +68,9 @@ Array.from(instructionModeSet)
     option.textContent = value
     selectInstructionModeElement.appendChild(option)
   })
-selectInstructionModeElement.addEventListener('change', updateTable)
+selectInstructionModeElement.addEventListener('change', () => {
+  updateTable()
+})
 
 // Create a Set that stores the special consent options
 const specialConsentSet = new Set()
@@ -94,21 +87,25 @@ Array.from(specialConsentSet)
     option.textContent = value
     specialConsentElement.appendChild(option)
   })
-specialConsentElement.addEventListener('change', updateTable)
+specialConsentElement.addEventListener('change', () => {
+  updateTable()
+})
 
-// Event listener for sorting dropdown
-selectSort.addEventListener('change', updateTable)
-
+// Element table body
 const coursesTableBody = document.getElementById('coursesTableBody')
 
-// Update table rows given the search parameter
-function updateTable(colId, colOrder) {
+function updateTable(colId) {
   // Clear all existing rows
- // coursesTableBody.innerHTML = ''
+  coursesTableBody.innerHTML = ''
+  const setSubject = selectSubjectElement.value
+  const setTime = selectStartTimeElement.value
+  const setInstrction = selectInstructionModeElement.value
+  const setConsent = specialConsentElement.value
+  const setSort = colId
 
   // Filter courses based on the search query and other filters
   const searchQuery = searchInput.value
-  const filteredCourses = courses.filter(course => {
+  const searchCourses = courses.filter(course => {
     // Check if the course name (DESCR) contains the search query
     return (
       course.CRSE.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -117,75 +114,180 @@ function updateTable(colId, colOrder) {
     )
   })
 
-  if (colId && colOrder != null) {
-    filteredCourses = filteredCourses.sort((a, b) => {
-      const valueA = a[colId];
-      const valueB = b[colId];
+  // Filter Courses
+  const filteredCourses = searchCourses.filter(course => {
+    // No filter
+    if (
+      setSubject === 'All' &&
+      setTime === 'All' &&
+      setInstrction === 'All' &&
+      setConsent === 'All'
+    ) {
+      return courses
+    }
+    // Single filter
+    else if (
+      setTime === 'All' &&
+      setInstrction === 'All' &&
+      setConsent === 'All'
+    ) {
+      return course.CRSE.slice(0, 4) == setSubject
+    } else if (
+      setSubject === 'All' &&
+      setInstrction === 'All' &&
+      setConsent === 'All'
+    ) {
+      return course.START_TIME == setTime
+    } else if (
+      setSubject === 'All' &&
+      setTime === 'All' &&
+      setConsent === 'All'
+    ) {
+      return course.INSTRUCTION_MODE == setInstrction
+    } else if (
+      setSubject === 'All' &&
+      setTime === 'All' &&
+      setInstrction === 'All'
+    ) {
+      return course.CONSENT == setConsent
+    }
+    // 2 filters
+    else if (setSubject === 'All' && setTime === 'All') {
+      return (
+        course.CONSENT == setConsent && course.INSTRUCTION_MODE == setInstrction
+      )
+    } else if (setSubject === 'All' && setInstrction === 'All') {
+      return course.CONSENT == setConsent && course.START_TIME == setTime
+    } else if (setSubject === 'All' && setConsent === 'All') {
+      return (
+        course.INSTRUCTION_MODE == setInstrction && course.START_TIME == setTime
+      )
+    } else if (setTime === 'All' && setInstrction === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject && course.CONSENT == setConsent
+      )
+    } else if (setTime === 'All' && setConsent === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject &&
+        course.INSTRUCTION_MODE == setInstrction
+      )
+    } else if (setInstrction === 'All' && setConsent === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject && course.START_TIME == setTime
+      )
+    }
+    // 3 filters
+    else if (setSubject === 'All') {
+      return (
+        course.START_TIME == setTime &&
+        course.INSTRUCTION_MODE == setInstrction &&
+        course.CONSENT == setConsent
+      )
+    } else if (setTime === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject &&
+        course.INSTRUCTION_MODE == setInstrction &&
+        course.CONSENT == setConsent
+      )
+    } else if (setInstrction === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject &&
+        course.START_TIME == setTime &&
+        course.CONSENT == setConsent
+      )
+    } else if (setConsent === 'All') {
+      return (
+        course.CRSE.slice(0, 4) == setSubject &&
+        course.INSTRUCTION_MODE == setInstrction &&
+        course.START_TIME == setTime
+      )
+    }
+    // All filters
+    else {
+      return (
+        course.CRSE.slice(0, 4) == setSubject &&
+        course.START_TIME == setTime &&
+        course.INSTRUCTION_MODE == setInstrction &&
+        course.CONSENT == setConsent
+      )
+    }
+  })
 
-      // Handle sorting for numeric values
-      if (!isNaN(valueA) && !isNaN(valueB)) {
-        return (colOrder === 0 ? valueB - valueA : valueA - valueB);
-      }
-
-      // Handle sorting for non-numeric values (alphabetical)
-      return (colOrder === 0 ? valueB.localeCompare(valueA) : valueA.localeCompare(valueB));
-    });
+  
+  // No filter (load in filter)
+  if (!filteredCourses) {
+    filteredCourses = courses
   }
-  coursesTableBody.innerHTML = '';
-  // Add a row to the table for each filtered course
+            /////////////////////////////////////////////////////////////////////////new code
+  console.log(setSort)
+  // Sort by setSort value
+  if (setSort === 'CRSE') {
+    filteredCourses.sort((a, b) => a.CRSE.localeCompare(b.CRSE))
+  } else if (setSort === 'DESCR') {
+    filteredCourses.sort((a, b) => a.DESCR.localeCompare(b.DESCR))
+  } else if (setSort === 'INSTR') {
+    filteredCourses.sort((a, b) => a.INSTR.localeCompare(b.INSTR))
+  } else if (setSort === 'DAYS') {
+    filteredCourses.sort((a, b) => a.DAYS.localeCompare(b.DAYS))
+  } else if (setSort === 'START_TIME') {
+    filteredCourses.sort((a, b) => checkStartTime(b.START_TIME) - checkStartTime(a.START_TIME))
+  } else if (setSort === 'CONSENT') {
+    filteredCourses.sort((a, b) => a.CONSENT.localeCompare(b.CONSENT))
+  } else if (setSort === 'INSTRUCTION_MODE') {
+    filteredCourses.sort((a, b) => a.INSTRUCTION_MODE.localeCompare(b.INSTRUCTION_MODE))
+  } else if (setSort === 'ENROLLED') {
+    filteredCourses.sort((a, b) => parseInt(b.ENROLLED) - parseInt(a.ENROLLED))
+  } 
+    //fucntion to convert to total minutes and then return
+  function checkStartTime(time){
+    const timeParts = time.match(/^(\d{2}):(\d{2}) ([AP][M])$/);
+    if (timeParts) {
+      let hours = parseInt(timeParts[1], 10);
+      const minutes = parseInt(timeParts[2], 10);
+      const ampm = timeParts[3]
+      var totalminutes = 0
+      // Check if the time is in the AM or PM
+      if (ampm === 'AM' && hours === 12) {
+        totalminutes += (hours + 12) * 60;
+      } else if (ampm === 'PM' && hours !== 12) {
+        totalminutes += hours;
+      }
+      totalminutes += minutes;
+    }
+    if(typeof totalminutes === 'undefined'){
+      totalminutes = 0;
+    }
+    return totalminutes;
+  }
+    ///////////////////////////////////////////////////////////////////////////////////////////////
+  // Add a row to the table for each course
   filteredCourses.forEach(course => {
     const row = document.createElement('tr')
+
     if (course.ENROLLING === 'Closed') row.classList.add('closed-course')
     columns.forEach(columnID => {
       const cell = document.createElement('td')
-      // Handle the CONSENT column separately as in your existing code
+
+      // Updates 'Consent' column to shorted field
       if (columnID === 'CONSENT') {
-        if (course.CONSENT === 'No Special Consent Required')
+        if (course.CONSENT == 'No Special Consent Required')
           cell.innerText = 'None'
         else if (course.CONSENT === 'Instructor Consent Required')
           cell.innerText = 'Instructor'
         else if (course.CONSENT === 'Department Consent Required')
           cell.innerText = 'Department'
         else cell.innerText = course[columnID]
-      } else {
-        cell.innerText = course[columnID]
-      }
+      } else cell.innerText = course[columnID]
       row.appendChild(cell)
     })
+
     coursesTableBody.appendChild(row)
   })
-   // If sorting is requested, apply sorting here
-  if (colId && colOrder != null) {
-    columnSort(colId, colOrder, filteredCourses);
-  }
 }
-
-function columnSort(colId, colOrder, data) {
-  if (data) {
-    // Sorting based on the provided data
-    data.sort((a, b) => {
-      const valueA = a[colId];
-      const valueB = b[colId];
-
-      // Handle sorting for numeric values
-      if (!isNaN(valueA) && !isNaN(valueB)) {
-        return colOrder === 0 ? valueB - valueA : valueA - valueB;
-      }
-
-      // Handle sorting for non-numeric values (alphabetical)
-      return colOrder === 0 ? valueB.localeCompare(valueA) : valueA.localeCompare(valueB);
-    });
-  }
-
-  // Update the table with the sorted data
-  updateTable();
-}
-
-
 
 // Event listener for input changes in the search bar
 searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
 searchInput.addEventListener('input', updateTable)
 
 // Initial unfiltered table
-updateTable()
+updateTable('')
