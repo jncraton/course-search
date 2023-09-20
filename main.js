@@ -12,13 +12,13 @@ const columns = [
 ]
 
 // Add event listeners to table headers
-const tableHeaders = document.querySelectorAll('thead th');
+const tableHeaders = document.querySelectorAll('thead th')
 tableHeaders.forEach(header => {
   header.addEventListener('click', () => {
-    const columnID = header.id;
-    updateTable(columnID);
-  });
-});
+    const columnID = header.id
+    updateTable(columnID)
+  })
+})
 
 // Grab element for sorter
 /*const selectSort = document.getElementById('selectSort')
@@ -213,12 +213,11 @@ function updateTable(colId) {
     }
   })
 
-  
   // No filter (load in filter)
   if (!filteredCourses) {
     filteredCourses = courses
   }
-            /////////////////////////////////////////////////////////////////////////new code
+  /////////////////////////////////////////////////////////////////////////new code
   console.log(setSort)
   // Sort by setSort value
   if (setSort === 'CRSE') {
@@ -230,19 +229,23 @@ function updateTable(colId) {
   } else if (setSort === 'DAYS') {
     filteredCourses.sort((a, b) => a.DAYS.localeCompare(b.DAYS))
   } else if (setSort === 'START_TIME') {
-    filteredCourses.sort((a, b) => checkStartTime(a.START_TIME) - checkStartTime(b.START_TIME))
+    filteredCourses.sort(
+      (a, b) => checkStartTime(a.START_TIME) - checkStartTime(b.START_TIME),
+    )
   } else if (setSort === 'CONSENT') {
     filteredCourses.sort((a, b) => a.CONSENT.localeCompare(b.CONSENT))
   } else if (setSort === 'INSTRUCTION_MODE') {
-    filteredCourses.sort((a, b) => a.INSTRUCTION_MODE.localeCompare(b.INSTRUCTION_MODE))
+    filteredCourses.sort((a, b) =>
+      a.INSTRUCTION_MODE.localeCompare(b.INSTRUCTION_MODE),
+    )
   } else if (setSort === 'ENROLLED') {
     filteredCourses.sort((a, b) => parseInt(b.ENROLLED) - parseInt(a.ENROLLED))
-  } 
-    //fucntion to convert to total minutes and then return
-  function checkStartTime(time){
-    return new Date(`1970-01-01 ${time} Z`).getTime();
   }
-    ///////////////////////////////////////////////////////////////////////////////////////////////
+  //fucntion to convert to total minutes and then return
+  function checkStartTime(time) {
+    return new Date(`1970-01-01 ${time} Z`).getTime()
+  }
+  ///////////////////////////////////////////////////////////////////////////////////////////////
   // Add a row to the table for each course
   filteredCourses.forEach(course => {
     const row = document.createElement('tr')
