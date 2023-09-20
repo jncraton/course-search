@@ -9,27 +9,15 @@
   </head>
 
   <body>
-    <h1>Anderson University Course Schedule</h1>
+    <h1><img src="images/raven.png" alt="" style="height: 1em; padding-right: 0.5em;">University Course Schedule</h1>
 
-    <label for="searchInput">Search: </label>
-    <input
-      type="text"
-      id="searchInput"
-      placeholder="Search by Course Caption, Course Title, or Instructor"
-    />
-
-    <div id="filters-container">
-      <div>
-        <label for="selectSubject">Subject: </label>
-        <select id="selectSubject">
-          <option value="All">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectStartTime">Start Time: </label>
-        <select id="selectStartTime">
-          <option value="All">All Times</option>
+    <div class="navbar">
+      <select class="dropdown-content" id="selectSubject">
+        <option value="All">Subject</option>
+      </select>
+  
+      <select class="dropdown-content" id="selectStartTime">
+          <option value="All">Start Time</option>
           <option value=" ">No Set Time</option>
           <option value="07:00 AM">7:00 AM</option>
           <option value="08:00 AM">8:00 AM</option>
@@ -54,31 +42,27 @@
           <option value="06:30 PM">6:30 PM</option>
           <option value="07:00 PM">7:00 PM</option>
           <option value="07:30 PM">7:30 PM</option>
-        </select>
-      </div>
+      </select>
+  
+      <select class="dropdown-content" id="selectInstructionMode">
+        <option value="All">Instruction Mode</option>
+      </select>
+  
+      <select class="dropdown-content" id="selectConsent">
+        <option value="All">Special Consent</option>
+      </select>
+  
+      <select class="dropdown-content" id="selectSort">
+        <option value="All">Course Caption</option>
+        <option value="enrolled">Enrolled</option>
+      </select>
 
-      <div>
-        <label for="selectInstructionMode">Instrucion Mode: </label>
-        <select id="selectInstructionMode">
-          <option value="All">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectConsent">Special Consent: </label>
-        <select id="selectConsent">
-          <option value="All">All</option>
-        </select>
-      </div>
-
-      <div>
-        <label for="selectSort">Sort By: </label>
-        <select id="selectSort">
-          <option value="All">Course Caption</option>
-          <option value="enrolled">Enrolled</option>
-        </select>
-      </div>
+      <input
+      type="text"
+      id="searchInput"
+      placeholder="Search by Course Caption, Course Title, or Instructor"/>
     </div>
+  
     <table>
       <thead>
         <tr>
