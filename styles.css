@@ -47,7 +47,6 @@ tr.closed-course {
 table,
 th,
 td {
-  margin-left: 20px;
   border: 1px solid #ff8000;
   border-collapse: collapse;
   text-align: left;
@@ -55,6 +54,7 @@ td {
 
 table {
   margin-top: 3px;
+  width: 100%;
 }
 
 #searchInput {
@@ -82,7 +82,7 @@ table {
 .navbar {
   overflow: hidden;
   background-color: #333;
-  width: 92%;
+  width: 100%;
 }
 
 .navbar a {
