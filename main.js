@@ -230,7 +230,7 @@ function updateTable(colId) {
   } else if (setSort === 'DAYS') {
     filteredCourses.sort((a, b) => a.DAYS.localeCompare(b.DAYS))
   } else if (setSort === 'START_TIME') {
-    filteredCourses.sort((a, b) => checkStartTime(b.START_TIME) - checkStartTime(a.START_TIME))
+    filteredCourses.sort((a, b) => checkStartTime(a.START_TIME) - checkStartTime(b.START_TIME))
   } else if (setSort === 'CONSENT') {
     filteredCourses.sort((a, b) => a.CONSENT.localeCompare(b.CONSENT))
   } else if (setSort === 'INSTRUCTION_MODE') {
@@ -240,24 +240,7 @@ function updateTable(colId) {
   } 
     //fucntion to convert to total minutes and then return
   function checkStartTime(time){
-    const timeParts = time.match(/^(\d{2}):(\d{2}) ([AP][M])$/);
-    if (timeParts) {
-      let hours = parseInt(timeParts[1], 10);
-      const minutes = parseInt(timeParts[2], 10);
-      const ampm = timeParts[3]
-      var totalminutes = 0
-      // Check if the time is in the AM or PM
-      if (ampm === 'AM' && hours === 12) {
-        totalminutes += (hours + 12) * 60;
-      } else if (ampm === 'PM' && hours !== 12) {
-        totalminutes += hours;
-      }
-      totalminutes += minutes;
-    }
-    if(typeof totalminutes === 'undefined'){
-      totalminutes = 0;
-    }
-    return totalminutes;
+    return new Date(`1970-01-01 ${time} Z`).getTime();
   }
     ///////////////////////////////////////////////////////////////////////////////////////////////
   // Add a row to the table for each course
@@ -290,4 +273,4 @@ searchInput.setAttribute('size', searchInput.getAttribute('placeholder').length)
 searchInput.addEventListener('input', updateTable)
 
 // Initial unfiltered table
-updateTable('')
+updateTable()
