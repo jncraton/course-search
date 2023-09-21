@@ -20,12 +20,6 @@ tableHeaders.forEach(header => {
   })
 })
 
-// Grab element for sorter
-/*const selectSort = document.getElementById('selectSort')
-selectSort.addEventListener('change', () => {
-  updateTable()
-})*/
-
 // Create a Set that stores the subject code, which is the first four characters of the course caption
 const subjectSet = new Set()
 courses.forEach(course => {

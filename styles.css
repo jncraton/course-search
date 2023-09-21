@@ -38,10 +38,6 @@ thead {
   text-align: center;
 }
 
-tbody tr:nth-child(odd) {
-  background-color: silver;
-}
-
 tr.closed-course {
   text-decoration: line-through;
 }
