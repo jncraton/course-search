@@ -116,3 +116,11 @@ table {
   font-family: inherit;
   margin: 0;
 }
+
+input:focus {
+  outline: 2px solid #007bff;
+}
+
+select:focus {
+  outline: 2px solid #007bff;
+}
