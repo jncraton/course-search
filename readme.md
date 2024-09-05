@@ -4,4 +4,4 @@
 
 A tool to search for courses.
 
-[Deployed Application](https://cpsc4430-course-search.netlify.app)
+[Deployed Application](https://jncraton.github.io/course-search/)
