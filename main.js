@@ -14,7 +14,7 @@ function reloadTable() {
 
 reloadTable()
 
-function filterOptions(event) {
+function filterOptions() {
   const departmentCode = document.querySelector("#dept-filter").value
   console.log(departmentCode)
   if (departmentCode === "") {
@@ -22,8 +22,7 @@ function filterOptions(event) {
   }
   else {
     filteredCourses = courses.filter(course => {
-      console.log(course.CRSE.substring(0, 4), departmentCode, course.CRSE.substring(0, 4) === departmentCode, )
-      return course.CRSE.substring(0, 4) === departmentCode
+      return course.CRSE.substring(0, 4) === departmentCode.toUpperCase()
     })
   }
   reloadTable()
