@@ -14,9 +14,24 @@ function reloadTable() {
 
 reloadTable()
 
+function reloadDepartmentOptions() {
+  const deptOptions = []
+  const deptOptionsHTML = courses.map(course => {
+    const dept = course.CRSE.substring(0, 4)
+    if (!deptOptions.includes(dept)) {
+      deptOptions.push(dept)
+      return `<option>${dept}</option>`
+    } else {
+      return ""
+    }
+  })
+  document.querySelector('#dept-filter').innerHTML = deptOptionsHTML.join('')
+}
+reloadDepartmentOptions()
+
 function filterOptions() {
   const departmentCode = document.querySelector("#dept-filter").value
-  console.log(departmentCode)
+
   if (departmentCode === "") {
     filteredCourses = courses
   }
