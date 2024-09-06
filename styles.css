@@ -1,0 +1,17 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #ffd; /* Light yellow color for odd rows */
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light gray color for even rows */
+  }
