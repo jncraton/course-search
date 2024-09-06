@@ -6,10 +6,7 @@ const hide_special_consent = true;
 const rows = courses.map(course => {
   if (hide_special_consent == true) {
   	if (course.CONSENT != 'No Special Consent Required') {
-  	  return `<tr>
-  	  		<td>Not allowed</td>
-  	  		</tr>`
-  		}
+  	  return}
   	else {
       return `<tr>
             <td>${course.CRSE} - ${course.DESCR}</td>
