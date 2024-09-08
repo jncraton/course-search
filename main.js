@@ -11,8 +11,8 @@ function loadTable(){
 }
 
 function onButtonClick() {
-  courses.sort((a,b) => a.ENROLLED - b.ENROLLED);
-  console.log(courses);
+  courses.sort((b,a) => b.ENROLLED - a.ENROLLED);
+  loadTable();
   alert('Button clicked!');
 }
 
