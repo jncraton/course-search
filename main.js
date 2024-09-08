@@ -1,6 +1,6 @@
 import { courses } from './courses.js'
 
-function loadTable(){
+function reloadTable(){
   const rows = courses.map(course => {
     return `<tr>
         <td>${course.CRSE} - ${course.DESCR}</td>
@@ -12,8 +12,7 @@ function loadTable(){
 
 function onButtonClick() {
   courses.sort((b,a) => b.ENROLLED - a.ENROLLED);
-  loadTable();
-  alert('Button clicked!');
+  reloadTable();
 }
 
 const button = document.querySelector('button');
