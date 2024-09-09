@@ -1,9 +1,28 @@
 import { courses } from './courses.js'
 
-const rows = courses.map(course => {
-  return `<tr>
-            <td>${course.CRSE} - ${course.DESCR}</td>
-          </tr>`
-})
+function createTable(tableContent){
+  const rows = tableContent.map(row => {
+    return `<tr>
+              <td>${row.CRSE} - ${row.DESCR}</td>
+            </tr>`
+  });
+  
+  document.querySelector('tbody').innerHTML = rows.join('');
+}
+window.onload = createTable(courses);
 
-document.querySelector('tbody').innerHTML = rows.join('')
+function filterCoursesByStartTime() {
+  const filterTime = document.getElementById("startTimes").value;
+  
+  const filteredCourses = courses.filter(course => {
+    return course.START_TIME >= filterTime
+  }
+  );
+  createTable(filteredCourses);
+}
+
+document.getElementById("startTimes").addEventListener('change',filterCoursesByStartTime);
+
+
+
+
