@@ -1,7 +1,9 @@
 import { courses } from './courses.js'
 
+// Ethan: filteredCourses: the courses to display 
 let filteredCourses = courses
 
+// Ethan: put code for creating tables in its own function so we can reload tables. 
 function reloadTable() {
   const rows = filteredCourses.map(course => {
     return `<tr>
@@ -14,9 +16,10 @@ function reloadTable() {
 
 reloadTable()
 
+// Ethan: load department options and automatically create the selectbox options
 function reloadDepartmentOptions() {
   const deptOptions = []
-
+  
   const deptOptionsHTML = courses.map(course => {
     const dept = course.CRSE.substring(0, 4)
 
@@ -35,7 +38,8 @@ function reloadDepartmentOptions() {
 }
 reloadDepartmentOptions()
 
-function filterOptions() {
+// Ethan: Filter courses by department
+function filterDeptOptions() {
   const departmentCode = document.querySelector("#dept-filter").value
 
   if (departmentCode === "" || departmentCode === "NONE") {
@@ -49,4 +53,4 @@ function filterOptions() {
   reloadTable()
 }
 
-document.querySelector("#filter-submit").addEventListener("click", filterOptions)
+document.querySelector("#filter-submit").addEventListener("click", filterDeptOptions)
