@@ -8,11 +8,11 @@ const rows = courses.map(course => {
           </tr>`
 })
 
-document.querySelector('tbody').innerHTML = rows.join('');
+document.querySelector('tbody').innerHTML = rows.join('')
 
-const enrollmentSort = document.getElementById('enrollment');
+const enrollmentSort = document.getElementById('enrollment')
 enrollmentSort.onclick = () => {
-  courses.sort((b,a) => b.ENROLLED - a.ENROLLED);
+  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
   const enrollmentSortedRows = courses.map(course => {
     return `<tr>
         <td>${course.CRSE} - ${course.DESCR}</td>
@@ -20,7 +20,5 @@ enrollmentSort.onclick = () => {
         <td>${course.ENROLLED}</td>
       </tr>`
   })
-  document.querySelector('tbody').innerHTML = enrollmentSortedRows.join('');
+  document.querySelector('tbody').innerHTML = enrollmentSortedRows.join('')
 }
-
-
