@@ -1,9 +1,9 @@
 import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
-  const rows = courses.map(filteredCourses => {
+  const rows = filteredCourses.map(course => {
     return `<tr>
-              <td>${filteredCourses.CRSE} - ${filteredCourses.DESCR}</td>
+              <td>${course.CRSE} - ${course.DESCR}</td>
             </tr>`
   })
 
@@ -11,12 +11,11 @@ function reloadCourseTable(filteredCourses) {
 }
 reloadCourseTable()
 
-
-document.querySelector('#filter-btn').addEventListener("click", () => {
+document.querySelector('#filter-btn').addEventListener('click', () => {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
 
-  console.log("Running filter")
+  console.log('Running filter')
   reloadCourseTable()
 })
