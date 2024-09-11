@@ -6,20 +6,18 @@ const rows = courses.map(course => {
           </tr>`
 })
 
-function reloadTable(){
-  const rows = courses.map(course => {
+document.querySelector('tbody').innerHTML = rows.join('');
+
+const enrollmentSort = document.getElementById('enrollment');
+enrollmentSort.onclick = () => {
+  courses.sort((b,a) => b.ENROLLED - a.ENROLLED);
+  const enrollmentSortedRows = courses.map(course => {
     return `<tr>
         <td>${course.CRSE} - ${course.DESCR}</td>
         <td>${course.ENROLLED}</td>
       </tr>`
   })
-  document.querySelector('tbody').innerHTML = rows.join('');
+  document.querySelector('tbody').innerHTML = enrollmentSortedRows.join('');
 }
 
-function onButtonClick() {
-  courses.sort((b,a) => b.ENROLLED - a.ENROLLED);
-  reloadTable();
-}
 
-const enrollmentButton = document.querySelector('enrollment');
-enrollmentButton.addEventListener('click', onButtonClick);
