@@ -3,6 +3,8 @@ import { courses } from './courses.js'
 const rows = courses.map(course => {
   return `<tr>
             <td>${course.CRSE} - ${course.DESCR}</td>
+            <td>${course.MAX_CREDIT}</td>
+            <td>${course.ENROLLED}</td>
           </tr>`
 })
 
@@ -14,6 +16,7 @@ enrollmentSort.onclick = () => {
   const enrollmentSortedRows = courses.map(course => {
     return `<tr>
         <td>${course.CRSE} - ${course.DESCR}</td>
+        <td>${course.MAX_CREDIT}</td>
         <td>${course.ENROLLED}</td>
       </tr>`
   })
