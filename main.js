@@ -1,9 +1,22 @@
 import { courses } from './courses.js'
 
-const rows = courses.map(course => {
-  return `<tr>
-            <td>${course.CRSE} - ${course.DESCR}</td>
-          </tr>`
-})
+function reloadCourseTable(filteredCourses) {
+  const rows = courses.map(filteredCourses => {
+    return `<tr>
+              <td>${filteredCourses.CRSE} - ${filteredCourses.DESCR}</td>
+            </tr>`
+  })
 
-document.querySelector('tbody').innerHTML = rows.join('')
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+reloadCourseTable()
+
+
+document.querySelector('#filter-btn').addEventListener("click", () => {
+  let filteredCourses = courses
+  // Run your filter here
+  // Example: filteredCourses = filterDepartment(filteredCourses)
+
+  console.log("Running filter")
+  reloadCourseTable()
+})
