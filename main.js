@@ -21,5 +21,5 @@ function onButtonClick() {
   reloadTable();
 }
 
-const button = document.querySelector('button');
-button.addEventListener('click', onButtonClick);
+const enrollmentButton = document.querySelector('enrollment');
+enrollmentButton.addEventListener('click', onButtonClick);
