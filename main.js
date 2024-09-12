@@ -9,7 +9,7 @@ function reloadCourseTable(filteredCourses) {
 
   document.querySelector('tbody').innerHTML = rows.join('')
 }
-reloadCourseTable()
+reloadCourseTable(courses)
 
 document.querySelector('#filter-btn').addEventListener('click', () => {
   let filteredCourses = courses
@@ -17,5 +17,5 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
   // Example: filteredCourses = filterDepartment(filteredCourses)
 
   console.log('Running filter')
-  reloadCourseTable()
+  reloadCourseTable(filteredCourses)
 })
