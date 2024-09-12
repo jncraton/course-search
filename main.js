@@ -1,5 +1,44 @@
 import { courses } from './courses.js'
 
+function reloadCourseTable(filteredCourses) {
+  const rows = filteredCourses.map(course => {
+    return `<tr>
+              <td>${course.CRSE} - ${course.DESCR}</td>
+            </tr>`
+  })
+
+  document.querySelector('tbody').innerHTML = rows.join('')
+}
+reloadCourseTable(courses)
+
+document.querySelector('#filter-btn').addEventListener('click', () => {
+  let filteredCourses = courses
+  // Run your filter here
+  // Example: filteredCourses = filterDepartment(filteredCourses)
+  filteredCourses = filterDepartment(filteredCourses)
+
+  console.log('Running filter')
+  reloadCourseTable(filteredCourses)
+})
+
+// --------------------------------
+
+function filterDepartment(courses) {
+  // Set our department choice options
+  const departmentCode = document.querySelector("#dept-filter").value
+
+  if (departmentCode === "" || departmentCode === "NONE") {
+    return courses
+  }
+  else {
+    return courses.filter(course => {
+      return course.CRSE.substring(0, 4) === departmentCode.toUpperCase()
+    })
+  }
+  return courses
+}
+import { courses } from './courses.js'
+
 // Ethan: filteredCourses: the courses to display 
 let filteredCourses = courses
 
