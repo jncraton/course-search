@@ -2,14 +2,15 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
-    if (document.getElementById('pre-req' == true)) {
-    if (course.CONSENT != 'No Special Consent Required') {
-      return
-    } else {
-      return `<tr>
-              <td>${course.CRSE} - ${course.DESCR}</td>
-            </tr>`
-      }
+    if (document.querySelector('#pre-req').checked) {
+      if (course.CONSENT != 'No Special Consent Required') {
+        console.log("Rejected course ", course.CRSE)
+        return
+      } else {
+        return `<tr>
+                <td>${course.CRSE} - ${course.DESCR}</td>
+              </tr>`
+        }
   } else {
     return `<tr>
           <td>${course.CRSE} - ${course.DESCR}</td>
