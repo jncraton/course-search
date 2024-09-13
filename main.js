@@ -1,5 +1,6 @@
 import { courses } from './courses.js'
 
+
 const rows = courses.map(course => {
   if (document.getElementById('pre-req' == true)) {
     if (course.CONSENT != 'No Special Consent Required') {
