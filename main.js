@@ -4,19 +4,19 @@ function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
-        console.log("Rejected course ", course.CRSE)
+        console.log('Rejected course ', course.CRSE)
         return
       } else {
         return `<tr>
                 <td>${course.CRSE} - ${course.DESCR}</td>
               </tr>`
-        }
-  } else {
-    return `<tr>
+      }
+    } else {
+      return `<tr>
           <td>${course.CRSE} - ${course.DESCR}</td>
         </tr>`
-  }
-})
+    }
+  })
 
   document.querySelector('tbody').innerHTML = rows.join('')
 }
