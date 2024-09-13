@@ -30,6 +30,7 @@ const enrollmentSort = document.getElementById('enrollment')
 enrollmentSort.onclick = () => {
   courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
   reloadCourseTable(courses)
+}
 
 document.querySelector('#filter-btn').addEventListener('click', () => {
   let filteredCourses = courses
