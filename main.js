@@ -42,7 +42,7 @@ function applyFilters() {
 }
 
 // Add event listeners to automatically filter courses
-document.querySelector("#filter-form").addEventListener("change", () => {
+document.querySelector('#filter-form').addEventListener('change', () => {
   applyFilters()
   // return false
 })

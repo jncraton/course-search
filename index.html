@@ -1,64 +1,87 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style></style>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-  <title></title>
-  <style></style>
-  <link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <form id="filter-form">
+      <div class="form-input-flex">
+        <label for="dept-filter" class="form-input-label">Department:</label>
+        <select
+          type="radio"
+          name="department"
+          id="dept-filter"
+          class="form-input-selector"
+        ></select>
+      </div>
 
-<body>
-  <form id="filter-form">
-    <div class="form-input-flex">
-      <label for="dept-filter" class="form-input-label">Department:</label>
-      <select type="radio" name="department" id="dept-filter" class="form-input-selector"></select>
-    </div>
+      <div class="form-input-flex">
+        <label for="startTimes" class="form-input-label">Start Time: </label>
+        <select
+          type="radio"
+          name="startTimes"
+          id="startTimes"
+          class="form-input-selector"
+        >
+          <option value="07:00:00">07:00:00</option>
+          <option value="08:00:00">08:00:00</option>
+          <option value="08:30:00">08:30:00</option>
+          <option value="09:00:00">09:00:00</option>
+          <option value="09:30:00">09:30:00</option>
+          <option value="10:00:00">10:00:00</option>
+          <option value="11:00:00">11:00:00</option>
+          <option value="12:00:00">12:00:00</option>
+          <option value="13:00:00">13:00:00</option>
+          <option value="14:00:00">14:00:00</option>
+          <option value="14:30:00">14:30:00</option>
+          <option value="15:00:00">15:00:00</option>
+          <option value="16:00:00">16:00:00</option>
+          <option value="16:30:00">16:30:00</option>
+          <option value="17:00:00">17:00:00</option>
+          <option value="17:30:00">17:30:00</option>
+          <option value="18:00:00">18:00:00</option>
+          <option value="18:30:00">18:30:00</option>
+          <option value="19:00:00">19:00:00</option>
+          <option value="19:30:00">19:30:00</option>
+        </select>
+      </div>
 
-    <div class="form-input-flex">
-      <label for="startTimes" class="form-input-label">Start Time: </label>
-      <select type="radio" name="startTimes" id="startTimes" class="form-input-selector">
-        <option value="07:00:00">07:00:00</option>
-        <option value="08:00:00">08:00:00</option>
-        <option value="08:30:00">08:30:00</option>
-        <option value="09:00:00">09:00:00</option>
-        <option value="09:30:00">09:30:00</option>
-        <option value="10:00:00">10:00:00</option>
-        <option value="11:00:00">11:00:00</option>
-        <option value="12:00:00">12:00:00</option>
-        <option value="13:00:00">13:00:00</option>
-        <option value="14:00:00">14:00:00</option>
-        <option value="14:30:00">14:30:00</option>
-        <option value="15:00:00">15:00:00</option>
-        <option value="16:00:00">16:00:00</option>
-        <option value="16:30:00">16:30:00</option>
-        <option value="17:00:00">17:00:00</option>
-        <option value="17:30:00">17:30:00</option>
-        <option value="18:00:00">18:00:00</option>
-        <option value="18:30:00">18:30:00</option>
-        <option value="19:00:00">19:00:00</option>
-        <option value="19:30:00">19:30:00</option>
-      </select>
-    </div>
+      <div class="form-input-flex">
+        <label for="pre-req" class="form-input-label"
+          >Doesn't require a pre-requisite class</label
+        >
+        <input
+          type="checkbox"
+          id="pre-req"
+          name="pre-req"
+          class="form-input-selector"
+        />
+      </div>
 
-    <div class="form-input-flex">
-      <label for="pre-req" class="form-input-label">Doesn't require a pre-requisite class</label>
-      <input type="checkbox" id="pre-req" name="pre-req" class="form-input-selector" />
-    </div>
+      <div class="form-input-flex">
+        <label for="online-only" class="form-input-label"
+          >Hide in-person classes</label
+        >
+        <input
+          id="online-only"
+          name="online-only"
+          type="checkbox"
+          class="form-input-selector"
+        />
+      </div>
+    </form>
 
-    <div class="form-input-flex">
-      <label for="online-only" class="form-input-label">Hide in-person classes</label>
-      <input id="online-only" name="online-only" type="checkbox" class="form-input-selector" />
-    </div>
-  </form>
-
-  <table>
-    <thead>
-      <tr>
-        <td>Filter and Sort:</td>
-        <!-- <td>
+    <table>
+      <thead>
+        <tr>
+          <td>Filter and Sort:</td>
+          <!-- <td>
             <label for="department">Department:</label>
             <select name="department" id="dept-filter"></select>
           </td>
@@ -90,24 +113,23 @@
             <input type="checkbox" id="pre-req" />Doesn't require a pre-requisit
             class
           </td>-->
-        <td><input type="button" id="credits" value="Sort by Credits" /></td>
-        <td>
-          <input type="button" id="enrollment" value="Sort by enrollment" />
-        </td>
-        <td>
-          <button id="filter-btn">Filter</button>
-        </td>
-      </tr>
-      <tr>
-        <td>Course</td>
-        <td>Credits</td>
-        <td>Students Enrolled</td>
-      </tr>
-      <tr></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-  <script type="module" src="main.js"></script>
-</body>
-
+          <td><input type="button" id="credits" value="Sort by Credits" /></td>
+          <td>
+            <input type="button" id="enrollment" value="Sort by enrollment" />
+          </td>
+          <td>
+            <button id="filter-btn">Filter</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Course</td>
+          <td>Credits</td>
+          <td>Students Enrolled</td>
+        </tr>
+        <tr></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
