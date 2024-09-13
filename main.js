@@ -30,20 +30,19 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
-  filteredCourses = filterCourseByStartTime(filteredCourses);
+  filteredCourses = filterCourseByStartTime(filteredCourses)
 
   console.log('Running filter')
   reloadCourseTable(filteredCourses)
 })
 
-function filterCourseByStartTime(courses){
-  const filterTime = document.getElementById("startTimes").value;
+function filterCourseByStartTime(courses) {
+  const filterTime = document.getElementById('startTimes').value
 
   const filteredCourses = courses.filter(course => {
     // console.log(course.START_TIME, filterTime, course.START_TIME >= filterTime )
-    return course.START_TIME >= filterTime;
+    return course.START_TIME >= filterTime
   })
 
-  return filteredCourses;
+  return filteredCourses
 }
-
