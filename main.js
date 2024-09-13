@@ -2,18 +2,18 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
-    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : '';
+    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
         console.log('Rejected course ', course.CRSE)
-        return '';
+        return ''
       } else {
         return `<tr class="${rowClass}">
                   <td>${course.CRSE} - ${course.DESCR}</td>
                   <td>${course.MAX_CREDIT}</td>
                   <td>${course.ENROLLED}</td>
                   <td>${rowClass}</td>
-                </tr>`;
+                </tr>`
       }
     } else {
       return `<tr class="${rowClass}">
@@ -21,11 +21,11 @@ function reloadCourseTable(filteredCourses) {
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
                  <td>${rowClass}</td>
-              </tr>`;
+              </tr>`
     }
   })
 
-  document.querySelector('tbody').innerHTML = rows.join('');
+  document.querySelector('tbody').innerHTML = rows.join('')
 }
 reloadCourseTable(courses)
 
