@@ -9,11 +9,15 @@ function reloadCourseTable(filteredCourses) {
       } else {
         return `<tr>
                 <td>${course.CRSE} - ${course.DESCR}</td>
+                <td>${course.MAX_CREDIT}</td>
+                <td>${course.ENROLLED}</td>
               </tr>`
       }
     } else {
       return `<tr>
           <td>${course.CRSE} - ${course.DESCR}</td>
+          <td>${course.MAX_CREDIT}</td>
+          <td>${course.ENROLLED}</td>
         </tr>`
     }
   })
@@ -21,6 +25,12 @@ function reloadCourseTable(filteredCourses) {
   document.querySelector('tbody').innerHTML = rows.join('')
 }
 reloadCourseTable(courses)
+
+const enrollmentSort = document.getElementById('enrollment')
+enrollmentSort.onclick = () => {
+  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+  reloadCourseTable(courses)
+}
 
 document.querySelector('#filter-btn').addEventListener('click', () => {
   let filteredCourses = courses
