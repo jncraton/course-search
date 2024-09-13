@@ -1,28 +1,33 @@
 import { courses } from './courses.js'
 
-function createTable(tableContent){
-  const rows = tableContent.map(row => {
-    return `<tr>
-              <td>${row.CRSE} - ${row.DESCR}</td>
-            </tr>`
-  });
-  
-  document.querySelector('tbody').innerHTML = rows.join('');
+function reloadCourseTable(filteredCourses) {
+  const rows = filteredCourses.map(course => {
+    if (document.querySelector('#pre-req').checked) {
+      if (course.CONSENT != 'No Special Consent Required') {
+        console.log('Rejected course ', course.CRSE)
+        return
+      } else {
+        return `<tr>
+                <td>${course.CRSE} - ${course.DESCR}</td>
+              </tr>`
+      }
+    } else {
+      return `<tr>
+          <td>${course.CRSE} - ${course.DESCR}</td>
+        </tr>`
+    }
+  })
+
+  document.querySelector('tbody').innerHTML = rows.join('')
 }
-window.onload = createTable(courses);
+reloadCourseTable(courses)
 
-function filterCoursesByStartTime() {
-  const filterTime = document.getElementById("startTimes").value;
-  
-  const filteredCourses = courses.filter(course => {
-    return course.START_TIME >= filterTime
-  }
-  );
-  createTable(filteredCourses);
-}
+document.querySelector('#filter-btn').addEventListener('click', () => {
+  let filteredCourses = courses
+  // Run your filter here
+  // Example: filteredCourses = filterDepartment(filteredCourses)
 
-document.getElementById("startTimes").addEventListener('change',filterCoursesByStartTime);
-
-
-
+  console.log('Running filter')
+  reloadCourseTable(filteredCourses)
+})
 
