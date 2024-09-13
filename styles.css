@@ -17,6 +17,3 @@ tbody tr:nth-child(even) {
   background-color: #f2f2f2; /* Light gray color for even rows */
 }
 
-.closed-enrollment {
-  background-color: red; /* Red color for closed enrollment */
-}
