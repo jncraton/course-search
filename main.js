@@ -8,17 +8,28 @@ function reloadCourseTable(filteredCourses) {
         return
       } else {
         return `<tr>
-                <td>${course.CRSE} - ${course.DESCR}</td>
+                <td>${course.DESCR}</td>
+                <td>${course.CRSE.substring(0, 4)}</td>
+                <td>${course.START_TIME}</td>
+                <td>${course.INSTRUCTION_MODE}</td>
+                <td>${course.CONSENT}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
+                <td>${course.ENROLLING}</td>
               </tr>`
       }
     } else {
+
       return `<tr>
-          <td>${course.CRSE} - ${course.DESCR}</td>
-          <td>${course.MAX_CREDIT}</td>
-          <td>${course.ENROLLED}</td>
-        </tr>`
+              <td>${course.DESCR}</td>
+              <td>${course.CRSE.substring(0, 4)}</td>
+              <td>${course.START_TIME}</td>
+              <td>${course.INSTRUCTION_MODE}</td>
+              <td>${course.CONSENT}</td>
+              <td>${course.MAX_CREDIT}</td>
+              <td>${course.ENROLLED}</td>
+              <td>${course.ENROLLING}</td>
+            </tr>`
     }
   })
 
