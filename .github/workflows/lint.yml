@@ -1,28 +1,14 @@
 name: Lint
-
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
-
 jobs:
   Lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      # Install Node.js and dependencies
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-
-      # Install dependencies
-      - run: npm install
-
-      # Ensure Prettier has correct permissions
-      - name: Fix Prettier permissions
-        run: chmod +x ./node_modules/.bin/prettier
-
-      # Run Prettier
-      - run: npx prettier --check .
+      - run: npm run lint
