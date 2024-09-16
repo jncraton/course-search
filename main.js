@@ -4,7 +4,6 @@ function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
-        console.log('Rejected course ', course.CRSE)
         return
       } else {
         return `<tr>
@@ -26,7 +25,13 @@ function reloadCourseTable(filteredCourses) {
 }
 reloadCourseTable(courses)
 
-document.querySelector('#filter-btn').addEventListener('click', () => {
+const enrollmentSort = document.getElementById('enrollment')
+enrollmentSort.onclick = () => {
+  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+  reloadCourseTable(courses)
+}
+
+function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
@@ -35,18 +40,13 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
 
   console.log('Running filter')
   reloadCourseTable(filteredCourses)
-})
-
-function filterCourseByStartTime(courses) {
-  const filterTime = document.getElementById('startTimes').value
-
-  const filteredCourses = courses.filter(course => {
-    // console.log(course.START_TIME, filterTime, course.START_TIME >= filterTime )
-    return course.START_TIME >= filterTime
-  })
-
-  return filteredCourses
 }
+
+// Add event listeners to automatically filter courses
+document.querySelector('#filter-form').addEventListener('change', () => {
+  applyFilters()
+  // return false
+})
 
 function filterDepartment(courses) {
   // Set our department choice options
@@ -59,6 +59,14 @@ function filterDepartment(courses) {
       return course.CRSE.substring(0, 4) === departmentCode.toUpperCase()
     })
   }
+}
+
+function filterCourseByStartTime(courses) {
+    const filterTime = document.getElementById("startTime").value;
+
+    return courses.filter(course => {
+      return course.START_TIME === filterTime;
+    })
 }
 
 // Ethan: load department options and automatically create the selectbox options
