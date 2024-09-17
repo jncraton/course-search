@@ -32,9 +32,17 @@ enrollmentSort.onclick = () => {
 }
 
 const credSort = document.getElementById('credits')
+let credSortCount = 2
 credSort.onclick = () => {
-  courses.sort((b, a) => a.MAX_CREDIT - b.MAX_CREDIT)
-  reloadCourseTable(courses)
+  if(credSortCount % 2 == 0){
+    courses.sort((b, a) => a.MAX_CREDIT - b.MAX_CREDIT)
+    reloadCourseTable(courses)
+    credSortCount++
+  } else {
+    courses.sort((b, a) => b.MAX_CREDIT - a.MAX_CREDIT)
+    reloadCourseTable(courses)
+    credSortCount++
+  }
 }
 
 function applyFilters() {
