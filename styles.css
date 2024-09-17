@@ -1,0 +1,20 @@
+#filter-form {
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  width: 50%;
+}
+
+.form-input-flex {
+  display: flex;
+  flex-direction: row;
+  /* border: solid brown; */
+}
+
+.form-input-selector {
+  width: 25%;
+}
+
+.form-input-label {
+  width: 75%;
+}
