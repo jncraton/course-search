@@ -31,6 +31,12 @@ enrollmentSort.onclick = () => {
   reloadCourseTable(courses)
 }
 
+const credSort = document.getElementById('credits')
+credSort.onclick = () => {
+  courses.sort((b, a) => a.MAX_CREDIT - b.MAX_CREDIT)
+  reloadCourseTable(courses)
+}
+
 function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
