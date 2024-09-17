@@ -7,7 +7,7 @@ function reloadCourseTable(filteredCourses) {
     if (
       !document.querySelector('#pre-req').checked ||
       (document.querySelector('#pre-req').checked &&
-        course.CONSENT != 'No Special Consent Required')
+        course.CONSENT === 'No Special Consent Required')
     ) {
       // Format consent/prereq requirements
       let formattedConsent = course.CONSENT
