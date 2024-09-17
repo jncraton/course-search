@@ -2,6 +2,7 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
+    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
         return
@@ -10,6 +11,7 @@ function reloadCourseTable(filteredCourses) {
                 <td>${course.CRSE} - ${course.DESCR}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
+                 <td>${rowClass}</td>
               </tr>`
       }
     } else {
@@ -17,6 +19,7 @@ function reloadCourseTable(filteredCourses) {
           <td>${course.CRSE} - ${course.DESCR}</td>
           <td>${course.MAX_CREDIT}</td>
           <td>${course.ENROLLED}</td>
+          <td>${rowClass}</td>
         </tr>`
     }
   })
