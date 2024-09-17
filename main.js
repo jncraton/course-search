@@ -5,8 +5,7 @@ function reloadCourseTable(filteredCourses) {
     const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
-        console.log('Rejected course ', course.CRSE)
-        return ''
+        return
       } else {
         return `<tr class="${rowClass}">
                   <td>${course.CRSE} - ${course.DESCR}</td>
@@ -35,7 +34,7 @@ enrollmentSort.onclick = () => {
   reloadCourseTable(courses)
 }
 
-document.querySelector('#filter-btn').addEventListener('click', () => {
+function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
@@ -43,6 +42,12 @@ document.querySelector('#filter-btn').addEventListener('click', () => {
 
   console.log('Running filter')
   reloadCourseTable(filteredCourses)
+}
+
+// Add event listeners to automatically filter courses
+document.querySelector('#filter-form').addEventListener('change', () => {
+  applyFilters()
+  // return false
 })
 
 function filterDepartment(courses) {
