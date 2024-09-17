@@ -3,7 +3,8 @@ import { courses } from './courses.js'
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
     console.log(course.START_TIME, "", course.START_TIME === "")
-    
+    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
+
     if (!(document.querySelector('#pre-req').checked) || (document.querySelector('#pre-req').checked && course.CONSENT != 'No Special Consent Required')) {
       let formattedConsent = course.CONSENT
       switch(formattedConsent) {
@@ -25,7 +26,7 @@ function reloadCourseTable(filteredCourses) {
                 <td>${formattedConsent}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
-                <td>${course.ENROLLING}</td>
+                 <td>${rowClass}</td>
               </tr>`
     } else {
       return ""
@@ -37,9 +38,18 @@ function reloadCourseTable(filteredCourses) {
 reloadCourseTable(courses)
 
 const enrollmentSort = document.getElementById('enrollment')
+
+let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
-  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
-  reloadCourseTable(courses)
+  if (enrollmentSortCount % 2 == 0) {
+    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  } else {
+    courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  }
 }
 
 function applyFilters() {
