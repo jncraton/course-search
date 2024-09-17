@@ -56,6 +56,7 @@ function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
+  filteredCourses = filterCourseByStartTime(filteredCourses)
   filteredCourses = filterDepartment(filteredCourses)
 
   console.log('Running filter')
@@ -77,6 +78,18 @@ function filterDepartment(courses) {
   } else {
     return courses.filter(course => {
       return course.CRSE.substring(0, 4) === departmentCode.toUpperCase()
+    })
+  }
+}
+
+function filterCourseByStartTime(courses) {
+  const filterTime = document.getElementById('startTimes').value
+
+  if (filterTime === 'No Specific Time') {
+    return courses
+  } else {
+    return courses.filter(course => {
+      return course.START_TIME === filterTime
     })
   }
 }
