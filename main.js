@@ -63,6 +63,7 @@ function applyFilters() {
   // Example: filteredCourses = filterDepartment(filteredCourses)
   filteredCourses = filterCourseByStartTime(filteredCourses)
   filteredCourses = filterDepartment(filteredCourses)
+  filteredCourses = OnlineOnly(filteredCourses)
 
   console.log('Running filter')
   reloadCourseTable(filteredCourses)
@@ -73,6 +74,18 @@ document.querySelector('#filter-form').addEventListener('change', () => {
   applyFilters()
   // return false
 })
+
+function OnlineOnly(courses) {
+  if (document.getElementById('online-only').checked == true) {
+      return courses.filter(checkInstruction)
+    } else {
+    return courses
+  }
+}
+
+function checkInstruction(course) {
+  return course.INSTRUCTION_MODE != 'Face to Face'
+}
 
 function filterDepartment(courses) {
   // Set our department choice options
