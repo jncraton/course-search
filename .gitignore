@@ -59,4 +59,3 @@ node_modules/prettier/plugins/yaml.d.ts
 node_modules/prettier/plugins/yaml.js
 node_modules/prettier/plugins/yaml.mjs
 package-lock.json
-node_modules/
