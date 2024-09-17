@@ -2,33 +2,33 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
-    if (document.querySelector('#pre-req').checked) {
-      if (course.CONSENT != 'No Special Consent Required') {
-        return
-      } else {
-        return `<tr>
+    console.log(course.START_TIME, "", course.START_TIME === "")
+    
+    if (!(document.querySelector('#pre-req').checked) || (document.querySelector('#pre-req').checked && course.CONSENT != 'No Special Consent Required')) {
+      let formattedConsent = course.CONSENT
+      switch(formattedConsent) {
+        case "No Special Consent Required":
+          formattedConsent = "None"
+          break
+        case "Department Consent Required":
+          formattedConsent = "Department"
+          break
+        case "Instructor Consent Required":
+          formattedConsent = "Instructor"
+          break
+      }
+      return `<tr>
                 <td>${course.DESCR}</td>
                 <td>${course.CRSE.substring(0, 4)}</td>
-                <td>${course.START_TIME}</td>
+                <td>${course.START_TIME === "" ? "See Instructor" : course.START_TIME}</td>
                 <td>${course.INSTRUCTION_MODE}</td>
-                <td>${course.CONSENT}</td>
+                <td>${formattedConsent}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
                 <td>${course.ENROLLING}</td>
               </tr>`
-      }
     } else {
-
-      return `<tr>
-              <td>${course.DESCR}</td>
-              <td>${course.CRSE.substring(0, 4)}</td>
-              <td>${course.START_TIME}</td>
-              <td>${course.INSTRUCTION_MODE}</td>
-              <td>${course.CONSENT}</td>
-              <td>${course.MAX_CREDIT}</td>
-              <td>${course.ENROLLED}</td>
-              <td>${course.ENROLLING}</td>
-            </tr>`
+      return ""
     }
   })
 
