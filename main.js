@@ -62,11 +62,15 @@ function filterDepartment(courses) {
 }
 
 function filterCourseByStartTime(courses) {
-    const filterTime = document.getElementById("startTime").value;
+    const filterTime = document.getElementById("startTimes").value;
 
-    return courses.filter(course => {
-      return course.START_TIME === filterTime;
-    })
+    if(filterTime === "No Specific Time"){
+      return courses;
+    } else {
+      return courses.filter(course => {
+        return course.START_TIME === filterTime;
+      });
+    }
 }
 
 // Ethan: load department options and automatically create the selectbox options
