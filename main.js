@@ -58,7 +58,6 @@ courseNameSort.onclick = () => {
   }
 }
 
-
 function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
