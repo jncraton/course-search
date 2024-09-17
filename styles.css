@@ -1,18 +1,20 @@
-table {
-  width: 100%;
-  border-collapse: collapse;
+#filter-form {
+  display: flex;
+  flex-direction: column;
+  border: solid black;
+  width: 50%;
 }
 
-th,
-td {
-  border: 1px solid #ddd;
-  padding: 8px;
+.form-input-flex {
+  display: flex;
+  flex-direction: row;
+  /* border: solid brown; */
 }
 
-tbody tr:nth-child(odd) {
-  background-color: #ffd; /* Light yellow color for odd rows */
+.form-input-selector {
+  width: 25%;
 }
 
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light gray color for even rows */
+.form-input-label {
+  width: 75%;
 }
