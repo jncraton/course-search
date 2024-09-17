@@ -7,20 +7,20 @@ function reloadCourseTable(filteredCourses) {
       if (course.CONSENT != 'No Special Consent Required') {
         return
       } else {
-        return `<tr class="${rowClass}">
-                  <td>${course.CRSE} - ${course.DESCR}</td>
-                  <td>${course.MAX_CREDIT}</td>
-                  <td>${course.ENROLLED}</td>
-                  <td>${rowClass}</td>
-                </tr>`
-      }
-    } else {
-      return `<tr class="${rowClass}">
+        return `<tr>
                 <td>${course.CRSE} - ${course.DESCR}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
                  <td>${rowClass}</td>
               </tr>`
+      }
+    } else {
+      return `<tr>
+          <td>${course.CRSE} - ${course.DESCR}</td>
+          <td>${course.MAX_CREDIT}</td>
+          <td>${course.ENROLLED}</td>
+          <td>${rowClass}</td>
+        </tr>`
     }
   })
 
