@@ -2,10 +2,10 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
-    console.log(course.START_TIME, "", course.START_TIME === "")
     const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
 
     if (!(document.querySelector('#pre-req').checked) || (document.querySelector('#pre-req').checked && course.CONSENT != 'No Special Consent Required')) {
+      // Format consent/prereq requirements
       let formattedConsent = course.CONSENT
       switch(formattedConsent) {
         case "No Special Consent Required":
@@ -18,15 +18,27 @@ function reloadCourseTable(filteredCourses) {
           formattedConsent = "Instructor"
           break
       }
+
+      // Format instruction mode
+      let formattedInstructionMode = course.INSTRUCTION_MODE
+      switch(formattedInstructionMode) {
+        case "Face to Face":
+          formattedInstructionMode = "In-Person"
+          break;
+        case "Blended:Mtg/Online":
+          formattedInstructionMode = "Hybrid (See Instructor)"
+          break;
+      }
+
       return `<tr>
                 <td>${course.DESCR}</td>
                 <td>${course.CRSE.substring(0, 4)}</td>
                 <td>${course.START_TIME === "" ? "See Instructor" : course.START_TIME}</td>
-                <td>${course.INSTRUCTION_MODE}</td>
+                <td>${formattedInstructionMode}</td>
                 <td>${formattedConsent}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
-                 <td>${rowClass}</td>
+                <td>${rowClass}</td>
               </tr>`
     } else {
       return ""
