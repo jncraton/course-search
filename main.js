@@ -43,6 +43,22 @@ enrollmentSort.onclick = () => {
   }
 }
 
+const courseNameSort = document.getElementById('courseName')
+
+let courseNameSortCount = 2
+courseNameSort.onclick = () => {
+  if (courseNameSortCount % 2 == 0) {
+    courses.sort((b, a) => b.CRSE - a.CRSE)
+    courseNameSortCount++
+    reloadCourseTable(courses)
+  } else {
+    courses.sort((a, b) => a.CRSE - b.CRSE)
+    courseNameSortCount++
+    reloadCourseTable(courses)
+  }
+}
+
+
 function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
