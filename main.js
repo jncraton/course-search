@@ -31,11 +31,10 @@ enrollmentSort.onclick = () => {
   reloadCourseTable(courses)
 }
 
-
 const credSort = document.getElementById('credits')
 let credSortCount = 2
 credSort.onclick = () => {
-  if(credSortCount % 2 == 0){
+  if (credSortCount % 2 == 0) {
     courses.sort((a, b) => b.MAX_CREDIT - a.MAX_CREDIT)
     reloadCourseTable(courses)
     credSortCount++
