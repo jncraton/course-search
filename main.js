@@ -2,6 +2,7 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
+    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
     if (document.querySelector('#pre-req').checked) {
       if (course.CONSENT != 'No Special Consent Required') {
         return
@@ -10,6 +11,7 @@ function reloadCourseTable(filteredCourses) {
                 <td>${course.CRSE} - ${course.DESCR}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
+                 <td>${rowClass}</td>
               </tr>`
       }
     } else {
@@ -17,6 +19,7 @@ function reloadCourseTable(filteredCourses) {
           <td>${course.CRSE} - ${course.DESCR}</td>
           <td>${course.MAX_CREDIT}</td>
           <td>${course.ENROLLED}</td>
+          <td>${rowClass}</td>
         </tr>`
     }
   })
@@ -26,9 +29,18 @@ function reloadCourseTable(filteredCourses) {
 reloadCourseTable(courses)
 
 const enrollmentSort = document.getElementById('enrollment')
+
+let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
-  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
-  reloadCourseTable(courses)
+  if (enrollmentSortCount % 2 == 0) {
+    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  } else {
+    courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  }
 }
 
 const credSort = document.getElementById('credits')
@@ -49,6 +61,7 @@ function applyFilters() {
   let filteredCourses = courses
   // Run your filter here
   // Example: filteredCourses = filterDepartment(filteredCourses)
+  filteredCourses = filterCourseByStartTime(filteredCourses)
   filteredCourses = filterDepartment(filteredCourses)
 
   console.log('Running filter')
@@ -70,6 +83,18 @@ function filterDepartment(courses) {
   } else {
     return courses.filter(course => {
       return course.CRSE.substring(0, 4) === departmentCode.toUpperCase()
+    })
+  }
+}
+
+function filterCourseByStartTime(courses) {
+  const filterTime = document.getElementById('startTimes').value
+
+  if (filterTime === 'No Specific Time') {
+    return courses
+  } else {
+    return courses.filter(course => {
+      return course.START_TIME === filterTime
     })
   }
 }
