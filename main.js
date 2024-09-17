@@ -29,9 +29,18 @@ function reloadCourseTable(filteredCourses) {
 reloadCourseTable(courses)
 
 const enrollmentSort = document.getElementById('enrollment')
+
+let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
-  courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
-  reloadCourseTable(courses)
+  if (enrollmentSortCount % 2 == 0) {
+    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  } else {
+    courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
+    enrollmentSortCount++
+    reloadCourseTable(courses)
+  }
 }
 
 function applyFilters() {
