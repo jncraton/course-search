@@ -33,7 +33,7 @@ const enrollmentSort = document.getElementById('enrollment')
 let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
   if (enrollmentSortCount % 2 == 0) {
-    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
     enrollmentSortCount++
     reloadCourseTable(courses)
   } else {
@@ -48,7 +48,7 @@ const courseNameSort = document.getElementById('courseName')
 let courseNameSortCount = 2
 courseNameSort.onclick = () => {
   if (courseNameSortCount % 2 == 0) {
-    courses.sort((b, a) => b.CRSE - a.CRSE)
+    courses.sort((a, b) => b.CRSE - a.CRSE)
     courseNameSortCount++
     reloadCourseTable(courses)
   } else {
