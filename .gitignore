@@ -1,7 +1,4 @@
 nodesource_setup.sh
-package.json
-prettierrc.json
-package-lock.json
 package-lock.json
 node_modules/.package-lock.json
 node_modules/.bin/prettier
