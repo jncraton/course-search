@@ -50,11 +50,11 @@ const courseNameSort = document.getElementById('courseName')
 let courseNameSortCount = 2
 courseNameSort.onclick = () => {
   if (courseNameSortCount % 2 == 0) {
-    courses.sort((a, b) => b.CRSE - a.CRSE)
+    courses.sort((a, b) => a.CRSE - b.CRSE)
     courseNameSortCount++
     reloadCourseTable(courses)
   } else {
-    courses.sort((a, b) => a.CRSE - b.CRSE)
+    courses.sort((a, b) => b.CRSE - a.CRSE)
     courseNameSortCount++
     reloadCourseTable(courses)
   }
