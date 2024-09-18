@@ -12,7 +12,7 @@ function reloadCourseTable(filteredCourses) {
                 <td>${course.DESCR}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
-                 <td>${rowClass}</td>
+                <td>${rowClass}</td>
               </tr>`
       }
     } else {
@@ -47,18 +47,21 @@ enrollmentSort.onclick = () => {
 
 const courseNameSort = document.getElementById('courseName')
 
-let courseNameSortCount = 2
 courseNameSort.onclick = () => {
-  if (courseNameSortCount % 2 == 0) {
-    courses.sort((a, b) => a.CRSE - b.CRSE)
-    courseNameSortCount++
-    reloadCourseTable(courses)
-  } else {
-    courses.sort((a, b) => b.CRSE - a.CRSE)
-    courseNameSortCount++
-    reloadCourseTable(courses)
-  }
+  courses.sort((a, b) => {
+    if (a.CRSE < b.CRSE)
+    {
+      return -1;
+    }
+    if (a.CRSE > b.CRSE){
+      return 1;
+    }
+      return 0;
+    })
+  reloadCourseTable(courses)
 }
+
+
 const credSort = document.getElementById('credits')
 let credSortCount = 2
 credSort.onclick = () => {
