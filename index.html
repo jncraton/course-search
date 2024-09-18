@@ -1,34 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
-    <style></style>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <body>
+  <title></title>
+  <style></style>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="content">
+    <h1>AU Course Search</h1>
     <form id="filter-form">
-      <div class="form-input-flex">
-        <label for="dept-filter" class="form-input-label">Department:</label>
-        <select
-          type="radio"
-          name="department"
-          id="dept-filter"
-          class="form-input-selector"
-        ></select>
-      </div>
 
-      <div class="form-input-flex">
+      <span class="form-input-flex">
+        <label for="dept-filter" class="form-input-label">Department:</label>
+        <select type="radio" name="department" id="dept-filter" class="form-input-selector"></select>
+      </span>
+      <span class="form-input-flex">
         <label for="startTimes" class="form-input-label">Start Time: </label>
-        <select
-          type="radio"
-          name="startTimes"
-          id="startTimes"
-          class="form-input-selector"
-        >
+        <select type="radio" name="startTimes" id="startTimes" class="form-input-selector">
           <option value="No Specific Time">No Specific Time</option>
           <option value="07:00:00">07:00:00</option>
           <option value="08:00:00">08:00:00</option>
@@ -51,34 +44,20 @@
           <option value="19:00:00">19:00:00</option>
           <option value="19:30:00">19:30:00</option>
         </select>
-      </div>
+      </span>
 
-      <div class="form-input-flex">
-        <label for="pre-req" class="form-input-label"
-          >Doesn't require a pre-requisite class</label
-        >
-        <input
-          type="checkbox"
-          id="pre-req"
-          name="pre-req"
-          class="form-input-selector"
-        />
-      </div>
+      <span class="form-input-flex">
+        <label for="pre-req" class="form-input-label">Doesn't require a pre-requisite class</label>
+        <input type="checkbox" id="pre-req" name="pre-req" class="form-input-selector" />
+      </span>
 
-      <div class="form-input-flex">
-        <label for="online-only" class="form-input-label"
-          >Hide in-person classes</label
-        >
-        <input
-          id="online-only"
-          name="online-only"
-          type="checkbox"
-          class="form-input-selector"
-        />
-      </div>
+      <span class="form-input-flex">
+        <label for="online-only" class="form-input-label">Hide in-person classes</label>
+        <input id="online-only" name="online-only" type="checkbox" class="form-input-selector" />
+      </span>
     </form>
 
-    <table>
+    <table class="header">
       <thead>
         <!-- <tr>
           <td>Filter and Sort:</td>
@@ -89,8 +68,7 @@
         </tr> -->
         <tr>
           <td>
-            <label for="course-header-btn">Course</label
-            ><input type="button" id="course-header-btn" value="Sort" />
+            <label for="course-header-btn">Course</label><input type="button" id="course-header-btn" value="Sort" />
           </td>
           <td>Department</td>
           <td>Start Time</td>
@@ -102,12 +80,7 @@
           </td>
           <td>
             <label for="enrollment">Students Enrolled</label>
-            <input
-              name="student-sort"
-              type="button"
-              id="enrollment"
-              value="Sort"
-            />
+            <input name="student-sort" type="button" id="enrollment" value="Sort" />
           </td>
           <td>Status</td>
         </tr>
@@ -115,6 +88,8 @@
       </thead>
       <tbody></tbody>
     </table>
-    <script type="module" src="main.js"></script>
-  </body>
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+
 </html>
