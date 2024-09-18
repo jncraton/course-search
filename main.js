@@ -76,18 +76,16 @@ const courseNameSort = document.getElementById('courseName')
 
 courseNameSort.onclick = () => {
   courses.sort((a, b) => {
-    if (a.CRSE < b.CRSE)
-    {
-      return -1;
+    if (a.CRSE < b.CRSE) {
+      return -1
     }
-    if (a.CRSE > b.CRSE){
-      return 1;
+    if (a.CRSE > b.CRSE) {
+      return 1
     }
-      return 0;
-    })
+    return 0
+  })
   reloadCourseTable(courses)
 }
-
 
 const credSort = document.getElementById('credits')
 let credSortCount = 2
