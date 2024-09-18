@@ -72,7 +72,7 @@ enrollmentSort.onclick = () => {
   }
 }
 
-const courseNameSort = document.getElementById('courseName')
+const courseNameSort = document.getElementById('course-header-btn')
 
 courseNameSort.onclick = () => {
   courses.sort((a, b) => {
@@ -109,7 +109,6 @@ function applyFilters() {
   filteredCourses = filterDepartment(filteredCourses)
   filteredCourses = OnlineOnly(filteredCourses)
 
-  console.log('Running filter')
   reloadCourseTable(filteredCourses)
 }
 
@@ -120,6 +119,7 @@ document.querySelector('#filter-form').addEventListener('change', () => {
 })
 
 function OnlineOnly(courses) {
+  console.log("Online Filter Running")
   if (document.getElementById('online-only').checked == true) {
     return courses.filter(checkInstruction)
   } else {
