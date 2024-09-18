@@ -77,8 +77,8 @@ document.querySelector('#filter-form').addEventListener('change', () => {
 
 function OnlineOnly(courses) {
   if (document.getElementById('online-only').checked == true) {
-      return courses.filter(checkInstruction)
-    } else {
+    return courses.filter(checkInstruction)
+  } else {
     return courses
   }
 }
