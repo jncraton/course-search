@@ -3,24 +3,53 @@ import { courses } from './courses.js'
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
     const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
-    if (document.querySelector('#pre-req').checked) {
-      if (course.CONSENT != 'No Special Consent Required') {
-        return
-      } else {
-        return `<tr>
-                <td>${course.CRSE} - ${course.DESCR}</td>
+
+    if (
+      !document.querySelector('#pre-req').checked ||
+      (document.querySelector('#pre-req').checked &&
+        course.CONSENT === 'No Special Consent Required')
+    ) {
+      // Format consent/prereq requirements
+      let formattedConsent = course.CONSENT
+      switch (formattedConsent) {
+        case 'No Special Consent Required':
+          formattedConsent = 'None'
+          break
+        case 'Department Consent Required':
+          formattedConsent = 'Department'
+          break
+        case 'Instructor Consent Required':
+          formattedConsent = 'Instructor'
+          break
+      }
+
+      // Format instruction mode
+      let formattedInstructionMode = course.INSTRUCTION_MODE
+      switch (formattedInstructionMode) {
+        case 'Face to Face':
+          formattedInstructionMode = 'In-Person'
+          break
+        case 'Blended:Mtg/Online':
+          formattedInstructionMode = 'Hybrid (See Instructor)'
+          break
+      }
+
+      return `<tr>
+                <td>${course.DESCR}</td>
+                <td>${course.CRSE.substring(0, 4)}</td>
+                <td>${
+                  course.START_TIME === ''
+                    ? 'See Instructor'
+                    : course.START_TIME
+                }</td>
+                <td>${formattedInstructionMode}</td>
+                <td>${formattedConsent}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
-                 <td>${rowClass}</td>
+                <td>${rowClass}</td>
               </tr>`
-      }
     } else {
-      return `<tr>
-          <td>${course.CRSE} - ${course.DESCR}</td>
-          <td>${course.MAX_CREDIT}</td>
-          <td>${course.ENROLLED}</td>
-          <td>${rowClass}</td>
-        </tr>`
+      return ''
     }
   })
 
@@ -33,13 +62,42 @@ const enrollmentSort = document.getElementById('enrollment')
 let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
   if (enrollmentSortCount % 2 == 0) {
-    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
     enrollmentSortCount++
     reloadCourseTable(courses)
   } else {
     courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
     enrollmentSortCount++
     reloadCourseTable(courses)
+  }
+}
+
+const courseNameSort = document.getElementById('courseName')
+
+courseNameSort.onclick = () => {
+  courses.sort((a, b) => {
+    if (a.CRSE < b.CRSE) {
+      return -1
+    }
+    if (a.CRSE > b.CRSE) {
+      return 1
+    }
+    return 0
+  })
+  reloadCourseTable(courses)
+}
+
+const credSort = document.getElementById('credits')
+let credSortCount = 2
+credSort.onclick = () => {
+  if (credSortCount % 2 == 0) {
+    courses.sort((a, b) => b.MAX_CREDIT - a.MAX_CREDIT)
+    reloadCourseTable(courses)
+    credSortCount++
+  } else {
+    courses.sort((a, b) => a.MAX_CREDIT - b.MAX_CREDIT)
+    reloadCourseTable(courses)
+    credSortCount++
   }
 }
 
