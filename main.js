@@ -8,7 +8,8 @@ function reloadCourseTable(filteredCourses) {
         return
       } else {
         return `<tr>
-                <td>${course.CRSE} - ${course.DESCR}</td>
+                <td>${course.CRSE}</td>
+                <td>${course.DESCR}</td>
                 <td>${course.MAX_CREDIT}</td>
                 <td>${course.ENROLLED}</td>
                  <td>${rowClass}</td>
@@ -16,7 +17,8 @@ function reloadCourseTable(filteredCourses) {
       }
     } else {
       return `<tr>
-          <td>${course.CRSE} - ${course.DESCR}</td>
+          <td>${course.CRSE}</td>
+          <td>${course.DESCR}</td>
           <td>${course.MAX_CREDIT}</td>
           <td>${course.ENROLLED}</td>
           <td>${rowClass}</td>
