@@ -119,7 +119,7 @@ document.querySelector('#filter-form').addEventListener('change', () => {
 })
 
 function OnlineOnly(courses) {
-  console.log("Online Filter Running")
+  console.log('Online Filter Running')
   if (document.getElementById('online-only').checked == true) {
     return courses.filter(checkInstruction)
   } else {
