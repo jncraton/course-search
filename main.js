@@ -69,7 +69,7 @@ enrollmentSort.onclick = () => {
     enrollmentSortCount++
   }
   reloadCourseTable(courses)
-  applyFilters();
+  applyFilters()
 }
 
 const courseNameSort = document.getElementById('course-header-btn')
@@ -85,7 +85,7 @@ courseNameSort.onclick = () => {
     return 0
   })
   reloadCourseTable(courses)
-  applyFilters();
+  applyFilters()
 }
 
 const credSort = document.getElementById('credits')
@@ -93,14 +93,14 @@ let credSortCount = 2
 credSort.onclick = () => {
   if (credSortCount % 2 == 0) {
     courses.sort((a, b) => b.MAX_CREDIT - a.MAX_CREDIT)
-    
+
     credSortCount++
   } else {
     courses.sort((a, b) => a.MAX_CREDIT - b.MAX_CREDIT)
     credSortCount++
   }
   reloadCourseTable(courses)
-  applyFilters();
+  applyFilters()
 }
 
 function applyFilters() {
