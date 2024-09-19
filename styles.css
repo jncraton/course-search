@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   background-color: #f4f4f9;
   color: #333;
   margin: 0;
@@ -112,7 +112,7 @@ table thead td {
   text-align: left;
   font-weight: bold;
   font-size: 1rem;
-}   
+}
 table tbody {
   background-color: #fff;
 }
@@ -121,14 +121,14 @@ table tbody td {
   padding: 10px;
   border-bottom: 1px solid #e0e0e0;
   font-size: 0.95rem;
-} 
+}
 
 table tbody tr:nth-child(even) {
   background-color: #f9f9f9;
 }
 
 /* Button Styling */
-input[type="button"] {
+input[type='button'] {
   background-color: #ffffff; /* Hot Orange */
   color: rgb(0, 0, 0);
   border: none;
@@ -138,6 +138,6 @@ input[type="button"] {
   font-size: 1rem;
 }
 
-input[type="button"]:hover {
+input[type='button']:hover {
   background-color: #eaeaea; /* Change color on hover */
-} 
+}
