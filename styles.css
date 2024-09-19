@@ -40,6 +40,24 @@ body {
 }
 
 /* Form Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffd; /* Light yellow color for odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray color for even rows */
+}
 #filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -111,8 +129,8 @@ table tbody tr:nth-child(even) {
 
 /* Button Styling */
 input[type="button"] {
-  background-color: #ff4500; /* Hot Orange */
-  color: white;
+  background-color: #ffffff; /* Hot Orange */
+  color: rgb(0, 0, 0);
   border: none;
   padding: 10px;
   border-radius: 5px;
@@ -121,5 +139,5 @@ input[type="button"] {
 }
 
 input[type="button"]:hover {
-  background-color: #cc3700; /* Darker hot orange on hover */
-}
+  background-color: #eaeaea; /* Change color on hover */
+} 

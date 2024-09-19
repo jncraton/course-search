@@ -62,14 +62,34 @@ const enrollmentSort = document.getElementById('enrollment')
 let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
   if (enrollmentSortCount % 2 == 0) {
-    courses.sort((b, a) => b.ENROLLED - a.ENROLLED)
+    courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
+    enrollmentSort.value = "Sort ^"
     enrollmentSortCount++
-    reloadCourseTable(courses)
   } else {
     courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
+    enrollmentSort.value = "Sort v"
     enrollmentSortCount++
-    reloadCourseTable(courses)
   }
+  reloadCourseTable(courses)
+  applyFilters()
+}
+
+const courseNameSort = document.getElementById('course-header-btn')
+
+courseNameSort.onclick = () => {
+  courses.sort((a, b) => {
+    if (a.CRSE < b.CRSE) {
+      courseNameSort.value = "Sort ^"
+      return -1
+    }
+    if (a.CRSE > b.CRSE) {
+      courseNameSort.value = "Sort"
+      return 1
+    }
+    return 0
+  })
+  reloadCourseTable(courses)
+  applyFilters()
 }
 
 const credSort = document.getElementById('credits')
@@ -77,13 +97,15 @@ let credSortCount = 2
 credSort.onclick = () => {
   if (credSortCount % 2 == 0) {
     courses.sort((a, b) => b.MAX_CREDIT - a.MAX_CREDIT)
-    reloadCourseTable(courses)
+    credSort.value = "Sort ^"
     credSortCount++
   } else {
     courses.sort((a, b) => a.MAX_CREDIT - b.MAX_CREDIT)
-    reloadCourseTable(courses)
+    credSort.value = "Sort v"
     credSortCount++
   }
+  reloadCourseTable(courses)
+  applyFilters()
 }
 
 function applyFilters() {
@@ -92,8 +114,8 @@ function applyFilters() {
   // Example: filteredCourses = filterDepartment(filteredCourses)
   filteredCourses = filterCourseByStartTime(filteredCourses)
   filteredCourses = filterDepartment(filteredCourses)
+  filteredCourses = OnlineOnly(filteredCourses)
 
-  console.log('Running filter')
   reloadCourseTable(filteredCourses)
 }
 
@@ -103,6 +125,21 @@ document.querySelector('#filter-form').addEventListener('change', () => {
   // return false
 })
 
+// Filters by if course is Online or not
+function OnlineOnly(courses) {
+  console.log('Online Filter Running')
+  if (document.getElementById('online-only').checked == true) {
+    return courses.filter(checkInstruction)
+  } else {
+    return courses
+  }
+}
+
+function checkInstruction(course) {
+  return course.INSTRUCTION_MODE != 'Face to Face'
+}
+
+// Filters by department
 function filterDepartment(courses) {
   // Set our department choice options
   const departmentCode = document.querySelector('#dept-filter').value
@@ -116,6 +153,7 @@ function filterDepartment(courses) {
   }
 }
 
+// Filters courses by their start time
 function filterCourseByStartTime(courses) {
   const filterTime = document.getElementById('startTimes').value
 

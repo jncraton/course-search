@@ -1,5 +1,5 @@
 nodesource_setup.sh
-package-lock.json
+.package-lock.json
 node_modules/.package-lock.json
 node_modules/.bin/prettier
 node_modules/.bin/prettier.cmd
@@ -59,3 +59,5 @@ node_modules/prettier/plugins/yaml.d.ts
 node_modules/prettier/plugins/yaml.js
 node_modules/prettier/plugins/yaml.mjs
 package-lock.json
+git
+node_modules/
