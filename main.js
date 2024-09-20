@@ -63,9 +63,11 @@ let enrollmentSortCount = 2
 enrollmentSort.onclick = () => {
   if (enrollmentSortCount % 2 == 0) {
     courses.sort((a, b) => b.ENROLLED - a.ENROLLED)
+    enrollmentSort.value = 'Sort ^'
     enrollmentSortCount++
   } else {
     courses.sort((a, b) => a.ENROLLED - b.ENROLLED)
+    enrollmentSort.value = 'Sort v'
     enrollmentSortCount++
   }
   reloadCourseTable(courses)
@@ -77,9 +79,11 @@ const courseNameSort = document.getElementById('course-header-btn')
 courseNameSort.onclick = () => {
   courses.sort((a, b) => {
     if (a.CRSE < b.CRSE) {
+      courseNameSort.value = 'Sort ^'
       return -1
     }
     if (a.CRSE > b.CRSE) {
+      courseNameSort.value = 'Sort'
       return 1
     }
     return 0
@@ -93,10 +97,11 @@ let credSortCount = 2
 credSort.onclick = () => {
   if (credSortCount % 2 == 0) {
     courses.sort((a, b) => b.MAX_CREDIT - a.MAX_CREDIT)
-
+    credSort.value = 'Sort ^'
     credSortCount++
   } else {
     courses.sort((a, b) => a.MAX_CREDIT - b.MAX_CREDIT)
+    credSort.value = 'Sort v'
     credSortCount++
   }
   reloadCourseTable(courses)
