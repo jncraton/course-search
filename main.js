@@ -2,7 +2,7 @@ import { courses } from './courses.js'
 
 function reloadCourseTable(filteredCourses) {
   const rows = filteredCourses.map(course => {
-    const rowClass = course.ENROLLING === 'Closed' ? 'CLOSED' : ''
+    const rowClass = course.ENROLLING === 'Closed' ? '&#10007;' : '&#10003;'
 
     if (
       !document.querySelector('#pre-req').checked ||
