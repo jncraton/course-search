@@ -1,9 +1,10 @@
 import { courses } from './courses.js'
 
-const rows = courses.map(course => {
-  return `<tr>
-            <td>${course.crse} - ${course.descr}</td>
-          </tr>`
-})
+const tbody = document.querySelector('tbody')
+const template = document.querySelector('#courserow')
 
-document.querySelector('tbody').innerHTML = rows.join('')
+courses.forEach(course => {
+  const row = template.content.cloneNode(true)
+  row.querySelector('td').textContent = `${course.crse} - ${course.descr}`
+  tbody.append(row)
+})
