@@ -1,7 +1,7 @@
 export const courses = [
   {
     crse: 'ACCT-2010-01',
-    descr: 'Principles of Accounting I (23)',
+    descr: 'Principles of Accounting I',
     instr: 'Vanessa Tijerina',
     days: 'MWF',
     newlibintensives: '',
@@ -12,7 +12,7 @@ export const courses = [
   },
   {
     crse: 'ACCT-2020-01',
-    descr: 'Principles of Accounting II (23)',
+    descr: 'Principles of Accounting II',
     instr: 'Celesta Bates',
     days: 'MWF',
     newlibintensives: '',
@@ -23,7 +23,7 @@ export const courses = [
   },
   {
     crse: 'ACCT-3020-01',
-    descr: 'Intermediate Accounting II (23)',
+    descr: 'Intermediate Accounting II',
     instr: 'Vanessa Tijerina',
     days: 'TR',
     newlibintensives: '',
@@ -34,7 +34,7 @@ export const courses = [
   },
   {
     crse: 'ACCT-3860-0E',
-    descr: 'Volunteer Income Tax Assistance Practicum (23)',
+    descr: 'Volunteer Income Tax Assistance Practicum',
     instr: 'Vanessa Tijerina',
     days: '',
     newlibintensives: '',
@@ -45,7 +45,7 @@ export const courses = [
   },
   {
     crse: 'ACCT-4020-01',
-    descr: 'Federal Income Tax (23)',
+    descr: 'Federal Income Tax',
     instr: 'Vanessa Tijerina',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -56,7 +56,7 @@ export const courses = [
   },
   {
     crse: 'ACCT-4310-01',
-    descr: 'Auditing (23)',
+    descr: 'Auditing',
     instr: 'Vanessa Tijerina',
     days: 'MWF',
     newlibintensives: '',
@@ -67,7 +67,7 @@ export const courses = [
   },
   {
     crse: 'ARTS-1230-01',
-    descr: 'Painting for Liberal Arts (23)',
+    descr: 'Painting for Liberal Arts',
     instr: 'Kameron Robinson',
     days: 'MWF',
     newlibintensives: '',
@@ -78,7 +78,7 @@ export const courses = [
   },
   {
     crse: 'ARTS-4114-01',
-    descr: 'Design for Digital Media (24)',
+    descr: 'Design for Digital Media',
     instr: 'Maria Gifford',
     days: 'MWF',
     newlibintensives: '',
@@ -89,7 +89,7 @@ export const courses = [
   },
   {
     crse: 'ARTS-4420-01',
-    descr: 'Design Methodology (24)',
+    descr: 'Design Methodology',
     instr: 'Kameron Robinson',
     days: 'TR',
     newlibintensives: '',
@@ -100,7 +100,7 @@ export const courses = [
   },
   {
     crse: 'ARTS-4820-01',
-    descr: 'Internship (24)',
+    descr: 'Internship',
     instr: 'Kameron Robinson',
     days: '',
     newlibintensives: '',
@@ -111,7 +111,7 @@ export const courses = [
   },
   {
     crse: 'ARTS-4950-01',
-    descr: 'Comprehensive Projects II (23)',
+    descr: 'Comprehensive Projects II',
     instr: 'Jeffrey Jackson',
     days: 'TR',
     newlibintensives: 'Speaking Intensive',
@@ -122,7 +122,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-2000-01',
-    descr: 'Intro to the Bible (23)',
+    descr: 'Intro to the Bible',
     instr: 'Rodney Kilgore',
     days: 'MWF',
     newlibintensives: '',
@@ -133,7 +133,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-2000-02',
-    descr: 'Intro to the Bible (23)',
+    descr: 'Intro to the Bible',
     instr: 'Gilbert Lozano',
     days: 'MWF',
     newlibintensives: '',
@@ -144,7 +144,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-2000-03',
-    descr: 'Intro to the Bible (23)',
+    descr: 'Intro to the Bible',
     instr: 'Rodney Kilgore',
     days: 'MWF',
     newlibintensives: '',
@@ -155,7 +155,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-2000-8E',
-    descr: 'Intro to the Bible (23)',
+    descr: 'Intro to the Bible',
     instr: 'Jason Varner',
     days: '',
     newlibintensives: '',
@@ -166,7 +166,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-2120-0E',
-    descr: 'Beginning Hebrew II (23)',
+    descr: 'Beginning Hebrew II',
     instr: 'Brian Sigmon',
     days: '',
     newlibintensives: '',
@@ -177,7 +177,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-3410-0EA',
-    descr: 'Images of Jesus Then and Now (24)',
+    descr: 'Images of Jesus Then and Now',
     instr: 'Fredrick Burnett',
     days: '',
     newlibintensives: '',
@@ -188,7 +188,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-3410-5E',
-    descr: 'Images of Jesus Then and Now (24)',
+    descr: 'Images of Jesus Then and Now',
     instr: 'Fredrick Burnett',
     days: '',
     newlibintensives: '',
@@ -199,7 +199,7 @@ export const courses = [
   },
   {
     crse: 'BIBL-4910-01',
-    descr: 'Seminar (23)',
+    descr: 'Seminar',
     instr: 'Rodney Kilgore',
     days: 'TR',
     newlibintensives: '',
@@ -210,7 +210,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-1000-01',
-    descr: 'Principles of Modern Biology (24)',
+    descr: 'Principles of Modern Biology',
     instr: 'Paul Bankole',
     days: 'R',
     newlibintensives: '',
@@ -221,7 +221,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2010-0E',
-    descr: 'Medical Terminology (24)',
+    descr: 'Medical Terminology',
     instr: 'Paul Bankole',
     days: '',
     newlibintensives: '',
@@ -232,7 +232,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2220-01',
-    descr: 'Foundations of Modern Biology II (24)',
+    descr: 'Foundations of Modern Biology II',
     instr: 'Michael Bailey',
     days: 'MWF',
     newlibintensives: '',
@@ -243,7 +243,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2220L-LA',
-    descr: 'Foundations of Modern Biology II (24) - Lab',
+    descr: 'Foundations of Modern Biology II - Lab',
     instr: 'Michael Bailey',
     days: 'T',
     newlibintensives: '',
@@ -254,7 +254,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2240-01',
-    descr: 'Cell Biology (24)',
+    descr: 'Cell Biology',
     instr: 'Renfang Taylor',
     days: 'R',
     newlibintensives: '',
@@ -265,7 +265,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2420-01',
-    descr: 'Human Anatomy and Physiology II (24)',
+    descr: 'Human Anatomy and Physiology II',
     instr: 'null',
     days: 'MWF',
     newlibintensives: '',
@@ -276,7 +276,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2420L-LA',
-    descr: 'Human Anatomy and Physiology II (24) - Lab',
+    descr: 'Human Anatomy and Physiology II - Lab',
     instr: 'null',
     days: 'T',
     newlibintensives: '',
@@ -287,7 +287,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-2420L-LB',
-    descr: 'Human Anatomy and Physiology II (24) - Lab',
+    descr: 'Human Anatomy and Physiology II - Lab',
     instr: 'null',
     days: 'R',
     newlibintensives: '',
@@ -298,7 +298,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-4070-01',
-    descr: 'Ecology and Evolutionary Biology (24)',
+    descr: 'Ecology and Evolutionary Biology',
     instr: 'Paul Bankole',
     days: 'T',
     newlibintensives: '',
@@ -309,7 +309,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-4220-01',
-    descr: 'Biochemistry II (24)',
+    descr: 'Biochemistry II',
     instr: 'Renfang Taylor',
     days: 'MWF',
     newlibintensives: '',
@@ -320,7 +320,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-4220-LA',
-    descr: 'Biochemistry II (24)',
+    descr: 'Biochemistry II',
     instr: 'Renfang Taylor',
     days: 'T',
     newlibintensives: '',
@@ -331,7 +331,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-4910-01',
-    descr: 'Science Seminar I (24)',
+    descr: 'Science Seminar I',
     instr: 'Tyler Williamson',
     days: 'R',
     newlibintensives: '',
@@ -342,7 +342,7 @@ export const courses = [
   },
   {
     crse: 'BIOL-4920-01',
-    descr: 'Science Seminar II (24)',
+    descr: 'Science Seminar II',
     instr: 'Tyler Williamson',
     days: 'R',
     newlibintensives: 'Speaking/Writing UpDiv Intens',
@@ -353,7 +353,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-1050-01',
-    descr: 'Business as a Profession (23)',
+    descr: 'Business as a Profession',
     instr: 'Allison Eddleman',
     days: 'MWF',
     newlibintensives: '',
@@ -364,7 +364,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2310-0E',
-    descr: 'Business Analytics (23)',
+    descr: 'Business Analytics',
     instr: 'Veronica Dougherty-Denny',
     days: '',
     newlibintensives: '',
@@ -375,7 +375,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2450-01',
-    descr: 'Data Analysis and Decision Making for Business (23)',
+    descr: 'Data Analysis and Decision Making for Business',
     instr: 'Hyeon Joon Shin',
     days: 'MWF',
     newlibintensives: '',
@@ -386,7 +386,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2510-01',
-    descr: 'Principles of Finance (23)',
+    descr: 'Principles of Finance',
     instr: 'Jongdoo Lee',
     days: 'MWF',
     newlibintensives: '',
@@ -397,7 +397,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2550-01',
-    descr: 'Business Communications (25)',
+    descr: 'Business Communications',
     instr: 'Anna Rasco',
     days: 'MWF',
     newlibintensives: '',
@@ -408,7 +408,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2710-01',
-    descr: 'Principles of Management (23)',
+    descr: 'Principles of Management',
     instr: 'Allison Eddleman',
     days: 'MWF',
     newlibintensives: '',
@@ -419,7 +419,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-2810-01',
-    descr: 'Principles of Marketing (23)',
+    descr: 'Principles of Marketing',
     instr: 'Emmett Dulaney',
     days: 'TR',
     newlibintensives: '',
@@ -430,7 +430,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-3120-01',
-    descr: 'Global Business (23)',
+    descr: 'Global Business',
     instr: 'Veronica Dougherty-Denny',
     days: 'TR',
     newlibintensives: 'Writing Intensive Up Div',
@@ -441,7 +441,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-3240-01',
-    descr: 'Operations Management (23)',
+    descr: 'Operations Management',
     instr: 'Anna Rasco',
     days: 'MWF',
     newlibintensives: '',
@@ -452,7 +452,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-3330-0B',
-    descr: 'Music Marketing (23)',
+    descr: 'Music Marketing',
     instr: 'Rebecca Chappell',
     days: 'TR',
     newlibintensives: 'Speaking/Writing UpDiv Intens',
@@ -463,7 +463,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-3350-0E',
-    descr: 'Corporate Finance (23)',
+    descr: 'Corporate Finance',
     instr: 'Jongdoo Lee',
     days: '',
     newlibintensives: '',
@@ -474,7 +474,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-3420-01',
-    descr: 'Business Law (23)',
+    descr: 'Business Law',
     instr: 'Anna Rasco',
     days: 'TR',
     newlibintensives: '',
@@ -485,7 +485,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4010-01',
-    descr: 'Organizational Behavior and Theory (23)',
+    descr: 'Organizational Behavior and Theory',
     instr: 'Veronica Dougherty-Denny',
     days: 'MWF',
     newlibintensives: '',
@@ -496,7 +496,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4160-01',
-    descr: 'Portfolio Management (23)',
+    descr: 'Portfolio Management',
     instr: 'Jongdoo Lee',
     days: 'MWF',
     newlibintensives: '',
@@ -507,7 +507,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4330-01',
-    descr: 'Marketing Management (23)',
+    descr: 'Marketing Management',
     instr: 'Emmett Dulaney',
     days: 'MWF',
     newlibintensives: '',
@@ -518,7 +518,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4360-01',
-    descr: 'Sport Sponsorship and Sales (23)',
+    descr: 'Sport Sponsorship and Sales',
     instr: 'James Newton',
     days: 'MWF',
     newlibintensives: '',
@@ -529,7 +529,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4400-01',
-    descr: 'Social Media (23)',
+    descr: 'Social Media',
     instr: 'James Newton',
     days: 'MWF',
     newlibintensives: '',
@@ -540,7 +540,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4500-01',
-    descr: 'Strategic Management (23)',
+    descr: 'Strategic Management',
     instr: 'Veronica Dougherty-Denny',
     days: 'TR',
     newlibintensives: '',
@@ -551,7 +551,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4560-01',
-    descr: 'Bsns of Game-Day Exper (23)',
+    descr: 'Bsns of Game-Day Exper',
     instr: 'James Newton',
     days: 'MWF',
     newlibintensives: '',
@@ -562,7 +562,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4800-01',
-    descr: 'Business Internship (23)',
+    descr: 'Business Internship',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -573,7 +573,7 @@ export const courses = [
   },
   {
     crse: 'BSNS-4910-01',
-    descr: 'Senior Seminar in Business (23)',
+    descr: 'Senior Seminar in Business',
     instr: 'Anna Rasco',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -584,7 +584,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-1000-01',
-    descr: 'Introduction to Chemistry (24)',
+    descr: 'Introduction to Chemistry',
     instr: 'Scott Carr',
     days: 'MWF',
     newlibintensives: '',
@@ -595,7 +595,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-1000L-LA',
-    descr: 'Introduction to Chemistry (24) - Lab',
+    descr: 'Introduction to Chemistry - Lab',
     instr: 'Scott Carr',
     days: 'T',
     newlibintensives: '',
@@ -606,7 +606,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-1000L-LB',
-    descr: 'Introduction to Chemistry (24) - Lab',
+    descr: 'Introduction to Chemistry - Lab',
     instr: 'Scott Carr',
     days: 'T',
     newlibintensives: '',
@@ -617,7 +617,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-2120-01',
-    descr: 'General Chemistry II (24)',
+    descr: 'General Chemistry II',
     instr: 'Scott Kennedy',
     days: 'MWF',
     newlibintensives: '',
@@ -628,7 +628,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-2120L-LA',
-    descr: 'General Chemistry II (24) - Lab',
+    descr: 'General Chemistry II - Lab',
     instr: 'Scott Kennedy',
     days: 'R',
     newlibintensives: '',
@@ -639,7 +639,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-2120L-LB',
-    descr: 'General Chemistry II (24) - Lab',
+    descr: 'General Chemistry II - Lab',
     instr: 'Scott Kennedy',
     days: 'R',
     newlibintensives: '',
@@ -650,7 +650,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-2220-01',
-    descr: 'Organic Chemistry II (24)',
+    descr: 'Organic Chemistry II',
     instr: 'Scott Carr',
     days: 'MWF',
     newlibintensives: '',
@@ -661,7 +661,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-2220L-LA',
-    descr: 'Organic Chemistry II (24) - Lab',
+    descr: 'Organic Chemistry II - Lab',
     instr: 'Scott Carr',
     days: 'R',
     newlibintensives: '',
@@ -672,7 +672,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-4220-01',
-    descr: 'Biochemistry II (24)',
+    descr: 'Biochemistry II',
     instr: 'Renfang Taylor',
     days: 'MWF',
     newlibintensives: '',
@@ -683,7 +683,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-4220-LA',
-    descr: 'Biochemistry II (24)',
+    descr: 'Biochemistry II',
     instr: 'Renfang Taylor',
     days: 'T',
     newlibintensives: '',
@@ -694,7 +694,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-4520-01',
-    descr: 'Senior Physical Science Practicum II (24)',
+    descr: 'Senior Physical Science Practicum II',
     instr: 'Scott Carr',
     days: 'T',
     newlibintensives: '',
@@ -705,7 +705,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-4650-01',
-    descr: 'Independent Study (24)',
+    descr: 'Independent Study',
     instr: 'Scott Carr',
     days: '',
     newlibintensives: '',
@@ -716,7 +716,7 @@ export const courses = [
   },
   {
     crse: 'CHEM-4920-01',
-    descr: 'Science Seminar II (24)',
+    descr: 'Science Seminar II',
     instr: 'Tyler Williamson',
     days: 'R',
     newlibintensives: 'Speaking/Writing UpDiv Intens',
@@ -727,7 +727,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-2270-01',
-    descr: 'Faith and Worship (23)',
+    descr: 'Faith and Worship',
     instr: 'Leanne Ketcham',
     days: 'MWF',
     newlibintensives: '',
@@ -738,7 +738,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-2810-01',
-    descr: 'Ministry Exploration (23)',
+    descr: 'Ministry Exploration',
     instr: 'Alan Overstreet',
     days: '',
     newlibintensives: '',
@@ -749,7 +749,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-3050-0E',
-    descr: 'Homiletics (23)',
+    descr: 'Homiletics',
     instr: 'Leanne Ketcham',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -760,7 +760,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-3340-0E',
-    descr: 'The Community of Faith in an Urban Culture (24)',
+    descr: 'The Community of Faith in an Urban Culture',
     instr: 'Nathan Willowby',
     days: '',
     newlibintensives: '',
@@ -771,7 +771,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-3910-01',
-    descr: 'Ministry Seminar (24)',
+    descr: 'Ministry Seminar',
     instr: 'Gilbert Lozano',
     days: 'TR',
     newlibintensives: 'Speaking Intensive',
@@ -782,7 +782,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-3910-0B',
-    descr: 'Ministry Seminar (24)',
+    descr: 'Ministry Seminar',
     instr: 'Leanne Ketcham',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -793,7 +793,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-4250-0E',
-    descr: 'Theology in a Ministry Context (23)',
+    descr: 'Theology in a Ministry Context',
     instr: 'Alan Overstreet',
     days: '',
     newlibintensives: 'Writing Intensive Up Div',
@@ -804,7 +804,7 @@ export const courses = [
   },
   {
     crse: 'CMIN-4810-01',
-    descr: 'Internship (23)',
+    descr: 'Internship',
     instr: 'Alan Overstreet',
     days: '',
     newlibintensives: '',
@@ -815,7 +815,7 @@ export const courses = [
   },
   {
     crse: 'COMM-1000-01',
-    descr: 'Introduction to Speech Communication (23)',
+    descr: 'Introduction to Speech Communication',
     instr: 'Arthur Kelly',
     days: 'TR',
     newlibintensives: '',
@@ -826,7 +826,7 @@ export const courses = [
   },
   {
     crse: 'COMM-1000-02',
-    descr: 'Introduction to Speech Communication (23)',
+    descr: 'Introduction to Speech Communication',
     instr: 'Arthur Kelly',
     days: 'TR',
     newlibintensives: '',
@@ -837,7 +837,7 @@ export const courses = [
   },
   {
     crse: 'COMM-1000-03',
-    descr: 'Introduction to Speech Communication (23)',
+    descr: 'Introduction to Speech Communication',
     instr: 'Jack Lugar',
     days: 'MWF',
     newlibintensives: '',
@@ -848,7 +848,7 @@ export const courses = [
   },
   {
     crse: 'COMM-1000-04',
-    descr: 'Introduction to Speech Communication (23)',
+    descr: 'Introduction to Speech Communication',
     instr: 'Jack Lugar',
     days: 'MWF',
     newlibintensives: '',
@@ -859,7 +859,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2000-01',
-    descr: 'Media and Society (23)',
+    descr: 'Media and Society',
     instr: 'Jack Lugar',
     days: 'MWF',
     newlibintensives: '',
@@ -870,7 +870,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2020-01',
-    descr: 'Audio Concepts and Production (23)',
+    descr: 'Audio Concepts and Production',
     instr: 'Kris Rinas',
     days: 'TR',
     newlibintensives: '',
@@ -881,7 +881,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2130-01',
-    descr: 'Writing for the Media (23)',
+    descr: 'Writing for the Media',
     instr: 'Heather Bremer',
     days: 'TR',
     newlibintensives: 'Writing Intensive',
@@ -892,7 +892,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2160-01',
-    descr: 'The Art of Storytelling (23)',
+    descr: 'The Art of Storytelling',
     instr: 'Jack Lugar',
     days: 'TR',
     newlibintensives: 'Writing Intensive',
@@ -903,7 +903,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2200-01',
-    descr: 'Visual Communication (23)',
+    descr: 'Visual Communication',
     instr: 'Kameron Robinson',
     days: 'MW',
     newlibintensives: '',
@@ -914,7 +914,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2320-01',
-    descr: 'Multicamera and Studio Production (23)',
+    descr: 'Multicamera and Studio Production',
     instr: 'Kris Rinas',
     days: 'MWF',
     newlibintensives: '',
@@ -925,7 +925,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2840-0E',
-    descr: 'Fifth Street Communication Staff (23)',
+    descr: 'Fifth Street Communication Staff',
     instr: 'Stefanie Leiter',
     days: '',
     newlibintensives: '',
@@ -936,7 +936,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2850-01',
-    descr: 'Andersonian Staff (23)',
+    descr: 'Andersonian Staff',
     instr: 'Peter Elliott',
     days: 'R',
     newlibintensives: '',
@@ -947,7 +947,7 @@ export const courses = [
   },
   {
     crse: 'COMM-2860-01',
-    descr: 'Black Bird Media Lab (23)',
+    descr: 'Black Bird Media Lab',
     instr: 'Kris Rinas',
     days: 'W',
     newlibintensives: '',
@@ -958,7 +958,7 @@ export const courses = [
   },
   {
     crse: 'COMM-3050-01',
-    descr: 'Global Communication (24)',
+    descr: 'Global Communication',
     instr: 'Stefanie Leiter',
     days: 'T',
     newlibintensives: '',
@@ -969,7 +969,7 @@ export const courses = [
   },
   {
     crse: 'COMM-3310-01',
-    descr: 'Interpersonal Communication (24)',
+    descr: 'Interpersonal Communication',
     instr: 'Stefanie Leiter',
     days: 'TR',
     newlibintensives: '',
@@ -980,7 +980,7 @@ export const courses = [
   },
   {
     crse: 'COMM-3370-8E',
-    descr: 'Communicating through Social Media (23)',
+    descr: 'Communicating through Social Media',
     instr: 'Maria Gifford',
     days: '',
     newlibintensives: '',
@@ -991,7 +991,7 @@ export const courses = [
   },
   {
     crse: 'COMM-3860-01',
-    descr: 'Practicum Event Management (23)',
+    descr: 'Practicum Event Management',
     instr: 'Stefanie Leiter',
     days: '',
     newlibintensives: '',
@@ -1002,7 +1002,7 @@ export const courses = [
   },
   {
     crse: 'COMM-4800-01',
-    descr: 'Internship (23)',
+    descr: 'Internship',
     instr: 'Jack Lugar',
     days: '',
     newlibintensives: '',
@@ -1013,7 +1013,7 @@ export const courses = [
   },
   {
     crse: 'COMM-4800-02',
-    descr: 'Internship (23)',
+    descr: 'Internship',
     instr: 'Stefanie Leiter',
     days: '',
     newlibintensives: '',
@@ -1024,7 +1024,7 @@ export const courses = [
   },
   {
     crse: 'COMM-4800-03',
-    descr: 'Internship (23)',
+    descr: 'Internship',
     instr: 'Stefanie Leiter',
     days: '',
     newlibintensives: '',
@@ -1035,7 +1035,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2020-01',
-    descr: 'Fundamentals of Computational Thinking and Programming (23)',
+    descr: 'Fundamentals of Computational Thinking and Programming',
     instr: 'Jonathan Craton',
     days: 'R',
     newlibintensives: '',
@@ -1046,7 +1046,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2030-01',
-    descr: 'Object-Oriented Analysis and Design (25)',
+    descr: 'Object-Oriented Analysis and Design',
     instr: 'Matthew Preston',
     days: '',
     newlibintensives: '',
@@ -1057,7 +1057,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2040-01',
-    descr: 'Foundations of Data Science (25)',
+    descr: 'Foundations of Data Science',
     instr: 'Matthew Preston',
     days: 'MTWF',
     newlibintensives: '',
@@ -1068,7 +1068,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2250-01',
-    descr: 'Discrete Mathematical Structures (23)',
+    descr: 'Discrete Mathematical Structures',
     instr: 'Fred Coon',
     days: 'MTRF',
     newlibintensives: '',
@@ -1079,7 +1079,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2300-01',
-    descr: 'System Administration (24)',
+    descr: 'System Administration',
     instr: 'Matthew Burch',
     days: 'MW',
     newlibintensives: '',
@@ -1090,7 +1090,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-2430-01',
-    descr: 'Programming Languages and Compilers (23)',
+    descr: 'Programming Languages and Compilers',
     instr: 'Jonathan Craton',
     days: 'W',
     newlibintensives: '',
@@ -1101,7 +1101,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-3480-01',
-    descr: 'Network Security (25)',
+    descr: 'Network Security',
     instr: 'Matthew Burch',
     days: 'R',
     newlibintensives: '',
@@ -1112,7 +1112,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-3540-01',
-    descr: 'Intro to Machine Learning (25)',
+    descr: 'Intro to Machine Learning',
     instr: 'Matthew Preston',
     days: 'MWF',
     newlibintensives: '',
@@ -1123,7 +1123,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-4070-01',
-    descr: 'Cybersecurity Analysis and Digital Forensics (25)',
+    descr: 'Cybersecurity Analysis and Digital Forensics',
     instr: 'Matthew Burch',
     days: 'R',
     newlibintensives: '',
@@ -1134,7 +1134,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-4420-01',
-    descr: 'Operating Systems (23)',
+    descr: 'Operating Systems',
     instr: 'Jonathan Craton',
     days: 'MTW',
     newlibintensives: '',
@@ -1145,7 +1145,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-4480-01',
-    descr: 'Technical Certification (23)',
+    descr: 'Technical Certification',
     instr: 'Matthew Preston',
     days: 'F',
     newlibintensives: '',
@@ -1156,7 +1156,7 @@ export const courses = [
   },
   {
     crse: 'CPSC-4960-01',
-    descr: 'Senior Seminar Ethics (23)',
+    descr: 'Senior Seminar Ethics',
     instr: 'Matthew Burch',
     days: 'T',
     newlibintensives: 'Writing Intensive Up Div',
@@ -1167,7 +1167,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-2510-0B',
-    descr: 'The Nature of Crime and Social Deviance (23)',
+    descr: 'The Nature of Crime and Social Deviance',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: 'Writing Intensive',
@@ -1178,7 +1178,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-2520-0E',
-    descr: 'Introduction to Criminal Justice (23)',
+    descr: 'Introduction to Criminal Justice',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: '',
@@ -1189,7 +1189,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-2560-01',
-    descr: 'Introduction to Criminal Forensic Science (23)',
+    descr: 'Introduction to Criminal Forensic Science',
     instr: 'Neal Freeman',
     days: 'MWF',
     newlibintensives: '',
@@ -1200,7 +1200,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-3020-01',
-    descr: 'Principles of Law Enforcement (23)',
+    descr: 'Principles of Law Enforcement',
     instr: 'Neal Freeman',
     days: 'TR',
     newlibintensives: '',
@@ -1211,7 +1211,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-3080-01',
-    descr: 'Forensic Psychology (25)',
+    descr: 'Forensic Psychology',
     instr: 'Tarah Butcher',
     days: 'W',
     newlibintensives: '',
@@ -1222,7 +1222,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-3350-01',
-    descr: 'Homeland Security (23)',
+    descr: 'Homeland Security',
     instr: 'Michael Frank',
     days: 'MWF',
     newlibintensives: '',
@@ -1233,7 +1233,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-3600-01',
-    descr: 'Topics in Criminal Justice: (23)',
+    descr: 'Topics in Criminal Justice:',
     instr: 'Connor Sutton',
     days: 'T',
     newlibintensives: '',
@@ -1244,7 +1244,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-4810-01',
-    descr: 'Criminal Justice Internship I (23)',
+    descr: 'Criminal Justice Internship I',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: '',
@@ -1255,7 +1255,7 @@ export const courses = [
   },
   {
     crse: 'CRIM-4820-01',
-    descr: 'Criminal Justice Internship II (23)',
+    descr: 'Criminal Justice Internship II',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: '',
@@ -1266,7 +1266,7 @@ export const courses = [
   },
   {
     crse: 'DANC-1120-01',
-    descr: 'Tap I (23)',
+    descr: 'Tap I',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1277,7 +1277,7 @@ export const courses = [
   },
   {
     crse: 'DANC-1150-01',
-    descr: 'Dance Repertory (23)',
+    descr: 'Dance Repertory',
     instr: 'Jason Panzino',
     days: '',
     newlibintensives: '',
@@ -1288,7 +1288,7 @@ export const courses = [
   },
   {
     crse: 'DANC-1220-01',
-    descr: 'Modern I (24)',
+    descr: 'Modern I',
     instr: 'Camden Lancaster',
     days: 'MWF',
     newlibintensives: '',
@@ -1299,7 +1299,7 @@ export const courses = [
   },
   {
     crse: 'DANC-1320-01',
-    descr: 'Jazz I (23)',
+    descr: 'Jazz I',
     instr: 'Camden Lancaster',
     days: 'MWF',
     newlibintensives: '',
@@ -1310,7 +1310,7 @@ export const courses = [
   },
   {
     crse: 'DANC-1420-01',
-    descr: 'Ballet I (24)',
+    descr: 'Ballet I',
     instr: 'Jennifer Thiemet',
     days: 'MWF',
     newlibintensives: '',
@@ -1321,7 +1321,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2110-01',
-    descr: 'Musical Theatre Dance Forms (23)',
+    descr: 'Musical Theatre Dance Forms',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1332,7 +1332,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2120-01',
-    descr: 'Tap II (23)',
+    descr: 'Tap II',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1343,7 +1343,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2220-01',
-    descr: 'Modern II (24)',
+    descr: 'Modern II',
     instr: 'Debra Silveus',
     days: 'TR',
     newlibintensives: '',
@@ -1354,7 +1354,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2320-01',
-    descr: 'Jazz II (23)',
+    descr: 'Jazz II',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1365,7 +1365,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2420-01',
-    descr: 'Ballet II (24)',
+    descr: 'Ballet II',
     instr: 'Jennifer Thiemet',
     days: 'MWF',
     newlibintensives: '',
@@ -1376,7 +1376,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2580-01',
-    descr: 'Dance Improvisation II (23)',
+    descr: 'Dance Improvisation II',
     instr: 'Hannah Wilhite',
     days: 'TR',
     newlibintensives: '',
@@ -1387,7 +1387,7 @@ export const courses = [
   },
   {
     crse: 'DANC-2590-01',
-    descr: 'Dance Composition II (23)',
+    descr: 'Dance Composition II',
     instr: 'Hannah Wilhite',
     days: 'TR',
     newlibintensives: '',
@@ -1398,7 +1398,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3020-0E',
-    descr: 'Dance History II (24)',
+    descr: 'Dance History II',
     instr: 'Hannah Wilhite',
     days: '',
     newlibintensives: '',
@@ -1409,7 +1409,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3055-01',
-    descr: 'Dance Pedagogy II (24)',
+    descr: 'Dance Pedagogy II',
     instr: 'Jennifer Thiemet',
     days: '',
     newlibintensives: '',
@@ -1420,7 +1420,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3120-01',
-    descr: 'Tap III (23)',
+    descr: 'Tap III',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1431,7 +1431,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3220-01',
-    descr: 'Modern III (24)',
+    descr: 'Modern III',
     instr: 'Debra Silveus',
     days: 'TR',
     newlibintensives: '',
@@ -1442,7 +1442,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3320-01',
-    descr: 'Jazz Dance III (23)',
+    descr: 'Jazz Dance III',
     instr: 'Douglas King',
     days: 'TR',
     newlibintensives: '',
@@ -1453,7 +1453,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3420-01',
-    descr: 'Ballet III (24)',
+    descr: 'Ballet III',
     instr: 'Jennifer Thiemet',
     days: 'MWF',
     newlibintensives: '',
@@ -1464,7 +1464,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3580-01',
-    descr: 'Dance Improvisation III (24)',
+    descr: 'Dance Improvisation III',
     instr: 'Hannah Wilhite',
     days: 'TR',
     newlibintensives: '',
@@ -1475,7 +1475,7 @@ export const courses = [
   },
   {
     crse: 'DANC-3590-01',
-    descr: 'Dance Composition III (23)',
+    descr: 'Dance Composition III',
     instr: 'Hannah Wilhite',
     days: 'TR',
     newlibintensives: '',
@@ -1486,7 +1486,7 @@ export const courses = [
   },
   {
     crse: 'ECON-2010-01',
-    descr: 'Principles of Macroeconomics (23)',
+    descr: 'Principles of Macroeconomics',
     instr: 'Hyeon Joon Shin',
     days: 'MWF',
     newlibintensives: '',
@@ -1497,7 +1497,7 @@ export const courses = [
   },
   {
     crse: 'ECON-2020-01',
-    descr: 'Principles of Microeconomics (23)',
+    descr: 'Principles of Microeconomics',
     instr: 'Hyeon Joon Shin',
     days: 'MWF',
     newlibintensives: '',
@@ -1508,7 +1508,7 @@ export const courses = [
   },
   {
     crse: 'ECON-3410-01',
-    descr: 'Money Banking and Financial Markets (23)',
+    descr: 'Money Banking and Financial Markets',
     instr: 'Emmett Dulaney',
     days: 'TR',
     newlibintensives: '',
@@ -1519,7 +1519,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2000-01',
-    descr: 'Teaching as a Profession (24)',
+    descr: 'Teaching as a Profession',
     instr: 'Amanda Hosier',
     days: 'TR',
     newlibintensives: '',
@@ -1530,7 +1530,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2100-01',
-    descr: 'Child and Adolescent Development (24)',
+    descr: 'Child and Adolescent Development',
     instr: 'Amanda Hosier',
     days: 'MWF',
     newlibintensives: '',
@@ -1541,7 +1541,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2110-01',
-    descr: 'Educational Psychology: Learning in the Schools (24)',
+    descr: 'Educational Psychology: Learning in the Schools',
     instr: 'Kylie Heyerly',
     days: 'MWF',
     newlibintensives: '',
@@ -1552,7 +1552,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2170-01',
-    descr: 'Teaching I: Curriculum and Instruction for Early Childhood (24)',
+    descr: 'Teaching I: Curriculum and Instruction for Early Childhood',
     instr: 'Amanda Hosier',
     days: 'MW',
     newlibintensives: '',
@@ -1563,7 +1563,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2460-01',
-    descr: 'Teaching in a Diverse Society (24)',
+    descr: 'Teaching in a Diverse Society',
     instr: 'Rebekah Baker',
     days: '',
     newlibintensives: '',
@@ -1574,7 +1574,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2520-0E',
-    descr: 'Technology in the Classroom (24)',
+    descr: 'Technology in the Classroom',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -1585,7 +1585,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2730-01',
-    descr: 'Field Experiences in Reading Processes (24)',
+    descr: 'Field Experiences in Reading Processes',
     instr: 'Katy Sample',
     days: 'T',
     newlibintensives: '',
@@ -1596,7 +1596,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-2850-01',
-    descr: 'Practicum in Leadership Skills (24)',
+    descr: 'Practicum in Leadership Skills',
     instr: 'G. Lee Griffith',
     days: 'F',
     newlibintensives: '',
@@ -1607,7 +1607,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-3100-01',
-    descr: 'The Middle School in the United States (24)',
+    descr: 'The Middle School in the United States',
     instr: 'Christine Trotter',
     days: 'T',
     newlibintensives: '',
@@ -1618,7 +1618,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-3120-01',
-    descr: 'Educational Assessment for the Classroom Teacher (24)',
+    descr: 'Educational Assessment for the Classroom Teacher',
     instr: 'Fred Coon',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -1630,7 +1630,7 @@ export const courses = [
   {
     crse: 'EDUC-3300-01',
     descr:
-      'Research-Based Reading Methods: Instruction, Intervention, and Assessment (24)',
+      'Research-Based Reading Methods: Instruction, Intervention, and Assessment',
     instr: 'Katy Sample',
     days: 'MWF',
     newlibintensives: '',
@@ -1641,7 +1641,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4010-01',
-    descr: 'Student Teaching (24)',
+    descr: 'Student Teaching',
     instr: 'Amanda Hosier',
     days: '',
     newlibintensives: '',
@@ -1653,7 +1653,7 @@ export const courses = [
   {
     crse: 'EDUC-4232-TE',
     descr:
-      'Research-Based Reading Methods: Instruction, Intervention, and Assessment (T2T - Elementary) (24)',
+      'Research-Based Reading Methods: Instruction, Intervention, and Assessment (T2T - Elementary)',
     instr: 'Carolyn Shryock',
     days: '',
     newlibintensives: '',
@@ -1664,7 +1664,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4250-TE',
-    descr: 'Reading in the Content Areas (T2T - Secondary) (24)',
+    descr: 'Reading in the Content Areas (T2T - Secondary)',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -1675,7 +1675,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4280-TE',
-    descr: 'Student Teaching (Clinical Practice) (24)',
+    descr: 'Student Teaching (Clinical Practice)',
     instr: 'Amanda Hosier',
     days: '',
     newlibintensives: '',
@@ -1686,7 +1686,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4310-01',
-    descr: 'Integrated Teaching II: Language Arts and Social Studies (24)',
+    descr: 'Integrated Teaching II: Language Arts and Social Studies',
     instr: 'Rebekah Baker',
     days: 'MWF',
     newlibintensives: '',
@@ -1697,7 +1697,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4800-01',
-    descr: 'Internship in Youth Leadership (23)',
+    descr: 'Internship in Youth Leadership',
     instr: 'Janell Blunt',
     days: 'MF',
     newlibintensives: '',
@@ -1708,7 +1708,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4910-0B',
-    descr: 'Dyslexia Seminar (24)',
+    descr: 'Dyslexia Seminar',
     instr: 'Katy Sample',
     days: '',
     newlibintensives: '',
@@ -1719,7 +1719,7 @@ export const courses = [
   },
   {
     crse: 'EDUC-4930-01',
-    descr: 'Leadership Seminar in Character Education (24)',
+    descr: 'Leadership Seminar in Character Education',
     instr: 'Amanda Hosier',
     days: 'T',
     newlibintensives: '',
@@ -1730,7 +1730,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1000-01',
-    descr: 'Composition Studio (23)',
+    descr: 'Composition Studio',
     instr: 'Unassigned Staff',
     days: 'R',
     newlibintensives: '',
@@ -1741,7 +1741,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1110-01',
-    descr: 'Rhetoric and Composition (23)',
+    descr: 'Rhetoric and Composition',
     instr: 'Jason Parks',
     days: 'MWF',
     newlibintensives: '',
@@ -1752,7 +1752,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1110-02',
-    descr: 'Rhetoric and Composition (23)',
+    descr: 'Rhetoric and Composition',
     instr: 'Unassigned Staff',
     days: 'MWF',
     newlibintensives: '',
@@ -1763,7 +1763,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1110-5E',
-    descr: 'Rhetoric and Composition (23)',
+    descr: 'Rhetoric and Composition',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -1774,7 +1774,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-01',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Brandon Bruning',
     days: 'MWF',
     newlibintensives: '',
@@ -1785,7 +1785,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-02',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Deborah Fox',
     days: 'MWF',
     newlibintensives: '',
@@ -1796,7 +1796,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-03',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Brandon Bruning',
     days: 'MWF',
     newlibintensives: '',
@@ -1807,7 +1807,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-04',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Peter Elliott',
     days: 'MWF',
     newlibintensives: '',
@@ -1818,7 +1818,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-06',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Brandon Bruning',
     days: 'MWF',
     newlibintensives: '',
@@ -1829,7 +1829,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-07',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Thomas Kneeland',
     days: 'MWF',
     newlibintensives: '',
@@ -1840,7 +1840,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-08',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Brandon Bruning',
     days: 'MWF',
     newlibintensives: '',
@@ -1851,7 +1851,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-1120-5E',
-    descr: 'Rhetoric and Research (23)',
+    descr: 'Rhetoric and Research',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -1862,7 +1862,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-2220-01',
-    descr: 'Global Literature (24)',
+    descr: 'Global Literature',
     instr: 'Jason Parks',
     days: 'MWF',
     newlibintensives: '',
@@ -1873,7 +1873,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-2500-01',
-    descr: 'Appreciation of the Writing Craft (23)',
+    descr: 'Appreciation of the Writing Craft',
     instr: 'Thomas Kneeland',
     days: 'MF',
     newlibintensives: 'Writing Intensive',
@@ -1884,7 +1884,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-2510-01',
-    descr: 'Creative Writing Workshop (23)',
+    descr: 'Creative Writing Workshop',
     instr: 'Thomas Kneeland',
     days: 'W',
     newlibintensives: '',
@@ -1895,7 +1895,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3120-01',
-    descr: 'Creative Writing: Poetry (24)',
+    descr: 'Creative Writing: Poetry',
     instr: 'Thomas Kneeland',
     days: 'TR',
     newlibintensives: 'Writing Intensive Up Div',
@@ -1906,7 +1906,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3190-01',
-    descr: 'Composing Arguments (24)',
+    descr: 'Composing Arguments',
     instr: 'Peter Elliott',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -1917,7 +1917,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3570-01',
-    descr: 'Studies in American Literature (24)',
+    descr: 'Studies in American Literature',
     instr: 'Jason Parks',
     days: 'MWF',
     newlibintensives: '',
@@ -1928,7 +1928,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3590-01',
-    descr: 'Teaching Diversity through Young Adult Literature (24)',
+    descr: 'Teaching Diversity through Young Adult Literature',
     instr: 'Peter Elliott',
     days: 'MWF',
     newlibintensives: '',
@@ -1939,7 +1939,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3870-01',
-    descr: 'Literary Arts Practicum (23)',
+    descr: 'Literary Arts Practicum',
     instr: 'Thomas Kneeland',
     days: '',
     newlibintensives: '',
@@ -1950,7 +1950,7 @@ export const courses = [
   },
   {
     crse: 'ENGL-3880-01',
-    descr: 'Writing Tutor Practicum (23)',
+    descr: 'Writing Tutor Practicum',
     instr: 'Peter Elliott',
     days: '',
     newlibintensives: '',
@@ -1961,7 +1961,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2060-0E',
-    descr: 'Engineering Ethics (24)',
+    descr: 'Engineering Ethics',
     instr: 'Scott Kennedy',
     days: '',
     newlibintensives: '',
@@ -1972,7 +1972,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2090-01',
-    descr: 'Systems Engineering (25)',
+    descr: 'Systems Engineering',
     instr: 'Willis Troy',
     days: 'MWF',
     newlibintensives: '',
@@ -1983,7 +1983,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2110-01',
-    descr: 'Dynamics (24)',
+    descr: 'Dynamics',
     instr: 'Brian McKenna',
     days: '',
     newlibintensives: '',
@@ -1994,7 +1994,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2200-01',
-    descr: 'Foundations of Digital Electronics (24)',
+    descr: 'Foundations of Digital Electronics',
     instr: 'Kuan-Chuen Wu',
     days: 'T',
     newlibintensives: '',
@@ -2005,7 +2005,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2310-01',
-    descr: 'Computational Problem Solving (24)',
+    descr: 'Computational Problem Solving',
     instr: 'Kuan-Chuen Wu',
     days: 'MW',
     newlibintensives: '',
@@ -2016,7 +2016,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2310L-LA',
-    descr: 'Computational Problem Solving (24) - Lab',
+    descr: 'Computational Problem Solving - Lab',
     instr: 'Kuan-Chuen Wu',
     days: 'F',
     newlibintensives: '',
@@ -2027,7 +2027,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-2310L-LB',
-    descr: 'Computational Problem Solving (24) - Lab',
+    descr: 'Computational Problem Solving - Lab',
     instr: 'Kuan-Chuen Wu',
     days: 'R',
     newlibintensives: '',
@@ -2038,7 +2038,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3080-01',
-    descr: 'Engineering Design for Service (24)',
+    descr: 'Engineering Design for Service',
     instr: 'Brian McKenna',
     days: 'MWF',
     newlibintensives: '',
@@ -2049,7 +2049,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3180-01',
-    descr: 'Materials and Processes (24)',
+    descr: 'Materials and Processes',
     instr: 'Caroline Baker',
     days: 'MWF',
     newlibintensives: '',
@@ -2060,7 +2060,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3190-01',
-    descr: 'Thermodyn: Cycle Analysis (24)',
+    descr: 'Thermodyn: Cycle Analysis',
     instr: 'Scott Kennedy',
     days: 'TR',
     newlibintensives: '',
@@ -2071,7 +2071,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3260-01',
-    descr: 'Embedded Systems (24)',
+    descr: 'Embedded Systems',
     instr: 'Willis Troy',
     days: 'R',
     newlibintensives: '',
@@ -2082,7 +2082,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3510-01',
-    descr: 'Solid Mechanics (24)',
+    descr: 'Solid Mechanics',
     instr: 'Caroline Baker',
     days: 'MWF',
     newlibintensives: '',
@@ -2093,7 +2093,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-3850-01',
-    descr: 'Engineering Projects Laboratory (24)',
+    descr: 'Engineering Projects Laboratory',
     instr: 'Brian McKenna',
     days: 'M',
     newlibintensives: '',
@@ -2104,7 +2104,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4020-01',
-    descr: 'Mechatronics System Design (24)',
+    descr: 'Mechatronics System Design',
     instr: 'Caroline Baker',
     days: 'T',
     newlibintensives: '',
@@ -2115,7 +2115,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4110-01',
-    descr: 'Machine Design (24)',
+    descr: 'Machine Design',
     instr: 'Caroline Baker',
     days: 'MWF',
     newlibintensives: '',
@@ -2126,7 +2126,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4140-01',
-    descr: 'Thermal Properties Laboratory (25)',
+    descr: 'Thermal Properties Laboratory',
     instr: 'Caroline Baker',
     days: 'T',
     newlibintensives: '',
@@ -2137,7 +2137,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4230-01',
-    descr: 'Power Systems (24)',
+    descr: 'Power Systems',
     instr: 'Willis Troy',
     days: 'T',
     newlibintensives: '',
@@ -2148,7 +2148,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4240-01',
-    descr: 'Communications Theory (24)',
+    descr: 'Communications Theory',
     instr: 'Willis Troy',
     days: 'MWF',
     newlibintensives: '',
@@ -2159,7 +2159,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4320-01',
-    descr: 'Fluid Mechanics Laboratory (25)',
+    descr: 'Fluid Mechanics Laboratory',
     instr: 'Brian McKenna',
     days: 'R',
     newlibintensives: '',
@@ -2170,7 +2170,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4340-01',
-    descr: 'Structural Design (concrete) (24)',
+    descr: 'Structural Design (concrete)',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2181,7 +2181,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4360-01',
-    descr: 'Transportation Engineering (24)',
+    descr: 'Transportation Engineering',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2192,7 +2192,7 @@ export const courses = [
   },
   {
     crse: 'ENGR-4960-01',
-    descr: 'Engineering Senior Design II (24)',
+    descr: 'Engineering Senior Design II',
     instr: 'Brian McKenna',
     days: 'MW',
     newlibintensives: 'Speaking/Writing UpDiv Intens',
@@ -2203,7 +2203,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-1530-01',
-    descr: 'Advanced Resistance Training and Conditioning (24)',
+    descr: 'Advanced Resistance Training and Conditioning',
     instr: 'Jeremy Keith',
     days: 'MWF',
     newlibintensives: '',
@@ -2214,7 +2214,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-2140-0EA',
-    descr: 'Nutrition in Health and Disease (24)',
+    descr: 'Nutrition in Health and Disease',
     instr: 'Alisha Miller',
     days: '',
     newlibintensives: '',
@@ -2225,7 +2225,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-2140-5E',
-    descr: 'Nutrition in Health and Disease (24)',
+    descr: 'Nutrition in Health and Disease',
     instr: 'Alisha Miller',
     days: '',
     newlibintensives: '',
@@ -2236,7 +2236,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-2455-01',
-    descr: 'Foundations of Exercise Leadership (23)',
+    descr: 'Foundations of Exercise Leadership',
     instr: 'Jeremy Keith',
     days: 'TR',
     newlibintensives: '',
@@ -2247,7 +2247,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-2580-01',
-    descr: 'Sports Nutrition (23)',
+    descr: 'Sports Nutrition',
     instr: 'Alisha Miller',
     days: 'MWF',
     newlibintensives: '',
@@ -2258,7 +2258,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-3100-0E',
-    descr: 'Eating Disorders (23)',
+    descr: 'Eating Disorders',
     instr: 'Alisha Miller',
     days: '',
     newlibintensives: '',
@@ -2269,7 +2269,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-3480-01',
-    descr: 'Physiology of Exercise II (23)',
+    descr: 'Physiology of Exercise II',
     instr: 'Jeremy Keith',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -2280,7 +2280,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-3480L-LA',
-    descr: 'Physiology of Exercise II (23) - Lab',
+    descr: 'Physiology of Exercise II - Lab',
     instr: 'Earlene Masi',
     days: 'R',
     newlibintensives: '',
@@ -2291,7 +2291,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-3530-01',
-    descr: 'Biomechanics II (23)',
+    descr: 'Biomechanics II',
     instr: 'Alisha Miller',
     days: 'MWF',
     newlibintensives: '',
@@ -2302,7 +2302,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-3530L-LA',
-    descr: 'Biomechanics II (23) - Lab',
+    descr: 'Biomechanics II - Lab',
     instr: 'Alisha Miller',
     days: 'T',
     newlibintensives: '',
@@ -2313,7 +2313,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-4150-01',
-    descr: 'Exercise Testing and Prescription (24)',
+    descr: 'Exercise Testing and Prescription',
     instr: 'Jeremy Keith',
     days: 'R',
     newlibintensives: '',
@@ -2324,7 +2324,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-4160-01',
-    descr: 'Clinical Experience in Exercise Testing and Prescription (23)',
+    descr: 'Clinical Experience in Exercise Testing and Prescription',
     instr: 'Earlene Masi',
     days: '',
     newlibintensives: '',
@@ -2335,7 +2335,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-4850-01',
-    descr: 'Topics in Exercise Science: (23)',
+    descr: 'Topics in Exercise Science:',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2346,7 +2346,7 @@ export const courses = [
   },
   {
     crse: 'EXSC-4920-01',
-    descr: 'Seminar in Exercise Science (24)',
+    descr: 'Seminar in Exercise Science',
     instr: 'Jeremy Keith',
     days: 'MWF',
     newlibintensives: 'Speaking Intensive',
@@ -2357,7 +2357,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2000-01',
-    descr: 'World History (23)',
+    descr: 'World History',
     instr: 'Jaye Rogers',
     days: 'TR',
     newlibintensives: '',
@@ -2368,7 +2368,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2040-01',
-    descr: 'Western Civilization II (23)',
+    descr: 'Western Civilization II',
     instr: 'David Murphy',
     days: 'TR',
     newlibintensives: '',
@@ -2379,7 +2379,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2110-01',
-    descr: 'American History I (23)',
+    descr: 'American History I',
     instr: 'Brian Dirck',
     days: 'MWF',
     newlibintensives: '',
@@ -2390,7 +2390,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2120-01',
-    descr: 'American History II (23)',
+    descr: 'American History II',
     instr: 'Jaye Rogers',
     days: 'MWF',
     newlibintensives: '',
@@ -2401,7 +2401,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2120-0EA',
-    descr: 'American History II (23)',
+    descr: 'American History II',
     instr: 'Brian Dirck',
     days: '',
     newlibintensives: '',
@@ -2412,7 +2412,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2120-8E',
-    descr: 'American History II (23)',
+    descr: 'American History II',
     instr: 'Brian Dirck',
     days: '',
     newlibintensives: '',
@@ -2423,7 +2423,7 @@ export const courses = [
   },
   {
     crse: 'HIST-2350-01',
-    descr: 'Foundation of Public History (24)',
+    descr: 'Foundation of Public History',
     instr: 'Brian Dirck',
     days: 'TR',
     newlibintensives: '',
@@ -2434,7 +2434,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3010-01',
-    descr: 'History of Political Thought (24)',
+    descr: 'History of Political Thought',
     instr: 'Jason Varner',
     days: 'TR',
     newlibintensives: '',
@@ -2445,7 +2445,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3100-01',
-    descr: 'Ancient History (24)',
+    descr: 'Ancient History',
     instr: 'David Murphy',
     days: 'MWF',
     newlibintensives: '',
@@ -2456,7 +2456,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3190-01',
-    descr: 'Jewish Holocaust and its Historical Context (23)',
+    descr: 'Jewish Holocaust and its Historical Context',
     instr: 'David Murphy',
     days: 'MWF',
     newlibintensives: '',
@@ -2467,7 +2467,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3250-01',
-    descr: 'History of the Cold War (24)',
+    descr: 'History of the Cold War',
     instr: 'Jaye Rogers',
     days: 'MWF',
     newlibintensives: '',
@@ -2478,7 +2478,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3260-01',
-    descr: 'Women in the World 1800-Present (24)',
+    descr: 'Women in the World 1800-Present',
     instr: 'Jaye Rogers',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -2489,7 +2489,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3260-0EA',
-    descr: 'Women in the World 1800-Present (24)',
+    descr: 'Women in the World 1800-Present',
     instr: 'Jaye Rogers',
     days: '',
     newlibintensives: 'Writing Intensive Up Div',
@@ -2500,7 +2500,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3260-5E',
-    descr: 'Women in the World 1800-Present (24)',
+    descr: 'Women in the World 1800-Present',
     instr: 'Jaye Rogers',
     days: '',
     newlibintensives: 'Writing Intensive Up Div',
@@ -2511,7 +2511,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3425-01',
-    descr: 'Slavery and Freedom in the Modern World 1800 to the Present (24)',
+    descr: 'Slavery and Freedom in the Modern World 1800 to the Present',
     instr: 'Brian Dirck',
     days: 'TR',
     newlibintensives: 'Writing Intensive Up Div',
@@ -2522,7 +2522,7 @@ export const courses = [
   },
   {
     crse: 'HIST-3520-01',
-    descr: 'History of the Vietnam War (23)',
+    descr: 'History of the Vietnam War',
     instr: 'Brian Dirck',
     days: 'MWF',
     newlibintensives: '',
@@ -2533,7 +2533,7 @@ export const courses = [
   },
   {
     crse: 'HIST-4800-01',
-    descr: 'Internship Public History (23)',
+    descr: 'Internship Public History',
     instr: 'Jaye Rogers',
     days: '',
     newlibintensives: '',
@@ -2544,7 +2544,7 @@ export const courses = [
   },
   {
     crse: 'HIST-4930-01',
-    descr: 'Senior Seminar (23)',
+    descr: 'Senior Seminar',
     instr: 'David Murphy',
     days: 'R',
     newlibintensives: '',
@@ -2555,7 +2555,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-1000-01',
-    descr: 'Personal Enrichment through Servant Leadership (24)',
+    descr: 'Personal Enrichment through Servant Leadership',
     instr: 'Deborah Fox',
     days: '',
     newlibintensives: '',
@@ -2566,7 +2566,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-2125-01',
-    descr: 'The Scholar as Servant Leader (23)',
+    descr: 'The Scholar as Servant Leader',
     instr: 'Lolene Bargerstock',
     days: 'WF',
     newlibintensives: '',
@@ -2577,7 +2577,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-2300-01',
-    descr: 'Honors History (24)',
+    descr: 'Honors History',
     instr: 'David Murphy',
     days: 'MWF',
     newlibintensives: '',
@@ -2588,7 +2588,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-3221-01',
-    descr: 'Traditionalism and Globalization (23)',
+    descr: 'Traditionalism and Globalization',
     instr: 'Timothy Fox',
     days: 'MWF',
     newlibintensives: '',
@@ -2599,7 +2599,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-3325-01',
-    descr: 'Christ and Culture (23)',
+    descr: 'Christ and Culture',
     instr: 'Jason Varner',
     days: 'MWF',
     newlibintensives: '',
@@ -2610,7 +2610,7 @@ export const courses = [
   },
   {
     crse: 'HNRS-4910-01',
-    descr: 'Honor Senior Seminar (24)',
+    descr: 'Honor Senior Seminar',
     instr: 'Janell Blunt',
     days: 'F',
     newlibintensives: '',
@@ -2621,7 +2621,7 @@ export const courses = [
   },
   {
     crse: 'LART-1000-01',
-    descr: 'College Survival Skills (23)',
+    descr: 'College Survival Skills',
     instr: 'Unassigned Staff',
     days: 'MW',
     newlibintensives: '',
@@ -2632,7 +2632,7 @@ export const courses = [
   },
   {
     crse: 'LART-1000-02',
-    descr: 'College Survival Skills (23)',
+    descr: 'College Survival Skills',
     instr: 'Keith Willis',
     days: 'TR',
     newlibintensives: '',
@@ -2643,7 +2643,7 @@ export const courses = [
   },
   {
     crse: 'LART-1020-8E1',
-    descr: 'Strategies for Academic Success for Adult Learners (23)',
+    descr: 'Strategies for Academic Success for Adult Learners',
     instr: 'Donald Watkins',
     days: 'R',
     newlibintensives: '',
@@ -2654,7 +2654,7 @@ export const courses = [
   },
   {
     crse: 'LART-1020-8E2',
-    descr: 'Strategies for Academic Success for Adult Learners (23)',
+    descr: 'Strategies for Academic Success for Adult Learners',
     instr: 'Donald Watkins',
     days: 'R',
     newlibintensives: '',
@@ -2665,7 +2665,7 @@ export const courses = [
   },
   {
     crse: 'LART-1050-01',
-    descr: 'First-Year Experience Seminar (23)',
+    descr: 'First-Year Experience Seminar',
     instr: 'Unassigned Staff',
     days: 'R',
     newlibintensives: '',
@@ -2676,7 +2676,7 @@ export const courses = [
   },
   {
     crse: 'LART-1050-02',
-    descr: 'First-Year Experience Seminar (23)',
+    descr: 'First-Year Experience Seminar',
     instr: 'Unassigned Staff',
     days: 'T',
     newlibintensives: '',
@@ -2687,7 +2687,7 @@ export const courses = [
   },
   {
     crse: 'LART-1100-0EA',
-    descr: 'Critical-Thinking Seminar (23)',
+    descr: 'Critical-Thinking Seminar',
     instr: 'Unassigned Staff',
     days: 'T',
     newlibintensives: '',
@@ -2698,7 +2698,7 @@ export const courses = [
   },
   {
     crse: 'LART-1100-0EA2',
-    descr: 'Critical-Thinking Seminar (23)',
+    descr: 'Critical-Thinking Seminar',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2709,7 +2709,7 @@ export const courses = [
   },
   {
     crse: 'LART-1100-8E',
-    descr: 'Critical-Thinking Seminar (23)',
+    descr: 'Critical-Thinking Seminar',
     instr: 'Unassigned Staff',
     days: 'T',
     newlibintensives: '',
@@ -2720,7 +2720,7 @@ export const courses = [
   },
   {
     crse: 'LART-1200-01',
-    descr: 'Career and Life Planning (24)',
+    descr: 'Career and Life Planning',
     instr: 'Mindy Grubbs',
     days: 'MW',
     newlibintensives: '',
@@ -2731,7 +2731,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-2300-8E',
-    descr: 'Social Problems and Their Impact on the Workplace (23)',
+    descr: 'Social Problems and Their Impact on the Workplace',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2742,7 +2742,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-3100-8E',
-    descr: 'Introduction to Information Systems and Analysis of Data (23)',
+    descr: 'Introduction to Information Systems and Analysis of Data',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2753,7 +2753,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-3200-8E',
-    descr: 'Issues in Management (23)',
+    descr: 'Issues in Management',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2764,7 +2764,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-4300-8E',
-    descr: 'Strategic Planning (23)',
+    descr: 'Strategic Planning',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2775,7 +2775,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-4550-8E',
-    descr: 'Diversity and Intercultural Humility (23)',
+    descr: 'Diversity and Intercultural Humility',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -2786,7 +2786,7 @@ export const courses = [
   },
   {
     crse: 'LEAD-4990-8E',
-    descr: 'Action Research Project (23)',
+    descr: 'Action Research Project',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: 'Speaking/Writing UpDiv Intens',
@@ -2797,7 +2797,7 @@ export const courses = [
   },
   {
     crse: 'MATH-1110-01',
-    descr: 'Elementary Mathematics-Geometry (23)',
+    descr: 'Elementary Mathematics-Geometry',
     instr: 'Fred Coon',
     days: 'MWF',
     newlibintensives: '',
@@ -2808,7 +2808,7 @@ export const courses = [
   },
   {
     crse: 'MATH-1250-01',
-    descr: 'Explorations in Mathematics (23)',
+    descr: 'Explorations in Mathematics',
     instr: 'Justin Lambright',
     days: 'MWF',
     newlibintensives: '',
@@ -2819,7 +2819,7 @@ export const courses = [
   },
   {
     crse: 'MATH-1300-01',
-    descr: 'Finite Mathematics (23)',
+    descr: 'Finite Mathematics',
     instr: 'Justin Lambright',
     days: 'MWF',
     newlibintensives: '',
@@ -2830,7 +2830,7 @@ export const courses = [
   },
   {
     crse: 'MATH-2010-01',
-    descr: 'Calculus I (23)',
+    descr: 'Calculus I',
     instr: 'Unassigned Staff',
     days: 'TR',
     newlibintensives: '',
@@ -2841,7 +2841,7 @@ export const courses = [
   },
   {
     crse: 'MATH-2020-01',
-    descr: 'Calculus II (23)',
+    descr: 'Calculus II',
     instr: 'Fred Coon',
     days: 'MTWF',
     newlibintensives: '',
@@ -2852,7 +2852,7 @@ export const courses = [
   },
   {
     crse: 'MATH-2120-01',
-    descr: 'Introductory Statistics with Applications (23)',
+    descr: 'Introductory Statistics with Applications',
     instr: 'Unassigned Staff',
     days: 'TR',
     newlibintensives: '',
@@ -2863,7 +2863,7 @@ export const courses = [
   },
   {
     crse: 'MATH-2120-02',
-    descr: 'Introductory Statistics with Applications (23)',
+    descr: 'Introductory Statistics with Applications',
     instr: 'Fred Coon',
     days: 'MWF',
     newlibintensives: '',
@@ -2874,7 +2874,7 @@ export const courses = [
   },
   {
     crse: 'MATH-2200-01',
-    descr: 'Discrete Mathematical Structures (23)',
+    descr: 'Discrete Mathematical Structures',
     instr: 'Fred Coon',
     days: 'MTRF',
     newlibintensives: '',
@@ -2885,7 +2885,7 @@ export const courses = [
   },
   {
     crse: 'MATH-3020-01',
-    descr: 'Calculus III (23)',
+    descr: 'Calculus III',
     instr: 'Justin Lambright',
     days: 'MTWF',
     newlibintensives: '',
@@ -2896,7 +2896,7 @@ export const courses = [
   },
   {
     crse: 'MATH-3100-01',
-    descr: 'Differential Equations (23)',
+    descr: 'Differential Equations',
     instr: 'Justin Lambright',
     days: 'MWF',
     newlibintensives: '',
@@ -2907,7 +2907,7 @@ export const courses = [
   },
   {
     crse: 'MLAN-2000-0E',
-    descr: 'Language and Society (23)',
+    descr: 'Language and Society',
     instr: 'Ingetraut Baird',
     days: '',
     newlibintensives: '',
@@ -2918,7 +2918,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-2020-0B',
-    descr: 'Introduction to Music Publishing (23)',
+    descr: 'Introduction to Music Publishing',
     instr: 'Rebecca Chappell',
     days: 'R',
     newlibintensives: '',
@@ -2929,7 +2929,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-3100-0B',
-    descr: 'Artist Development (23)',
+    descr: 'Artist Development',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -2940,7 +2940,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-3370-01',
-    descr: 'Record Production (23)',
+    descr: 'Record Production',
     instr: 'Chad Evans',
     days: 'T',
     newlibintensives: '',
@@ -2951,7 +2951,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-3470-0B',
-    descr: 'DIY for Musicians (23)',
+    descr: 'DIY for Musicians',
     instr: 'Rebecca Chappell',
     days: 'W',
     newlibintensives: '',
@@ -2962,7 +2962,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-4500-01',
-    descr: 'Songwriter Showcase (23)',
+    descr: 'Songwriter Showcase',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -2973,7 +2973,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-4800-01',
-    descr: 'Internship in Music Business (23)',
+    descr: 'Internship in Music Business',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -2984,7 +2984,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-4900-01',
-    descr: 'Recording Label Seminar (23)',
+    descr: 'Recording Label Seminar',
     instr: 'Rebecca Chappell',
     days: 'M',
     newlibintensives: '',
@@ -2995,7 +2995,7 @@ export const courses = [
   },
   {
     crse: 'MUBS-4950-01',
-    descr: 'Recording Project (24)',
+    descr: 'Recording Project',
     instr: 'Chad Evans',
     days: '',
     newlibintensives: '',
@@ -3006,7 +3006,7 @@ export const courses = [
   },
   {
     crse: 'MUED-1300-01',
-    descr: 'Brass Techniques (23)',
+    descr: 'Brass Techniques',
     instr: 'Cynthia Shaver',
     days: 'MW',
     newlibintensives: '',
@@ -3017,7 +3017,7 @@ export const courses = [
   },
   {
     crse: 'MUED-2110-01',
-    descr: 'Music for the Elementary Classroom (23)',
+    descr: 'Music for the Elementary Classroom',
     instr: 'Michelle Bade',
     days: 'TR',
     newlibintensives: '',
@@ -3028,7 +3028,7 @@ export const courses = [
   },
   {
     crse: 'MUED-2470-01',
-    descr: 'Introduction to Conducting (23)',
+    descr: 'Introduction to Conducting',
     instr: 'Adam Waller',
     days: 'MW',
     newlibintensives: '',
@@ -3039,7 +3039,7 @@ export const courses = [
   },
   {
     crse: 'MUED-2510-01',
-    descr: "Singer's Diction I (23)",
+    descr: "Singer's Diction I",
     instr: 'Sarah Ballman',
     days: 'MW',
     newlibintensives: '',
@@ -3050,7 +3050,7 @@ export const courses = [
   },
   {
     crse: 'MUED-3120-01',
-    descr: 'Vocal Music in the Secondary School (23)',
+    descr: 'Vocal Music in the Secondary School',
     instr: 'Theodore Hicks',
     days: 'MWF',
     newlibintensives: '',
@@ -3061,7 +3061,7 @@ export const courses = [
   },
   {
     crse: 'MUED-3330-01',
-    descr: 'Instrumental Pedagogy (23)',
+    descr: 'Instrumental Pedagogy',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3072,7 +3072,7 @@ export const courses = [
   },
   {
     crse: 'MUED-4700-01',
-    descr: 'Methods of Teaching Music in the Public Schools (23)',
+    descr: 'Methods of Teaching Music in the Public Schools',
     instr: 'Michelle Bade',
     days: '',
     newlibintensives: '',
@@ -3083,7 +3083,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0010-01',
-    descr: 'Unassigned Voice (23)',
+    descr: 'Unassigned Voice',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -3094,7 +3094,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0020-01',
-    descr: 'Unassigned Piano (23)',
+    descr: 'Unassigned Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -3105,7 +3105,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0030-01',
-    descr: 'Unassignd Cl Piano (23)',
+    descr: 'Unassignd Cl Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -3116,7 +3116,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0040-01',
-    descr: 'Unassigned Choirs (23)',
+    descr: 'Unassigned Choirs',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -3127,7 +3127,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0050-01',
-    descr: 'Unassigned Bands (23)',
+    descr: 'Unassigned Bands',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3138,7 +3138,7 @@ export const courses = [
   },
   {
     crse: 'MUPF- _0060-01',
-    descr: 'Unassigned Piano (Music Education) (23)',
+    descr: 'Unassigned Piano (Music Education)',
     instr: 'Michelle Bade',
     days: '',
     newlibintensives: '',
@@ -3149,7 +3149,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1030-01',
-    descr: 'Class Lessons in Piano I (23)',
+    descr: 'Class Lessons in Piano I',
     instr: 'Unassigned Staff',
     days: 'M',
     newlibintensives: '',
@@ -3160,7 +3160,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1060-01',
-    descr: 'Keyboard Class II (23)',
+    descr: 'Keyboard Class II',
     instr: 'Hyeseon Jin',
     days: 'MW',
     newlibintensives: '',
@@ -3171,7 +3171,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1060-02',
-    descr: 'Keyboard Class II (23)',
+    descr: 'Keyboard Class II',
     instr: 'Hyeseon Jin',
     days: 'MW',
     newlibintensives: '',
@@ -3182,7 +3182,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1070-01',
-    descr: 'Vola Voce (SSAA Choir) (23)',
+    descr: 'Vola Voce (SSAA Choir)',
     instr: 'Sally Kelley',
     days: '',
     newlibintensives: '',
@@ -3193,7 +3193,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1080-01',
-    descr: 'Chorale (SATB Choir) (23)',
+    descr: 'Chorale (SATB Choir)',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -3204,7 +3204,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1090-01',
-    descr: 'University Choir (23)',
+    descr: 'University Choir',
     instr: 'Sally Kelley',
     days: 'MWF',
     newlibintensives: '',
@@ -3215,7 +3215,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1110-01',
-    descr: 'Gospel Choir (23)',
+    descr: 'Gospel Choir',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3226,7 +3226,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1160-01',
-    descr: 'Music Theatre Production (23)',
+    descr: 'Music Theatre Production',
     instr: 'Jason Panzino',
     days: '',
     newlibintensives: '',
@@ -3237,7 +3237,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1170-01',
-    descr: 'Introduction to Musical Theatre Performance (25)',
+    descr: 'Introduction to Musical Theatre Performance',
     instr: 'Sarah Fischbeck',
     days: 'TR',
     newlibintensives: '',
@@ -3248,7 +3248,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1180-01',
-    descr: 'Vox Corvi (TTBB Choir) (23)',
+    descr: 'Vox Corvi (TTBB Choir)',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3259,7 +3259,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1190-01',
-    descr: 'Instrumental Ensemble (23)',
+    descr: 'Instrumental Ensemble',
     instr: 'Michael Snyder',
     days: '',
     newlibintensives: '',
@@ -3270,7 +3270,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1210-01',
-    descr: 'Duo Piano (23)',
+    descr: 'Duo Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -3281,7 +3281,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1210-02',
-    descr: 'Duo Piano (23)',
+    descr: 'Duo Piano',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -3292,7 +3292,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1220-01',
-    descr: 'Athletic Band (23)',
+    descr: 'Athletic Band',
     instr: 'Sherman Robbins',
     days: 'S',
     newlibintensives: '',
@@ -3303,7 +3303,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1230-01',
-    descr: 'Jazz Combo (23)',
+    descr: 'Jazz Combo',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3314,7 +3314,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1260-01',
-    descr: 'Concert Band (23)',
+    descr: 'Concert Band',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3325,7 +3325,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1270-01',
-    descr: 'Symphonic Wind Ensemble (23)',
+    descr: 'Symphonic Wind Ensemble',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3336,7 +3336,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1280-01',
-    descr: 'Jazz Ensemble (23)',
+    descr: 'Jazz Ensemble',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3347,7 +3347,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1290-01',
-    descr: 'Anderson Symphony Orchestra (23)',
+    descr: 'Anderson Symphony Orchestra',
     instr: 'Unassigned Staff',
     days: 'M',
     newlibintensives: '',
@@ -3358,7 +3358,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1350-01',
-    descr: 'Guitar Ensemble (23)',
+    descr: 'Guitar Ensemble',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -3369,7 +3369,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1360-01',
-    descr: 'Brass Ensemble (23)',
+    descr: 'Brass Ensemble',
     instr: 'Adam Waller',
     days: '',
     newlibintensives: '',
@@ -3380,7 +3380,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1360-02',
-    descr: 'Brass Ensemble (23)',
+    descr: 'Brass Ensemble',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -3391,7 +3391,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1370-01',
-    descr: 'Woodwind Ensemble (23)',
+    descr: 'Woodwind Ensemble',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3402,7 +3402,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1370-02',
-    descr: 'Woodwind Ensemble (23)',
+    descr: 'Woodwind Ensemble',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3413,7 +3413,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1380-01',
-    descr: 'String Ensemble (23)',
+    descr: 'String Ensemble',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3424,7 +3424,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1390-01',
-    descr: 'Percussion Ensemble (23)',
+    descr: 'Percussion Ensemble',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -3435,7 +3435,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1410-01',
-    descr: 'Class Lessons in Guitar I (23)',
+    descr: 'Class Lessons in Guitar I',
     instr: 'Jamie Johnson',
     days: 'W',
     newlibintensives: '',
@@ -3446,7 +3446,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1500-01',
-    descr: 'World Drumming (23)',
+    descr: 'World Drumming',
     instr: 'Sherman Robbins',
     days: 'W',
     newlibintensives: '',
@@ -3457,7 +3457,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1530-01',
-    descr: 'Accompanying II (23)',
+    descr: 'Accompanying II',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3468,7 +3468,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1600-01',
-    descr: 'Topics in Music Performance: (23)',
+    descr: 'Topics in Music Performance:',
     instr: 'Unassigned Staff',
     days: 'TR',
     newlibintensives: '',
@@ -3479,7 +3479,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-01',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -3490,7 +3490,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-02',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -3501,7 +3501,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-03',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -3512,7 +3512,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-04',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -3523,7 +3523,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-05',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3534,7 +3534,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1700-06',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3545,7 +3545,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1710-01',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -3556,7 +3556,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1710-02',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -3567,7 +3567,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1720-01',
-    descr: 'Harpsichord (23)',
+    descr: 'Harpsichord',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3578,7 +3578,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1730-01',
-    descr: 'Organ (23)',
+    descr: 'Organ',
     instr: 'Mary Yetter',
     days: '',
     newlibintensives: '',
@@ -3589,7 +3589,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1740-01',
-    descr: 'Violin (23)',
+    descr: 'Violin',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -3600,7 +3600,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1750-01',
-    descr: 'Viola (23)',
+    descr: 'Viola',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -3611,7 +3611,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1760-01',
-    descr: 'Cello (23)',
+    descr: 'Cello',
     instr: 'Stephen Hawkey',
     days: '',
     newlibintensives: '',
@@ -3622,7 +3622,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1770-01',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Joseph Everett',
     days: '',
     newlibintensives: '',
@@ -3633,7 +3633,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1770-02',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -3644,7 +3644,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1780-01',
-    descr: 'Flute/Piccolo (23)',
+    descr: 'Flute/Piccolo',
     instr: 'Laura Recendez',
     days: '',
     newlibintensives: '',
@@ -3655,7 +3655,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1790-01',
-    descr: 'Clarinet (23)',
+    descr: 'Clarinet',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -3666,7 +3666,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1800-01',
-    descr: 'Oboe/English Horn (23)',
+    descr: 'Oboe/English Horn',
     instr: 'Angela Shaver',
     days: '',
     newlibintensives: '',
@@ -3677,7 +3677,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1810-01',
-    descr: 'Bassoon (23)',
+    descr: 'Bassoon',
     instr: 'Emily Smith',
     days: '',
     newlibintensives: '',
@@ -3688,7 +3688,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1820-01',
-    descr: 'Saxophone (23)',
+    descr: 'Saxophone',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -3699,7 +3699,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1830-01',
-    descr: 'Trumpet/Cornet (23)',
+    descr: 'Trumpet/Cornet',
     instr: 'Gilmar Cavalcante Da Silva',
     days: '',
     newlibintensives: '',
@@ -3710,7 +3710,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1840-01',
-    descr: 'French Horn (23)',
+    descr: 'French Horn',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -3721,7 +3721,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1850-01',
-    descr: 'Trombone (23)',
+    descr: 'Trombone',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -3732,7 +3732,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1860-01',
-    descr: 'Baritone/Euphonium (23)',
+    descr: 'Baritone/Euphonium',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -3743,7 +3743,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1870-01',
-    descr: 'Tuba (23)',
+    descr: 'Tuba',
     instr: 'Brian Kiser',
     days: '',
     newlibintensives: '',
@@ -3754,7 +3754,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1880-01',
-    descr: 'Percussion (23)',
+    descr: 'Percussion',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -3765,7 +3765,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1885-01',
-    descr: 'Harp (23)',
+    descr: 'Harp',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -3776,7 +3776,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1890-01',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -3787,7 +3787,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1890-02',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -3798,7 +3798,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1900-01',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -3809,7 +3809,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1900-02',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -3820,7 +3820,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1900-03',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -3831,7 +3831,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1900-04',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3842,7 +3842,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-1905-01',
-    descr: 'Songwriting (23)',
+    descr: 'Songwriting',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3853,7 +3853,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2600-01',
-    descr: 'Topics in Music Performance: (23)',
+    descr: 'Topics in Music Performance:',
     instr: 'Sarah Ballman',
     days: 'TR',
     newlibintensives: '',
@@ -3864,7 +3864,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-01',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -3875,7 +3875,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-02',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -3886,7 +3886,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-03',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -3897,7 +3897,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-04',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -3908,7 +3908,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-05',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3919,7 +3919,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2700-06',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3930,7 +3930,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2710-01',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -3941,7 +3941,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2710-02',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -3952,7 +3952,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2720-01',
-    descr: 'Harpsichord (23)',
+    descr: 'Harpsichord',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -3963,7 +3963,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2730-01',
-    descr: 'Organ (23)',
+    descr: 'Organ',
     instr: 'Mary Yetter',
     days: '',
     newlibintensives: '',
@@ -3974,7 +3974,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2740-01',
-    descr: 'Violin (23)',
+    descr: 'Violin',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -3985,7 +3985,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2750-01',
-    descr: 'Viola (23)',
+    descr: 'Viola',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -3996,7 +3996,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2760-01',
-    descr: 'Cello (23)',
+    descr: 'Cello',
     instr: 'Stephen Hawkey',
     days: '',
     newlibintensives: '',
@@ -4007,7 +4007,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2770-01',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Joseph Everett',
     days: '',
     newlibintensives: '',
@@ -4018,7 +4018,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2770-02',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -4029,7 +4029,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2780-01',
-    descr: 'Flute/Piccolo (23)',
+    descr: 'Flute/Piccolo',
     instr: 'Laura Recendez',
     days: '',
     newlibintensives: '',
@@ -4040,7 +4040,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2790-01',
-    descr: 'Clarinet (23)',
+    descr: 'Clarinet',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4051,7 +4051,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2800-01',
-    descr: 'Oboe/English Horn (23)',
+    descr: 'Oboe/English Horn',
     instr: 'Angela Shaver',
     days: '',
     newlibintensives: '',
@@ -4062,7 +4062,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2810-01',
-    descr: 'Bassoon (23)',
+    descr: 'Bassoon',
     instr: 'Emily Smith',
     days: '',
     newlibintensives: '',
@@ -4073,7 +4073,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2820-01',
-    descr: 'Saxophone (23)',
+    descr: 'Saxophone',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4084,7 +4084,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2830-01',
-    descr: 'Trumpet/Cornet (23)',
+    descr: 'Trumpet/Cornet',
     instr: 'Gilmar Cavalcante Da Silva',
     days: '',
     newlibintensives: '',
@@ -4095,7 +4095,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2840-01',
-    descr: 'French Horn (23)',
+    descr: 'French Horn',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -4106,7 +4106,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2850-01',
-    descr: 'Trombone (23)',
+    descr: 'Trombone',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4117,7 +4117,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2860-01',
-    descr: 'Baritone/Euphonium (23)',
+    descr: 'Baritone/Euphonium',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4128,7 +4128,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2870-01',
-    descr: 'Tuba (23)',
+    descr: 'Tuba',
     instr: 'Brian Kiser',
     days: '',
     newlibintensives: '',
@@ -4139,7 +4139,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2880-01',
-    descr: 'Percussion (23)',
+    descr: 'Percussion',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -4150,7 +4150,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2885-01',
-    descr: 'Harp (23)',
+    descr: 'Harp',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -4161,7 +4161,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2890-01',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -4172,7 +4172,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2890-02',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -4183,7 +4183,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2900-01',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4194,7 +4194,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2900-02',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4205,7 +4205,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2900-03',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4216,7 +4216,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2900-04',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4227,7 +4227,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-2905-01',
-    descr: 'Songwriting (23)',
+    descr: 'Songwriting',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4238,7 +4238,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-01',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -4249,7 +4249,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-02',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -4260,7 +4260,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-03',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -4271,7 +4271,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-04',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -4282,7 +4282,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-05',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4293,7 +4293,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3540-06',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4304,7 +4304,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3550-01',
-    descr: 'Keyboard Recital (23)',
+    descr: 'Keyboard Recital',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -4315,7 +4315,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3550-02',
-    descr: 'Keyboard Recital (23)',
+    descr: 'Keyboard Recital',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -4326,7 +4326,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3560-01',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -4337,7 +4337,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3560-02',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -4348,7 +4348,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3560-03',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -4359,7 +4359,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3560-04',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -4370,7 +4370,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3570-01',
-    descr: 'Woodwind Recital (23)',
+    descr: 'Woodwind Recital',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4381,7 +4381,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3580-01',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -4392,7 +4392,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3580-02',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4403,7 +4403,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3580-03',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4414,7 +4414,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3590-01',
-    descr: 'Percussion Recital (23)',
+    descr: 'Percussion Recital',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -4425,7 +4425,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-01',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -4436,7 +4436,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-02',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -4447,7 +4447,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-03',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -4458,7 +4458,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-04',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -4469,7 +4469,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-05',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4480,7 +4480,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3700-06',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4491,7 +4491,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3710-01',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -4502,7 +4502,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3710-02',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -4513,7 +4513,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3720-01',
-    descr: 'Harpsichord (23)',
+    descr: 'Harpsichord',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4524,7 +4524,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3730-01',
-    descr: 'Organ (23)',
+    descr: 'Organ',
     instr: 'Mary Yetter',
     days: '',
     newlibintensives: '',
@@ -4535,7 +4535,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3740-01',
-    descr: 'Violin (23)',
+    descr: 'Violin',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -4546,7 +4546,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3750-01',
-    descr: 'Viola (23)',
+    descr: 'Viola',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -4557,7 +4557,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3760-01',
-    descr: 'Cello (23)',
+    descr: 'Cello',
     instr: 'Stephen Hawkey',
     days: '',
     newlibintensives: '',
@@ -4568,7 +4568,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3770-01',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Joseph Everett',
     days: '',
     newlibintensives: '',
@@ -4579,7 +4579,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3770-02',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -4590,7 +4590,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3780-01',
-    descr: 'Flute/Piccolo (23)',
+    descr: 'Flute/Piccolo',
     instr: 'Laura Recendez',
     days: '',
     newlibintensives: '',
@@ -4601,7 +4601,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3790-01',
-    descr: 'Clarinet (23)',
+    descr: 'Clarinet',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4612,7 +4612,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3800-01',
-    descr: 'Oboe/English Horn (23)',
+    descr: 'Oboe/English Horn',
     instr: 'Angela Shaver',
     days: '',
     newlibintensives: '',
@@ -4623,7 +4623,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3810-01',
-    descr: 'Bassoon (23)',
+    descr: 'Bassoon',
     instr: 'Emily Smith',
     days: '',
     newlibintensives: '',
@@ -4634,7 +4634,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3820-01',
-    descr: 'Saxophone (23)',
+    descr: 'Saxophone',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4645,7 +4645,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3830-01',
-    descr: 'Trumpet/Cornet (23)',
+    descr: 'Trumpet/Cornet',
     instr: 'Gilmar Cavalcante Da Silva',
     days: '',
     newlibintensives: '',
@@ -4656,7 +4656,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3840-01',
-    descr: 'French Horn (23)',
+    descr: 'French Horn',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -4667,7 +4667,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3850-01',
-    descr: 'Trombone (23)',
+    descr: 'Trombone',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4678,7 +4678,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3860-01',
-    descr: 'Baritone/Euphonium (23)',
+    descr: 'Baritone/Euphonium',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4689,7 +4689,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3870-01',
-    descr: 'Tuba (23)',
+    descr: 'Tuba',
     instr: 'Brian Kiser',
     days: '',
     newlibintensives: '',
@@ -4700,7 +4700,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3880-01',
-    descr: 'Percussion (23)',
+    descr: 'Percussion',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -4711,7 +4711,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3885-01',
-    descr: 'Harp (23)',
+    descr: 'Harp',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -4722,7 +4722,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3890-01',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -4733,7 +4733,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3890-02',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -4744,7 +4744,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3900-01',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4755,7 +4755,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3900-02',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4766,7 +4766,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3900-03',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -4777,7 +4777,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3900-04',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4788,7 +4788,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-3905-01',
-    descr: 'Songwriting (23)',
+    descr: 'Songwriting',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4799,7 +4799,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-01',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -4810,7 +4810,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-02',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -4821,7 +4821,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-03',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -4832,7 +4832,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-04',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -4843,7 +4843,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-05',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4854,7 +4854,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4540-06',
-    descr: 'Voice Recital (23)',
+    descr: 'Voice Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4865,7 +4865,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4550-01',
-    descr: 'Keyboard Recital (23)',
+    descr: 'Keyboard Recital',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -4876,7 +4876,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4550-02',
-    descr: 'Keyboard Recital (23)',
+    descr: 'Keyboard Recital',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -4887,7 +4887,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4560-01',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -4898,7 +4898,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4560-02',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -4909,7 +4909,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4560-03',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -4920,7 +4920,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4560-04',
-    descr: 'String/Guitar/Harp Recital (23)',
+    descr: 'String/Guitar/Harp Recital',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -4931,7 +4931,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4570-01',
-    descr: 'Woodwind Recital (23)',
+    descr: 'Woodwind Recital',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -4942,7 +4942,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4580-01',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -4953,7 +4953,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4580-02',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -4964,7 +4964,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4580-03',
-    descr: 'Brass Recital (23)',
+    descr: 'Brass Recital',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -4975,7 +4975,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4590-01',
-    descr: 'Percussion Recital (23)',
+    descr: 'Percussion Recital',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -4986,7 +4986,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-01',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -4997,7 +4997,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-02',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Karri York',
     days: '',
     newlibintensives: '',
@@ -5008,7 +5008,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-03',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -5019,7 +5019,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-04',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Deborah Hill',
     days: '',
     newlibintensives: '',
@@ -5030,7 +5030,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-05',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -5041,7 +5041,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4700-06',
-    descr: 'Voice (23)',
+    descr: 'Voice',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -5052,7 +5052,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4710-01',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Reginald Rodgers',
     days: '',
     newlibintensives: '',
@@ -5063,7 +5063,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4710-02',
-    descr: 'Piano (23)',
+    descr: 'Piano',
     instr: 'Rebecca Edie',
     days: '',
     newlibintensives: '',
@@ -5074,7 +5074,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4720-01',
-    descr: 'Harpsichord (23)',
+    descr: 'Harpsichord',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -5085,7 +5085,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4730-01',
-    descr: 'Organ (23)',
+    descr: 'Organ',
     instr: 'Mary Yetter',
     days: '',
     newlibintensives: '',
@@ -5096,7 +5096,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4740-01',
-    descr: 'Violin (23)',
+    descr: 'Violin',
     instr: 'Gert Kumi',
     days: '',
     newlibintensives: '',
@@ -5107,7 +5107,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4750-01',
-    descr: 'Viola (23)',
+    descr: 'Viola',
     instr: 'Amy Kniffen',
     days: '',
     newlibintensives: '',
@@ -5118,7 +5118,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4760-01',
-    descr: 'Cello (23)',
+    descr: 'Cello',
     instr: 'Stephen Hawkey',
     days: '',
     newlibintensives: '',
@@ -5129,7 +5129,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4770-01',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Joseph Everett',
     days: '',
     newlibintensives: '',
@@ -5140,7 +5140,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4770-02',
-    descr: 'Bass (23)',
+    descr: 'Bass',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -5151,7 +5151,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4780-01',
-    descr: 'Flute/Piccolo (23)',
+    descr: 'Flute/Piccolo',
     instr: 'Laura Recendez',
     days: '',
     newlibintensives: '',
@@ -5162,7 +5162,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4790-01',
-    descr: 'Clarinet (23)',
+    descr: 'Clarinet',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -5173,7 +5173,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4800-01',
-    descr: 'Oboe/English Horn (23)',
+    descr: 'Oboe/English Horn',
     instr: 'Angela Shaver',
     days: '',
     newlibintensives: '',
@@ -5184,7 +5184,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4810-01',
-    descr: 'Bassoon (23)',
+    descr: 'Bassoon',
     instr: 'Emily Smith',
     days: '',
     newlibintensives: '',
@@ -5195,7 +5195,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4820-01',
-    descr: 'Saxophone (23)',
+    descr: 'Saxophone',
     instr: 'Rebecca Chappell',
     days: '',
     newlibintensives: '',
@@ -5206,7 +5206,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4830-01',
-    descr: 'Trumpet/Cornet (23)',
+    descr: 'Trumpet/Cornet',
     instr: 'Gilmar Cavalcante Da Silva',
     days: '',
     newlibintensives: '',
@@ -5217,7 +5217,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4840-01',
-    descr: 'French Horn (23)',
+    descr: 'French Horn',
     instr: 'Suzanne Rice',
     days: '',
     newlibintensives: '',
@@ -5228,7 +5228,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4850-01',
-    descr: 'Trombone (23)',
+    descr: 'Trombone',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -5239,7 +5239,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4860-01',
-    descr: 'Baritone/Euphonium (23)',
+    descr: 'Baritone/Euphonium',
     instr: 'Gary Hetrick',
     days: '',
     newlibintensives: '',
@@ -5250,7 +5250,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4870-01',
-    descr: 'Tuba (23)',
+    descr: 'Tuba',
     instr: 'Brian Kiser',
     days: '',
     newlibintensives: '',
@@ -5261,7 +5261,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4880-01',
-    descr: 'Percussion (23)',
+    descr: 'Percussion',
     instr: 'Sherman Robbins',
     days: '',
     newlibintensives: '',
@@ -5272,7 +5272,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4885-01',
-    descr: 'Harp (23)',
+    descr: 'Harp',
     instr: 'Heaven Fan',
     days: '',
     newlibintensives: '',
@@ -5283,7 +5283,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4890-01',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Adam Shuntich',
     days: '',
     newlibintensives: '',
@@ -5294,7 +5294,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4890-02',
-    descr: 'Guitar (23)',
+    descr: 'Guitar',
     instr: 'Jamie Johnson',
     days: '',
     newlibintensives: '',
@@ -5305,7 +5305,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4900-01',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -5316,7 +5316,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4900-02',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -5327,7 +5327,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4900-03',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Amanda Ellery',
     days: '',
     newlibintensives: '',
@@ -5338,7 +5338,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4900-04',
-    descr: 'Composition (23)',
+    descr: 'Composition',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -5349,7 +5349,7 @@ export const courses = [
   },
   {
     crse: 'MUPF-4905-01',
-    descr: 'Songwriting (23)',
+    descr: 'Songwriting',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -5360,7 +5360,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-1020-01',
-    descr: 'Theory II (23)',
+    descr: 'Theory II',
     instr: 'Christopher Holmes',
     days: 'MWF',
     newlibintensives: '',
@@ -5371,7 +5371,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-1040-01',
-    descr: 'Aural Comprehension II (23)',
+    descr: 'Aural Comprehension II',
     instr: 'Sarah Ballman',
     days: 'TR',
     newlibintensives: '',
@@ -5382,7 +5382,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2020-01',
-    descr: 'Theory IV (23)',
+    descr: 'Theory IV',
     instr: 'Christopher Holmes',
     days: 'MWF',
     newlibintensives: '',
@@ -5393,7 +5393,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2040-01',
-    descr: 'Aural Comprehension IV (23)',
+    descr: 'Aural Comprehension IV',
     instr: 'Theodore Hicks',
     days: 'TR',
     newlibintensives: '',
@@ -5404,7 +5404,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2110-01',
-    descr: 'Introduction to Music Literature (23)',
+    descr: 'Introduction to Music Literature',
     instr: 'Christopher Holmes',
     days: 'TR',
     newlibintensives: '',
@@ -5415,7 +5415,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2210-01',
-    descr: 'Music the Arts and Culture (23)',
+    descr: 'Music the Arts and Culture',
     instr: 'Unassigned Staff',
     days: 'MWF',
     newlibintensives: '',
@@ -5426,7 +5426,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2210-0EA',
-    descr: 'Music the Arts and Culture (23)',
+    descr: 'Music the Arts and Culture',
     instr: 'Michelle Bade',
     days: '',
     newlibintensives: '',
@@ -5437,7 +5437,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2210-5E',
-    descr: 'Music the Arts and Culture (23)',
+    descr: 'Music the Arts and Culture',
     instr: 'Michelle Bade',
     days: '',
     newlibintensives: '',
@@ -5448,7 +5448,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-2220-01',
-    descr: 'Music in Society (23)',
+    descr: 'Music in Society',
     instr: 'Jeffrey Wright',
     days: 'TR',
     newlibintensives: '',
@@ -5459,7 +5459,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-3040-01',
-    descr: 'Orchestration (23)',
+    descr: 'Orchestration',
     instr: 'Unassigned Staff',
     days: 'MW',
     newlibintensives: '',
@@ -5470,7 +5470,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-3800-01',
-    descr: 'Internship in Church Music (23)',
+    descr: 'Internship in Church Music',
     instr: 'Sarah Ballman',
     days: '',
     newlibintensives: '',
@@ -5481,7 +5481,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-4950-01',
-    descr: 'Senior Project (23)',
+    descr: 'Senior Project',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: '',
@@ -5492,7 +5492,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-4950-02',
-    descr: 'Senior Project (23)',
+    descr: 'Senior Project',
     instr: 'Christopher Holmes',
     days: '',
     newlibintensives: '',
@@ -5503,7 +5503,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-4955-01',
-    descr: 'Senior Presentation (23)',
+    descr: 'Senior Presentation',
     instr: 'Theodore Hicks',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -5514,7 +5514,7 @@ export const courses = [
   },
   {
     crse: 'MUSC-4955-02',
-    descr: 'Senior Presentation (23)',
+    descr: 'Senior Presentation',
     instr: 'Christopher Holmes',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -5525,7 +5525,7 @@ export const courses = [
   },
   {
     crse: 'MUTR-1170-01',
-    descr: 'Intro to Musical Theatre Performance (25)',
+    descr: 'Intro to Musical Theatre Performance',
     instr: 'Sarah Fischbeck',
     days: 'TR',
     newlibintensives: '',
@@ -5536,7 +5536,7 @@ export const courses = [
   },
   {
     crse: 'MUTR-2420-01',
-    descr: 'Voice Production for the Actor (25)',
+    descr: 'Voice Production for the Actor',
     instr: 'Sarah Fischbeck',
     days: 'TR',
     newlibintensives: '',
@@ -5547,7 +5547,7 @@ export const courses = [
   },
   {
     crse: 'MUTR-4500-01',
-    descr: 'Musical Theatre Showcase (23)',
+    descr: 'Musical Theatre Showcase',
     instr: 'Jason Panzino',
     days: 'MW',
     newlibintensives: '',
@@ -5558,7 +5558,7 @@ export const courses = [
   },
   {
     crse: 'NURS-1210-0E1',
-    descr: 'Nutrition for Healthy Living (23)',
+    descr: 'Nutrition for Healthy Living',
     instr: 'Alisha Miller',
     days: '',
     newlibintensives: '',
@@ -5569,7 +5569,7 @@ export const courses = [
   },
   {
     crse: 'NURS-1210-8E',
-    descr: 'Nutrition for Healthy Living (23)',
+    descr: 'Nutrition for Healthy Living',
     instr: 'Alisha Miller',
     days: '',
     newlibintensives: '',
@@ -5580,7 +5580,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2140-01',
-    descr: 'Introduction to Nursing (23)',
+    descr: 'Introduction to Nursing',
     instr: 'Toya Lutterman',
     days: 'TR',
     newlibintensives: '',
@@ -5591,7 +5591,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2140-0E',
-    descr: 'Introduction to Nursing (23)',
+    descr: 'Introduction to Nursing',
     instr: 'Toya Lutterman',
     days: '',
     newlibintensives: '',
@@ -5602,7 +5602,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2241-01',
-    descr: 'Fundamentals II (23)',
+    descr: 'Fundamentals II',
     instr: 'April Lopez',
     days: 'TR',
     newlibintensives: '',
@@ -5613,7 +5613,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2270-01',
-    descr: 'Pathophysiological Basis for Pharmacology in Nursing (23)',
+    descr: 'Pathophysiological Basis for Pharmacology in Nursing',
     instr: 'Hannah Willard',
     days: 'MW',
     newlibintensives: '',
@@ -5624,7 +5624,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2270L-LA',
-    descr: 'Pathophysiological Basis for Pharmacology in Nursing (23) - Lab',
+    descr: 'Pathophysiological Basis for Pharmacology in Nursing - Lab',
     instr: 'Savannah Laker',
     days: 'R',
     newlibintensives: '',
@@ -5635,7 +5635,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2270L-LB',
-    descr: 'Pathophysiological Basis for Pharmacology in Nursing (23) - Lab',
+    descr: 'Pathophysiological Basis for Pharmacology in Nursing - Lab',
     instr: 'Savannah Laker',
     days: 'R',
     newlibintensives: '',
@@ -5646,7 +5646,7 @@ export const courses = [
   },
   {
     crse: 'NURS-2340-0B',
-    descr: 'Personal and Community Health Nursing (23)',
+    descr: 'Personal and Community Health Nursing',
     instr: 'Savannah Laker',
     days: '',
     newlibintensives: '',
@@ -5657,7 +5657,7 @@ export const courses = [
   },
   {
     crse: 'NURS-3361-01',
-    descr: 'Adult Health II (23)',
+    descr: 'Adult Health II',
     instr: 'Hannah Willard',
     days: 'TR',
     newlibintensives: '',
@@ -5668,7 +5668,7 @@ export const courses = [
   },
   {
     crse: 'NURS-3391-01',
-    descr: 'Evidence-Based Research (23)',
+    descr: 'Evidence-Based Research',
     instr: 'Kari Bryan',
     days: '',
     newlibintensives: '',
@@ -5679,7 +5679,7 @@ export const courses = [
   },
   {
     crse: 'NURS-4510-0E',
-    descr: 'Entry into Professional Nursing Practice (23)',
+    descr: 'Entry into Professional Nursing Practice',
     instr: 'Kari Bryan',
     days: '',
     newlibintensives: '',
@@ -5690,7 +5690,7 @@ export const courses = [
   },
   {
     crse: 'NURS-4521-01',
-    descr: 'Child Health (23)',
+    descr: 'Child Health',
     instr: 'April Lopez',
     days: '',
     newlibintensives: '',
@@ -5701,7 +5701,7 @@ export const courses = [
   },
   {
     crse: 'NURS-4950-01',
-    descr: 'Intercultural Capstone (24)',
+    descr: 'Intercultural Capstone',
     instr: 'Toya Lutterman',
     days: 'T',
     newlibintensives: '',
@@ -5712,7 +5712,7 @@ export const courses = [
   },
   {
     crse: 'NURS-4960-01',
-    descr: 'Leadership Capstone (23)',
+    descr: 'Leadership Capstone',
     instr: 'Amanda Boys',
     days: '',
     newlibintensives: '',
@@ -5723,7 +5723,7 @@ export const courses = [
   },
   {
     crse: 'NURS-4970-01',
-    descr: 'Clinical Capstone (24)',
+    descr: 'Clinical Capstone',
     instr: 'Amanda Boys',
     days: '',
     newlibintensives: '',
@@ -5734,7 +5734,7 @@ export const courses = [
   },
   {
     crse: 'PACT-2400-01',
-    descr: 'Principles and Practices of Conflict Transformation (23)',
+    descr: 'Principles and Practices of Conflict Transformation',
     instr: 'Unassigned Staff',
     days: 'M',
     newlibintensives: '',
@@ -5745,7 +5745,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1000-01',
-    descr: 'Fitness and Wellness for Life (23)',
+    descr: 'Fitness and Wellness for Life',
     instr: 'Rachel Ferguson',
     days: 'MWF',
     newlibintensives: '',
@@ -5756,7 +5756,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1000-02',
-    descr: 'Fitness and Wellness for Life (23)',
+    descr: 'Fitness and Wellness for Life',
     instr: 'Rachel Ferguson',
     days: 'MWF',
     newlibintensives: '',
@@ -5767,7 +5767,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1000-03',
-    descr: 'Fitness and Wellness for Life (23)',
+    descr: 'Fitness and Wellness for Life',
     instr: 'Rachel Ferguson',
     days: 'MWF',
     newlibintensives: '',
@@ -5778,7 +5778,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1100-01',
-    descr: 'Beginning Swimming (23)',
+    descr: 'Beginning Swimming',
     instr: 'James Scott',
     days: 'MW',
     newlibintensives: '',
@@ -5789,7 +5789,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-01',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5800,7 +5800,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-02',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5811,7 +5811,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-03',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5822,7 +5822,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-04',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5833,7 +5833,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-05',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5844,7 +5844,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-08',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5855,7 +5855,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1200-09',
-    descr: 'Co-Curricular Activity (23)',
+    descr: 'Co-Curricular Activity',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -5866,7 +5866,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-1450-01',
-    descr: 'First Aid (23)',
+    descr: 'First Aid',
     instr: 'James Scott',
     days: 'MWF',
     newlibintensives: '',
@@ -5877,7 +5877,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-2260-01',
-    descr: 'Advanced Conditioning Sports Performance (23)',
+    descr: 'Advanced Conditioning Sports Performance',
     instr: 'Jonathan Coddington',
     days: '',
     newlibintensives: '',
@@ -5888,7 +5888,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-2260-02',
-    descr: 'Advanced Conditioning Sports Performance (23)',
+    descr: 'Advanced Conditioning Sports Performance',
     instr: 'Scott Fridley',
     days: '',
     newlibintensives: '',
@@ -5899,7 +5899,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-2260-03',
-    descr: 'Advanced Conditioning Sports Performance (23)',
+    descr: 'Advanced Conditioning Sports Performance',
     instr: 'Jennifer Myhre',
     days: '',
     newlibintensives: '',
@@ -5910,7 +5910,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-2260-04',
-    descr: 'Advanced Conditioning Sports Performance (23)',
+    descr: 'Advanced Conditioning Sports Performance',
     instr: 'Tamra Miller',
     days: '',
     newlibintensives: '',
@@ -5921,7 +5921,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-3050-01',
-    descr: 'Techniques of Coaching Football (23)',
+    descr: 'Techniques of Coaching Football',
     instr: 'Jonathan Coddington',
     days: '',
     newlibintensives: '',
@@ -5932,7 +5932,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-3070-01',
-    descr: 'Techniques of Coaching Basketball (23)',
+    descr: 'Techniques of Coaching Basketball',
     instr: 'Morgan Douglass',
     days: '',
     newlibintensives: '',
@@ -5943,7 +5943,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-3340-01',
-    descr: 'Sociology of Sport (23)',
+    descr: 'Sociology of Sport',
     instr: 'Tamra Miller',
     days: 'MWF',
     newlibintensives: 'Writing Intensive Up Div',
@@ -5954,7 +5954,7 @@ export const courses = [
   },
   {
     crse: 'PEHS-3410-01',
-    descr: 'Sports Administration (23)',
+    descr: 'Sports Administration',
     instr: 'Tamra Miller',
     days: 'MWF',
     newlibintensives: '',
@@ -5965,7 +5965,7 @@ export const courses = [
   },
   {
     crse: 'PETE-1300-01',
-    descr: 'Introduction to Sports/Physical Activity/Recreation (23)',
+    descr: 'Introduction to Sports/Physical Activity/Recreation',
     instr: 'James Scott',
     days: 'TR',
     newlibintensives: '',
@@ -5976,7 +5976,7 @@ export const courses = [
   },
   {
     crse: 'PETE-2250-01',
-    descr: 'Motor Behavior (23)',
+    descr: 'Motor Behavior',
     instr: 'Alisha Miller',
     days: 'MWF',
     newlibintensives: 'Writing Intensive',
@@ -5987,7 +5987,7 @@ export const courses = [
   },
   {
     crse: 'PETE-3720-01',
-    descr: 'Sports/Physical Activity/Recreation for Special Populations (23)',
+    descr: 'Sports/Physical Activity/Recreation for Special Populations',
     instr: 'Unassigned Staff',
     days: 'MWF',
     newlibintensives: '',
@@ -5998,7 +5998,7 @@ export const courses = [
   },
   {
     crse: 'PHIL-3010-01',
-    descr: 'History of Political Thought (24)',
+    descr: 'History of Political Thought',
     instr: 'Jason Varner',
     days: 'TR',
     newlibintensives: '',
@@ -6009,7 +6009,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2140-01',
-    descr: 'General Physics I (Algebra Based) (24)',
+    descr: 'General Physics I (Algebra Based)',
     instr: 'Tyler Williamson',
     days: 'MWF',
     newlibintensives: '',
@@ -6020,7 +6020,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2140L-LA',
-    descr: 'General Physics I (Algebra Based) (24) - Lab',
+    descr: 'General Physics I (Algebra Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'R',
     newlibintensives: '',
@@ -6031,7 +6031,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2140L-LB',
-    descr: 'General Physics I (Algebra Based) (24) - Lab',
+    descr: 'General Physics I (Algebra Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'T',
     newlibintensives: '',
@@ -6042,7 +6042,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2140L-LC',
-    descr: 'General Physics I (Algebra Based) (24) - Lab',
+    descr: 'General Physics I (Algebra Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'T',
     newlibintensives: '',
@@ -6053,7 +6053,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2240-01',
-    descr: 'General Physics I (Calculus Based) (24)',
+    descr: 'General Physics I (Calculus Based)',
     instr: 'Tyler Williamson',
     days: 'MWF',
     newlibintensives: '',
@@ -6064,7 +6064,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2240L-LA',
-    descr: 'General Physics I (Calculus Based) (24) - Lab',
+    descr: 'General Physics I (Calculus Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'R',
     newlibintensives: '',
@@ -6075,7 +6075,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2240L-LB',
-    descr: 'General Physics I (Calculus Based) (24) - Lab',
+    descr: 'General Physics I (Calculus Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'T',
     newlibintensives: '',
@@ -6086,7 +6086,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-2240L-LC',
-    descr: 'General Physics I (Calculus Based) (24) - Lab',
+    descr: 'General Physics I (Calculus Based) - Lab',
     instr: 'Tyler Williamson',
     days: 'T',
     newlibintensives: '',
@@ -6097,7 +6097,7 @@ export const courses = [
   },
   {
     crse: 'PHYS-4650-01',
-    descr: 'Independent Study (24)',
+    descr: 'Independent Study',
     instr: 'Tyler Williamson',
     days: '',
     newlibintensives: '',
@@ -6108,7 +6108,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2100-01',
-    descr: 'American National Government (23)',
+    descr: 'American National Government',
     instr: 'Michael Frank',
     days: 'MWF',
     newlibintensives: '',
@@ -6119,7 +6119,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2200-01',
-    descr: 'Public Policy (23)',
+    descr: 'Public Policy',
     instr: 'Connor Sutton',
     days: 'MWF',
     newlibintensives: '',
@@ -6130,7 +6130,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2210-01',
-    descr: 'Introduction to Legal Studies (24)',
+    descr: 'Introduction to Legal Studies',
     instr: 'Unassigned Staff',
     days: 'M',
     newlibintensives: '',
@@ -6141,7 +6141,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2420-01',
-    descr: 'Applied Statistics Lab (25)',
+    descr: 'Applied Statistics Lab',
     instr: 'Michael Frank',
     days: 'TR',
     newlibintensives: '',
@@ -6152,7 +6152,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2600-01',
-    descr: 'Topics in Political Science: (23)',
+    descr: 'Topics in Political Science:',
     instr: 'null',
     days: 'TR',
     newlibintensives: '',
@@ -6163,7 +6163,7 @@ export const courses = [
   },
   {
     crse: 'POSC-2840-01',
-    descr: 'Model Diplomacy and Simulation Conferences (23)',
+    descr: 'Model Diplomacy and Simulation Conferences',
     instr: 'Connor Sutton',
     days: '',
     newlibintensives: '',
@@ -6174,7 +6174,7 @@ export const courses = [
   },
   {
     crse: 'POSC-3010-01',
-    descr: 'History of Political Thought (24)',
+    descr: 'History of Political Thought',
     instr: 'Jason Varner',
     days: 'TR',
     newlibintensives: '',
@@ -6185,7 +6185,7 @@ export const courses = [
   },
   {
     crse: 'POSC-3350-01',
-    descr: 'Homeland Security (23)',
+    descr: 'Homeland Security',
     instr: 'Michael Frank',
     days: 'MWF',
     newlibintensives: '',
@@ -6196,7 +6196,7 @@ export const courses = [
   },
   {
     crse: 'POSC-3370-01',
-    descr: 'Intelligence and Security Studies (23)',
+    descr: 'Intelligence and Security Studies',
     instr: 'Connor Sutton',
     days: 'TR',
     newlibintensives: 'Speaking Intensive',
@@ -6207,7 +6207,7 @@ export const courses = [
   },
   {
     crse: 'POSC-4800-01',
-    descr: 'Government Internship (23)',
+    descr: 'Government Internship',
     instr: 'Michael Frank',
     days: '',
     newlibintensives: '',
@@ -6218,7 +6218,7 @@ export const courses = [
   },
   {
     crse: 'POSC-4800-02',
-    descr: 'Government Internship (23)',
+    descr: 'Government Internship',
     instr: 'Connor Sutton',
     days: '',
     newlibintensives: '',
@@ -6229,7 +6229,7 @@ export const courses = [
   },
   {
     crse: 'POSC-4810-01',
-    descr: 'Legal Internship (23)',
+    descr: 'Legal Internship',
     instr: 'Michael Frank',
     days: '',
     newlibintensives: '',
@@ -6240,7 +6240,7 @@ export const courses = [
   },
   {
     crse: 'POSC-4820-01',
-    descr: 'International Internship (23)',
+    descr: 'International Internship',
     instr: 'Connor Sutton',
     days: '',
     newlibintensives: '',
@@ -6251,7 +6251,7 @@ export const courses = [
   },
   {
     crse: 'POSC-4930-01',
-    descr: 'Senior Seminar (23)',
+    descr: 'Senior Seminar',
     instr: 'Michael Frank',
     days: 'R',
     newlibintensives: '',
@@ -6262,7 +6262,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2000-01',
-    descr: 'General Psychology (23)',
+    descr: 'General Psychology',
     instr: 'Wayne Priest',
     days: 'MWF',
     newlibintensives: '',
@@ -6273,7 +6273,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2000-02',
-    descr: 'General Psychology (23)',
+    descr: 'General Psychology',
     instr: 'Janell Blunt',
     days: 'TR',
     newlibintensives: '',
@@ -6284,7 +6284,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2010-01',
-    descr: 'Research Methods in Psychology (23)',
+    descr: 'Research Methods in Psychology',
     instr: 'Laura Stull',
     days: 'TR',
     newlibintensives: 'Writing Intensive',
@@ -6295,7 +6295,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2100-01',
-    descr: 'Interpersonal Relationships (23)',
+    descr: 'Interpersonal Relationships',
     instr: 'G. Lee Griffith',
     days: 'MW',
     newlibintensives: '',
@@ -6306,7 +6306,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2100-02',
-    descr: 'Interpersonal Relationships (23)',
+    descr: 'Interpersonal Relationships',
     instr: 'Wayne Priest',
     days: 'TR',
     newlibintensives: '',
@@ -6317,7 +6317,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2110-01',
-    descr: 'Educational Psychology (23)',
+    descr: 'Educational Psychology',
     instr: 'Kylie Heyerly',
     days: 'MWF',
     newlibintensives: '',
@@ -6328,7 +6328,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2440-01',
-    descr: 'Applied Statistics and Introduction to Research (23)',
+    descr: 'Applied Statistics and Introduction to Research',
     instr: 'G. Lee Griffith',
     days: 'MTWR',
     newlibintensives: '',
@@ -6339,7 +6339,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-2850-01',
-    descr: 'Practicum in Leadership Skills (24)',
+    descr: 'Practicum in Leadership Skills',
     instr: 'G. Lee Griffith',
     days: 'F',
     newlibintensives: '',
@@ -6350,7 +6350,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-3010-01',
-    descr: 'Social Psychology (23)',
+    descr: 'Social Psychology',
     instr: 'Wayne Priest',
     days: 'MW',
     newlibintensives: 'Writing Intensive Up Div',
@@ -6361,7 +6361,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-3080-01',
-    descr: 'Forensic Psychology (25)',
+    descr: 'Forensic Psychology',
     instr: 'Tarah Butcher',
     days: 'W',
     newlibintensives: '',
@@ -6372,7 +6372,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-3220-01',
-    descr: 'Organizational Behavior and Theory (23)',
+    descr: 'Organizational Behavior and Theory',
     instr: 'Veronica Dougherty-Denny',
     days: 'MWF',
     newlibintensives: '',
@@ -6383,7 +6383,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-3330-01',
-    descr: 'Cognitive Psychology (23)',
+    descr: 'Cognitive Psychology',
     instr: 'Janell Blunt',
     days: 'MTRF',
     newlibintensives: '',
@@ -6394,7 +6394,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-3400-01',
-    descr: 'Memory (23)',
+    descr: 'Memory',
     instr: 'Janell Blunt',
     days: 'TR',
     newlibintensives: '',
@@ -6405,7 +6405,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-4030-01',
-    descr: 'Counseling and Psychotherapy (23)',
+    descr: 'Counseling and Psychotherapy',
     instr: 'G. Lee Griffith',
     days: 'MTWR',
     newlibintensives: '',
@@ -6416,7 +6416,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-4100-01',
-    descr: 'Leadership and Training Skills (23)',
+    descr: 'Leadership and Training Skills',
     instr: 'Wayne Priest',
     days: 'F',
     newlibintensives: '',
@@ -6427,7 +6427,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-4520-01',
-    descr: 'Capstone Research II (23)',
+    descr: 'Capstone Research II',
     instr: 'Laura Stull',
     days: 'TR',
     newlibintensives: 'Speaking Intensive',
@@ -6438,7 +6438,7 @@ export const courses = [
   },
   {
     crse: 'PSYC-4800-01',
-    descr: 'Internship in Youth Leadership (24)',
+    descr: 'Internship in Youth Leadership',
     instr: 'Janell Blunt',
     days: 'MF',
     newlibintensives: '',
@@ -6449,7 +6449,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-1100-0EA',
-    descr: 'Introduction to Spiritual Formation (25)',
+    descr: 'Introduction to Spiritual Formation',
     instr: 'Leanne Ketcham',
     days: '',
     newlibintensives: '',
@@ -6460,7 +6460,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-1100-8E',
-    descr: 'Introduction to Spiritual Formation (25)',
+    descr: 'Introduction to Spiritual Formation',
     instr: 'Leanne Ketcham',
     days: '',
     newlibintensives: '',
@@ -6471,7 +6471,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-3010-01',
-    descr: 'Faith in Context (24)',
+    descr: 'Faith in Context',
     instr: 'Alan Overstreet',
     days: 'MWF',
     newlibintensives: '',
@@ -6482,7 +6482,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-3010-02',
-    descr: 'Faith in Context (24)',
+    descr: 'Faith in Context',
     instr: 'Rodney Kilgore',
     days: 'TR',
     newlibintensives: '',
@@ -6493,7 +6493,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-3010-8E',
-    descr: 'Faith in Context (24)',
+    descr: 'Faith in Context',
     instr: 'Leanne Ketcham',
     days: '',
     newlibintensives: '',
@@ -6504,7 +6504,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-3040-01',
-    descr: 'Introduction to Christian Theology (24)',
+    descr: 'Introduction to Christian Theology',
     instr: 'Nathan Willowby',
     days: 'TR',
     newlibintensives: '',
@@ -6515,7 +6515,7 @@ export const courses = [
   },
   {
     crse: 'RLGN-3040-8E',
-    descr: 'Introduction to Christian Theology (24)',
+    descr: 'Introduction to Christian Theology',
     instr: 'Rustin Brian',
     days: '',
     newlibintensives: '',
@@ -6526,7 +6526,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2010-01',
-    descr: 'Intro to Sociology (23)',
+    descr: 'Intro to Sociology',
     instr: 'Melanie Musser',
     days: 'MWF',
     newlibintensives: '',
@@ -6537,7 +6537,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2020-01',
-    descr: 'Social Problems (23)',
+    descr: 'Social Problems',
     instr: 'D. Wesley Poythress',
     days: 'MWF',
     newlibintensives: '',
@@ -6548,7 +6548,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2020-0EA',
-    descr: 'Social Problems (23)',
+    descr: 'Social Problems',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: '',
@@ -6559,7 +6559,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2020-8E',
-    descr: 'Social Problems (23)',
+    descr: 'Social Problems',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: '',
@@ -6570,7 +6570,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2450-01',
-    descr: 'Introduction to Issues in Race and Ethnicity (23)',
+    descr: 'Introduction to Issues in Race and Ethnicity',
     instr: 'Lolene Bargerstock',
     days: 'TR',
     newlibintensives: '',
@@ -6581,7 +6581,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2510-0B',
-    descr: 'The Nature of Crime and Social Deviance (23)',
+    descr: 'The Nature of Crime and Social Deviance',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: 'Writing Intensive',
@@ -6592,7 +6592,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-2850-01',
-    descr: 'Practicum in Leadership Skills (24)',
+    descr: 'Practicum in Leadership Skills',
     instr: 'G. Lee Griffith',
     days: 'F',
     newlibintensives: '',
@@ -6603,7 +6603,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-3010-01',
-    descr: 'Social Psychology (23)',
+    descr: 'Social Psychology',
     instr: 'Wayne Priest',
     days: 'MW',
     newlibintensives: 'Writing Intensive Up Div',
@@ -6614,7 +6614,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-3100-01',
-    descr: 'Human Sexuality (23)',
+    descr: 'Human Sexuality',
     instr: 'Lisa Pay',
     days: 'MWF',
     newlibintensives: '',
@@ -6625,7 +6625,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-3700-0E',
-    descr: 'Introduction to Social Research (23)',
+    descr: 'Introduction to Social Research',
     instr: 'Dulce Scott',
     days: '',
     newlibintensives: 'Writing Intensive Up Div',
@@ -6636,7 +6636,7 @@ export const courses = [
   },
   {
     crse: 'SOCI-4800-01',
-    descr: 'Internship in Youth Leadership (24)',
+    descr: 'Internship in Youth Leadership',
     instr: 'Janell Blunt',
     days: 'MF',
     newlibintensives: '',
@@ -6647,7 +6647,7 @@ export const courses = [
   },
   {
     crse: 'SOWK-3100-0B',
-    descr: 'Social Welfare Policy (23)',
+    descr: 'Social Welfare Policy',
     instr: 'Lolene Bargerstock',
     days: '',
     newlibintensives: '',
@@ -6658,7 +6658,7 @@ export const courses = [
   },
   {
     crse: 'SOWK-4710-01',
-    descr: 'Social Work Practice (23)',
+    descr: 'Social Work Practice',
     instr: 'Lisa Pay',
     days: 'TR',
     newlibintensives: '',
@@ -6669,7 +6669,7 @@ export const courses = [
   },
   {
     crse: 'SOWK-4850-01',
-    descr: 'Social Work Practicum (23)',
+    descr: 'Social Work Practicum',
     instr: 'Lisa Pay',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -6680,7 +6680,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-1010-01',
-    descr: 'Elementary Spanish I (23)',
+    descr: 'Elementary Spanish I',
     instr: 'Karin Craton',
     days: '',
     newlibintensives: '',
@@ -6691,7 +6691,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-1010-02',
-    descr: 'Elementary Spanish I (23)',
+    descr: 'Elementary Spanish I',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -6702,7 +6702,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-1020-0E',
-    descr: 'Elementary Spanish II (23)',
+    descr: 'Elementary Spanish II',
     instr: 'Ingetraut Baird',
     days: '',
     newlibintensives: '',
@@ -6713,7 +6713,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-2600-01',
-    descr: 'Topics in Spanish: (23)',
+    descr: 'Topics in Spanish:',
     instr: 'Timothy Fox',
     days: 'MWF',
     newlibintensives: '',
@@ -6724,7 +6724,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-3020-01',
-    descr: 'Spanish Conversation (24)',
+    descr: 'Spanish Conversation',
     instr: 'Timothy Fox',
     days: '',
     newlibintensives: 'Speaking Intensive',
@@ -6735,7 +6735,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-3440-01',
-    descr: 'Latin American Civilization (24)',
+    descr: 'Latin American Civilization',
     instr: 'Timothy Fox',
     days: 'MWF',
     newlibintensives: '',
@@ -6746,7 +6746,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-4550-01',
-    descr: 'Intensive Experience in Spanish (23)',
+    descr: 'Intensive Experience in Spanish',
     instr: 'Timothy Fox',
     days: '',
     newlibintensives: '',
@@ -6757,7 +6757,7 @@ export const courses = [
   },
   {
     crse: 'SPAN-4660-01',
-    descr: 'Directed Individual Study (23)',
+    descr: 'Directed Individual Study',
     instr: 'Timothy Fox',
     days: '',
     newlibintensives: '',
@@ -6768,7 +6768,7 @@ export const courses = [
   },
   {
     crse: 'SPED-2400-01',
-    descr: 'Introduction to Mild Disabilities (24)',
+    descr: 'Introduction to Mild Disabilities',
     instr: 'Kylie Heyerly',
     days: 'TR',
     newlibintensives: '',
@@ -6780,7 +6780,7 @@ export const courses = [
   {
     crse: 'SPED-2550-01',
     descr:
-      'Characteristics of Emotional and Behavioral Disorders of Children and Youth (24)',
+      'Characteristics of Emotional and Behavioral Disorders of Children and Youth',
     instr: 'Unassigned Staff',
     days: 'MWF',
     newlibintensives: '',
@@ -6791,7 +6791,7 @@ export const courses = [
   },
   {
     crse: 'SPED-3200-01',
-    descr: 'Classroom Instruction for Mild Disabilities (24)',
+    descr: 'Classroom Instruction for Mild Disabilities',
     instr: 'Unassigned Staff',
     days: 'TR',
     newlibintensives: '',
@@ -6803,7 +6803,7 @@ export const courses = [
   {
     crse: 'SPRL-2450-01',
     descr:
-      'Physical Activity Cluster III: Focus on Recreational Activities and Outdoor Pursuits (23)',
+      'Physical Activity Cluster III: Focus on Recreational Activities and Outdoor Pursuits',
     instr: 'Tamra Miller',
     days: 'TR',
     newlibintensives: '',
@@ -6814,7 +6814,7 @@ export const courses = [
   },
   {
     crse: 'SPRL-3250-0E',
-    descr: 'Legal Aspects of Sport and Recreation (23)',
+    descr: 'Legal Aspects of Sport and Recreation',
     instr: 'Trent Palmer',
     days: '',
     newlibintensives: '',
@@ -6825,7 +6825,7 @@ export const courses = [
   },
   {
     crse: 'SPRL-3300-01',
-    descr: 'Management of Sport Facilities and Events (23)',
+    descr: 'Management of Sport Facilities and Events',
     instr: 'James Newton',
     days: 'TR',
     newlibintensives: '',
@@ -6836,7 +6836,7 @@ export const courses = [
   },
   {
     crse: 'SPRL-4850-01',
-    descr: 'Practicum in Sport and Recreational Leadership (23)',
+    descr: 'Practicum in Sport and Recreational Leadership',
     instr: 'James Scott',
     days: '',
     newlibintensives: '',
@@ -6847,7 +6847,7 @@ export const courses = [
   },
   {
     crse: 'THEA-2120-01',
-    descr: 'Acting II (23)',
+    descr: 'Acting II',
     instr: 'Jason Panzino',
     days: 'TR',
     newlibintensives: '',
@@ -6858,7 +6858,7 @@ export const courses = [
   },
   {
     crse: 'THEA-2210-01',
-    descr: 'Stagecraft (23)',
+    descr: 'Stagecraft',
     instr: 'Anthony Bacon',
     days: 'TR',
     newlibintensives: '',
@@ -6869,7 +6869,7 @@ export const courses = [
   },
   {
     crse: 'THEA-2230-01',
-    descr: 'Special Topics in Theatre (25)',
+    descr: 'Special Topics in Theatre',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
@@ -6880,7 +6880,7 @@ export const courses = [
   },
   {
     crse: 'THEA-2420-01',
-    descr: 'Voice Production for the Actor (25)',
+    descr: 'Voice Production for the Actor',
     instr: 'Sarah Fischbeck',
     days: 'TR',
     newlibintensives: '',
@@ -6891,7 +6891,7 @@ export const courses = [
   },
   {
     crse: 'THEA-2890-01',
-    descr: 'Production Practicum (25)',
+    descr: 'Production Practicum',
     instr: 'Anthony Bacon',
     days: '',
     newlibintensives: '',
@@ -6902,7 +6902,7 @@ export const courses = [
   },
   {
     crse: 'THEA-3550-01',
-    descr: 'Lighting Design (23)',
+    descr: 'Lighting Design',
     instr: 'Anthony Bacon',
     days: '',
     newlibintensives: '',
@@ -6913,7 +6913,7 @@ export const courses = [
   },
   {
     crse: 'THEA-4500-01',
-    descr: 'Musical Theatre Showcase (23)',
+    descr: 'Musical Theatre Showcase',
     instr: 'Jason Panzino',
     days: 'MW',
     newlibintensives: '',
@@ -6924,7 +6924,7 @@ export const courses = [
   },
   {
     crse: 'THEA-4800-01',
-    descr: 'Senior Project (23)',
+    descr: 'Senior Project',
     instr: 'Unassigned Staff',
     days: '',
     newlibintensives: '',
