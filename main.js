@@ -8,7 +8,7 @@ const filterBtn = document.querySelector('#filterConsent')
 let filterState = 0
 
 function renderTable(filterState) {
-  tbody.innerHTML = '' // clear existing rows. 
+  tbody.innerHTML = '' // clear existing rows.
 
   courses.forEach(course => {
     if (filterState === 1 && course.consent === 'No Consent Required') return
@@ -16,7 +16,7 @@ function renderTable(filterState) {
 
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
-    
+
     tds[0].textContent = `${course.crse} - ${course.descr}`
     tds[1].textContent = course.consent
 

@@ -1,33 +1,31 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style></style>
+  </head>
 
-  <title></title>
-  <style></style>
-</head>
+  <button id="filterConsent">Hide Courses with No Consent Needed</button>
 
-<button id="filterConsent">Hide Courses with No Consent Needed</button>
+  <table>
+    <thead>
+      <tr>
+        <td style="background-color: powderblue">Course</td>
+        <td style="background-color: powderblue">Consent</td>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
 
-<table>
-  <thead>
+  <template id="courserow">
     <tr>
-      <td style="background-color:powderblue;">Course</td>
-      <td style="background-color:powderblue;">Consent</td>
+      <td></td>
+      <td></td>
     </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+  </template>
 
-<template id="courserow">
-  <tr>
-    <td></td>
-    <td></td>
-  </tr>
-</template>
-
-<script type="module" src="main.js"></script>
-
+  <script type="module" src="main.js"></script>
 </html>
