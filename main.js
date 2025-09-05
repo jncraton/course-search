@@ -12,5 +12,10 @@ courses.filter(course => course.days.includes(selectday.value)).forEach(course =
 })
 
 selectday.addEventListener('change', function() {
-  tbody.innerhtml = ''
+  tbody.innerHTML = ''
+  courses.filter(course => course.days.includes(selectday.value)).forEach(course => {
+    const row = template.content.cloneNode(true)
+    row.querySelector('td').textContent = `${course.crse} - ${course.descr} - ${course.days}`
+    tbody.append(row)
+})
 })
