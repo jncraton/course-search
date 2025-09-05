@@ -1,39 +1,36 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style></style>
+  </head>
 
-  <title></title>
-  <style></style>
-</head>
+  <body>
+    <label>
+      <input type="checkbox" id="filterConsent" />
+      Show only courses that require consent
+    </label>
 
-<body>
+    <table>
+      <thead>
+        <tr>
+          <td style="background-color: powderblue">Course</td>
+          <td style="background-color: powderblue">Consent</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
 
-  <label>
-    <input type="checkbox" id="filterConsent" />
-    Show only courses that require consent
-  </label>
-
-  <table>
-    <thead>
+    <template id="courserow">
       <tr>
-        <td style="background-color: powderblue">Course</td>
-        <td style="background-color: powderblue">Consent</td>
+        <td></td>
+        <td></td>
       </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+    </template>
 
-  <template id="courserow">
-    <tr>
-      <td></td>
-      <td></td>
-    </tr>
-  </template>
-
-  <script type="module" src="main.js"></script>
-</body>
-
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
