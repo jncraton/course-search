@@ -3,24 +3,37 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="FilterbyEnrol.css">
     <title></title>
     <style></style>
   </head>
 
   <body>
+    <div class="dropdown">
+      <button class="dropbtn">Filter by enrolments</button>
+      <div class="dropdown-content">
+        <a onclick="filterSelection('none')" id="notactive">No filters</a>
+        <a onclick="filterSelection('max')" id="min-max">Filter by min-max</a>
+        <a onclick="filterSelection('min')" id="max-min">Filter by max-min</a>
+      </div>
+    </div>
+
+
     <table>
       <thead>
         <tr>
           <td>Course</td>
+          <td>Name</td>
+          <td>Enrolments</td>
         </tr>
-        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
 
     <template id="courserow">
       <tr>
+        <td></td>
+        <td></td>
         <td></td>
       </tr>
     </template>
