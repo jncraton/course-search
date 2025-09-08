@@ -12,7 +12,6 @@
 .dropdown {
   position: relative;
   display: inline-block;
-  
 }
 
 .dropdown-content {
@@ -20,7 +19,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 12px;
 }
@@ -42,4 +41,6 @@
   display: block;
 }
 
-.dropdown:hover .dropbtn {background-color: #ff3b3b;}
+.dropdown:hover .dropbtn {
+  background-color: #ff3b3b;
+}
