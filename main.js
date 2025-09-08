@@ -25,6 +25,4 @@ function renderTable() {
 renderTable()
 
 // Re-render whenever checkbox state changes
-filterBox.addEventListener('change', () => {
-  renderTable()
-})
+filterBox.addEventListener('change', renderTable)
