@@ -1,3 +1,7 @@
 thead tr {
   background-color: powderblue;
 }
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
