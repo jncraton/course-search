@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title></title>
-    <style></style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body> 
-    <button id="button" > Click to filter online classes </button>
+    <button id="filterOnline" > Click to filter online classes </button>
+    <label>
+      <input type="checkbox" id="filterConsent" />
+      Show only courses that require consent
+    </label>
+
     <table>
       <thead>
         <tr>
-          <!-- <td>Course</td> -->
+          <td>Course</td>
+          <td>Consent</td>
         </tr>
-        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
 
     <template id="courserow">
       <tr>
+        <td></td>
         <td></td>
       </tr>
     </template>
