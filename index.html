@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="FilterbyEnrol.css" />
     <title></title>
-    <style></style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <label>
+      <input type="checkbox" id="filterConsent" />
+      Show only courses that require consent
+    </label>
+
     <!--! Add the class dropdown class (button) to filter student by enrolment -->
     <div class="dropdown">
       <button class="dropbtn">Filter by enrolments</button>
@@ -24,6 +29,7 @@
         <tr>
           <!-- Add column to devide the Enrolment people and other things -->
           <td>Course</td>
+          <td>Consent</td>
           <td>Name</td>
           <td>Enrolments</td>
         </tr>
@@ -33,6 +39,7 @@
 
     <template id="courserow">
       <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
