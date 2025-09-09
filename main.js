@@ -12,17 +12,17 @@ courses.forEach(course => {
 })
 
 //on click of online selection print online classes only
-filterOnline.addEventListener("click",()=> {
+filterOnline.addEventListener('click', () => {
   tbody.innerHTML = ''
   courses.forEach(course => {
-    if((course.crse[10]=="0")&& course.crse[11]=="E"){
+    if (course.crse[10] == '0' && course.crse[11] == 'E') {
       const row = template.content.cloneNode(true)
       row.querySelector('td').textContent = `${course.crse} - ${course.descr}`
       tbody.append(row)
     }
   })
-  });
- 
+})
+
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
