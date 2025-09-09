@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title></title>
-    <style>
-      tbody tr:nth-child(odd) {
-        background-color: #d6eeee;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <label>
+      <input type="checkbox" id="filterConsent" />
+      Show only courses that require consent
+    </label>
+
     <form>
       <label for="days">Choose a day:</label>
       <select id="selecteddays">
@@ -28,14 +29,15 @@
       <thead>
         <tr>
           <td>Course</td>
+          <td>Consent</td>
         </tr>
-        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
 
     <template id="courserow">
       <tr>
+        <td></td>
         <td></td>
       </tr>
     </template>
