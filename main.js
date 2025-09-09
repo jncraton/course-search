@@ -3,11 +3,10 @@ import { courses } from './courses.js'
 const tbody = document.querySelector('tbody')
 const template = document.querySelector('#courserow')
 const filterBox = document.querySelector('#filterConsent')
+const selectday = document.getElementById('selecteddays')
 
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
-
-  var selectday = document.getElementById('selecteddays')
 
   courses.forEach(course => {
     // If the checkbox is checked, only show "Consent Needed" courses
