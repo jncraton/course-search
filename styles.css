@@ -3,5 +3,5 @@ thead tr {
 }
 
 tr:nth-child(odd) {
-  background-color:#D6EEEE;
+  background-color: #d6eeee;
 }

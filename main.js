@@ -9,31 +9,30 @@ function renderTable() {
 
   var selectday = document.getElementById('selecteddays')
 
-courses
-  .forEach(course => {
+  courses.forEach(course => {
     // If the checkbox is checked, only show "Consent Needed" courses
     if (filterBox.checked && course.consent !== 'Consent Required') return
 
-      const row = template.content.cloneNode(true)
-      const tds = row.querySelectorAll('td')
+    const row = template.content.cloneNode(true)
+    const tds = row.querySelectorAll('td')
 
     tds[0].textContent = `${course.crse} - ${course.descr} - ${course.days}`
     tds[1].textContent = course.consent
 
-      tbody.append(row)
-    })
+    tbody.append(row)
+  })
 
-selectday.addEventListener('change', function () {
-  tbody.innerHTML = ''
-  courses
-    .filter(course => course.days.includes(selectday.value))
-    .forEach(course => {
-      const row = template.content.cloneNode(true)
-      row.querySelector('td').textContent =
-        `${course.crse} - ${course.descr} - ${course.days}`
-      tbody.append(row)
-    })
-})
+  selectday.addEventListener('change', function () {
+    tbody.innerHTML = ''
+    courses
+      .filter(course => course.days.includes(selectday.value))
+      .forEach(course => {
+        const row = template.content.cloneNode(true)
+        row.querySelector('td').textContent =
+          `${course.crse} - ${course.descr} - ${course.days}`
+        tbody.append(row)
+      })
+  })
 }
 
 // Initial render
