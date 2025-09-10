@@ -14,13 +14,15 @@
       Show only courses that require consent
     </label>
 
-    <!--! Add the class dropdown class (button) to filter student by enrolment -->
+    <!--! Add the class dropdown class (button) to filter student by enrollment -->
     <div class="dropdown">
-      <button class="dropbtn">Filter by enrolments</button>
+      <h2>Sort by numerical numbers</h2>
+      <button class="dropbtn">Select</button>
       <div class="dropdown-content">
         <a onclick="filterSelection('none')" id="notactive">No filters</a>
-        <a onclick="filterSelection('max')" id="min-max">Filter by min-max</a>
-        <a onclick="filterSelection('min')" id="max-min">Filter by max-min</a>
+        <a onclick="filterSelection('max')" id="min-max">Filter by increasing</a>
+        <a onclick="filterSelection('min')" id="max-min">Filter by decreasing</a>
+
       </div>
     </div>
 
