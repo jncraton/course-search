@@ -3,23 +3,27 @@ import { courses } from './courses.js'
 const tbody = document.querySelector('tbody')
 const template = document.querySelector('#courserow')
 
-const filterConsent = document.querySelector('#filterConsent')
-const selectday = document.getElementById('selecteddays')
+const filterConsent = document.querySelector('#filterconsent')
+const selectDay = document.querySelector('#selecteddays')
 
 const applyButton = document.querySelector('#applybutton')
 
-let currentCourses    // current version of the courses displayed
-
+let currentCourses // current version of the courses displayed
 
 function filterCourses() {
   // If the checkbox is checked, only show "Consent Needed" courses
   if (filterConsent.checked) {
-      currentCourses = currentCourses.filter(course => course.consent === 'Consent Required')
-    }
+    currentCourses = currentCourses.filter(
+      course => course.consent === 'Consent Required',
+    )
+  }
 
   // Filter days selected
-  currentCourses = currentCourses.filter(course => course.days.includes(selectday.value))
+  currentCourses = currentCourses.filter(course =>
+    course.days.includes(selectDay.value),
+  )
 
+  // TODO: Future filter logic can go here
 }
 
 function sortCourses() {
