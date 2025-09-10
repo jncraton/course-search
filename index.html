@@ -28,26 +28,26 @@
         </select>
       </form>
 
+      <!-- Button that applying selected changes -->
+      <button id="apply-button">Apply filters</button>
+
       <!-- Add the class - dropdown && (button) to filter student by enrollment -->
       <!-- + to existing button add the filter by courses -->
-      <div class="NumericalFilterSection">
+      <div class="numerical-filter-section">
         <p>Sort by numerical numbers</p>
         <div class="dropdown">
-          <button class="dropbtn">Select</button>
+          <button class="dropbtn">Sorting</button>
           <div class="dropdown-content">
-            <a onclick="filterSelection('none')" id="notactive">No filters</a>
+            <a onclick="filterSelection('none')" id="notactive">Default</a>
             <a onclick="filterSelection('max')" id="min-max"
-              >Filter by increasing</a
+              >Sort by increasing</a
             >
             <a onclick="filterSelection('min')" id="max-min"
-              >Filter by decreasing</a
+              >Sort by decreasing</a
             >
           </div>
         </div>
       </div>
-
-      <!-- Button that applying selected changes -->
-      <button id="apply-button">Apply changes</button>
     </div>
 
     <table>

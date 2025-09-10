@@ -18,7 +18,7 @@ tr:nth-child(even) {
 }
 
 /* This func. Applied for Numerical Filter */
-.NumericalFilterSection {
+.numerical-filter-section {
   display: flex;
   align-items: center;
 }
