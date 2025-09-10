@@ -9,34 +9,41 @@
   </head>
 
   <body>
-    <label>
-      <input type="checkbox" id="filterConsent" />
-      Show only courses that require consent
-    </label>
+    <div class="filter-items-display">
+      <label>
+        <input type="checkbox" id="filter-consent" />
+        Show only require consent courses
+      </label>
 
-    <form>
-      <label for="days">Choose a day:</label>
-      <select id="selecteddays">
-        <option value="M">Monday</option>
-        <option value="T">Tuesday</option>
-        <option value="W">Wednesday</option>
-        <option value="R">Thursday</option>
-        <option value="F">Friday</option>
-      </select>
-    </form>
+      <form>
+        <label>Choose a day:</label>
+        <select id="selected-days">
+          <option value="">All</option>
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </form>
+
+      <button id="apply-button">Apply changes</button>
+    </div>
 
     <table>
       <thead>
         <tr>
           <td>Course</td>
+          <td>Days</td>
           <td>Consent</td>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
 
-    <template id="courserow">
+    <template id="course-row">
       <tr>
+        <td></td>
         <td></td>
         <td></td>
       </tr>
