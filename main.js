@@ -8,7 +8,6 @@ const selectDay = document.querySelector('#selected-days')
 
 const applyButton = document.querySelector('#apply-button')
 
-
 let currentCourses // current version of the courses displayed
 
 function filterCourses() {
@@ -27,9 +26,8 @@ function filterCourses() {
   // TODO: Future filter logic can go here
 }
 
-// This function will contain -> filter by enrolment and filter by courses 
+// This function will contain -> filter by enrolment and filter by courses
 function sortCourses() {
-
   // Comperacent elements like a tree
   function compareCourses(a, b) {
     return a.enrolled - b.enrolled
@@ -43,12 +41,13 @@ function sortCourses() {
     tbody.innerHTML = ''
 
     sortenrolledmaxmin.forEach(course => {
-    const row = template.content.cloneNode(true)
-    row.querySelectorAll('td')[0].textContent = `${course.crse} - ${course.descr}`
-    row.querySelectorAll('td')[1].textContent = course.days
-    row.querySelectorAll('td')[2].textContent = course.consent
-    row.querySelectorAll('td')[3].textContent = course.enrolled
-    tbody.append(row)
+      const row = template.content.cloneNode(true)
+      row.querySelectorAll('td')[0].textContent =
+        `${course.crse} - ${course.descr}`
+      row.querySelectorAll('td')[1].textContent = course.days
+      row.querySelectorAll('td')[2].textContent = course.consent
+      row.querySelectorAll('td')[3].textContent = course.enrolled
+      tbody.append(row)
     })
   }
 
@@ -63,25 +62,26 @@ function sortCourses() {
     const sortenrolledmaxmin = [...currentCourses].sort(mincompareCourses)
 
     tbody.innerHTML = ''
-    
+
     sortenrolledmaxmin.forEach(course => {
-    const row = template.content.cloneNode(true)
-    row.querySelectorAll('td')[0].textContent = `${course.crse} - ${course.descr}`
-    row.querySelectorAll('td')[1].textContent = course.days
-    row.querySelectorAll('td')[2].textContent = course.consent
-    row.querySelectorAll('td')[3].textContent = course.enrolled
-    
-    tbody.append(row)
+      const row = template.content.cloneNode(true)
+      row.querySelectorAll('td')[0].textContent =
+        `${course.crse} - ${course.descr}`
+      row.querySelectorAll('td')[1].textContent = course.days
+      row.querySelectorAll('td')[2].textContent = course.consent
+      row.querySelectorAll('td')[3].textContent = course.enrolled
+
+      tbody.append(row)
     })
   }
 
   function notActive() {
-
     tbody.innerHTML = ''
 
     currentCourses.forEach(course => {
       const row = template.content.cloneNode(true)
-      row.querySelectorAll('td')[0].textContent = `${course.crse} - ${course.descr}`
+      row.querySelectorAll('td')[0].textContent =
+        `${course.crse} - ${course.descr}`
       row.querySelectorAll('td')[1].textContent = course.days
       row.querySelectorAll('td')[2].textContent = course.consent
       row.querySelectorAll('td')[3].textContent = course.enrolled
@@ -95,18 +95,12 @@ function sortCourses() {
   document.getElementById('notactive').addEventListener('click', notActive)
 }
 
-
-
-
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
   currentCourses = courses // reset current courses
 
   filterCourses()
   sortCourses()
-
-
 
   // Go through the current array of courses and display them
   currentCourses.forEach(course => {
@@ -117,7 +111,6 @@ function renderTable() {
     tds[1].textContent = course.days
     tds[2].textContent = course.consent
     tds[3].textContent = course.enrolled
-
 
     tbody.append(row)
   })
