@@ -38,8 +38,9 @@ function renderTable() {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
-    tds[0].textContent = `${course.crse} - ${course.descr} - ${course.days}`
-    tds[1].textContent = course.consent
+    tds[0].textContent = `${course.crse} - ${course.descr}`
+    tds[1].textContent = course.days
+    tds[2].textContent = course.consent
 
     tbody.append(row)
   })
