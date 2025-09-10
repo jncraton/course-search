@@ -6,7 +6,7 @@ tr:nth-child(even) {
   background-color: #d6eeee;
 }
 
-.filteritemsdisplay {
+.filter-items-display {
   display: flex;
   align-items: center;
   gap: 1rem;

@@ -1,12 +1,12 @@
 import { courses } from './courses.js'
 
 const tbody = document.querySelector('tbody')
-const template = document.querySelector('#courserow')
+const template = document.querySelector('#course-row')
 
-const filterConsent = document.querySelector('#filterconsent')
-const selectDay = document.querySelector('#selecteddays')
+const filterConsent = document.querySelector('#filter-consent')
+const selectDay = document.querySelector('#selected-days')
 
-const applyButton = document.querySelector('#applybutton')
+const applyButton = document.querySelector('#apply-button')
 
 let currentCourses // current version of the courses displayed
 
