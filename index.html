@@ -3,27 +3,47 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="FilterbyEnrol.css" />
+    
     <title></title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <label>
-      <input type="checkbox" id="filterConsent" />
-      Show only courses that require consent
-    </label>
+    <div class="filter-items-display">
+      <label>
+        <input type="checkbox" id="filter-consent" />
+        Show only require consent courses
+      </label>
 
-    <!--! Add the class dropdown class (button) to filter student by enrollment -->
-    <div class="dropdown">
-      <h2>Sort by numerical numbers</h2>
-      <button class="dropbtn">Select</button>
-      <div class="dropdown-content">
-        <a onclick="filterSelection('none')" id="notactive">No filters</a>
-        <a onclick="filterSelection('max')" id="min-max">Filter by increasing</a>
-        <a onclick="filterSelection('min')" id="max-min">Filter by decreasing</a>
+      <!-- Filter-form where are you choosing the day of the week that applicable for you -->
+      <form>
+        <label>Choose a day:</label>
+        <select id="selected-days">
+          <option value="">All</option>
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </form>
 
+      <!-- Add the class - dropdown && (button) to filter student by enrollment -->
+      <!-- + to existing button add the filter by courses -->
+      <div class="NumericalFilterSection">
+        <p>Sort by numerical numbers</p>
+        <div class="dropdown">
+          <button class="dropbtn">Select</button>
+          <div class="dropdown-content">
+            <a onclick="filterSelection('none')" id="notactive">No filters</a>
+            <a onclick="filterSelection('max')" id="min-max">Filter by increasing</a>
+            <a onclick="filterSelection('min')" id="max-min">Filter by decreasing</a>
+          </div>
+        </div>
       </div>
+
+      <!-- Button that applying selected changes -->
+      <button id="apply-button">Apply changes</button>
     </div>
 
     <table>
@@ -31,16 +51,17 @@
         <tr>
           <!-- Add column to devide the Enrolment people and other things -->
           <td>Course</td>
+          <td>Days</td>
           <td>Consent</td>
-          <td>Name</td>
           <td>Enrolments</td>
         </tr>
       </thead>
       <tbody></tbody>
     </table>
 
-    <template id="courserow">
+    <template id="course-row">
       <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
