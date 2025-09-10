@@ -2,16 +2,39 @@ import { courses } from './courses.js'
 
 const tbody = document.querySelector('tbody')
 const template = document.querySelector('#courserow')
-const filterBox = document.querySelector('#filterConsent')
+
+const filterConsent = document.querySelector('#filterConsent')
 const selectday = document.getElementById('selecteddays')
+
+const applyButton = document.querySelector('#applybutton')
+
+let currentCourses    // current version of the courses displayed
+
+
+function filterCourses() {
+  // If the checkbox is checked, only show "Consent Needed" courses
+  if (filterConsent.checked) {
+      currentCourses = currentCourses.filter(course => course.consent === 'Consent Required')
+    }
+
+  // Filter days selected
+  currentCourses = currentCourses.filter(course => course.days.includes(selectday.value))
+
+}
+
+function sortCourses() {
+  // TODO: add sorting logic here
+}
 
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
+  currentCourses = courses // reset current courses
 
-  courses.forEach(course => {
-    // If the checkbox is checked, only show "Consent Needed" courses
-    if (filterBox.checked && course.consent !== 'Consent Required') return
+  filterCourses()
+  sortCourses()
 
+  // Go through the current array of courses and display them
+  currentCourses.forEach(course => {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
@@ -20,22 +43,10 @@ function renderTable() {
 
     tbody.append(row)
   })
-
-  selectday.addEventListener('change', function () {
-    tbody.innerHTML = ''
-    courses
-      .filter(course => course.days.includes(selectday.value))
-      .forEach(course => {
-        const row = template.content.cloneNode(true)
-        row.querySelector('td').textContent =
-          `${course.crse} - ${course.descr} - ${course.days}`
-        tbody.append(row)
-      })
-  })
 }
 
 // Initial render
 renderTable()
 
-// Re-render whenever checkbox state changes
-filterBox.addEventListener('change', renderTable)
+// Render again when user wants to
+applyButton.addEventListener('click', renderTable)

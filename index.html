@@ -9,21 +9,25 @@
   </head>
 
   <body>
-    <label>
-      <input type="checkbox" id="filterConsent" />
-      Show only courses that require consent
-    </label>
+    <div style="display: flex; align-items: center; gap: 1rem;">
+      <label>
+        <input type="checkbox" id="filterConsent" />
+        Show only require consent courses
+      </label>
 
-    <form>
-      <label for="days">Choose a day:</label>
-      <select id="selecteddays">
-        <option value="M">Monday</option>
-        <option value="T">Tuesday</option>
-        <option value="W">Wednesday</option>
-        <option value="R">Thursday</option>
-        <option value="F">Friday</option>
-      </select>
-    </form>
+      <form>
+        <label for="days">Choose a day:</label>
+        <select id="selecteddays">
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </form>
+
+      <button id="applybutton">Apply changes</button>
+    </div>
 
     <table>
       <thead>
