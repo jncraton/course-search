@@ -5,6 +5,7 @@ const template = document.querySelector('#course-row')
 
 const filterConsent = document.querySelector('#filter-consent')
 const selectDay = document.querySelector('#selected-days')
+const filterOnline = document.querySelector('#filter-online')
 
 const applyButton = document.querySelector('#apply-button')
 
@@ -22,6 +23,11 @@ function filterCourses() {
   currentCourses = currentCourses.filter(course =>
     course.days.includes(selectDay.value),
   )
+
+  //If the checkbox is checked, show online courses
+  if (filterOnline.checked) {
+    currentCourses = currentCourses.filter(course => course.crse[11] == 'E')
+  }
 
   // TODO: Future filter logic can go here
 }
