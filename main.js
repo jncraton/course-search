@@ -11,25 +11,22 @@ courses.forEach(course => {
   tbody.append(row)
 })
 
-//on click of online selection print online classes only
-filterOnline.addEventListener('click', () => {
-  tbody.innerHTML = ''
-  courses.forEach(course => {
-    if (course.crse[10] == '0' && course.crse[11] == 'E') {
-      const row = template.content.cloneNode(true)
-      row.querySelector('td').textContent = `${course.crse} - ${course.descr}`
-      tbody.append(row)
-    }
-  })
-})
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
   courses.forEach(course => {
+    //If the checkbox is checked, show Online classes
+    if (filterOnline.checked && course.crse[11] == 'E') {
+      const row = template.content.cloneNode(true)
+      row.querySelector('td').textContent = `${course.crse} - ${course.descr}`
+      tbody.append(row)
+        }
+    })
+
+  courses.forEach(course => {
     // If the checkbox is checked, only show "Consent Needed" courses
     if (filterBox.checked && course.consent !== 'Consent Required') return
-
+  
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
@@ -38,6 +35,7 @@ function renderTable() {
 
     tbody.append(row)
   })
+
 }
 
 // Initial render
@@ -45,3 +43,4 @@ renderTable()
 
 // Re-render whenever checkbox state changes
 filterBox.addEventListener('change', renderTable)
+filterOnline.addEventListener('change', renderTable)
