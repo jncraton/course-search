@@ -1,12 +1,116 @@
 import { courses } from './courses.js'
 
 const tbody = document.querySelector('tbody')
-const template = document.querySelector('#courserow')
+const template = document.querySelector('#course-row')
 
-courses.sort((a, b) => a.credits - b.credits)
+const filterConsent = document.querySelector('#filter-consent')
+const selectDay = document.querySelector('#selected-days')
+const filterOnline = document.querySelector('#filter-online')
 
-courses.forEach(course => {
-  const row = template.content.cloneNode(true)
-  row.querySelector('td').textContent = `${course.crse} - ${course.descr} (${course.credits} cr)`
-  tbody.append(row)
+const applyButton = document.querySelector('#apply-button')
+
+let currentCourses // current version of the courses displayed
+
+function filterCourses() {
+  // If the checkbox is checked, only show "Consent Needed" courses
+  if (filterConsent.checked) {
+    currentCourses = currentCourses.filter(
+      course => course.consent === 'Consent Required',
+    )
+  }
+
+  // Filter days selected
+  currentCourses = currentCourses.filter(course =>
+    course.days.includes(selectDay.value),
+  )
+
+  //If the checkbox is checked, show online courses
+  if (filterOnline.checked) {
+    currentCourses = currentCourses.filter(course => course.crse[11] == 'E')
+  }
+
+  // TODO: Future filter logic can go here
+}
+
+function renderTable() {
+  tbody.innerHTML = '' // clear rows first
+
+  // Go through the current array of courses and display them (assumes things are filtered and sorted)
+  currentCourses.forEach(course => {
+    const row = template.content.cloneNode(true)
+    const tds = row.querySelectorAll('td')
+
+    tds[0].textContent = `${course.crse} - ${course.descr}`
+    tds[1].textContent = course.days
+    tds[2].textContent = course.consent
+    tds[3].textContent = course.enrolled
+    tds[4].textContent = daysCount(course)
+    tds[5].textContent = course['instruction mode']
+
+    tbody.append(row)
+  })
+}
+
+function daysCount(currentCourses) {
+  if (
+    typeof currentCourses.days === 'string' &&
+    currentCourses.days.trim() !== ''
+  ) {
+    return currentCourses.days.trim().length
+  } else {
+    return 1
+  }
+}
+
+// This function will contain -> filter by enrolment and filter by courses
+function sortCourses(sortType) {
+  // Decision logic for deciding how to sort
+  if (sortType === 'not-active') {
+    currentCourses = courses
+    filterCourses()
+  } else if (sortType === 'min-max-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => a.enrolled - b.enrolled)
+  } else if (sortType === 'max-min-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => b.enrolled - a.enrolled)
+  } else if (sortType === 'min-max-credit-hours') {
+    currentCourses = [...currentCourses].sort(
+      (a, b) => daysCount(a) - daysCount(b),
+    )
+  } else if (sortType === 'max-min-credit-hours') {
+    currentCourses = [...currentCourses].sort(
+      (a, b) => daysCount(b) - daysCount(a),
+    )
+  }
+
+  // Render the table after
+  renderTable()
+}
+
+// Initial set current courses and render
+currentCourses = courses
+renderTable()
+
+// Render again when user wants to for filtering
+applyButton.addEventListener('click', () => {
+  currentCourses = courses // reset current courses
+
+  filterCourses()
+  renderTable()
 })
+
+// Auto render for sorting
+document
+  .getElementById('min-max-enrollment')
+  .addEventListener('click', () => sortCourses('min-max-enrollment'))
+document
+  .getElementById('max-min-enrollment')
+  .addEventListener('click', () => sortCourses('max-min-enrollment'))
+document
+  .getElementById('not-active')
+  .addEventListener('click', () => sortCourses('not-active'))
+document
+  .getElementById('min-max-credit-hours')
+  .addEventListener('click', () => sortCourses('min-max-credit-hours'))
+document
+  .getElementById('max-min-credit-hours')
+  .addEventListener('click', () => sortCourses('max-min-credit-hours'))
