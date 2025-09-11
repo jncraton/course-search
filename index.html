@@ -19,6 +19,7 @@
         Show only online courses
       </label>
 
+      <!-- Filter-form where are you choosing the day of the week that applicable for you -->
       <form>
         <label>Choose a day:</label>
         <select id="selected-days">
@@ -31,15 +32,33 @@
         </select>
       </form>
 
-      <button id="apply-button">Apply changes</button>
+      <!-- Button that applying selected changes -->
+      <button id="apply-button">Apply filters</button>
+
+      <!-- Add the class - dropdown && (button) to filter student by enrollment -->
+      <!-- + to existing button add the filter by courses -->
+      <div class="numerical-filter-section">
+        <div class="dropdown">
+          <button class="dropbtn">Sorting</button>
+          <div class="dropdown-content">
+            <a id="not-active">Default</a>
+            <a id="min-max-enrollment">Enrollment ascending</a>
+            <a id="max-min-enrollment">Enrollment descending</a>
+          </div>
+        </div>
+      </div>
     </div>
 
     <table>
       <thead>
         <tr>
+          <!-- Add column to devide the Enrolment people and other things -->
           <td>Course</td>
           <td>Days</td>
           <td>Consent</td>
+          <td>Enrollments</td>
+          <td></td>
+          <td>Format</td>
         </tr>
       </thead>
       <tbody></tbody>
@@ -47,6 +66,9 @@
 
     <template id="course-row">
       <tr>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
