@@ -40,7 +40,10 @@ function renderTable() {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
-    tds[0].textContent = `${course.crse} - ${course.descr}`
+    const classStatusVisual =
+      course.enrolling === 'Open' ? '&#9989;' : '&#10060;' // Adds visual for if class is open or not with UTF encoded version of emojis
+
+    tds[0].innerHTML = `${classStatusVisual} ${course.crse} - ${course.descr}`
     tds[1].textContent = course.days
     tds[2].textContent = course.consent
     tds[3].textContent = course.enrolled

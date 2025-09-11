@@ -36,7 +36,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '7',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'ACCT-3860-0E',
@@ -62,7 +62,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '11',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'ACCT-4310-01',
@@ -335,7 +335,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '4',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'BIOL-2420L-LB',
@@ -400,7 +400,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'BIOL-4920-01',
@@ -1011,7 +1011,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'COMM-2000-01',
@@ -1258,7 +1258,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'CPSC-2250-01',
@@ -1375,7 +1375,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '11',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'CRIM-2510-0B',
@@ -1388,7 +1388,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '6',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'CRIM-2520-0E',
@@ -1401,7 +1401,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '8',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'CRIM-2560-01',
@@ -1479,7 +1479,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '2',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'CRIM-4820-01',
@@ -2521,7 +2521,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '8',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'ENGR-4230-01',
@@ -3145,7 +3145,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'LART-1050-01',
@@ -3158,7 +3158,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'LART-1050-02',
@@ -3171,7 +3171,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'LART-1100-0EA',
@@ -3184,7 +3184,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'LART-1100-0EA2',
@@ -3197,7 +3197,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'LART-1100-8E',
@@ -3314,7 +3314,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MATH-1250-01',
@@ -4705,7 +4705,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2750-01',
@@ -4718,7 +4718,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2760-01',
@@ -4731,7 +4731,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2770-01',
@@ -4744,7 +4744,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2770-02',
@@ -4757,7 +4757,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2780-01',
@@ -4770,7 +4770,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2790-01',
@@ -4783,7 +4783,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'MUPF-2800-01',
@@ -7435,7 +7435,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '4',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'PSYC-2100-01',
@@ -7448,7 +7448,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '5',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'PSYC-2100-02',
@@ -7461,7 +7461,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '2',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'PSYC-2110-01',
@@ -8126,7 +8126,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'THEA-2420-01',
@@ -8139,7 +8139,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'THEA-2890-01',
@@ -8178,7 +8178,7 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'In Person',
     enrolled: '1',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
   {
     crse: 'THEA-4800-01',
@@ -8191,6 +8191,6 @@ export const courses = [
     consent: 'No Consent Required',
     'instruction mode': 'Asynchronous Online',
     enrolled: '0',
-    enrolling: 'Open',
+    enrolling: 'Closed',
   },
 ]
