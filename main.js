@@ -2,23 +2,52 @@ import { courses } from './courses.js'
 
 const tbody = document.querySelector('tbody')
 const template = document.querySelector('#courserow')
-const template = document.querySelector('#filterDepartment')
+const filterBox = document.querySelector('#filterDepartment')
 
-const getDept = crse => crse.split("-", 1)[0];
-const uniqueDept = [...new Set(getDept)];
-console.log(uniqueDept);
+const getDept = crse => crse.split('-', 1)[0]
+
+function populateDeptFilter() {
+  const depts = Array.from(new Set(courses.map(c => getDept(c.crse)))).sort()
+
+  filterBox.innerHTML = ''
+
+  const allOpt = document.createElement('option')
+  allOpt.value = '__ALL__'
+  allOpt.textContent = 'All departments'
+  filterBox.append(allOpt)
+
+  depts.forEach(d => {
+    const opt = document.createElement('option')
+    opt.value = d
+    opt.textContent = d
+    filterBox.append(opt)
+  })
+}
 
 function renderTable() {
 
   tbody.innerHTML = ''
 
-courses.forEach(course => {
-  const row = template.content.cloneNode(true)
-  row.querySelectorAll('td')[0].textContent = `${course.crse.split("-", 1)}`
-  row.querySelectorAll('td')[1].textContent = `${course.crse.split("-", 2).slice(1)}`
-  row.querySelectorAll('td')[2].textContent = `${course.descr}`
-  tbody.append(row)
-})
+  let visible;
+  if (selectedDept && selectedDept !== '__ALL__') {
+    visible = courses.filter(c => getDept(c.crse) === selectedDept);
+  } else {
+    visible = courses;
+  }
+
+  visible.forEach(course => {
+    const row = rowTpl.content.cloneNode(true)
+    const tds = row.querySelectorAll('td')
+
+    tds[0].textContent = getDept(course.crse)
+    tds[1].textContent = course.crse.split('-').slice(1).join('-')
+    tds[2].textContent = course.descr
+
+    tbody.append(row)
+  })
 }
+
+populateDeptFilter()
+
 renderTable()
 filterBox.addEventListener('change', renderTable)
