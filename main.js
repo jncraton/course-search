@@ -3,7 +3,6 @@ import { courses } from './courses.js'
 // html elements
 const tbody = document.querySelector('tbody')
 const template = document.querySelector('#course-row')
-
 const filterConsent = document.querySelector('#filter-consent')
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
@@ -58,17 +57,18 @@ function populateDeptFilter() {
 
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
-  
+
 // show courses based on filter
   const selectedDept = filterBox.value
   let visible;
   if (selectedDept && selectedDept !== '__ALL__') {
     visible = courses.filter(c => getDept(c.crse) === selectedDept);
   } else {
-    currentCourses = courses;
+    visible = courses;
   }
 
-populateDeptFilter()
+  currentCourses = visible
+  filterCourses()
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)
   currentCourses.forEach(course => {
@@ -131,16 +131,17 @@ function sortCourses(sortType) {
 }
 
 // Initial set current courses and render
+populateDeptFilter()
 currentCourses = courses
 renderTable()
 
 // Render again when user wants to for filtering
 applyButton.addEventListener('click', () => {
   currentCourses = courses // reset current courses
-
-  filterCourses()
   renderTable()
 })
+
+filterBox.addEventListener('change', renderTable)
 
 // Auto render for sorting
 document
