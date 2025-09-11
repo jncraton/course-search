@@ -54,6 +54,7 @@ function renderTable() {
   })
 }
 
+// Make each day count as 1 credit hour and if it's online "" also 1 credit hour
 function daysCount(currentCourses) {
   if (
     typeof currentCourses.days === 'string' &&
@@ -67,7 +68,7 @@ function daysCount(currentCourses) {
 
 // This function will contain -> filter by enrolment and filter by courses
 function sortCourses(sortType) {
-  // Decision logic for deciding how to sort
+  // Decision logic for deciding how to sort by enorllment
   if (sortType === 'not-active') {
     currentCourses = courses
     filterCourses()
@@ -75,6 +76,8 @@ function sortCourses(sortType) {
     currentCourses = [...currentCourses].sort((a, b) => a.enrolled - b.enrolled)
   } else if (sortType === 'max-min-enrollment') {
     currentCourses = [...currentCourses].sort((a, b) => b.enrolled - a.enrolled)
+    // Decision logic for deciding how to sort by credit hours
+    // Make each day count as 1 credit hour and if it's online "" also 1 credit hour
   } else if (sortType === 'min-max-credit-hours') {
     currentCourses = [...currentCourses].sort(
       (a, b) => daysCount(a) - daysCount(b),
