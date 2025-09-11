@@ -13,7 +13,7 @@ function populateDeptFilter() {
 
   const allOpt = document.createElement('option')
   allOpt.value = '__ALL__'
-  allOpt.textContent = 'All departments'
+  allOpt.textContent = 'ALL DEPARTMENTS'
   filterBox.append(allOpt)
 
   depts.forEach(d => {
@@ -28,6 +28,7 @@ function renderTable() {
 
   tbody.innerHTML = ''
 
+  const selectedDept = filterBox.value
   let visible;
   if (selectedDept && selectedDept !== '__ALL__') {
     visible = courses.filter(c => getDept(c.crse) === selectedDept);
@@ -36,7 +37,7 @@ function renderTable() {
   }
 
   visible.forEach(course => {
-    const row = rowTpl.content.cloneNode(true)
+    const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
     tds[0].textContent = getDept(course.crse)
