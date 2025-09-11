@@ -4,32 +4,92 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
+    <title>Courses</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <label>
-      <input type="checkbox" id="filterConsent" />
-      Show only courses that require consent
-    </label>
+    <div class="filter-items-display">
+      <label>
+        <input type="checkbox" id="filter-consent" />
+        Show only require consent courses
+      </label>
+      <label>
+        <input type="checkbox" id="filter-online" />
+        Show only online courses
+      </label>
+      <label>
+        <input type="checkbox" id="liberalArtsFilter" />
+        Show only Liberal Arts courses
+      </label>
 
-    <label>
-      <input type="checkbox" id="liberalArtsFilter"> Show only courses for Liberal Arts
-    </label>
+      <!-- Filter-form where are you choosing the day of the week that applicable for you -->
+      <form>
+        <label>Choose a day:</label>
+        <select id="selected-days">
+          <option value="">All</option>
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </form>
 
+      <!-- Button that applying selected changes -->
+      <button id="apply-button">Apply filters</button>
+
+      <!-- Add the class - dropdown && (button) to filter student by enrollment -->
+      <!-- + to existing button add the filter by courses -->
+      <div class="numerical-filter-section">
+        <div class="dropdown">
+          <button class="dropbtn">Sorting</button>
+          <div class="dropdown-content">
+            <a id="not-active">Default</a>
+            <a id="min-max-enrollment">Enrollment ascending</a>
+            <a id="max-min-enrollment">Enrollment descending</a>
+            <a id="min-max-credit-hours">Credit ascending</a>
+            <a id="max-min-credit-hours">Credit descending</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <label>&#9989; = Open &#10060; = Closed</label>
+
+    <div class="controls">
+      <label for="filterDepartment">Department:</label>
+      <select id="filterDepartment"></select>
+    </div>
     <table>
       <thead>
         <tr>
-          <td>Course</td>
+          <!-- Add column to devide the Enrolment people and other things -->
+          <td>Status</td>
+          <td>Department</td>
+          <td>Course ID</td>
+          <td>Class Name</td>
+          <td>Days</td>
           <td>Consent</td>
+          <td>Enrollments</td>
+          <td>Credits</td>
+          <td>Format</td>
         </tr>
+
+        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
 
-    <template id="courserow">
+    <template id="course-row">
       <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
       </tr>
