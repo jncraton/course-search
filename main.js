@@ -58,13 +58,13 @@ function populateDeptFilter() {
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
-// show courses based on filter
+  // show courses based on filter
   const selectedDept = filterBox.value
-  let visible;
+  let visible
   if (selectedDept && selectedDept !== '__ALL__') {
-    visible = courses.filter(c => getDept(c.crse) === selectedDept);
+    visible = courses.filter(c => getDept(c.crse) === selectedDept)
   } else {
-    visible = courses;
+    visible = courses
   }
 
   currentCourses = visible
@@ -77,7 +77,7 @@ function renderTable() {
 
     const classStatusVisual =
       course.enrolling === 'Open' ? '&#9989;' : '&#10060;' // Adds visual for if class is open or not with UTF encoded version of emojis
-    
+
     tds[0].innerHTML = `${classStatusVisual}`
     tds[1].textContent = getDept(course.crse)
     tds[2].textContent = course.crse.split('-').slice(1).join('-')
