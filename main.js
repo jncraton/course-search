@@ -8,7 +8,7 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const applyButton = document.querySelector('#apply-button')
-const liberalArtsCheckbox = document.getElementById("liberalArtsFilter");
+const liberalArtsCheckbox = document.getElementById('liberalArtsFilter')
 
 let currentCourses // current version of the courses displayed
 let sortMode = 'not-active'
@@ -38,15 +38,16 @@ function filterCourses() {
   if (filterOnline.checked) {
     arr = arr.filter(c => c.crse && c.crse[11] === 'E')
   }
-  
+
   // Liberal Arts filter
   if (liberalArtsCheckbox.checked) {
-    arr = arr.filter(c =>
-      (c.descr && c.descr.includes("Liberal Arts")) ||
-      (c.title && c.title.includes("Liberal Arts"))
+    arr = arr.filter(
+      c =>
+        (c.descr && c.descr.includes('Liberal Arts')) ||
+        (c.title && c.title.includes('Liberal Arts')),
     )
   }
-  
+
   currentCourses = arr
 }
 
