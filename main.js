@@ -47,15 +47,28 @@ function renderTable() {
     tds[1].textContent = course.days
     tds[2].textContent = course.consent
     tds[3].textContent = course.enrolled
+    tds[4].textContent = daysCount(course)
     tds[5].textContent = course['instruction mode']
 
     tbody.append(row)
   })
 }
 
+// Make each day count as 1 credit hour and if it's online "" also 1 credit hour
+function daysCount(currentCourses) {
+  if (
+    typeof currentCourses.days === 'string' &&
+    currentCourses.days.trim() !== ''
+  ) {
+    return currentCourses.days.trim().length
+  } else {
+    return 1
+  }
+}
+
 // This function will contain -> filter by enrolment and filter by courses
 function sortCourses(sortType) {
-  // Decision logic for deciding how to sort
+  // Decision logic for deciding how to sort by enorllment
   if (sortType === 'not-active') {
     currentCourses = courses
     filterCourses()
@@ -63,6 +76,16 @@ function sortCourses(sortType) {
     currentCourses = [...currentCourses].sort((a, b) => a.enrolled - b.enrolled)
   } else if (sortType === 'max-min-enrollment') {
     currentCourses = [...currentCourses].sort((a, b) => b.enrolled - a.enrolled)
+    // Decision logic for deciding how to sort by credit hours
+    // Make each day count as 1 credit hour and if it's online "" also 1 credit hour
+  } else if (sortType === 'min-max-credit-hours') {
+    currentCourses = [...currentCourses].sort(
+      (a, b) => daysCount(a) - daysCount(b),
+    )
+  } else if (sortType === 'max-min-credit-hours') {
+    currentCourses = [...currentCourses].sort(
+      (a, b) => daysCount(b) - daysCount(a),
+    )
   }
 
   // Render the table after
@@ -91,3 +114,9 @@ document
 document
   .getElementById('not-active')
   .addEventListener('click', () => sortCourses('not-active'))
+document
+  .getElementById('min-max-credit-hours')
+  .addEventListener('click', () => sortCourses('min-max-credit-hours'))
+document
+  .getElementById('max-min-credit-hours')
+  .addEventListener('click', () => sortCourses('max-min-credit-hours'))
