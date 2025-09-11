@@ -38,13 +38,12 @@
       <!-- Add the class - dropdown && (button) to filter student by enrollment -->
       <!-- + to existing button add the filter by courses -->
       <div class="numerical-filter-section">
-        <p>Sort by numerical numbers</p>
         <div class="dropdown">
           <button class="dropbtn">Sorting</button>
           <div class="dropdown-content">
             <a id="notactive">Default</a>
-            <a id="min-max">Enrollment ascending</a>
-            <a id="max-min">Enrollment disascending</a>
+            <a id="min-max-enrollment">Enrollment ascending</a>
+            <a id="max-min-enrollment">Enrollment descending</a>
           </div>
         </div>
       </div>
@@ -58,6 +57,8 @@
           <td>Days</td>
           <td>Consent</td>
           <td>Enrolments</td>
+          <td></td>
+          <td>Format</td>
         </tr>
       </thead>
       <tbody></tbody>
@@ -65,6 +66,7 @@
 
     <template id="course-row">
       <tr>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
