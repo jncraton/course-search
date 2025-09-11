@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title></title>
+    <title>Courses</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -44,7 +44,7 @@
             <a id="not-active">Default</a>
             <a id="min-max-enrollment">Enrollment ascending</a>
             <a id="max-min-enrollment">Enrollment descending</a>
-            <a id="min-max-credit-hours">Credit descending</a>
+            <a id="min-max-credit-hours">Credit ascending</a>
             <a id="max-min-credit-hours">Credit descending</a>
           </div>
         </div>
@@ -53,23 +53,35 @@
 
     <label>&#9989; = Open &#10060; = Closed</label>
 
+    <div class="controls">
+      <label for="filterDepartment">Department:</label>
+      <select id="filterDepartment"></select>
+    </div>
     <table>
       <thead>
         <tr>
           <!-- Add column to devide the Enrolment people and other things -->
-          <td>Course</td>
+          <td>Status</td>
+          <td>Department</td>
+          <td>Course ID</td>
+          <td>Class Name</td>
           <td>Days</td>
           <td>Consent</td>
           <td>Enrollments</td>
           <td>Credits</td>
           <td>Format</td>
         </tr>
+
+        <tr></tr>
       </thead>
       <tbody></tbody>
     </table>
 
     <template id="course-row">
       <tr>
+        <td></td>
+        <td></td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
