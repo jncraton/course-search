@@ -32,83 +32,10 @@ function filterCourses() {
   // TODO: Future filter logic can go here
 }
 
-// This function will contain -> filter by enrolment and filter by courses
-function sortCourses() {
-  // Comperacent elements like a tree
-  function compareCourses(a, b) {
-    return a.enrolled - b.enrolled
-  }
-
-  // Creating function that would be responsible for maxValue
-  // Creating the ...courses from courses and putting the course into sortenrolledmaxmin where we taken only enrolled and compare them
-  function maxValue() {
-    const sortenrolledmaxmin = [...currentCourses].sort(compareCourses)
-
-    tbody.innerHTML = ''
-
-    sortenrolledmaxmin.forEach(course => {
-      const row = template.content.cloneNode(true)
-      row.querySelectorAll('td')[0].textContent =
-        `${course.crse} - ${course.descr}`
-      row.querySelectorAll('td')[1].textContent = course.days
-      row.querySelectorAll('td')[2].textContent = course.consent
-      row.querySelectorAll('td')[3].textContent = course.enrolled
-      tbody.append(row)
-    })
-  }
-
-  // Creating function that would be responsible for minValue
-  // Creating the ...courses from courses and putting the course into sortenrolledmaxmin where we taken only enrolled and compare them
-  function mincompareCourses(a, b) {
-    return b.enrolled - a.enrolled
-  }
-
-  // Using Prof.Craton code but adding the const that we created
-  function minValue() {
-    const sortenrolledmaxmin = [...currentCourses].sort(mincompareCourses)
-
-    tbody.innerHTML = ''
-
-    sortenrolledmaxmin.forEach(course => {
-      const row = template.content.cloneNode(true)
-      row.querySelectorAll('td')[0].textContent =
-        `${course.crse} - ${course.descr}`
-      row.querySelectorAll('td')[1].textContent = course.days
-      row.querySelectorAll('td')[2].textContent = course.consent
-      row.querySelectorAll('td')[3].textContent = course.enrolled
-
-      tbody.append(row)
-    })
-  }
-
-  function notActive() {
-    tbody.innerHTML = ''
-
-    currentCourses.forEach(course => {
-      const row = template.content.cloneNode(true)
-      row.querySelectorAll('td')[0].textContent =
-        `${course.crse} - ${course.descr}`
-      row.querySelectorAll('td')[1].textContent = course.days
-      row.querySelectorAll('td')[2].textContent = course.consent
-      row.querySelectorAll('td')[3].textContent = course.enrolled
-
-      tbody.append(row)
-    })
-  }
-
-  document.getElementById('min-max').addEventListener('click', maxValue)
-  document.getElementById('max-min').addEventListener('click', minValue)
-  document.getElementById('notactive').addEventListener('click', notActive)
-}
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
-  currentCourses = courses // reset current courses
 
-  filterCourses()
-  sortCourses()
-
-  // Go through the current array of courses and display them
+  // Go through the current array of courses and display them (assumes things are filtered and sorted)
   currentCourses.forEach(course => {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
@@ -117,13 +44,47 @@ function renderTable() {
     tds[1].textContent = course.days
     tds[2].textContent = course.consent
     tds[3].textContent = course.enrolled
+    tds[5].textContent = course['instruction mode']
 
     tbody.append(row)
   })
 }
 
-// Initial render
+// This function will contain -> filter by enrolment and filter by courses
+function sortCourses(sortType) {
+  // Decision logic for deciding how to sort
+  if (sortType === 'notactive') {
+    currentCourses = courses
+    filterCourses()
+  } else if (sortType === 'min-max-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => a.enrolled - b.enrolled)
+  } else if (sortType === 'max-min-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => b.enrolled - a.enrolled)
+  }
+
+  // Render the table after
+  renderTable()
+}
+
+// Initial set current courses and render
+currentCourses = courses
 renderTable()
 
-// Render again when user wants to
-applyButton.addEventListener('click', renderTable)
+// Render again when user wants to for filtering
+applyButton.addEventListener('click', () => {
+  currentCourses = courses // reset current courses
+
+  filterCourses()
+  renderTable()
+})
+
+// Auto render for sorting
+document
+  .getElementById('min-max-enrollment')
+  .addEventListener('click', () => sortCourses('min-max-enrollment'))
+document
+  .getElementById('max-min-enrollment')
+  .addEventListener('click', () => sortCourses('max-min-enrollment'))
+document
+  .getElementById('notactive')
+  .addEventListener('click', () => sortCourses('notactive'))
