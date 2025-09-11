@@ -32,18 +32,10 @@ function filterCourses() {
   // TODO: Future filter logic can go here
 }
 
-function sortCourses() {
-  // TODO: add sorting logic here
-}
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
-  currentCourses = courses // reset current courses
 
-  filterCourses()
-  sortCourses()
-
-  // Go through the current array of courses and display them
+  // Go through the current array of courses and display them (assumes things are filtered and sorted)
   currentCourses.forEach(course => {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
@@ -54,13 +46,48 @@ function renderTable() {
     tds[0].innerHTML = `${classStatusVisual} ${course.crse} - ${course.descr}`
     tds[1].textContent = course.days
     tds[2].textContent = course.consent
+    tds[3].textContent = course.enrolled
+    tds[5].textContent = course['instruction mode']
 
     tbody.append(row)
   })
 }
 
-// Initial render
+// This function will contain -> filter by enrolment and filter by courses
+function sortCourses(sortType) {
+  // Decision logic for deciding how to sort
+  if (sortType === 'not-active') {
+    currentCourses = courses
+    filterCourses()
+  } else if (sortType === 'min-max-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => a.enrolled - b.enrolled)
+  } else if (sortType === 'max-min-enrollment') {
+    currentCourses = [...currentCourses].sort((a, b) => b.enrolled - a.enrolled)
+  }
+
+  // Render the table after
+  renderTable()
+}
+
+// Initial set current courses and render
+currentCourses = courses
 renderTable()
 
-// Render again when user wants to
-applyButton.addEventListener('click', renderTable)
+// Render again when user wants to for filtering
+applyButton.addEventListener('click', () => {
+  currentCourses = courses // reset current courses
+
+  filterCourses()
+  renderTable()
+})
+
+// Auto render for sorting
+document
+  .getElementById('min-max-enrollment')
+  .addEventListener('click', () => sortCourses('min-max-enrollment'))
+document
+  .getElementById('max-min-enrollment')
+  .addEventListener('click', () => sortCourses('max-min-enrollment'))
+document
+  .getElementById('not-active')
+  .addEventListener('click', () => sortCourses('not-active'))

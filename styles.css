@@ -1,3 +1,8 @@
+/* Declare the font to make it tidy*/
+* {
+  font-size: 14px;
+}
+
 thead tr {
   background-color: powderblue;
 }
@@ -11,3 +16,60 @@ tr:nth-child(even) {
   align-items: center;
   gap: 1rem;
 }
+
+/* This func. Applied for Numerical Filter */
+.numerical-filter-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #ffffff;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  padding: 4px;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 12px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  display: cover;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #c73c3c;
+}
+
+/* END OF Dropdown Button */
