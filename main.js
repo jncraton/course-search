@@ -53,7 +53,7 @@ function renderTable() {
 // This function will contain -> filter by enrolment and filter by courses
 function sortCourses(sortType) {
   // Decision logic for deciding how to sort
-  if (sortType === 'notactive') {
+  if (sortType === 'not-active') {
     currentCourses = courses
     filterCourses()
   } else if (sortType === 'min-max-enrollment') {
@@ -86,5 +86,5 @@ document
   .getElementById('max-min-enrollment')
   .addEventListener('click', () => sortCourses('max-min-enrollment'))
 document
-  .getElementById('notactive')
-  .addEventListener('click', () => sortCourses('notactive'))
+  .getElementById('not-active')
+  .addEventListener('click', () => sortCourses('not-active'))
