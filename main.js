@@ -8,7 +8,7 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const applyButton = document.querySelector('#apply-button')
-const liberalArtsCheckbox = document.getElementById('liberal-arts-filter')
+const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 
 let currentCourses // current version of the courses displayed
 let sortMode = 'not-active'
