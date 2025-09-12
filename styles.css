@@ -3,13 +3,58 @@
   font-size: 14px;
 }
 
-thead tr {
-  background-color: powderblue;
+/*General table cleanup*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
-tr:nth-child(even) {
-  background-color: #d6eeee;
+/*Header row*/
+thead {
+  border-bottom: 2px solid #333;
 }
+thead td {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+/* Rows */
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1; /*Stripes*/
+}
+tbody tr:hover {
+  background-color: #eef; /*Highlight row on hover*/
+}
+
+/*Cellstyle*/
+td {
+  padding: 8px 12px;
+  border: none;
+  vertical-align: top;
+}
+
+/*Alignment rules*/
+td:nth-child(1), /*Status*/
+td:nth-child(7), /*Enrollments*/
+td:nth-child(8)  /*Credits*/
+{
+  text-align: center; /*Numbers/symbols*/
+}
+
+td:nth-child(2), /*Department*/
+td:nth-child(3), /*Course ID*/
+td:nth-child(4), /*Class Name*/
+td:nth-child(5), /*Days*/
+td:nth-child(6), /*Consent*/
+td:nth-child(9)  /*Format*/
+{
+  text-align: left; /*words, codes, labels*/
+}
+/* End of Table Edit */
 
 .filter-items-display {
   display: flex;
