@@ -36,7 +36,9 @@ function filterCourses() {
 
   //If the checkbox is checked, show online courses
   if (filterOnline.checked) {
-    arr = arr.filter(c => c.crse && c['instruction mode'] ==='Asynchronous Online' )
+    arr = arr.filter(
+      c => c.crse && c['instruction mode'] === 'Asynchronous Online',
+    )
   }
 
   // Liberal Arts filter
