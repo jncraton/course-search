@@ -40,8 +40,7 @@ td {
 /*Alignment rules*/
 td:nth-child(1), /*Status*/
 td:nth-child(7), /*Enrollments*/
-td:nth-child(8)  /*Credits*/
-{
+td:nth-child(8)  /*Credits*/ {
   text-align: center; /*Numbers/symbols*/
 }
 
@@ -50,8 +49,7 @@ td:nth-child(3), /*Course ID*/
 td:nth-child(4), /*Class Name*/
 td:nth-child(5), /*Days*/
 td:nth-child(6), /*Consent*/
-td:nth-child(9)  /*Format*/
-{
+td:nth-child(9)  /*Format*/ {
   text-align: left; /*words, codes, labels*/
 }
 /* End of Table Edit */
