@@ -37,20 +37,15 @@ td {
   vertical-align: top;
 }
 
-/*Alignment rules*/
-td:nth-child(1), /*Status*/
-td:nth-child(7), /*Enrollments*/
-td:nth-child(8)  /*Credits*/ {
-  text-align: center; /*Numbers/symbols*/
+/* Alignment utilities */
+td.center,
+th.center {
+  text-align: center;
 }
 
-td:nth-child(2), /*Department*/
-td:nth-child(3), /*Course ID*/
-td:nth-child(4), /*Class Name*/
-td:nth-child(5), /*Days*/
-td:nth-child(6), /*Consent*/
-td:nth-child(9)  /*Format*/ {
-  text-align: left; /*words, codes, labels*/
+td.left,
+th.left {
+  text-align: left;
 }
 /* End of Table Edit */
 
