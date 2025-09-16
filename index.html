@@ -39,22 +39,6 @@
       <!-- Button that applying selected changes -->
       <button id="apply-button">Apply filters</button>
 
-      <!-- Add the class - dropdown && (button) to filter student by enrollment -->
-      <!-- + to existing button add the filter by courses -->
-      <div class="numerical-filter-section">
-        <div class="dropdown">
-          <button class="dropbtn">Sorting</button>
-          <div class="dropdown-content">
-            <a id="not-active">Default</a>
-            <a id="min-max-enrollment">Enrollment ascending</a>
-            <a id="max-min-enrollment">Enrollment descending</a>
-            <a id="min-max-credit-hours">Credit ascending</a>
-            <a id="max-min-credit-hours">Credit descending</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <label>&#9989; = Open &#10060; = Closed</label>
 
     <div class="controls">
@@ -71,8 +55,16 @@
           <td>Class Name</td>
           <td>Days</td>
           <td>Consent</td>
-          <td>Enrollments</td>
-          <td>Credits</td>
+          <td class="enroll-td">
+            <a href="#" id="enrollments-button">
+              Enrollments
+              <span class="icon-span">
+                <i class="fas fa-caret-up up-icon"></i>
+                <i class="fas fa-caret-down down-icon"></i>
+              </span>
+            </a>
+          </td>
+          <td>Credit</td>
           <td>Format</td>
         </tr>
 
