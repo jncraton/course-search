@@ -10,8 +10,16 @@ A tool to search for courses.
 
 In order to run the application locally, we need to use a local webserver. One way to do this is using the following Python command:
 
+#### Linux/MacOS
+
 ```
 python3 -m http.server
+```
+
+#### Windows
+
+```
+python -m http.server
 ```
 
 We can then access our application in a browser at `localhost:8000`.
