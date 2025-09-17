@@ -62,7 +62,6 @@ th.left {
   align-items: center;
 }
 
-
 /* Enrollment and Credit icons align */
 .enroll-div a,
 .credit-div a {
@@ -89,7 +88,6 @@ th.left {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .icon-span i {
@@ -104,7 +102,6 @@ th.left {
 .down-icon {
   color: #bbc2c5;
 }
-
 
 /* IMG OF THE STSTUS */
 .status-icon {
