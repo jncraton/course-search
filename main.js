@@ -162,3 +162,16 @@ document
 document
   .getElementById('max-min-credit-hours')
   .addEventListener('click', () => setSortAndRender('max-min-credit-hours'))
+document
+  .querySelectorAll('#filter-consent, #filter-online, #liberal-arts-filter')
+  .forEach(checkbox => {
+    checkbox.addEventListener('click', () => {
+      const filters = {
+        consent: document.getElementById('filter-consent').checked,
+        online: document.getElementById('filter-online').checked,
+        liberalArts: document.getElementById('liberal-arts-filter').checked
+      };
+
+      setSortAndRender(filters);
+    });
+  });

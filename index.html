@@ -10,18 +10,23 @@
 
   <body>
     <div class="filter-items-display">
-      <label for="filter-consent">
-        <input type="checkbox" id="filter-consent" />
-        Show only require consent courses
-      </label>
-      <label for="filter-online">
-        <input type="checkbox" id="filter-online" />
-        Show only online courses
-      </label>
-      <label for="liberal-arts-filter">
-        <input type="checkbox" id="liberal-arts-filter" />
-        Show only Liberal Arts courses
-      </label>
+      <div class="dropdown">
+        <button class="dropbtn">Course Type</button>
+        <div class="dropdown-content">
+          <label>
+            <input type="checkbox" id="filter-consent" />
+            Require Consent
+          </label>
+          <label>
+            <input type="checkbox" id="filter-online" />
+            Online
+          </label>
+          <label>
+            <input type="checkbox" id="liberal-arts-filter" />
+            Liberal Arts
+          </label>
+        </div>
+      </div>
 
       <!-- Filter-form where are you choosing the day of the week that applicable for you -->
       <form>
