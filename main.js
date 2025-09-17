@@ -169,9 +169,9 @@ document
       const filters = {
         consent: document.getElementById('filter-consent').checked,
         online: document.getElementById('filter-online').checked,
-        liberalArts: document.getElementById('liberal-arts-filter').checked
-      };
+        liberalArts: document.getElementById('liberal-arts-filter').checked,
+      }
 
-      setSortAndRender(filters);
-    });
-  });
+      setSortAndRender(filters)
+    })
+  })
