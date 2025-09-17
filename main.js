@@ -8,7 +8,7 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const applyButton = document.querySelector('#apply-button')
-const liberalArtsCheckbox = document.getElementById('liberalArtsFilter')
+const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 
 let currentCourses // current version of the courses displayed
 let sortMode = 'not-active'
@@ -118,17 +118,19 @@ function renderTable() {
     const tds = row.querySelectorAll('td')
 
     const classStatusVisual =
-      course.enrolling === 'Open' ? '&#9989;' : '&#10060;' // Adds visual for if class is open or not with UTF encoded version of emojis
+      course.enrolling === 'Open'
+        ? '<img src="images/open.png" alt="Open" class="status-icon">'
+        : '<img src="images/close.png" alt="Closed" class="status-icon">' // Adds visual for if class is open or not with UTF encoded version of emojis
 
-    tds[0].innerHTML = `${classStatusVisual}`
-    tds[1].textContent = getDept(course.crse)
-    tds[2].textContent = course.crse.split('-').slice(1).join('-')
-    tds[3].textContent = course.descr
-    tds[4].textContent = course.days
-    tds[5].textContent = course.consent
-    tds[6].textContent = course.enrolled
-    tds[7].textContent = daysCount(course)
-    tds[8].textContent = course['instruction mode']
+    tds[0].textContent = getDept(course.crse)
+    tds[1].textContent = course.crse.split('-').slice(1).join('-')
+    tds[2].textContent = course.descr
+    tds[3].textContent = course.days
+    tds[4].textContent = course.consent
+    tds[5].textContent = course.enrolled
+    tds[6].textContent = daysCount(course)
+    tds[7].textContent = course['instruction mode']
+    tds[8].innerHTML = `${classStatusVisual}`
 
     tbody.append(row)
   })

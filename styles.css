@@ -3,16 +3,55 @@
   font-size: 14px;
 }
 
-thead tr {
-  background-color: powderblue;
+/*General table cleanup*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-top: 1rem;
 }
 
-tr:nth-child(even) {
-  background-color: #d6eeee;
+/*Header row*/
+thead {
+  border-bottom: 2px solid #333;
 }
+thead td {
+  font-weight: bold;
+  background-color: #f4f4f4;
+}
+
+/* Rows */
+tbody tr:nth-child(even) {
+  background-color: #f1f1f1; /*Stripes*/
+}
+tbody tr:hover {
+  background-color: #eef; /*Highlight row on hover*/
+}
+
+/*Cellstyle*/
+td {
+  padding: 8px 12px;
+  border: none;
+  vertical-align: top;
+}
+
+/* Alignment utilities */
+td.center,
+th.center {
+  text-align: center;
+}
+
+td.left,
+th.left {
+  text-align: left;
+}
+/* End of Table Edit */
 
 .filter-items-display {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 }
@@ -23,53 +62,56 @@ tr:nth-child(even) {
   align-items: center;
 }
 
-/* Dropdown Button */
-.dropbtn {
-  background-color: #ffffff;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 4px;
-  color: rgb(0, 0, 0);
-  padding: 4px;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin: 5px;
-}
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 12px;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+/* Enrollment and Credit icons align */
+.enroll-div a,
+.credit-div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   text-decoration: none;
+  color: #000000;
+}
+
+.enroll-div a:visited,
+.credit-div a:visited {
+  color: #000000;
+}
+
+.enroll-div a:active,
+.credit-div a:active {
+  color: #000000;
+}
+
+.icon-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.icon-span i {
+  font-size: 16px;
+  line-height: 0.5;
+}
+
+.up-icon {
+  color: #bbc2c5;
+}
+
+.down-icon {
+  color: #bbc2c5;
+}
+
+
+/* IMG OF THE STSTUS */
+.status-icon {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
   display: block;
-  border-radius: 12px;
+  margin: 0 auto;
+  justify-content: center;
 }
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-  display: cover;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #c73c3c;
-}
-
-/* END OF Dropdown Button */

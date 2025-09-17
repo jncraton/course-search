@@ -6,66 +6,79 @@
 
     <title>Courses</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!--Filter Icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
   </head>
 
   <body>
     <div class="filter-items-display">
-      <label>
+      <label for="filter-consent">
         <input type="checkbox" id="filter-consent" />
         Show only require consent courses
       </label>
-      <label>
+      <label for="filter-online">
         <input type="checkbox" id="filter-online" />
         Show only online courses
       </label>
-      <label>
-        <input type="checkbox" id="liberalArtsFilter" />
+      <label for="liberal-arts-filter">
+        <input type="checkbox" id="liberal-arts-filter" />
         Show only Liberal Arts courses
       </label>
 
       <!-- Filter-form where are you choosing the day of the week that applicable for you -->
       <form>
-        <label>Choose a day:</label>
-        <select id="selected-days">
-          <option value="">All</option>
-          <option value="M">Monday</option>
-          <option value="T">Tuesday</option>
-          <option value="W">Wednesday</option>
-          <option value="R">Thursday</option>
-          <option value="F">Friday</option>
-        </select>
+        <label for="selected-days"
+          >Choose a day:
+          <select id="selected-days">
+            <option value="">All</option>
+            <option value="M">Monday</option>
+            <option value="T">Tuesday</option>
+            <option value="W">Wednesday</option>
+            <option value="R">Thursday</option>
+            <option value="F">Friday</option>
+          </select>
+        </label>
       </form>
 
       <!-- Button that applying selected changes -->
       <button id="apply-button">Apply filters</button>
 
-    <label>&#9989; = Open &#10060; = Closed</label>
-
     <div class="controls">
-      <label for="filterDepartment">Department:</label>
-      <select id="filterDepartment"></select>
+      <label for="filterDepartment"
+        >Department:
+        <select id="filterDepartment"></select>
+      </label>
     </div>
     <table>
       <thead>
         <tr>
-          <!-- Add column to devide the Enrolment people and other things -->
-          <td>Status</td>
-          <td>Department</td>
-          <td>Course ID</td>
-          <td>Class Name</td>
-          <td>Days</td>
-          <td>Consent</td>
-          <td class="enroll-td">
-            <a href="#" id="enrollments-button">
-              Enrollments
-              <span class="icon-span">
-                <i class="fas fa-caret-up up-icon"></i>
-                <i class="fas fa-caret-down down-icon"></i>
-              </span>
-            </a>
+          <td class="left">Department</td>
+          <td class="left">Course ID</td>
+          <td class="left">Class Name</td>
+          <td class="left">Days</td>
+          <td class="left">Consent</td>
+          <!-- To make the arrow in the text for Enrollment -->
+          <td class="center">
+            <div class="enroll-div">
+              <a href="#">
+                Enrollments
+                <span class="icon-span">
+                  <i class="fas fa-caret-up up-icon"></i>
+                  <i class="fas fa-caret-down down-icon"></i>
+                </span>
+              </a>
+            </div>
           </td>
-          <td>Credit</td>
-          <td>Format</td>
+          <!-- To make the arrow in the text for Credit -->
+          <td class="center">Credits</td>
+
+
+          <td class="left">Format</td>
+          <td class="center">Status</td>
         </tr>
 
         <tr></tr>
@@ -75,15 +88,15 @@
 
     <template id="course-row">
       <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
+        <td class="left"></td>
+        <td class="left"></td>
+        <td class="left"></td>
+        <td class="left"></td>
+        <td class="left"></td>
+        <td class="center"></td>
+        <td class="center"></td>
+        <td class="left"></td>
+        <td class="center"></td>
       </tr>
     </template>
 
