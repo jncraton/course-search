@@ -24,21 +24,8 @@ const inputElements = document.querySelectorAll('select, input')
 
 // Enrollment filter button
 let clickCountEnrollment = 0
-
-filterEnrollment.addEventListener('click', () => {
-  clickCountEnrollment = (clickCountEnrollment % 3) + 1
-  clickCountCredit = 0
-  renderTable()
-})
-
 // Credit filter button
 let clickCountCredit = 0
-
-filterCredit.addEventListener('click', () => {
-  clickCountCredit = (clickCountCredit % 3) + 1
-  clickCountEnrollment = 0
-  renderTable()
-})
 
 const getDept = crse => crse.split('-', 1)[0]
 
@@ -171,14 +158,21 @@ function renderTable() {
   })
 }
 
-function setSortAndRender(mode) {
-  sortMode = mode
-  renderTable()
-}
-
 // Add event listeners to all the select dropdowns and input checkboxes
 inputElements.forEach(element => {
   element.addEventListener('change', renderTable)
+})
+// Enrollment filter button event list.
+filterEnrollment.addEventListener('click', () => {
+  clickCountEnrollment = (clickCountEnrollment % 3) + 1
+  clickCountCredit = 0
+  renderTable()
+})
+// Credit filter button event list.
+filterCredit.addEventListener('click', () => {
+  clickCountCredit = (clickCountCredit % 3) + 1
+  clickCountEnrollment = 0
+  renderTable()
 })
 
 // Initial render
