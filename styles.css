@@ -83,10 +83,10 @@ th.right {
   line-height: 1;
 }
 
-.up-icon {
-  color: #6E6E6Eff;
+.inactive-color {
+  color: #000000;
 }
 
-.down-icon {
-  color: #6E6E6Eff;
+.active-color {
+  color: #f5660f
 }

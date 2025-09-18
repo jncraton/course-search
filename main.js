@@ -62,13 +62,26 @@ function filterCourses(source) {
 }
 
 function sortCourses(visible) {
+  // Setup color changing functions
+  const makeActive = (arrowElement) => {
+    arrowElement.classList.remove('inactive-color')
+    arrowElement.classList.add('active-color')
+  }
+
+  const makeInactive = (arrowElement) => {
+    arrowElement.classList.remove('active-color')
+    arrowElement.classList.add('inactive-color')
+  }
+
   // Logic for enrollment sorting
   switch (clickCountEnrollment) {
     case 1:
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-      downIconEnrollment.style.color = '#ff8400ff'
+
+      makeActive(downIconEnrollment)
+
       filterEnrollment.setAttribute(
         'aria-label',
         'Sort by Descending Enrollment',
@@ -78,14 +91,18 @@ function sortCourses(visible) {
       visible = [...visible].sort(
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
-      upIconEnrollment.style.color = '#ff8400ff'
-      downIconEnrollment.style.color = '#000000ff'
+
+      makeActive(upIconEnrollment)
+      makeInactive(downIconEnrollment)
+      
       filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
     default:
       visible = [...visible]
-      upIconEnrollment.style.color = '#000000ff'
-      downIconEnrollment.style.color = '#000000ff'
+
+      makeInactive(upIconEnrollment)
+      makeInactive(downIconEnrollment)
+
       filterEnrollment.setAttribute(
         'aria-label',
         'Sort by Ascending Enrollment',
@@ -97,19 +114,26 @@ function sortCourses(visible) {
   switch (clickCountCredit) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
-      downIconCredit.style.color = '#ff8400ff'
+
+      makeActive(downIconCredit)
+      makeInactive(upIconCredit)
+
       filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
-      upIconCredit.style.color = '#ff8400ff'
-      downIconCredit.style.color = '#000000ff'
+
+      makeActive(upIconCredit)
+      makeInactive(downIconCredit)
+
       filterCredit.setAttribute('aria-label', 'Default Credit order')
       break
     default:
       visible = [...visible]
-      upIconCredit.style.color = '#000000ff'
-      downIconCredit.style.color = '#000000ff'
+
+      makeInactive(upIconCredit)
+      makeInactive(downIconCredit)
+
       filterCredit.setAttribute('aria-label', 'Sort by Credit Ascending')
       break
   }
