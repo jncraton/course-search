@@ -121,7 +121,9 @@ function renderTable() {
     tds[5].textContent = course.enrolled
     tds[6].textContent = daysCount(course)
     tds[7].textContent = course['instruction mode']
-    tds[8].innerHTML = `${classStatusVisual}`
+    tds[8].textContent = course.newlib
+    tds[9].textContent = course.newlibintensives
+    tds[10].innerHTML = `${classStatusVisual}`
 
     tbody.append(row)
   })
