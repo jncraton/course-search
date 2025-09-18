@@ -99,8 +99,8 @@ function renderTable() {
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-      ;((downIconEnrollment.style.color = '#0F2B36'),
-        filterEnrollment.setAttribute('aria-label', 'Ascending'))
+      downIconEnrollment.style.color = '#0F2B36'
+      filterEnrollment.setAttribute('aria-label', 'Ascending')
       break
     case 2:
       visible = [...visible].sort(
@@ -114,7 +114,7 @@ function renderTable() {
       visible = [...visible]
       upIconEnrollment.style.color = '#bbc2c5'
       downIconEnrollment.style.color = '#bbc2c5'
-      filterEnrollment.setAttribute('aria-label', 'Default ')
+      filterEnrollment.setAttribute('aria-label', 'Default')
       break
   }
 
@@ -134,7 +134,7 @@ function renderTable() {
       visible = [...visible]
       upIconCredit.style.color = '#bbc2c5'
       downIconCredit.style.color = '#bbc2c5'
-      filterCredit.setAttribute('aria-label', 'Default ')
+      filterCredit.setAttribute('aria-label', 'Default')
       break
   }
 
