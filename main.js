@@ -99,7 +99,7 @@ function renderTable() {
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-      downIconEnrollment.style.color = '#000000ff'
+      downIconEnrollment.style.color = '#ff8400ff'
       filterEnrollment.setAttribute(
         'aria-label',
         'Sort by Descending Enrollment',
@@ -109,14 +109,14 @@ function renderTable() {
       visible = [...visible].sort(
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
-      upIconEnrollment.style.color = '#000000ff'
-      downIconEnrollment.style.color = '#b9b9b9ff'
+      upIconEnrollment.style.color = '#ff8400ff'
+      downIconEnrollment.style.color = '#000000ff'
       filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
     default:
       visible = [...visible]
-      upIconEnrollment.style.color = '#b9b9b9ff'
-      downIconEnrollment.style.color = '#b9b9b9ff'
+      upIconEnrollment.style.color = '#000000ff'
+      downIconEnrollment.style.color = '#000000ff'
       filterEnrollment.setAttribute(
         'aria-label',
         'Sort by Ascending Enrollment',
@@ -127,19 +127,19 @@ function renderTable() {
   switch (clickCountCredit) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
-      downIconCredit.style.color = '#000000ff'
+      downIconCredit.style.color = '#ff8400ff'
       filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
-      upIconCredit.style.color = '#000000ff'
-      downIconCredit.style.color = '#b9b9b9ff'
+      upIconCredit.style.color = '#ff8400ff'
+      downIconCredit.style.color = '#000000ff'
       filterCredit.setAttribute('aria-label', 'Default Credit order')
       break
     default:
       visible = [...visible]
-      upIconCredit.style.color = '#b9b9b9ff'
-      downIconCredit.style.color = '#b9b9b9ff'
+      upIconCredit.style.color = '#000000ff'
+      downIconCredit.style.color = '#000000ff'
       filterCredit.setAttribute('aria-label', 'Sort by Credit Ascending')
       break
   }
