@@ -100,7 +100,10 @@ function renderTable() {
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
       downIconEnrollment.style.color = '#0F2B36'
-      filterEnrollment.setAttribute('aria-label', 'Sort by Descending Enrollment')
+      filterEnrollment.setAttribute(
+        'aria-label',
+        'Sort by Descending Enrollment',
+      )
       break
     case 2:
       visible = [...visible].sort(
@@ -114,7 +117,10 @@ function renderTable() {
       visible = [...visible]
       upIconEnrollment.style.color = '#bbc2c5'
       downIconEnrollment.style.color = '#bbc2c5'
-      filterEnrollment.setAttribute('aria-label', 'Sort by Ascending Enrollment')
+      filterEnrollment.setAttribute(
+        'aria-label',
+        'Sort by Ascending Enrollment',
+      )
       break
   }
 
