@@ -12,7 +12,9 @@ const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 // const for button, enrollment
-const downIconEnrollment = document.querySelector('#enrollments-button .down-icon')
+const downIconEnrollment = document.querySelector(
+  '#enrollments-button .down-icon',
+)
 const upIconEnrollment = document.querySelector('#enrollments-button .up-icon')
 // const for button, credit
 const downIconCredit = document.querySelector('#credit-button .down-icon')
