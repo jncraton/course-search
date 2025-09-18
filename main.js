@@ -8,15 +8,12 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
-// Enrollment and Credit
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
-// const for button, enrollment
 const downIconEnrollment = document.querySelector(
   '#enrollments-button .down-icon',
 )
 const upIconEnrollment = document.querySelector('#enrollments-button .up-icon')
-// const for button, credit
 const downIconCredit = document.querySelector('#credit-button .down-icon')
 const upIconCredit = document.querySelector('#credit-button .up-icon')
 
@@ -24,6 +21,7 @@ const inputElements = document.querySelectorAll('select, input')
 
 // Enrollment filter button
 let clickCountEnrollment = 0
+
 // Credit filter button
 let clickCountCredit = 0
 
@@ -162,12 +160,14 @@ function renderTable() {
 inputElements.forEach(element => {
   element.addEventListener('change', renderTable)
 })
+
 // Enrollment filter button event list.
 filterEnrollment.addEventListener('click', () => {
   clickCountEnrollment = (clickCountEnrollment % 3) + 1
   clickCountCredit = 0
   renderTable()
 })
+
 // Credit filter button event list.
 filterCredit.addEventListener('click', () => {
   clickCountCredit = (clickCountCredit % 3) + 1
