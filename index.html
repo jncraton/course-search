@@ -10,39 +10,37 @@
 
   <body>
     <div class="filter-items-display">
-      <div>
-        <!-- Filter by department -->
-        <label for="filterDepartment"
-          >Department:
-          <select id="filterDepartment"></select>
-        </label>
+      <!-- Filter by department -->
+      <label for="filterDepartment"
+        >Department:
+        <select id="filterDepartment"></select>
+      </label>
 
-        <!-- Filter by day of the week the class is on -->
-        <label for="selected-days"
-          >Choose a day:
-          <select id="selected-days">
-            <option value="">All</option>
-            <option value="M">Monday</option>
-            <option value="T">Tuesday</option>
-            <option value="W">Wednesday</option>
-            <option value="R">Thursday</option>
-            <option value="F">Friday</option>
-          </select>
-        </label>
+      <!-- Filter by day of the week the class is on -->
+      <label for="selected-days"
+        >Choose a day:
+        <select id="selected-days">
+          <option value="">All</option>
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </label>
 
-        <label for="filter-consent">
-          <input type="checkbox" id="filter-consent" />
-          Show only require consent courses
-        </label>
-        <label for="filter-online">
-          <input type="checkbox" id="filter-online" />
-          Show only online courses
-        </label>
-        <label for="liberal-arts-filter">
-          <input type="checkbox" id="liberal-arts-filter" />
-          Show only Liberal Arts courses
-        </label>
-      </div>
+      <label for="filter-consent">
+        <input type="checkbox" id="filter-consent" />
+        Show only require consent courses
+      </label>
+      <label for="filter-online">
+        <input type="checkbox" id="filter-online" />
+        Show only online courses
+      </label>
+      <label for="liberal-arts-filter">
+        <input type="checkbox" id="liberal-arts-filter" />
+        Show only Liberal Arts courses
+      </label>
 
       <!-- Button that applying selected changes -->
       <button id="apply-button">Apply filters</button>
