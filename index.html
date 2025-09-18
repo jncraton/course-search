@@ -10,6 +10,25 @@
 
   <body>
     <div class="filter-items-display">
+      <!-- Filter by department -->
+      <label for="filterDepartment"
+        >Department:
+        <select id="filterDepartment"></select>
+      </label>
+
+      <!-- Filter by day of the week the class is on -->
+      <label for="selected-days"
+        >Choose a day:
+        <select id="selected-days">
+          <option value="">All</option>
+          <option value="M">Monday</option>
+          <option value="T">Tuesday</option>
+          <option value="W">Wednesday</option>
+          <option value="R">Thursday</option>
+          <option value="F">Friday</option>
+        </select>
+      </label>
+
       <label for="filter-consent">
         <input type="checkbox" id="filter-consent" />
         Show only require consent courses
@@ -22,21 +41,6 @@
         <input type="checkbox" id="liberal-arts-filter" />
         Show only Liberal Arts courses
       </label>
-
-      <!-- Filter-form where are you choosing the day of the week that applicable for you -->
-      <form>
-        <label for="selected-days"
-          >Choose a day:
-          <select id="selected-days">
-            <option value="">All</option>
-            <option value="M">Monday</option>
-            <option value="T">Tuesday</option>
-            <option value="W">Wednesday</option>
-            <option value="R">Thursday</option>
-            <option value="F">Friday</option>
-          </select>
-        </label>
-      </form>
 
       <!-- Button that applying selected changes -->
       <button id="apply-button">Apply filters</button>
@@ -57,12 +61,6 @@
       </div>
     </div>
 
-    <div class="controls">
-      <label for="filterDepartment"
-        >Department:
-        <select id="filterDepartment"></select>
-      </label>
-    </div>
     <table>
       <thead>
         <tr>
