@@ -66,4 +66,44 @@ th.right {
   align-items: center;
 }
 
+/* Enrollment and Credit arrows align */
+.enroll-div a,
+.credit-div a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.enroll-div a:visited,
+.credit-div a:visited {
+  color: #000000;
+}
+
+.enroll-div a:active,
+.credit-div a:active {
+  color: #000000;
+}
+
+.icon-span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-span i {
+  font-size: 16px;
+  line-height: 0.2;
+}
+
+.up-icon {
+  color: #bbc2c5;
+}
+
+.down-icon {
+  color: #bbc2c5;
+}
 
