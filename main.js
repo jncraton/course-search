@@ -63,12 +63,12 @@ function filterCourses(source) {
 
 function sortCourses(visible) {
   // Setup color changing functions
-  const makeActive = (arrowElement) => {
+  const makeActive = arrowElement => {
     arrowElement.classList.remove('inactive-color')
     arrowElement.classList.add('active-color')
   }
 
-  const makeInactive = (arrowElement) => {
+  const makeInactive = arrowElement => {
     arrowElement.classList.remove('active-color')
     arrowElement.classList.add('inactive-color')
   }
@@ -94,7 +94,7 @@ function sortCourses(visible) {
 
       makeActive(downIconEnrollment)
       makeInactive(upIconEnrollment)
-      
+
       filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
     default:
