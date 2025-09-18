@@ -12,8 +12,8 @@ const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 // const for button, enrollment
-const downIconEnrolment = document.querySelector('#enrollments-button .down-icon')
-const upIconEnrolment = document.querySelector('#enrollments-button .up-icon')
+const downIconEnrollment = document.querySelector('#enrollments-button .down-icon')
+const upIconEnrollment = document.querySelector('#enrollments-button .up-icon')
 // const for button, credit
 const downIconCredit = document.querySelector('#credit-button .down-icon')
 const upIconCredit = document.querySelector('#credit-button .up-icon')
@@ -114,19 +114,19 @@ function renderTable() {
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-      downIconEnrolment.style.color = '#0F2B36'
+      downIconEnrollment.style.color = '#0F2B36'
       break
     case 2:
       visible = [...visible].sort(
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
-      upIconEnrolment.style.color = '#0F2B36'
-      downIconEnrolment.style.color = '#bbc2c5'
+      upIconEnrollment.style.color = '#0F2B36'
+      downIconEnrollment.style.color = '#bbc2c5'
       break
     default:
       visible = [...visible]
-      upIconEnrolment.style.color = '#bbc2c5'
-      downIconEnrolment.style.color = '#bbc2c5'
+      upIconEnrollment.style.color = '#bbc2c5'
+      downIconEnrollment.style.color = '#bbc2c5'
       break
   }
 
