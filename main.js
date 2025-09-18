@@ -80,7 +80,7 @@ function sortCourses(visible) {
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
 
-      makeActive(downIconEnrollment)
+      makeActive(upIconEnrollment)
 
       filterEnrollment.setAttribute(
         'aria-label',
@@ -92,8 +92,8 @@ function sortCourses(visible) {
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
 
-      makeActive(upIconEnrollment)
-      makeInactive(downIconEnrollment)
+      makeActive(downIconEnrollment)
+      makeInactive(upIconEnrollment)
       
       filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
@@ -115,16 +115,15 @@ function sortCourses(visible) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
 
-      makeActive(downIconCredit)
-      makeInactive(upIconCredit)
+      makeActive(upIconCredit)
 
       filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
 
-      makeActive(upIconCredit)
-      makeInactive(downIconCredit)
+      makeActive(downIconCredit)
+      makeInactive(upIconCredit)
 
       filterCredit.setAttribute('aria-label', 'Default Credit order')
       break
