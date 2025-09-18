@@ -11,7 +11,6 @@ const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 
 const inputElements = document.querySelectorAll('select, input')
 
-let currentCourses // current version of the courses displayed
 let sortMode = 'not-active'
 
 const getDept = crse => crse.split('-', 1)[0]
@@ -23,8 +22,8 @@ function daysCount(course) {
   return 1
 }
 
-function filterCourses() {
-  let arr = currentCourses
+function filterCourses(source) {
+  let arr = source
   // If the checkbox is checked, only show "Consent Needed" courses
   if (filterConsent.checked) {
     arr = arr.filter(c => c.consent === 'Consent Required')
@@ -42,14 +41,14 @@ function filterCourses() {
 
   // Liberal Arts filter
   if (liberalArtsCheckbox.checked) {
-    arr = arr.filter(
-      c =>
-        (c.descr && c.descr.includes('Liberal Arts')) ||
-        (c.title && c.title.includes('Liberal Arts')),
-    )
+    arr = arr.filter(c => {
+      const title = (c.title || '').toLowerCase()
+      const descr = (c.descr || '').toLowerCase()
+      return title.includes('liberal arts') || descr.includes('liberal arts')
+    })
   }
 
-  currentCourses = arr
+  return arr
 }
 
 // get unique department codes
@@ -140,11 +139,10 @@ function setSortAndRender(mode) {
   renderTable()
 }
 
-
 // Add event listeners to all the select dropdowns and input checkboxes
 inputElements.forEach(element => {
   element.addEventListener('change', renderTable)
-});
+})
 
 // Initial render
 populateDeptFilter()
