@@ -100,7 +100,7 @@ function renderTable() {
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
       downIconEnrollment.style.color = '#0F2B36'
-      filterEnrollment.setAttribute('aria-label', 'Ascending')
+      filterEnrollment.setAttribute('aria-label', 'Sort by Descending Enrollment')
       break
     case 2:
       visible = [...visible].sort(
@@ -108,13 +108,13 @@ function renderTable() {
       )
       upIconEnrollment.style.color = '#0F2B36'
       downIconEnrollment.style.color = '#bbc2c5'
-      filterEnrollment.setAttribute('aria-label', 'Descending')
+      filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
     default:
       visible = [...visible]
       upIconEnrollment.style.color = '#bbc2c5'
       downIconEnrollment.style.color = '#bbc2c5'
-      filterEnrollment.setAttribute('aria-label', 'Default')
+      filterEnrollment.setAttribute('aria-label', 'Sort by Ascending Enrollment')
       break
   }
 
@@ -122,19 +122,19 @@ function renderTable() {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
       downIconCredit.style.color = '#0F2B36'
-      filterCredit.setAttribute('aria-label', 'Ascending')
+      filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
       upIconCredit.style.color = '#0F2B36'
       downIconCredit.style.color = '#bbc2c5'
-      filterCredit.setAttribute('aria-label', 'Descending')
+      filterCredit.setAttribute('aria-label', 'Default Credit order')
       break
     default:
       visible = [...visible]
       upIconCredit.style.color = '#bbc2c5'
       downIconCredit.style.color = '#bbc2c5'
-      filterCredit.setAttribute('aria-label', 'Default')
+      filterCredit.setAttribute('aria-label', 'Sort by Credit Ascending')
       break
   }
 
