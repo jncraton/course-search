@@ -71,16 +71,6 @@ th.right {
   color: #000000;
 }
 
-.enroll-div a:visited,
-.credit-div a:visited {
-  color: #000000;
-}
-
-.enroll-div a:active,
-.credit-div a:active {
-  color: #000000;
-}
-
 .icon-span {
   display: flex;
   flex-direction: column;
@@ -94,9 +84,9 @@ th.right {
 }
 
 .up-icon {
-  color: #bbc2c5;
+  color: #98999aff;
 }
 
 .down-icon {
-  color: #bbc2c5;
+  color: #98999aff;
 }
