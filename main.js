@@ -122,16 +122,19 @@ function renderTable() {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
       downIconCredit.style.color = '#0F2B36'
+      downIconCredit.setAttribute('aria-label', 'Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
       upIconCredit.style.color = '#0F2B36'
       downIconCredit.style.color = '#bbc2c5'
+      upIconCredit.setAttribute('aria-label', 'Ascending ')
       break
     default:
       visible = [...visible]
       upIconCredit.style.color = '#bbc2c5'
       downIconCredit.style.color = '#bbc2c5'
+      downIconCredit.setAttribute('aria-label', 'Default ')
       break
   }
 
