@@ -19,10 +19,8 @@ const upIconCredit = document.querySelector('#credit-button .up-icon')
 
 const inputElements = document.querySelectorAll('select, input')
 
-// Enrollment filter button
+//Click count vars
 let clickCountEnrollment = 0
-
-// Credit filter button
 let clickCountCredit = 0
 
 const getDept = crse => crse.split('-', 1)[0]
