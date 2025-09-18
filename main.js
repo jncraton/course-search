@@ -12,11 +12,13 @@ const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 // const for button, enrollment
-const downIcon = document.querySelector('#enrollments-button .down-icon')
-const upIcon = document.querySelector('#enrollments-button .up-icon')
+const downIconEnrolment = document.querySelector(
+  '#enrollments-button .down-icon',
+)
+const upIconEnrolment = document.querySelector('#enrollments-button .up-icon')
 // const for button, credit
-const downIconC = document.querySelector('#credit-button .down-icon')
-const upIconC = document.querySelector('#credit-button .up-icon')
+const downIconCredit = document.querySelector('#credit-button .down-icon')
+const upIconCredit = document.querySelector('#credit-button .up-icon')
 
 const inputElements = document.querySelectorAll('select, input')
 
@@ -114,36 +116,36 @@ function renderTable() {
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-      downIcon.style.color = '#0F2B36'
+      downIconEnrolment.style.color = '#0F2B36'
       break
     case 2:
       visible = [...visible].sort(
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
-      upIcon.style.color = '#0F2B36'
-      downIcon.style.color = '#bbc2c5'
+      upIconEnrolment.style.color = '#0F2B36'
+      downIconEnrolment.style.color = '#bbc2c5'
       break
     default:
       visible = [...visible]
-      upIcon.style.color = '#bbc2c5'
-      downIcon.style.color = '#bbc2c5'
+      upIconEnrolment.style.color = '#bbc2c5'
+      downIconEnrolment.style.color = '#bbc2c5'
       break
   }
 
   switch (clickCountCredit) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
-      downIconC.style.color = '#0F2B36'
+      downIconCredit.style.color = '#0F2B36'
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
-      upIconC.style.color = '#0F2B36'
-      downIconC.style.color = '#bbc2c5'
+      upIconCredit.style.color = '#0F2B36'
+      downIconCredit.style.color = '#bbc2c5'
       break
     default:
       visible = [...visible]
-      upIconC.style.color = '#bbc2c5'
-      downIconC.style.color = '#bbc2c5'
+      upIconCredit.style.color = '#bbc2c5'
+      downIconCredit.style.color = '#bbc2c5'
       break
   }
 
@@ -182,20 +184,3 @@ inputElements.forEach(element => {
 // Initial render
 populateDeptFilter()
 renderTable()
-
-// Auto render for sorting
-document
-  .getElementById('min-max-enrollment')
-  .addEventListener('click', () => setSortAndRender('min-max-enrollment'))
-document
-  .getElementById('max-min-enrollment')
-  .addEventListener('click', () => setSortAndRender('max-min-enrollment'))
-document
-  .getElementById('not-active')
-  .addEventListener('click', () => setSortAndRender('not-active'))
-document
-  .getElementById('min-max-credit-hours')
-  .addEventListener('click', () => setSortAndRender('min-max-credit-hours'))
-document
-  .getElementById('max-min-credit-hours')
-  .addEventListener('click', () => setSortAndRender('max-min-credit-hours'))
