@@ -7,10 +7,10 @@ const filterConsent = document.querySelector('#filter-consent')
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
-const applyButton = document.querySelector('#apply-button')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 
-let currentCourses // current version of the courses displayed
+const inputElements = document.querySelectorAll('select, input')
+
 let sortMode = 'not-active'
 
 const getDept = crse => crse.split('-', 1)[0]
@@ -22,8 +22,8 @@ function daysCount(course) {
   return 1
 }
 
-function filterCourses() {
-  let arr = currentCourses
+function filterCourses(source) {
+  let arr = source
   // If the checkbox is checked, only show "Consent Needed" courses
   if (filterConsent.checked) {
     arr = arr.filter(c => c.consent === 'Consent Required')
@@ -48,7 +48,7 @@ function filterCourses() {
     )
   }
 
-  currentCourses = arr
+  return arr
 }
 
 // get unique department codes
@@ -77,43 +77,36 @@ function renderTable() {
 
   // show courses based on filter
   const selectedDept = filterBox.value
-  let visible
-  if (selectedDept && selectedDept !== '__ALL__') {
-    visible = courses.filter(c => getDept(c.crse) === selectedDept)
-  } else {
-    visible = courses
-  }
+  const byDept =
+    selectedDept && selectedDept !== '__ALL__'
+      ? courses.filter(c => getDept(c.crse) === selectedDept)
+      : courses
 
-  currentCourses = visible
-  filterCourses()
+  let visible = filterCourses(byDept)
 
   switch (sortMode) {
     case 'min-max-enrollment':
-      currentCourses = [...currentCourses].sort(
-        (a, b) => a.enrolled - b.enrolled,
+      visible = [...visible].sort(
+        (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
       break
     case 'max-min-enrollment':
-      currentCourses = [...currentCourses].sort(
-        (a, b) => b.enrolled - a.enrolled,
+      visible = [...visible].sort(
+        (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
       break
     case 'min-max-credit-hours':
-      currentCourses = [...currentCourses].sort(
-        (a, b) => daysCount(a) - daysCount(b),
-      )
+      visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
       break
     case 'max-min-credit-hours':
-      currentCourses = [...currentCourses].sort(
-        (a, b) => daysCount(b) - daysCount(a),
-      )
+      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
       break
     default:
     // no sorting
   }
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)
-  currentCourses.forEach(course => {
+  visible.forEach(course => {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
@@ -139,12 +132,14 @@ function setSortAndRender(mode) {
   renderTable()
 }
 
+// Add event listeners to all the select dropdowns and input checkboxes
+inputElements.forEach(element => {
+  element.addEventListener('change', renderTable)
+})
+
+// Initial render
 populateDeptFilter()
 renderTable()
-
-// Re-render when filters apply
-applyButton.addEventListener('click', renderTable)
-filterBox.addEventListener('change', renderTable)
 
 // Auto render for sorting
 document
