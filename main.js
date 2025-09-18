@@ -7,8 +7,9 @@ const filterConsent = document.querySelector('#filter-consent')
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
-const applyButton = document.querySelector('#apply-button')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
+
+const inputElements = document.querySelectorAll('select, input')
 
 let currentCourses // current version of the courses displayed
 let sortMode = 'not-active'
@@ -139,12 +140,15 @@ function setSortAndRender(mode) {
   renderTable()
 }
 
+
+// Add event listeners to all the select dropdowns and input checkboxes
+inputElements.forEach(element => {
+  element.addEventListener('change', renderTable)
+});
+
+// Initial render
 populateDeptFilter()
 renderTable()
-
-// Re-render when filters apply
-applyButton.addEventListener('click', renderTable)
-filterBox.addEventListener('change', renderTable)
 
 // Auto render for sorting
 document
