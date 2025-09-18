@@ -43,8 +43,8 @@ function filterCourses() {
   if (liberalArtsCheckbox.checked) {
     arr = arr.filter(
       c =>
-        (c.descr && c.descr.includes('Liberal Arts')) ||
-        (c.title && c.title.includes('Liberal Arts')),
+        (c.newlib && c.newlib.trim() !== '') ||
+        (c.newlibintensives && c.newlibintensives.trim() !== ''),
     )
   }
 
