@@ -8,10 +8,20 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
+const filterCredit = document.querySelector('#credit-button')
+const filterEnrollment = document.querySelector('#enrollments-button')
+const downIconEnrollment = document.querySelector(
+  '#enrollments-button .down-icon',
+)
+const upIconEnrollment = document.querySelector('#enrollments-button .up-icon')
+const downIconCredit = document.querySelector('#credit-button .down-icon')
+const upIconCredit = document.querySelector('#credit-button .up-icon')
 
 const inputElements = document.querySelectorAll('select, input')
 
-let sortMode = 'not-active'
+//Click count vars
+let clickCountEnrollment = 0
+let clickCountCredit = 0
 
 const getDept = crse => crse.split('-', 1)[0]
 
@@ -51,6 +61,85 @@ function filterCourses(source) {
   return arr
 }
 
+function sortCourses(visible) {
+  // Setup color changing functions
+  const makeActive = arrowElement => {
+    arrowElement.classList.remove('inactive-color')
+    arrowElement.classList.add('active-color')
+  }
+
+  const makeInactive = arrowElement => {
+    arrowElement.classList.remove('active-color')
+    arrowElement.classList.add('inactive-color')
+  }
+
+  // Logic for enrollment sorting
+  switch (clickCountEnrollment) {
+    case 1:
+      visible = [...visible].sort(
+        (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
+      )
+
+      makeActive(upIconEnrollment)
+
+      filterEnrollment.setAttribute(
+        'aria-label',
+        'Sort by Descending Enrollment',
+      )
+      break
+    case 2:
+      visible = [...visible].sort(
+        (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
+      )
+
+      makeActive(downIconEnrollment)
+      makeInactive(upIconEnrollment)
+
+      filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
+      break
+    default:
+      visible = [...visible]
+
+      makeInactive(upIconEnrollment)
+      makeInactive(downIconEnrollment)
+
+      filterEnrollment.setAttribute(
+        'aria-label',
+        'Sort by Ascending Enrollment',
+      )
+      break
+  }
+
+  // Logic for credit sorting
+  switch (clickCountCredit) {
+    case 1:
+      visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
+
+      makeActive(upIconCredit)
+
+      filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
+      break
+    case 2:
+      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
+
+      makeActive(downIconCredit)
+      makeInactive(upIconCredit)
+
+      filterCredit.setAttribute('aria-label', 'Default Credit order')
+      break
+    default:
+      visible = [...visible]
+
+      makeInactive(upIconCredit)
+      makeInactive(downIconCredit)
+
+      filterCredit.setAttribute('aria-label', 'Sort by Credit Ascending')
+      break
+  }
+
+  return visible
+}
+
 // get unique department codes
 function populateDeptFilter() {
   const depts = Array.from(new Set(courses.map(c => getDept(c.crse)))).sort()
@@ -84,26 +173,7 @@ function renderTable() {
 
   let visible = filterCourses(byDept)
 
-  switch (sortMode) {
-    case 'min-max-enrollment':
-      visible = [...visible].sort(
-        (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
-      )
-      break
-    case 'max-min-enrollment':
-      visible = [...visible].sort(
-        (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
-      )
-      break
-    case 'min-max-credit-hours':
-      visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
-      break
-    case 'max-min-credit-hours':
-      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
-      break
-    default:
-    // no sorting
-  }
+  visible = sortCourses(visible)
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)
   visible.forEach(course => {
@@ -129,33 +199,25 @@ function renderTable() {
   })
 }
 
-function setSortAndRender(mode) {
-  sortMode = mode
-  renderTable()
-}
-
 // Add event listeners to all the select dropdowns and input checkboxes
 inputElements.forEach(element => {
   element.addEventListener('change', renderTable)
 })
 
+// Enrollment filter button event list.
+filterEnrollment.addEventListener('click', () => {
+  clickCountEnrollment = (clickCountEnrollment % 3) + 1
+  clickCountCredit = 0
+  renderTable()
+})
+
+// Credit filter button event list.
+filterCredit.addEventListener('click', () => {
+  clickCountCredit = (clickCountCredit % 3) + 1
+  clickCountEnrollment = 0
+  renderTable()
+})
+
 // Initial render
 populateDeptFilter()
 renderTable()
-
-// Auto render for sorting
-document
-  .getElementById('min-max-enrollment')
-  .addEventListener('click', () => setSortAndRender('min-max-enrollment'))
-document
-  .getElementById('max-min-enrollment')
-  .addEventListener('click', () => setSortAndRender('max-min-enrollment'))
-document
-  .getElementById('not-active')
-  .addEventListener('click', () => setSortAndRender('not-active'))
-document
-  .getElementById('min-max-credit-hours')
-  .addEventListener('click', () => setSortAndRender('min-max-credit-hours'))
-document
-  .getElementById('max-min-credit-hours')
-  .addEventListener('click', () => setSortAndRender('max-min-credit-hours'))
