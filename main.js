@@ -8,10 +8,35 @@ const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
+// Enrollment and Credit
+const filterCredit = document.querySelector('#credit-button')
+const filterEnrollment = document.querySelector('#enrollments-button')
+// const for button, enrollment
+const downIcon = document.querySelector('#enrollments-button .down-icon')
+const upIcon = document.querySelector('#enrollments-button .up-icon')
+// const for button, credit
+const downIconC = document.querySelector('#credit-button .down-icon')
+const upIconC = document.querySelector('#credit-button .up-icon')
 
 const inputElements = document.querySelectorAll('select, input')
 
-let sortMode = 'not-active'
+// Enrollment filter button
+let clickCountEnrollment = 0
+
+filterEnrollment.addEventListener('click', () => {
+  clickCountEnrollment = (clickCountEnrollment % 3) + 1
+  clickCountCredit = 0
+  renderTable()
+})
+
+// Credit filter button
+let clickCountCredit = 0
+
+filterCredit.addEventListener('click', () => {
+  clickCountCredit = (clickCountCredit % 3) + 1
+  clickCountEnrollment = 0
+  renderTable()
+})
 
 const getDept = crse => crse.split('-', 1)[0]
 
@@ -84,25 +109,42 @@ function renderTable() {
 
   let visible = filterCourses(byDept)
 
-  switch (sortMode) {
-    case 'min-max-enrollment':
+  switch (clickCountEnrollment) {
+    case 1:
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
+      downIcon.style.color = '#0F2B36'
       break
-    case 'max-min-enrollment':
+    case 2:
       visible = [...visible].sort(
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
-      break
-    case 'min-max-credit-hours':
-      visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
-      break
-    case 'max-min-credit-hours':
-      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
+      upIcon.style.color = '#0F2B36'
+      downIcon.style.color = '#bbc2c5'
       break
     default:
-    // no sorting
+      visible = [...visible]
+      upIcon.style.color = '#bbc2c5'
+      downIcon.style.color = '#bbc2c5'
+      break
+  }
+
+  switch (clickCountCredit) {
+    case 1:
+      visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
+      downIconC.style.color = '#0F2B36'
+      break
+    case 2:
+      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
+      upIconC.style.color = '#0F2B36'
+      downIconC.style.color = '#bbc2c5'
+      break
+    default:
+      visible = [...visible]
+      upIconC.style.color = '#bbc2c5'
+      downIconC.style.color = '#bbc2c5'
+      break
   }
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)

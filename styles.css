@@ -60,12 +60,6 @@ th.right {
   gap: 1rem;
 }
 
-/* This func. Applied for Numerical Filter */
-.numerical-filter-section {
-  display: flex;
-  align-items: center;
-}
-
 /* Enrollment and Credit arrows align */
 .enroll-div a,
 .credit-div a {
