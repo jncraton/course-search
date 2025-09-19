@@ -10,13 +10,6 @@ const filterBox = document.querySelector('#filterDepartment')
 const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
-const downIconEnrollment = document.querySelector(
-  '#enrollments-button .down-icon',
-)
-const upIconEnrollment = document.querySelector('#enrollments-button .up-icon')
-const downIconCredit = document.querySelector('#credit-button .down-icon')
-const upIconCredit = document.querySelector('#credit-button .up-icon')
-
 const inputElements = document.querySelectorAll('select, input')
 
 //Click count vars
