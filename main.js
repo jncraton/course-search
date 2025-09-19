@@ -19,11 +19,12 @@ const getDept = crse => crse.split('-', 1)[0]
 const daysCount = crse => Math.max(1, crse.days.trim().length)
 
 function filterCourses(source) {
-  return source.filter(c =>
-    (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
-    (!filterConsent.checked || c.consent === 'Consent Required') &&
-    (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
-    (!filterOnline.checked || c['instruction mode'] === 'Asynchronous Online')
+  return source.filter(
+    c =>
+      (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
+      (!filterConsent.checked || c.consent === 'Consent Required') &&
+      (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
+      (!filterOnline.checked || c['instruction mode'].includes('Online')),
   )
 }
 
