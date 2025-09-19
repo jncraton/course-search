@@ -15,8 +15,10 @@ const inputElements = document.querySelectorAll('select, input')
 let clickCountEnrollment = 0
 let clickCountCredit = 0
 
-const getDept = crse => crse.split('-', 1)[0]
-const daysCount = crse => Math.max(1, crse.days.trim().length)
+courses.forEach(crse => {
+  crse.dept = crse => crse.split('-', 1)[0]
+  crse.hours = Math.max(1, crse.days.trim().length)
+})
 
 function sortCourses(visible) {
   // Logic for enrollment sorting
@@ -38,11 +40,11 @@ function sortCourses(visible) {
   // Logic for credit sorting
   switch (clickCountCredit) {
     case 1:
-      visible.sort((a, b) => daysCount(a) - daysCount(b))
+      visible.sort((a, b) => a.hours - b.hours)
       filterCredit.setAttribute('aria-label', 'Sort Descending')
       break
     case 2:
-      visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
+      visible = [...visible].sort((a, b) => b.hours - a.hours)
       filterCredit.setAttribute('aria-label', 'Default order')
       break
     default:
@@ -55,7 +57,7 @@ function sortCourses(visible) {
 
 function populateDeptFilter() {
   // get unique department codes
-  const depts = Array.from(new Set(courses.map(c => getDept(c.crse)))).sort()
+  const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
 
   // add option for each department
   depts.forEach(dept => {
@@ -70,7 +72,7 @@ function renderTable() {
 
   let visible = courses.filter(
     c =>
-      (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
+      (filterBox.value == '__ALL__' || c.dept === filterBox.value) &&
       (!filterConsent.checked || c.consent === 'Consent Required') &&
       (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
       (!filterOnline.checked || c['instruction mode'].includes('Online')),
@@ -85,13 +87,13 @@ function renderTable() {
 
     const openClosedIcon = course.enrolling === 'Open' ? '&#9989;' : '&#10060;'
 
-    tds[0].textContent = getDept(course.crse)
+    tds[0].textContent = course.dept
     tds[1].textContent = course.crse.split('-').slice(1).join('-')
     tds[2].textContent = course.descr
     tds[3].textContent = course.days
     tds[4].textContent = course.consent
     tds[5].textContent = course.enrolled
-    tds[6].textContent = daysCount(course)
+    tds[6].textContent = course.hours
     tds[7].textContent = course['instruction mode']
     tds[8].innerHTML = `${course.enrolling} ${openClosedIcon}`
 
