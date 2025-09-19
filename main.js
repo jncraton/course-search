@@ -43,33 +43,26 @@ function renderTable() {
   })
 }
 
-// Enrollment filter button event list.
-$('#sort-enrollment').addEventListener('click', () => {
-  if (sortCol == 'enrolled') {
+function sortClick(e) {
+  const col = e.target.id.split('-')[1]
+
+  if (sortCol == col) {
     sortState = (sortState + 1) % 3
   } else {
     sortState = 1
-    sortCol = 'enrolled'
+    sortCol = col
   }
 
-  $('#sort-enrollment').setAttribute('aria-label', sortNextLabels[sortState])
-  $('#sort-hours').setAttribute('aria-label', sortNextLabels[0])
+  document
+    .querySelectorAll('button')
+    .forEach(el => el.setAttribute('aria-label', sortNextLabels[0]))
+  e.target.setAttribute('aria-label', sortNextLabels[sortState])
   renderTable()
-})
+}
 
-// Credit filter button event list.
-$('#sort-hours').addEventListener('click', () => {
-  if (sortCol == 'hours') {
-    sortState = (sortState + 1) % 3
-  } else {
-    sortState = 1
-    sortCol = 'hours'
-  }
-
-  $('#sort-enrollment').setAttribute('aria-label', sortNextLabels[0])
-  $('#sort-hours').setAttribute('aria-label', sortNextLabels[sortState])
-  renderTable()
-})
+document
+  .querySelectorAll('button')
+  .forEach(e => e.addEventListener('click', sortClick))
 
 function init() {
   courses.forEach(crse => {
