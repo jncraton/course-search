@@ -24,13 +24,7 @@ let clickCountEnrollment = 0
 let clickCountCredit = 0
 
 const getDept = crse => crse.split('-', 1)[0]
-
-function daysCount(course) {
-  if (typeof course.days === 'string' && course.days.trim() !== '') {
-    return course.days.trim().length
-  }
-  return 1
-}
+const daysCount = crse => Math.max(1, crse.days.trim().length)
 
 function filterCourses(source) {
   let arr = source
