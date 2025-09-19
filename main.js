@@ -28,6 +28,14 @@ const daysCount = crse => Math.max(1, crse.days.trim().length)
 
 function filterCourses(source) {
   let arr = source
+
+  // show courses based on filter
+  const selectedDept = filterBox.value
+  arr =
+    selectedDept && selectedDept !== '__ALL__'
+      ? courses.filter(c => getDept(c.crse) === selectedDept)
+      : courses
+
   // If the checkbox is checked, only show "Consent Needed" courses
   if (filterConsent.checked) {
     arr = arr.filter(c => c.consent === 'Consent Required')
@@ -150,14 +158,7 @@ function populateDeptFilter() {
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
-  // show courses based on filter
-  const selectedDept = filterBox.value
-  const byDept =
-    selectedDept && selectedDept !== '__ALL__'
-      ? courses.filter(c => getDept(c.crse) === selectedDept)
-      : courses
-
-  let visible = filterCourses(byDept)
+  let visible = filterCourses(courses)
 
   visible = sortCourses(visible)
 
