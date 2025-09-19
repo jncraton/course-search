@@ -32,7 +32,7 @@ function renderTable() {
 
   if (sortState > 0) {
     visible.sort(
-      (a, b) => (a[sortCol] - b[sortCol]) * (sortState == 1 ? -1 : 1),
+      (a, b) => (a[sortCol] - b[sortCol]) * (sortState == 1 ? 1 : -1),
     )
   }
 
