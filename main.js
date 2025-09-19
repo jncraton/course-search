@@ -100,9 +100,7 @@ function renderTable() {
 }
 
 // Add event listeners to all the select dropdowns and input checkboxes
-inputElements.forEach(element => {
-  element.addEventListener('change', renderTable)
-})
+inputElements.forEach(el => el.addEventListener('change', renderTable))
 
 // Enrollment filter button event list.
 filterEnrollment.addEventListener('click', () => {
