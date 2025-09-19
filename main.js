@@ -138,14 +138,6 @@ function sortCourses(visible) {
 function populateDeptFilter() {
   const depts = Array.from(new Set(courses.map(c => getDept(c.crse)))).sort()
 
-  filterBox.innerHTML = ''
-
-  // Add all department option
-  const allOpt = document.createElement('option')
-  allOpt.value = '__ALL__'
-  allOpt.textContent = 'ALL DEPARTMENTS'
-  filterBox.append(allOpt)
-
   // add option for each department
   depts.forEach(d => {
     const opt = document.createElement('option')
