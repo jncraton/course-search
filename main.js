@@ -57,9 +57,6 @@ function renderTable() {
   })
 }
 
-// Add event listeners to all the select dropdowns and input checkboxes
-inputElements.forEach(el => el.addEventListener('change', renderTable))
-
 const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
 
 // Enrollment filter button event list.
@@ -98,6 +95,9 @@ function init() {
     opt.value = opt.textContent = dept
     filterBox.append(opt)
   })
+
+  inputElements.forEach(el => el.addEventListener('change', renderTable))
+
+  renderTable()
 }
 init()
-renderTable()
