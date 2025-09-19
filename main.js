@@ -21,15 +21,11 @@ courses.forEach(crse => {
 
 function sortCourses(visible) {
   // Logic for enrollment sorting
-  switch (sortState) {
-    case 1:
-      visible.sort((a, b) => (a[sortCol] ?? 0) - (b[sortCol] ?? 0))
-      break
-    case 2:
-      visible.sort((a, b) => (b[sortCol] ?? 0) - (a[sortCol] ?? 0))
-      break
-    default:
-      break
+  if (sortState > 0) {
+    console.log(sortState)
+    visible.sort(
+      (a, b) => (a[sortCol] - b[sortCol]) * (sortState == 1 ? -1 : 1),
+    )
   }
 
   return visible
@@ -89,7 +85,7 @@ const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
 // Enrollment filter button event list.
 filterEnrollment.addEventListener('click', () => {
   if (sortCol == 'enrolled') {
-    sortState = (sortState % 3) + 1
+    sortState = (sortState + 1) % 3
   } else {
     sortState = 1
     sortCol = 'enrolled'
@@ -103,7 +99,7 @@ filterEnrollment.addEventListener('click', () => {
 // Credit filter button event list.
 filterCredit.addEventListener('click', () => {
   if (sortCol == 'hours') {
-    sortState = (sortState % 3) + 1
+    sortState = (sortState + 1) % 3
   } else {
     sortState = 1
     sortCol = 'hours'
