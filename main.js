@@ -26,7 +26,7 @@ function sortCourses(visible) {
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
 
-      filterEnrollment.setAttribute('aria-label', 'Sort by Descending')
+      filterEnrollment.setAttribute('aria-label', 'Sort Descending')
       break
     case 2:
       visible = [...visible].sort(
@@ -38,7 +38,7 @@ function sortCourses(visible) {
     default:
       visible = [...visible]
 
-      filterEnrollment.setAttribute('aria-label', 'Sort by Ascending')
+      filterEnrollment.setAttribute('aria-label', 'Sort Ascending')
       break
   }
 
@@ -47,7 +47,7 @@ function sortCourses(visible) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
 
-      filterCredit.setAttribute('aria-label', 'Sort by Descending')
+      filterCredit.setAttribute('aria-label', 'Sort Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
@@ -57,7 +57,7 @@ function sortCourses(visible) {
     default:
       visible = [...visible]
 
-      filterCredit.setAttribute('aria-label', 'Sort by Ascending')
+      filterCredit.setAttribute('aria-label', 'Sort Ascending')
       break
   }
 
