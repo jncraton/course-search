@@ -84,8 +84,7 @@ function renderTable() {
     const row = template.content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
-    const classStatusVisual =
-      course.enrolling === 'Open' ? 'Open &#9989;' : 'Closed &#10060;' // Adds visual for if class is open or not with UTF encoded version of emojis
+    const openClosedIcon = course.enrolling === 'Open' ? '&#9989;' : '&#10060;'
 
     tds[0].textContent = getDept(course.crse)
     tds[1].textContent = course.crse.split('-').slice(1).join('-')
@@ -95,7 +94,7 @@ function renderTable() {
     tds[5].textContent = course.enrolled
     tds[6].textContent = daysCount(course)
     tds[7].textContent = course['instruction mode']
-    tds[8].innerHTML = `${classStatusVisual}`
+    tds[8].innerHTML = `${course.enrolling} ${openClosedIcon}`
 
     tbody.append(row)
   })
