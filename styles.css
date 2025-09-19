@@ -81,10 +81,12 @@ th.right {
   line-height: 1;
 }
 
-button[aria-label*="Default"] .up-icon, button[aria-label*="Descending"] .down-icon {
+button[aria-label*='Default'] .up-icon,
+button[aria-label*='Descending'] .down-icon {
   color: #000000;
 }
 
-button[aria-label*="Default"] .down-icon, button[aria-label*="Descending"] .up-icon {
+button[aria-label*='Default'] .down-icon,
+button[aria-label*='Descending'] .up-icon {
   color: #f5660f;
 }
