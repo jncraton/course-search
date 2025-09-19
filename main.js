@@ -1,9 +1,7 @@
 import { courses } from './courses.js'
 
 // html elements
-const tbody = document.querySelector('tbody')
-const template = document.querySelector('#course-row')
-const filterConsent = document.querySelector('#filter-consent')
+const $ = sel => document.querySelector(sel)
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
@@ -16,12 +14,12 @@ let sortCol = ''
 let sortState = 0
 
 function renderTable() {
-  tbody.innerHTML = '' // clear rows first
+  $('tbody').innerHTML = '' // clear rows first
 
   let visible = courses.filter(
     c =>
       (filterBox.value == '__ALL__' || c.dept === filterBox.value) &&
-      (!filterConsent.checked || c.consent === 'Consent Required') &&
+      (!$('#filter-consent').checked || c.consent === 'Consent Required') &&
       (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
       (!filterOnline.checked || c['instruction mode'].includes('Online')),
   )
@@ -34,7 +32,7 @@ function renderTable() {
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)
   visible.forEach(course => {
-    const row = template.content.cloneNode(true)
+    const row = $('#course-row').content.cloneNode(true)
     const tds = row.querySelectorAll('td')
 
     const openClosedIcon = course.enrolling === 'Open' ? '&#9989;' : '&#10060;'
@@ -49,7 +47,7 @@ function renderTable() {
     tds[7].textContent = course['instruction mode']
     tds[8].innerHTML = `${course.enrolling} ${openClosedIcon}`
 
-    tbody.append(row)
+    $('tbody').append(row)
   })
 }
 
