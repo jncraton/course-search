@@ -22,11 +22,6 @@ const daysCount = crse => Math.max(1, crse.days.trim().length)
 function filterCourses(source) {
   let arr = source
 
-  // Filter days selected
-  if (selectDay.value) {
-    arr = arr.filter(c => (c.days || '').includes(selectDay.value))
-  }
-
   //If the checkbox is checked, show online courses
   if (filterOnline.checked) {
     arr = arr.filter(c => c['instruction mode'] === 'Asynchronous Online')
@@ -43,7 +38,8 @@ function filterCourses(source) {
 
   return arr.filter(c =>
     (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
-    (!filterConsent.checked || c.consent === 'Consent Required')
+    (!filterConsent.checked || c.consent === 'Consent Required') &&
+    (!selectDay.value || (c.days || '').includes(selectDay.value))
   )
 }
 
