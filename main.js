@@ -11,9 +11,8 @@ const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 const inputElements = document.querySelectorAll('select, input')
 
-//Click count vars
-let clickCountEnrollment = 0
-let clickCountCredit = 0
+let sortCol = ''
+let sortState = 0
 
 courses.forEach(crse => {
   crse.dept = crse => crse.split('-', 1)[0]
@@ -22,33 +21,14 @@ courses.forEach(crse => {
 
 function sortCourses(visible) {
   // Logic for enrollment sorting
-  switch (clickCountEnrollment) {
+  switch (sortState) {
     case 1:
-      visible.sort((a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0))
-      filterEnrollment.setAttribute('aria-label', 'Sort Descending')
+      visible.sort((a, b) => (a[sortCol] ?? 0) - (b[sortCol] ?? 0))
       break
     case 2:
-      visible.sort((a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0))
-
-      filterEnrollment.setAttribute('aria-label', 'Default order')
+      visible.sort((a, b) => (b[sortCol] ?? 0) - (a[sortCol] ?? 0))
       break
     default:
-      filterEnrollment.setAttribute('aria-label', 'Sort Ascending')
-      break
-  }
-
-  // Logic for credit sorting
-  switch (clickCountCredit) {
-    case 1:
-      visible.sort((a, b) => a.hours - b.hours)
-      filterCredit.setAttribute('aria-label', 'Sort Descending')
-      break
-    case 2:
-      visible = [...visible].sort((a, b) => b.hours - a.hours)
-      filterCredit.setAttribute('aria-label', 'Default order')
-      break
-    default:
-      filterCredit.setAttribute('aria-label', 'Sort Ascending')
       break
   }
 
@@ -104,17 +84,33 @@ function renderTable() {
 // Add event listeners to all the select dropdowns and input checkboxes
 inputElements.forEach(el => el.addEventListener('change', renderTable))
 
+const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
+
 // Enrollment filter button event list.
 filterEnrollment.addEventListener('click', () => {
-  clickCountEnrollment = (clickCountEnrollment % 3) + 1
-  clickCountCredit = 0
+  if (sortCol == 'enrolled') {
+    sortState = (sortState % 3) + 1
+  } else {
+    sortState = 1
+    sortCol = 'enrolled'
+  }
+
+  filterEnrollment.setAttribute('aria-label', sortNextLabels[sortState])
+  filterCredit.setAttribute('aria-label', sortNextLabels[0])
   renderTable()
 })
 
 // Credit filter button event list.
 filterCredit.addEventListener('click', () => {
-  clickCountCredit = (clickCountCredit % 3) + 1
-  clickCountEnrollment = 0
+  if (sortCol == 'hours') {
+    sortState = (sortState % 3) + 1
+  } else {
+    sortState = 1
+    sortCol = 'hours'
+  }
+
+  filterEnrollment.setAttribute('aria-label', sortNextLabels[0])
+  filterCredit.setAttribute('aria-label', sortNextLabels[sortState])
   renderTable()
 })
 
