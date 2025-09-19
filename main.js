@@ -15,7 +15,7 @@ let sortCol = ''
 let sortState = 0
 
 courses.forEach(crse => {
-  crse.dept = crse => crse.split('-', 1)[0]
+  crse.dept = crse.crse.split('-', 1)[0]
   crse.hours = Math.max(1, crse.days.trim().length)
 })
 
