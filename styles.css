@@ -22,6 +22,19 @@ thead td {
   background-color: #f4f4f4;
 }
 
+td button {
+  background: none;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #000000;
+  font: inherit;
+
+}
+
 /* Rows */
 tbody tr:nth-child(even) {
   background-color: #f1f1f1; /*Stripes*/
@@ -61,16 +74,6 @@ th.right {
 }
 
 /* Enrollment and Credit arrows align */
-.enroll-div a,
-.credit-div a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  color: #000000;
-}
-
 .icon-span {
   display: flex;
   flex-direction: column;
