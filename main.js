@@ -22,11 +22,6 @@ const daysCount = crse => Math.max(1, crse.days.trim().length)
 function filterCourses(source) {
   let arr = source
 
-  // If the checkbox is checked, only show "Consent Needed" courses
-  if (filterConsent.checked) {
-    arr = arr.filter(c => c.consent === 'Consent Required')
-  }
-
   // Filter days selected
   if (selectDay.value) {
     arr = arr.filter(c => (c.days || '').includes(selectDay.value))
@@ -47,7 +42,8 @@ function filterCourses(source) {
   }
 
   return arr.filter(c =>
-    (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value)
+    (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
+    (!filterConsent.checked || c.consent === 'Consent Required')
   )
 }
 
