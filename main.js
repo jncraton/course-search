@@ -19,16 +19,6 @@ courses.forEach(crse => {
   crse.hours = Math.max(1, crse.days.trim().length)
 })
 
-function init() {
-  // add option for each department
-  const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
-  depts.forEach(dept => {
-    const opt = document.createElement('option')
-    opt.value = opt.textContent = dept
-    filterBox.append(opt)
-  })
-}
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
@@ -100,6 +90,14 @@ filterCredit.addEventListener('click', () => {
   renderTable()
 })
 
-// Initial render
+function init() {
+  // add option for each department
+  const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
+  depts.forEach(dept => {
+    const opt = document.createElement('option')
+    opt.value = opt.textContent = dept
+    filterBox.append(opt)
+  })
+}
 init()
 renderTable()
