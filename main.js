@@ -2,7 +2,6 @@ import { courses } from './courses.js'
 
 // html elements
 const $ = sel => document.querySelector(sel)
-const selectDay = document.querySelector('#selected-days')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 const inputElements = document.querySelectorAll('select, input')
@@ -18,8 +17,9 @@ function renderTable() {
     c =>
       (!$('#filter-dept').value || c.dept === $('#filter-dept').value) &&
       (!$('#filter-consent').checked || c.consent === 'Consent Required') &&
-      (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
-      (!$('#filter-online').checked || c['instruction mode'].includes('Online')),
+      (!$('#filter-day').value || c.days.includes($('#filter-day').value)) &&
+      (!$('#filter-online').checked ||
+        c['instruction mode'].includes('Online')),
   )
 
   if (sortState > 0) {
