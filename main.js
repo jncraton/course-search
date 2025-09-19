@@ -7,7 +7,6 @@ const filterConsent = document.querySelector('#filter-consent')
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
 const filterBox = document.querySelector('#filterDepartment')
-const liberalArtsCheckbox = document.querySelector('#liberal-arts-filter')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 const inputElements = document.querySelectorAll('select, input')
@@ -20,18 +19,7 @@ const getDept = crse => crse.split('-', 1)[0]
 const daysCount = crse => Math.max(1, crse.days.trim().length)
 
 function filterCourses(source) {
-  let arr = source
-
-  // Liberal Arts filter
-  if (liberalArtsCheckbox.checked) {
-    arr = arr.filter(c => {
-      const title = (c.title || '').toLowerCase()
-      const descr = (c.descr || '').toLowerCase()
-      return title.includes('liberal arts') || descr.includes('liberal arts')
-    })
-  }
-
-  return arr.filter(c =>
+  return source.filter(c =>
     (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
     (!filterConsent.checked || c.consent === 'Consent Required') &&
     (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
