@@ -11,6 +11,7 @@ const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 const inputElements = document.querySelectorAll('select, input')
 
+const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
 let sortCol = ''
 let sortState = 0
 
@@ -51,8 +52,6 @@ function renderTable() {
     tbody.append(row)
   })
 }
-
-const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
 
 // Enrollment filter button event list.
 filterEnrollment.addEventListener('click', () => {
