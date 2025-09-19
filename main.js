@@ -18,16 +18,6 @@ let clickCountCredit = 0
 const getDept = crse => crse.split('-', 1)[0]
 const daysCount = crse => Math.max(1, crse.days.trim().length)
 
-function filterCourses(source) {
-  return source.filter(
-    c =>
-      (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
-      (!filterConsent.checked || c.consent === 'Consent Required') &&
-      (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
-      (!filterOnline.checked || c['instruction mode'].includes('Online')),
-  )
-}
-
 function sortCourses(visible) {
   // Logic for enrollment sorting
   switch (clickCountEnrollment) {
@@ -96,7 +86,13 @@ function populateDeptFilter() {
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
-  let visible = filterCourses(courses)
+  let visible = courses.filter(
+    c =>
+      (filterBox.value == '__ALL__' || getDept(c.crse) === filterBox.value) &&
+      (!filterConsent.checked || c.consent === 'Consent Required') &&
+      (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
+      (!filterOnline.checked || c['instruction mode'].includes('Online')),
+  )
 
   visible = sortCourses(visible)
 
