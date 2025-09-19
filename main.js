@@ -53,15 +53,14 @@ function sortCourses(visible) {
   return visible
 }
 
-// get unique department codes
 function populateDeptFilter() {
+  // get unique department codes
   const depts = Array.from(new Set(courses.map(c => getDept(c.crse)))).sort()
 
   // add option for each department
-  depts.forEach(d => {
+  depts.forEach(dept => {
     const opt = document.createElement('option')
-    opt.value = d
-    opt.textContent = d
+    opt.value = opt.textContent = dept
     filterBox.append(opt)
   })
 }
