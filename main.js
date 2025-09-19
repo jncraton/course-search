@@ -2,8 +2,8 @@ import { courses } from './courses.js'
 
 // html elements
 const $ = sel => document.querySelector(sel)
-const filterCredit = document.querySelector('#credit-button')
-const filterEnrollment = document.querySelector('#enrollments-button')
+const filterCredit = document.querySelector('#sort-hours')
+const filterEnrollment = document.querySelector('#sort-enrollment')
 const inputElements = document.querySelectorAll('select, input')
 
 const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
