@@ -64,25 +64,12 @@ function filterCourses(source) {
 }
 
 function sortCourses(visible) {
-  // Setup color changing functions
-  const makeActive = arrowElement => {
-    arrowElement.classList.remove('inactive-color')
-    arrowElement.classList.add('active-color')
-  }
-
-  const makeInactive = arrowElement => {
-    arrowElement.classList.remove('active-color')
-    arrowElement.classList.add('inactive-color')
-  }
-
   // Logic for enrollment sorting
   switch (clickCountEnrollment) {
     case 1:
       visible = [...visible].sort(
         (a, b) => (a.enrolled ?? 0) - (b.enrolled ?? 0),
       )
-
-      makeActive(upIconEnrollment)
 
       filterEnrollment.setAttribute(
         'aria-label',
@@ -94,16 +81,10 @@ function sortCourses(visible) {
         (a, b) => (b.enrolled ?? 0) - (a.enrolled ?? 0),
       )
 
-      makeActive(downIconEnrollment)
-      makeInactive(upIconEnrollment)
-
       filterEnrollment.setAttribute('aria-label', 'Default Enrollment order')
       break
     default:
       visible = [...visible]
-
-      makeInactive(upIconEnrollment)
-      makeInactive(downIconEnrollment)
 
       filterEnrollment.setAttribute(
         'aria-label',
@@ -117,23 +98,15 @@ function sortCourses(visible) {
     case 1:
       visible = [...visible].sort((a, b) => daysCount(a) - daysCount(b))
 
-      makeActive(upIconCredit)
-
       filterCredit.setAttribute('aria-label', 'Sort by Credit Descending')
       break
     case 2:
       visible = [...visible].sort((a, b) => daysCount(b) - daysCount(a))
 
-      makeActive(downIconCredit)
-      makeInactive(upIconCredit)
-
       filterCredit.setAttribute('aria-label', 'Default Credit order')
       break
     default:
       visible = [...visible]
-
-      makeInactive(upIconCredit)
-      makeInactive(downIconCredit)
 
       filterCredit.setAttribute('aria-label', 'Sort by Credit Ascending')
       break
