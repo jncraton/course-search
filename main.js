@@ -1,9 +1,6 @@
 import { courses } from './courses.js'
 
-// html elements
 const $ = sel => document.querySelector(sel)
-const inputElements = document.querySelectorAll('select, input')
-
 const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
 let sortCol = ''
 let sortState = 0
@@ -89,7 +86,9 @@ function init() {
     $('#filter-dept').append(opt)
   })
 
-  inputElements.forEach(el => el.addEventListener('change', renderTable))
+  document
+    .querySelectorAll('select, input')
+    .forEach(el => el.addEventListener('change', renderTable))
 
   renderTable()
 }
