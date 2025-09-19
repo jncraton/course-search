@@ -4,7 +4,6 @@ import { courses } from './courses.js'
 const $ = sel => document.querySelector(sel)
 const selectDay = document.querySelector('#selected-days')
 const filterOnline = document.querySelector('#filter-online')
-const filterBox = document.querySelector('#filterDepartment')
 const filterCredit = document.querySelector('#credit-button')
 const filterEnrollment = document.querySelector('#enrollments-button')
 const inputElements = document.querySelectorAll('select, input')
@@ -18,7 +17,7 @@ function renderTable() {
 
   let visible = courses.filter(
     c =>
-      (filterBox.value == '__ALL__' || c.dept === filterBox.value) &&
+      (!$('#filter-dept').value || c.dept === $('#filter-dept').value) &&
       (!$('#filter-consent').checked || c.consent === 'Consent Required') &&
       (!selectDay.value || (c.days || '').includes(selectDay.value)) &&
       (!filterOnline.checked || c['instruction mode'].includes('Online')),
@@ -80,17 +79,17 @@ filterCredit.addEventListener('click', () => {
 })
 
 function init() {
+  courses.forEach(crse => {
+    crse.dept = crse.crse.split('-', 1)[0]
+    crse.hours = Math.max(1, crse.days.trim().length)
+  })
+
   // add option for each department
   const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
   depts.forEach(dept => {
     const opt = document.createElement('option')
     opt.value = opt.textContent = dept
-    filterBox.append(opt)
-  })
-
-  courses.forEach(crse => {
-    crse.dept = crse.crse.split('-', 1)[0]
-    crse.hours = Math.max(1, crse.days.trim().length)
+    $('#filter-dept').append(opt)
   })
 
   inputElements.forEach(el => el.addEventListener('change', renderTable))
