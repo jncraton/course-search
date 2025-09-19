@@ -13,8 +13,7 @@ function renderTable() {
       (!$('#filter-dept').value || c.dept === $('#filter-dept').value) &&
       (!$('#filter-consent').checked || c.consent === 'Consent Required') &&
       (!$('#filter-day').value || c.days.includes($('#filter-day').value)) &&
-      (!$('#filter-online').checked ||
-        c['instruction mode'].includes('Online')),
+      (!$('#filter-online').checked || c.online),
   )
 
   if (sortState > 0) {
@@ -76,6 +75,7 @@ function init() {
   courses.forEach(crse => {
     crse.dept = crse.crse.split('-', 1)[0]
     crse.hours = Math.max(1, crse.days.trim().length)
+    crse.online = crse['instruction mode'].includes('Online')
   })
 
   // add option for each department
