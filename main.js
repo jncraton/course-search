@@ -19,11 +19,9 @@ courses.forEach(crse => {
   crse.hours = Math.max(1, crse.days.trim().length)
 })
 
-function populateDeptFilter() {
-  // get unique department codes
-  const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
-
+function init() {
   // add option for each department
+  const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
   depts.forEach(dept => {
     const opt = document.createElement('option')
     opt.value = opt.textContent = dept
@@ -103,5 +101,5 @@ filterCredit.addEventListener('click', () => {
 })
 
 // Initial render
-populateDeptFilter()
+init()
 renderTable()
