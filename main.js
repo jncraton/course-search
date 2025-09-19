@@ -2,7 +2,6 @@ import { courses } from './courses.js'
 
 // html elements
 const $ = sel => document.querySelector(sel)
-const filterEnrollment = document.querySelector('#sort-enrollment')
 const inputElements = document.querySelectorAll('select, input')
 
 const sortNextLabels = ['Sort Ascending', 'Sort Descending', 'Sort Default']
@@ -49,7 +48,7 @@ function renderTable() {
 }
 
 // Enrollment filter button event list.
-filterEnrollment.addEventListener('click', () => {
+$('#sort-enrollment').addEventListener('click', () => {
   if (sortCol == 'enrolled') {
     sortState = (sortState + 1) % 3
   } else {
@@ -57,7 +56,7 @@ filterEnrollment.addEventListener('click', () => {
     sortCol = 'enrolled'
   }
 
-  filterEnrollment.setAttribute('aria-label', sortNextLabels[sortState])
+  $('#sort-enrollment').setAttribute('aria-label', sortNextLabels[sortState])
   $('#sort-hours').setAttribute('aria-label', sortNextLabels[0])
   renderTable()
 })
@@ -71,7 +70,7 @@ $('#sort-hours').addEventListener('click', () => {
     sortCol = 'hours'
   }
 
-  filterEnrollment.setAttribute('aria-label', sortNextLabels[0])
+  $('#sort-enrollment').setAttribute('aria-label', sortNextLabels[0])
   $('#sort-hours').setAttribute('aria-label', sortNextLabels[sortState])
   renderTable()
 })
