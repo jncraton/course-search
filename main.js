@@ -14,11 +14,6 @@ const inputElements = document.querySelectorAll('select, input')
 let sortCol = ''
 let sortState = 0
 
-courses.forEach(crse => {
-  crse.dept = crse.crse.split('-', 1)[0]
-  crse.hours = Math.max(1, crse.days.trim().length)
-})
-
 function renderTable() {
   tbody.innerHTML = '' // clear rows first
 
@@ -94,6 +89,11 @@ function init() {
     const opt = document.createElement('option')
     opt.value = opt.textContent = dept
     filterBox.append(opt)
+  })
+
+  courses.forEach(crse => {
+    crse.dept = crse.crse.split('-', 1)[0]
+    crse.hours = Math.max(1, crse.days.trim().length)
   })
 
   inputElements.forEach(el => el.addEventListener('change', renderTable))
