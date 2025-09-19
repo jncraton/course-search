@@ -19,18 +19,6 @@ courses.forEach(crse => {
   crse.hours = Math.max(1, crse.days.trim().length)
 })
 
-function sortCourses(visible) {
-  // Logic for enrollment sorting
-  if (sortState > 0) {
-    console.log(sortState)
-    visible.sort(
-      (a, b) => (a[sortCol] - b[sortCol]) * (sortState == 1 ? -1 : 1),
-    )
-  }
-
-  return visible
-}
-
 function populateDeptFilter() {
   // get unique department codes
   const depts = Array.from(new Set(courses.map(c => c.dept))).sort()
@@ -54,7 +42,11 @@ function renderTable() {
       (!filterOnline.checked || c['instruction mode'].includes('Online')),
   )
 
-  visible = sortCourses(visible)
+  if (sortState > 0) {
+    visible.sort(
+      (a, b) => (a[sortCol] - b[sortCol]) * (sortState == 1 ? -1 : 1),
+    )
+  }
 
   // Go through the current array of courses and display them (assumes things are filtered and sorted)
   visible.forEach(course => {
